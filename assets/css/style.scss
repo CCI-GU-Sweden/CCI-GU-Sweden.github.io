@@ -1,0 +1,27 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header nav {
+  margin-top: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a.active {
+  text-decoration: underline;
+}
