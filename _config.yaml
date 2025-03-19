@@ -11,6 +11,8 @@ collections:
   posts:
     output          : true
 
+remote_theme        : pages-themes/modernist@v0.2.0
+
 # Handling Reading
 safe                : false
 include             : [".htaccess"]
@@ -28,7 +30,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : []
+plugins             : [jekyll-remote-theme]
 
 # Conversion
 markdown            : kramdown
