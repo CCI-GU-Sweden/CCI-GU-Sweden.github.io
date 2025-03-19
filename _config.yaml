@@ -12,6 +12,7 @@ collections:
     output          : true
 
 remote_theme        : pages-themes/dinky@v0.2.0
+show_downloads      : false
 
 # Handling Reading
 safe                : false
