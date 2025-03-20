@@ -4,10 +4,12 @@ title: CCI help and documentation page
 permalink: /docs/
 ---
 
+# Documentation
 
-Here is the various links for different help sections:
 
-[OMERO]({{ '/omero_howto' | relative_url }})
+Various links for different help sections:
+
+[OMERO Frontend and download]({{ '/omero_howto' | relative_url }})
 
 
 
