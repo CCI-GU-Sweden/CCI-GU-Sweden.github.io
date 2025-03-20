@@ -1,6 +1,7 @@
 ---
 layout: default
 title: CCI help and documentation page
+permalink: /docs/
 ---
 
 
