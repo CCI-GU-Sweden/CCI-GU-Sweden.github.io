@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blogging Like a Hacker
+title: CCI help and documentation page
 ---
 
 Hej hej

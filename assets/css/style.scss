@@ -3,25 +3,52 @@
 
 @import "{{ site.theme }}";
 
-header nav {
-  margin-top: 20px;
+nav {
+  margin-top: 50px;
 }
 
-header nav ul {
+nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-header nav ul li {
+nav ul li {
   display: inline;
   margin-right: 20px;
+  margin-left:  40px;
+
 }
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
+nav ul li a {
+  color: #FFF;
 }
 
-header nav ul li a.active {
+nav ul li a.active {
   text-decoration: underline;
 }
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between the image and text */
+  }
+  
+  .project-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: Makes the image circular */
+  }
+  
+  #project_title,
+  #project_tagline {
+    margin: 0;
+  }
+  
+
+  .inner {
+    position: relative;
+    max-width: 800px;
+    padding: 20px 10px;
+    margin: 0 auto;
+  }

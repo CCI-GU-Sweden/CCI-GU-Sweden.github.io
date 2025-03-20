@@ -11,7 +11,10 @@ collections:
   posts:
     output          : true
 
-remote_theme        : pages-themes/dinky@v0.2.0
+title               : "Centre for Cellular Imaging, GU"
+description         : "World class research support"
+
+remote_theme        : pages-themes/slate@v0.2.0
 show_downloads      : false
 
 # Handling Reading
