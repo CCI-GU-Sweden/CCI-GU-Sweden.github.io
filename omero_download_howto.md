@@ -43,7 +43,7 @@ async function fetchMarkdownAndImages(mdUrl) {
 }
 
 // Usage
-fetchMarkdownAndImages('https://github.com/CCI-GU-Sweden/Omero_download_client/blob/main/README.md')
+fetchMarkdownAndImages('https://github.com/CCI-GU-Sweden/Omero_download_client/README.md')
   .then(({markdown, baseUrl, images}) => {
     console.log('Fetched images:', images);
     
