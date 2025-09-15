@@ -1,8 +1,9 @@
----
-layout: page
-title: CCI User Rules
-permalink: /user-rules/
----
+{
+  echo "---"
+  echo "title: CCI User Rules ${TAG}"
+  echo "---"
+  cat CCI_User_Rules.md
+} > "site/versions/${TAG}/index.md"
 
 <div style="margin:.75rem 0;">
   <label for="version-select"><strong>Version:</strong></label>
