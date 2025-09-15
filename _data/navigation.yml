@@ -2,5 +2,7 @@
   link: /
 - name: Contact
   link: /contact/
+- name: "CCI User Rules"
+  link: /user-rules/
 - name: Documentation
   link: /docs/
