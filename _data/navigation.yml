@@ -2,6 +2,8 @@
   link: /
 - name: Contact
   link: /contact/
+- name: "User Registration Workflow"
+  link: /user-registration-workflow/
 - name: "CCI User Rules"
   link: /user-rules/
 - name: Documentation
