@@ -43,7 +43,7 @@ async function fetchMarkdownAndImages(mdUrl) {
 }
 
 // Usage
-fetchMarkdownAndImages('https://raw.githubusercontent.com/CCI-GU-Sweden/Omero_download_client/main/README.md')
+fetchMarkdownAndImages('https://raw.githubusercontent.com/CCI-GU-Sweden/napari-omero-downloader-cci/main/README.md')
   .then(({markdown, baseUrl, images}) => {
     console.log('Fetched images:', images);
     
