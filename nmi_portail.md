@@ -17,42 +17,51 @@ permalink: /docs/nmi_portail/
 const mdUrl = 'https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_registration_documents/refs/heads/main/NMI%20portail.md';
 const pdfBaseName = 'NMI%20portail';
 
-// Prebuilt PDF locations (served via GitHub Pages or raw)
-const prebuiltPdf = `https://cci-gu-sweden.github.io/CCI_registration_documents/assets/pdfs/${pdfBaseName}.pdf`;
-const rawPdf      = `https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_registration_documents/refs/heads/main/assets/pdfs/${pdfBaseName}.pdf`;
+// Prefer prebuilt PDF from CCI_registration_documents; fall back to "raw" if Pages isn't enabled
+const prebuiltPdf = `https://cci-gu-sweden.github.io/CCI_registration_documents/assets/pdfs/${encodeURIComponent(pdfBaseName)}.pdf`;
+const rawPdf      = `https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_registration_documents/refs/heads/main/assets/pdfs/${encodeURIComponent(pdfBaseName)}.pdf`;
 
-// Regex to resolve relative image paths inside the fetched Markdown
-const imageRegex = /!\[(?<altText>.*?)\]\s*\((?<imageURL>[^)]+)\)|<img\s+[^>]*?src=["'](?<imageURL1>[^"']+)["'][^>]*?>/g;
-
-async function renderMarkdownFrom(mdUrl) {
-  const baseUrl = mdUrl.substring(0, mdUrl.lastIndexOf('/') + 1);
-  const mdResponse = await fetch(mdUrl, { cache: 'no-store' });
-  const mdText = await mdResponse.text();
-
-  // Fix relative image URLs
-  const resolvedMarkdown = mdText.replace(imageRegex, (match, _a, _b, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _aa, _ab, groups) => {
-    const src = (groups && (groups.imageURL || groups.imageURL1)) || null;
-    if (!src) return match;
-    const absoluteUrl = src.startsWith('http') || src.startsWith('/') ? src : new URL(src, baseUrl).href;
-    return match.replace(src, absoluteUrl);
+// Simple, robust resolvers for relative URLs in Markdown
+function resolveMarkdownImages(md, base) {
+  // 1) Markdown syntax: ![alt](url)
+  md = md.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (m, alt, url) => {
+    url = url.trim();
+    if (/^(?:https?:)?\/\//i.test(url) || url.startsWith('/')) return m; // already absolute
+    const abs = new URL(url, base).href;
+    return `![${alt}](${abs})`;
   });
+  // 2) HTML <img src="url">
+  md = md.replace(/<img\s+([^>]*?)src=["']([^"']+)["']([^>]*)>/gi, (m, pre, url, post) => {
+    url = url.trim();
+    if (/^(?:https?:)?\/\//i.test(url) || url.startsWith('/')) return m;
+    const abs = new URL(url, base).href;
+    return `<img ${pre}src="${abs}"${post}>`;
+  });
+  return md;
+}
 
-  document.getElementById('md-content').innerHTML = `<md>${resolvedMarkdown}</md>`;
-  if (window.renderMarkdown) window.renderMarkdown();
+async function renderMarkdownPage() {
+  const base = mdUrl.slice(0, mdUrl.lastIndexOf('/') + 1);
+  const r = await fetch(mdUrl, { cache: 'no-store' });
+  let md = await r.text();
+  md = resolveMarkdownImages(md, base);
 
-  // Optional: open external links in a new tab
+  document.getElementById('md-content').innerHTML = `<md>${md}</md>`;
+  if (window.renderMarkdown) renderMarkdown();
+
+  // external links open in a new tab (optional)
   document.querySelectorAll('#md-content a[href]').forEach(a => {
-    const url = new URL(a.getAttribute('href'), location.href);
-    if (url.origin !== location.origin) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    const u = new URL(a.getAttribute('href'), location.href);
+    if (u.origin !== location.origin) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
   });
 }
 
-async function tryShowPrebuiltPdf() {
+async function setupPdfButton() {
   const link = document.getElementById('pdf-link');
   const btn  = document.getElementById('pdf-btn');
   const status = document.getElementById('pdf-status');
 
-  // Prefer Pages URL; if not found, try raw; else show generator button
+  // Try prebuilt PDFs first
   for (const href of [prebuiltPdf, rawPdf]) {
     try {
       const head = await fetch(href, { method: 'HEAD', cache: 'no-store' });
@@ -64,7 +73,8 @@ async function tryShowPrebuiltPdf() {
       }
     } catch {}
   }
-  // Fallback to client-side generation
+
+  // Fall back to client-side generation
   btn.style.display = '';
   btn.addEventListener('click', async () => {
     status.textContent = 'Preparing PDF…';
@@ -78,25 +88,18 @@ async function tryShowPrebuiltPdf() {
       }).from(document.getElementById('md-content')).save();
       status.textContent = '';
     } catch (e) {
-      console.warn(e); status.textContent = 'PDF failed — try your browser’s “Print to PDF”.';
+      console.warn(e);
+      status.textContent = 'PDF failed — try your browser’s “Print to PDF”.';
     }
   });
 }
 
-// Kick it off
-renderMarkdownFrom(mdUrl).then(tryShowPrebuiltPdf).catch(console.error);
+// Boot
+renderMarkdownPage().then(setupPdfButton).catch(console.error);
 </script>
 
-// Markdown renderer
+<!-- Markdown renderer -->
 <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>
-// Fallback PDF generator (only used if prebuilt PDF not found)
+<!-- Client-side PDF (no SRI; prevents the integrity error you saw) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-YcsIP0wAZy0u0m4q+6YV1qg9M+oWEj83S9v3n6uEwYqfE7Hqh8fH3u9q4j1S7EJqGdS9QJr0A3z+JtqH7QG6WQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<style>
-/* Optional: cleaner PDF page breaks if users print */
-#md-content h1, #md-content h2 { page-break-after: avoid; }
-#md-content img { page-break-inside: avoid; max-width: 100%; }
-@media print { nav, header, footer { display:none !important; } }
-</style>
