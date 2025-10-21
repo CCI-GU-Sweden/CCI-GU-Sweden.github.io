@@ -15,7 +15,7 @@ permalink: /docs/nmi_portail/
 <script>
 // CONFIG  
 const mdUrl = 'https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_registration_documents/refs/heads/main/NMI%20portail.md';
-const pdfBaseName = 'NMI%20portail';
+const pdfBaseName = 'NMI portail';
 
 // Prefer prebuilt PDF from CCI_registration_documents; fall back to "raw" if Pages isn't enabled
 const prebuiltPdf = `https://cci-gu-sweden.github.io/CCI_registration_documents/assets/pdfs/${encodeURIComponent(pdfBaseName)}.pdf`;
