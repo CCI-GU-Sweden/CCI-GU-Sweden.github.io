@@ -13,7 +13,7 @@ Various links for different help sections:
 
 ## Registration documentation
 
-- [NMI portail instruction]({{ '/docs/nmi_portail' | relative_url }})
+- [NMI portal instruction]({{ '/docs/nmi_portal' | relative_url }})
 - [Connection to the CCI server]({{ '/docs/connect_cci_server' | relative_url }})
 
 ### Crosslab manual
