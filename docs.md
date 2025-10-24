@@ -22,3 +22,7 @@ Various links for different help sections:
 - [Crosslab external user]({{ '/docs/crosslab_external_user' | relative_url }})
 - [Crosslab GU PI]({{ '/docs/crosslab_gu_pi' | relative_url }})
 - [Crosslab GU user]({{ '/docs/crosslab_gu_user' | relative_url }})
+
+### HowTos and Guides
+
+- [Installing Napari]({{ '/docs/install_napari' | relative_url }})
