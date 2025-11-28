@@ -18,10 +18,6 @@ permalink: /user-registration-workflow/
 (async function () {
   const repo = 'CCI-GU-Sweden/CCI_user-registration-workflow';
   const base = 'https://cci-gu-sweden.github.io/CCI_user-registration-workflow';
-
-  const rawTagsBase  = 'https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_user-registration-workflow/refs/tags';
-  const rawMainUrl   = 'https://raw.githubusercontent.com/CCI-GU-Sweden/CCI_user-registration-workflow/refs/heads/main/User-registration-workflow.md';
-	
   const select = document.getElementById('version-select');
   const frame  = document.getElementById('workflow-frame');
 
@@ -41,31 +37,21 @@ permalink: /user-registration-workflow/
     });
     const tags = await r.json();
     tags.sort((a,b)=>{const A=key(a),B=key(b);return B.y-A.y||B.m-A.m||B.d-A.d||B.n-A.n;});
-
-	// add all tags, newest first
     for (const t of tags) {
       const o = document.createElement('option');
-      //o.value = `${base}/versions/${t.name}/`;
-	  o.value = `${rawTagsBase}/${t.name}/User-registration-workflow.md`;
+      o.value = `${base}/versions/${t.name}/`;
       o.textContent = t.name;
       select.appendChild(o);
     }
-	
 	if (tags.length) {
-	  const defaultUrl = `${rawTagsBase}/${tags[0].name}/User-registration-workflow.md`;
-      select.value = defaultUrl;
-      frame.src = defaultUrl;
-    } else {
-	  select.value = rawMainUrl;
-      frame.src = rawMainUrl;
+      select.value = `${base}/versions/${tags[0].name}/`;
+      frame.src = select.value;
     }
-	  
     select.addEventListener('change', e => {
-      frame.src = e.target.value;
+      document.getElementById('workflow-frame').src = e.target.value;
     });
   } catch (e) {
     console.warn('Could not load tags; falling back to latest.', e);
-	frame.src = rawMainUrl;
   }
 })();
 </script>
