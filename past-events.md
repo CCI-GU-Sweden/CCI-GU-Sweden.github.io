@@ -68,6 +68,7 @@ The event brought together experts, researchers, and industry professionals to s
 **Demo Address:** Medicinaregatan, floor 1, staircase of door 7A
 
 ![Cleared brain, cleared and imaged by Haijiang Zhang (CUBIC), sample by Syam Nair](/assets/past-events/9015045dbedf6ed49dae5942288eacfef383d34a.png)
+
 Cleared brain, cleared and imaged by Haijiang Zhang, sample by Syam Nair. Clearing method CUBIC  
 Photo: Rafael Camacho
 
