@@ -22,9 +22,13 @@ permalink: /user-registration-workflow/
   const frame  = document.getElementById('workflow-frame');
 
   // CalVer sorter: YYYY.M.D(.N)
-  function key(t){
-    const m = t.name?.match(/^(\d{4})\.(\d{1,2})\.(\d{1,2})(?:\.(\d+))?$/);
-    return m ? {y:+m[1], m:+m[2], d:+m[3], n:+(m[4]||0)} : {y:0,m:0,d:0,n:0};
+  function key(t) {
+    const parts = (t.name || '').split('.').map(p => parseInt(p, 10) || 0);
+    const y = parts[0] || 0;
+    const m = parts[1] || 0;
+    const d = parts[2] || 0;
+    const n = parts[3] || 0;
+    return { y, m, d, n };
   }
   
   try {
