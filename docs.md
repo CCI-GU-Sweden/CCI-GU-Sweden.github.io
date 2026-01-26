@@ -23,6 +23,10 @@ Various links for different help sections:
 - [Crosslab GU PI]({{ '/docs/crosslab_gu_pi' | relative_url }})
 - [Crosslab GU user]({{ '/docs/crosslab_gu_user' | relative_url }})
 
-### HowTos and Guides
+## Extra
+
+- [Data Management at Light Microscope]({{ 'docs/data_management_LM' | relative_url }})
+
+## HowTos and Guides
 
 - [Installing Napari]({{ '/docs/install_napari' | relative_url }})
