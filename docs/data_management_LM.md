@@ -1,5 +1,5 @@
 ---
-layout: document
+layout: default
 title: CCI data management at light microscopy
 permalink: /docs/data_management_LM/
 ---
@@ -11,7 +11,7 @@ After your imaging session, we encourage you to transfer all saved data to your 
 All CCI light microscope computers use an automatic cleanup and notification system to help keep the disks healthy and prevent data loss. As such:
 
  - **21 days after data acquisition**
-    - Any data present on the microscope computer for more than 21 days will be moved to a temporary archive folder (D:\TMP).
+    - Any data present on the microscope computer for more than 21 days will be moved to a temporary archive folder (`D:\TMP`).
     - When this happens, an email notification can be sent to you (see [Opt in Notifications](#opt-in-notifications) below)
  - **28 days after data acquisition**
     - If the data is still not moved off the microscope / not cleaned up by 28 days, it will be automatically deleted from the system.
@@ -31,12 +31,12 @@ If you receive a notification while you are away and cannot take action, contact
 Email notifications are **opt-in** and can be set up in three ways:
 
  - **Using your GU x-account**
-    - If your data is stored in a top-level folder named with your x-account (e.g. xlecsi), the system can automatically send emails to your x-account@gu.se address.
+    - If your data is stored in a top-level folder named with your x-account (e.g. xlecsi), the system can automatically send emails to your `x-account@gu.se` address.
 
  - **Using your email written as name_at_domain**
     - If your folder is named with your email in the form
-firstname.lastname_at_gu.se or user_at_example.com,
-the system will interpret _at_ as @ and send the notification there.
+`firstname.lastname_at_gu.se` or `user_at_example.com`,
+the system will interpret `_at_` as `@` and send the notification there.
 
  - **Manual setup**
     - If neither option above applies, email the CCI staff with:
