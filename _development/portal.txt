@@ -19,7 +19,14 @@ match somewhere in a record. Year, search, CCI involvement and technology filter
 multiple selected technologies match any selected technology. Sort options
 are newest, oldest, and title A-Z. Filter state is retained in the URL.
 
-CCI Involvement appears after Sort by, with All involvement (default),
+Technology appears after Sort by and before CCI Involvement. Its dropdown
+contains checkboxes for labels assigned in the catalogue. It shows the selected
+label or count, preserves repeated technology URL parameters, and closes on
+Escape or an outside click. Clear filters unchecks all technologies. Cards
+may carry several technology badges. CCI involvement and year combine with
+the technology selection; the technology choices themselves use match-any.
+
+CCI Involvement follows Technology, with All involvement (default),
 Scientific Collaboration and Service Provision. Cards show a compact text
 badge beside the year/journal metadata; colour is supplementary to the text.
 The involvement URL parameter stores the selected value and restores it on
@@ -32,9 +39,9 @@ local development and the GitHub revision in production (timestamp fallback).
 The catalogue fetch uses cache: no-store. This prevents an updated filter
 form from being paired with an older cached script or catalogue after a build.
 
-Technology controls are hidden until records have tags. No labels were
-inferred. Human-facing technology labels come from the public vocabulary
-generated from _publications/vocabulary.yml. The current 138 approved records
+The technology dropdown remains available when there are no assigned tags,
+showing an empty-state message. Human-facing labels come from the public
+vocabulary generated from _publications/vocabulary.yml. The current 138 approved records
 remain unchanged by the portal. Long author lists can be expanded inline.
 The All X authors and Abstract disclosure buttons sit side by side. Each
 expands its own full-width panel underneath, with keyboard support. Abstract
