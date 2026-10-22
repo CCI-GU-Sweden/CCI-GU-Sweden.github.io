@@ -313,12 +313,27 @@ and review tables remain under private_data/technology-review/. Only broad
 vocabulary IDs enter the public registry. Abstract-only evidence may establish
 a positive tag; omitted methods remain unknown, not absent.
 
-The initial 2026 trial selects effective bibliographic year 2026 (including
-manual year overrides), independently of reporting years and DOI suffixes.
-Other years remain untagged while this subset is reviewed locally. Extracted
-findings are reviewed into a separate assignment plan containing schema_version:
-1, year: 2026, and publications entries with id, doi and technologies lists.
+Each year batch selects its effective bibliographic year (including manual
+year overrides), independently of reporting years and DOI suffixes. The initial
+2026 checkpoint is preserved while the same workflow extends to 2022-2025.
+Extracted findings are reviewed into a separate assignment plan containing
+schema_version: 1, year, and publications entries with id, doi and technologies lists.
 The importer does not directly trust or apply raw model output.
+
+Cryo-EM has the stable ID cryo-electron-microscopy. Its initial assignments
+require explicit cryogenic electron microscopy evidence and retain the broader
+Electron Microscopy tag. Frozen storage, cryosectioning, negative staining alone
+and incidental references to earlier cryo-EM structures do not qualify.
+
+Validate the extracted evidence before curating a plan (2024 example):
+
+    python scripts/validate_technology_evidence.py private_data/technology-review/2024/findings.json --year 2024
+
+This requires the full year selection, exact registry identities, collected
+source coverage, matching Markdown checksums, valid vocabulary IDs and exact
+excerpt/line references. Unavailable sources cannot support positive labels.
+Citation validity does not prove that a label is semantically justified;
+review technique meanings separately before preparing the assignment plan.
 
 Preview the curated assignment plan, then apply explicitly and rebuild JSON:
 
@@ -329,5 +344,5 @@ Preview the curated assignment plan, then apply explicitly and rebuild JSON:
 The importer checks IDs, DOIs, effective years and the vocabulary before any
 write. It rejects conflicting existing labels rather than replacing them
 silently. Publication approval, involvement and other metadata are preserved.
-The local trial leaves tagging_status pending until Rafa completes review;
+The initial assignments leave tagging_status pending until Rafa completes review;
 that internal status is not exported. Nothing is published until release.
