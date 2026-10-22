@@ -113,6 +113,8 @@ def test_overrides_and_approval_survive_refresh(registry, metadata):
     record = registry["publications"][0]
     record["overrides"] = {"title": "Manually corrected title"}
     record["technologies"] = ["confocal", "light_sheet"]
+    record["cci_involvement"] = "scientific-collaboration"
+    record["cci_involvement_override"] = "scientific-collaboration"
     original_id = record["id"]
     p.enrich(registry, FakeClient(metadata))
     assert record["metadata_check"]["status"] == "matched"
@@ -144,12 +146,16 @@ def test_failed_lookup_keeps_approved_fallback(registry, vocabulary):
 def test_public_export_allowlist_and_determinism(registry, vocabulary):
     record = registry["publications"][0]
     record["notes"] = "PRIVATE synthetic note"
+    record["cci_involvement"] = "scientific-collaboration"
+    record["cci_involvement_override"] = "scientific-collaboration"
     record["technologies"] = ["confocal", "light_sheet"]
     exported = p.public_catalogue(registry, vocabulary)
     public = exported["publications"][0]
     assert "notes" not in public
     assert "original_citations" not in public
     assert public["technologies"] == ["confocal", "light_sheet"]
+    assert public["cci_involvement"] == "scientific-collaboration"
+    assert "cci_involvement_override" not in public
     assert exported == p.public_catalogue(copy.deepcopy(registry), vocabulary)
     record["approved"] = False
     assert not p.public_catalogue(registry, vocabulary)["publications"]
@@ -383,6 +389,7 @@ def test_refresh_cannot_change_cci_contributions(registry, metadata):
     curated = {"approved": True, "technologies": ["confocal", "light_sheet"],
                "services": ["analysis"], "tagging_status": "reviewed",
                "cci_contributions": {"imaging": True, "staff_support": "curated"}}
+    curated.update(cci_involvement="scientific-collaboration", cci_involvement_override="scientific-collaboration")
     record.update(copy.deepcopy(curated))
     p.enrich(registry, FakeClient(metadata))
     assert {field: record[field] for field in curated} == curated

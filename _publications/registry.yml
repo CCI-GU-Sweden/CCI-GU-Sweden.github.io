@@ -142,6 +142,7 @@ publications:
       to action for all stakeholders to join efforts in advancing BIA.
     source_url: https://doi.org/10.1242/jcs.262322
     license_url: http://creativecommons.org/licenses/by/4.0
+  cci_involvement: scientific-collaboration
 - id: cci-04993b33bd695df5b8a93e7ee9ce9e4f
   doi: 10.1186/s12935-023-02916-8
   approved: true
@@ -267,6 +268,7 @@ publications:
       and until now neglected role during liver metastasis formation.'
     source_url: https://doi.org/10.1186/s12935-023-02916-8
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-06ffab90573856dda210d20f5c8d1251
   doi: 10.3389/fbioe.2026.1797692
   approved: true
@@ -383,6 +385,7 @@ publications:
       GO-PEI as a biodegradable and biocompatible candidate for future biomedical and drug delivery applications.'
     source_url: https://doi.org/10.3389/fbioe.2026.1797692
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-0b59616960d85694af04eb2210a8fea2
   doi: 10.1093/dote/doae034
   approved: true
@@ -479,6 +482,7 @@ publications:
       among gastroesophageal reflux patients are discussed.'
     source_url: https://doi.org/10.1093/dote/doae034
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-0f7199f77aec5dd898dc8dca3b5f134d
   doi: 10.1002/jev2.12408
   approved: true
@@ -548,6 +552,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-1527e08114ec58c0a165c343a4bcf543
   doi: 10.1016/j.mucimm.2024.03.004
   approved: true
@@ -615,6 +620,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-17ebcf16ac9a57f3a73e70fb661551af
   doi: 10.1016/j.ejps.2024.106959
   approved: true
@@ -690,6 +696,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-193c1f03cc7e5554950b8a9218ce88e7
   doi: 10.1002/jev2.12380
   approved: true
@@ -755,6 +762,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-19629611c59957be890ef938b221fa53
   doi: 10.1021/acschemneuro.4c00006
   approved: true
@@ -830,6 +838,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-1b37be2b88d3595ba8274dffd56d78bf
   doi: 10.1038/s41467-026-68968-2
   approved: true
@@ -951,6 +960,7 @@ publications:
       therapeutic potential of microbiota-based interventions after exposure to early-life unhealthy diets.
     source_url: https://doi.org/10.1038/s41467-026-68968-2
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-1bf6b70ada11518f90bf0de8a734eea7
   doi: 10.1016/j.ajpath.2023.08.008
   approved: true
@@ -1026,6 +1036,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-1c30fa7a08f1520a95f5d4ca9deaaf8f
   doi: 10.7554/elife.88256
   approved: true
@@ -1117,6 +1128,7 @@ publications:
       by p53. Finally, we propose PITAR as a potential GBM therapeutic target.
     source_url: https://doi.org/10.7554/elife.88256
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-1c62d83293e25cf18decc6f9bf7a5fa9
   doi: 10.1039/d4cb00313f
   approved: true
@@ -1196,6 +1208,7 @@ publications:
       activity.
     source_url: https://doi.org/10.1039/d4cb00313f
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-21569a3284355288a34cc80d3bd269f0
   doi: 10.5037/jomr.2023.14302
   approved: true
@@ -1258,6 +1271,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-218199a5b7575c2aac4ef5f0b2e4a38f
   doi: 10.1093/g3journal/jkag161
   approved: true
@@ -1343,6 +1357,7 @@ publications:
       rendering the germline particularly vulnerable.
     source_url: https://doi.org/10.1093/g3journal/jkag161
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-2289b715172c5d89a74d5a1e3d1a936d
   doi: 10.1016/j.ecoenv.2024.117327
   approved: true
@@ -1402,6 +1417,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-24c8ad51366f534e82e23996f601f984
   doi: 10.1039/d3cp01147j
   approved: true
@@ -1476,6 +1492,7 @@ publications:
       reporter is demonstrated using live cell imaging.
     source_url: https://doi.org/10.1039/d3cp01147j
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-2650f28ce88b568da1ac1f01b17b9ffc
   doi: 10.1172/jci.insight.202461
   approved: true
@@ -1559,6 +1576,7 @@ publications:
       a valuable resource to fuel biomarker and therapeutic target research.
     source_url: https://doi.org/10.1172/jci.insight.202461
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-26c97845d4a3571f9c1182b08053d530
   doi: 10.1101/2025.10.27.684756
   approved: true
@@ -1620,6 +1638,7 @@ publications:
       type: posted-content
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-2b8971e7b7525d45ad07c989b228f2d0
   doi: 10.26434/chemrxiv-2023-zt864
   approved: true
@@ -1694,6 +1713,7 @@ publications:
       type: posted-content
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-2c8151b852ce5c3a883fd7a3b8b19f57
   doi: 10.1101/2024.06.03.596890
   approved: true
@@ -1777,6 +1797,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-2efb459b94265c1ea331783967657e66
   doi: 10.1002/jex2.70043
   approved: true
@@ -1869,6 +1890,7 @@ publications:
       the pathogenesis and identifying liver‐specific EVs as biomarkers of MASLD.
     source_url: https://doi.org/10.1002/jex2.70043
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-32c6c4f386c05d1fb1a082f5ef3920a5
   doi: 10.1021/jacsau.2c00492
   approved: true
@@ -1940,6 +1962,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-34d0c493c6c65f168f05b48f44a0bf22
   doi: 10.1038/s41598-023-41188-0
   approved: true
@@ -2015,6 +2038,7 @@ publications:
       α-synuclein of the Parkinson’s disease, suggesting a role of Sec7 in mitigating proteotoxicity.
     source_url: https://doi.org/10.1038/s41598-023-41188-0
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-363fdcc3305059c79d1f1b1e2b4bca59
   doi: 10.1111/mec.17817
   approved: true
@@ -2093,6 +2117,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-3759c15dd1855e498e642830f90ef7d2
   doi: 10.1101/2025.08.18.670881
   approved: true
@@ -2243,6 +2268,7 @@ publications:
       in life science research.
     source_url: https://doi.org/10.1101/2025.08.18.670881
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: scientific-collaboration
 - id: cci-375e7ec02dc755e6b5a3218942db94b8
   doi: 10.1021/acssensors.2c02496
   approved: true
@@ -2314,6 +2340,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-3798d9f2a0195b1db8eee4aa4338efb5
   doi: 10.1016/j.jmb.2025.169405
   approved: true
@@ -2391,6 +2418,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-38c4274a0b355301ae93f0febc48905b
   doi: 10.1038/s41467-023-43867-y
   approved: true
@@ -2472,6 +2500,7 @@ publications:
       how defensive extractive compounds have major roles in shaping microbiomes.
     source_url: https://doi.org/10.1038/s41467-023-43867-y
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-3bef0edb97bb5eadbad6675798a69e53
   doi: 10.1111/clr.14136
   approved: true
@@ -2538,6 +2567,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-438e88f96d085336aedd687a48390457
   doi: 10.1051/bioconf/202412913019
   approved: true
@@ -2598,6 +2628,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-4497cff246d45be4b4f5c95dd2868bf2
   doi: 10.20517/evcna.2025.173
   approved: true
@@ -2668,6 +2699,7 @@ publications:
       type: journal-article
       year: 2026
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-45345be001445615a1ee6dc03bfda294
   doi: 10.1101/2024.07.03.601781
   approved: true
@@ -2752,6 +2784,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-45988c618c5c5a68b3e52d0d348ba804
   doi: 10.1038/s44303-024-00010-w
   approved: true
@@ -2846,6 +2879,7 @@ publications:
       community activities to help move the field forward.
     source_url: https://doi.org/10.1038/s44303-024-00010-w
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: scientific-collaboration
 - id: cci-474448c98feb5914837e4d62a60024ae
   doi: 10.1101/2023.03.06.530313
   approved: true
@@ -2906,6 +2940,7 @@ publications:
       type: posted-content
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-485e4abcabad53cc93957faf426cc0dd
   doi: 10.3390/ijms25010581
   approved: true
@@ -2985,6 +3020,7 @@ publications:
       in modulating basal neurotransmission and eCB-mediated synaptic plasticity.
     source_url: https://doi.org/10.3390/ijms25010581
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-4abe9d4b554558158d265d356a829442
   doi: 10.1021/acs.analchem.2c05302
   approved: true
@@ -3052,6 +3088,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-4b34fb239ec956c0be26c298faa782b2
   doi: 10.1186/s12951-025-03125-3
   approved: true
@@ -3129,6 +3166,7 @@ publications:
       Graphical Abstract'
     source_url: https://doi.org/10.1186/s12951-025-03125-3
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-4b9ff6176d2854669a5d88fb27a55762
   doi: 10.1021/jacs.4c08450
   approved: true
@@ -3193,6 +3231,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-5386bf76edef545fbd189b4c316c8d5f
   doi: 10.1002/admi.202500252
   approved: true
@@ -3276,6 +3315,7 @@ publications:
       and are amenable to loading with peptides that enhance their anti‐inflammatory effects.
     source_url: https://doi.org/10.1002/admi.202500252
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-5a6f1a42ece25b9fa0ebbea64fb7fd28
   doi: 10.3390/pharmaceutics15020391
   approved: true
@@ -3365,6 +3405,7 @@ publications:
       with potential to improve chemotherapy—at least against liver and breast cancers.
     source_url: https://doi.org/10.3390/pharmaceutics15020391
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-5a73c11b11ec5bf6aa72da6fbf839c0c
   doi: 10.1016/j.mtbio.2024.100997
   approved: true
@@ -3423,6 +3464,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-5c291730530a537abc3c6ce6beca7b0f
   doi: 10.1210/endocr/bqae166
   approved: true
@@ -3507,6 +3549,7 @@ publications:
       can engage the brain ghrelin signaling system.'
     source_url: https://doi.org/10.1210/endocr/bqae166
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-5ca7e705555d5650b5a20fd99e3920e9
   doi: 10.48550/arxiv.2603.10653
   approved: true
@@ -3604,6 +3647,7 @@ publications:
       type: article
       year: 2026
     provider: doi-csl
+  cci_involvement: scientific-collaboration
 - id: cci-5cef10a2e7935026ab11b8e25d66f669
   doi: 10.1186/s13058-025-02209-0
   approved: true
@@ -3712,6 +3756,7 @@ publications:
       is needed to assess their clinical applicability.'
     source_url: https://doi.org/10.1186/s13058-025-02209-0
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-5fac0a6f4a735edb843ee5c5193d427b
   doi: 10.1038/s41467-023-38568-5
   approved: true
@@ -3790,6 +3835,7 @@ publications:
       death. We conclude that the p38 MAPK pathway-driven proteins are crucial for adult cisplatin resilience.
     source_url: https://doi.org/10.1038/s41467-023-38568-5
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-627989ab2fec5c0ca42a76ce66427c35
   doi: 10.1088/1748-605x/acdebb
   approved: true
@@ -3883,6 +3929,7 @@ publications:
       the clinical relevance of 3D-bioprinted nanocellulose-based constructs.
     source_url: https://doi.org/10.1088/1748-605x/acdebb
     license_url: http://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-62b6487059f9541d95254b8881a0385a
   doi: 10.1523/jneurosci.1516-22.2022
   approved: true
@@ -3939,6 +3986,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-62c3ee17f01857779592149d2a21552b
   doi: 10.1016/j.jcmgh.2025.101485
   approved: true
@@ -4027,6 +4075,7 @@ publications:
     fingerprint: ad4e319011c325fb31acfb3b8643964023f0ab83c01efe504172662484c5d101
     basis: retrieved
     note: CCI accepted the author-list discrepancy; retain the complete retrieved citation.
+  cci_involvement: service-provision
 - id: cci-632e5512e43c5712b15e437a2b3ffd33
   doi: 10.1039/d4lc00509k
   approved: true
@@ -4108,6 +4157,7 @@ publications:
       vivo -like zonated protein expression profiles. Graphical abstract image created with BioRender.com.
     source_url: https://doi.org/10.1039/d4lc00509k
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-63da63a05dcc51429da393cdff3d1e33
   doi: 10.1038/s41591-024-03400-0
   approved: true
@@ -4245,6 +4295,7 @@ publications:
       targeted therapeutic opportunities for AD.
     source_url: https://doi.org/10.1038/s41591-024-03400-0
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-669b70c7b0e654fe9f2f798f5b4408a7
   doi: 10.1186/s13148-023-01498-6
   approved: true
@@ -4333,6 +4384,7 @@ publications:
       HGG.'
     source_url: https://doi.org/10.1186/s13148-023-01498-6
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-66c60e000fe45e269e02b548bf284ce6
   doi: 10.1002/adtp.202500084
   approved: true
@@ -4399,6 +4451,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-6b59a0a242cd5093b64fcce19fe169c7
   doi: 10.1172/jci162253
   approved: true
@@ -4495,6 +4548,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-785adee0dbc759a3ac0b43ec0af8b309
   doi: 10.1096/fba.2023-00030
   approved: true
@@ -4573,6 +4627,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-78de3425bdf950e4a06b0a7ce04ca783
   doi: 10.22541/authorea.15004908/v1
   approved: true
@@ -4651,6 +4706,7 @@ publications:
       type: posted-content
       year: 2026
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-796dca03f3fd5e26a4a901c0bf3d7698
   doi: 10.1083/jcb.202601032
   approved: true
@@ -4816,6 +4872,7 @@ publications:
       type: journal-article
       year: 2026
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-7c082368cb505f749ffc0514a57862d6
   doi: 10.1038/s43856-025-00756-3
   approved: true
@@ -4922,6 +4979,7 @@ publications:
       dental implants and are not associated with the occurrence of peri-implantitis.'
     source_url: https://doi.org/10.1038/s43856-025-00756-3
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-7c1d89bd9a7950c195c44f383a3a2435
   doi: 10.1038/s41467-025-60059-y
   approved: true
@@ -5035,6 +5093,7 @@ publications:
       development. Our findings emphasize the importance of POLγB in modulating the severity of POLG mutations.
     source_url: https://doi.org/10.1038/s41467-025-60059-y
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-7c60e7ccac185790ae987648a5d17d6e
   doi: 10.48550/arxiv.2606.08647
   approved: true
@@ -5189,6 +5248,7 @@ publications:
       type: article
       year: 2026
     provider: doi-csl
+  cci_involvement: scientific-collaboration
 - id: cci-7f275d025db65bd79b1a8008bdb394ab
   doi: 10.1101/2025.07.05.663259
   approved: true
@@ -5261,6 +5321,7 @@ publications:
       that SDC4-expressing HEK293F-EV potentially could become an anti-inflammatory therapeutic.
     source_url: https://doi.org/10.1101/2025.07.05.663259
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-805e6d66194b5b4db951462e247a303a
   doi: 10.1096/fj.202400293rr
   approved: true
@@ -5369,6 +5430,7 @@ publications:
       well tolerated.
     source_url: https://doi.org/10.1096/fj.202400293rr
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-82e5fff32978539592fd0f379af27d6d
   doi: 10.1186/s12931-023-02310-y
   approved: true
@@ -5474,6 +5536,7 @@ publications:
       therapeutic candidate for treating allergic diseases such as asthma.'
     source_url: https://doi.org/10.1186/s12931-023-02310-y
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-85e32b8cd407532ebb8fde83683d8fdb
   doi: 10.1016/j.heliyon.2024.e32023
   approved: true
@@ -5535,6 +5598,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-85e40ad62260599db46f0edc1c6f0acc
   doi: 10.1210/clinem/dgag212
   approved: true
@@ -5660,6 +5724,7 @@ publications:
       based on substrate reduction, enhancement of autophagy, or gene therapy require further investigation.'
     source_url: https://doi.org/10.1210/clinem/dgag212
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-8655e671581c53fbbf265d955da64679
   doi: 10.1128/aem.00247-24
   approved: true
@@ -5766,6 +5831,7 @@ publications:
       companion strains of probiotics.'
     source_url: https://doi.org/10.1128/aem.00247-24
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-8b9202dff8915401ab8ebd4f6f6fd33e
   doi: 10.1101/2024.04.03.587936
   approved: true
@@ -5833,6 +5899,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-8d718ede348f522fb587cf4cbca9f01d
   doi: 10.3389/fbiom.2024.1338115
   approved: true
@@ -5950,6 +6017,7 @@ publications:
       at how we anticipate building on this initial initiative.
     source_url: https://doi.org/10.3389/fbiom.2024.1338115
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: scientific-collaboration
 - id: cci-8f9ec5e06eaf5f3bbe8d30311bc82c02
   doi: 10.1093/jxb/erae387
   approved: true
@@ -6053,6 +6121,7 @@ publications:
     provider: crossref
   reporting_years_override:
   - 2025
+  cci_involvement: service-provision
 - id: cci-902c76a65d7358018a6beae216607b7c
   doi: 10.1101/2023.09.22.559080
   approved: true
@@ -6134,6 +6203,7 @@ publications:
       type: posted-content
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-91b148c6dcdb51c985b19f2b3130bc5d
   doi: 10.1016/j.neuroscience.2025.07.009
   approved: true
@@ -6198,6 +6268,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-93b3a136913f5533aafd0d6d64ae75f0
   doi: 10.1111/jmi.13307
   approved: true
@@ -6386,6 +6457,7 @@ publications:
       institutions all around the world.
     source_url: https://doi.org/10.1111/jmi.13307
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: scientific-collaboration
 - id: cci-93e163c6502c54e584a5a746b4e05e8a
   doi: 10.1101/2025.02.28.640726
   approved: true
@@ -6479,6 +6551,7 @@ publications:
       type: posted-content
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-940025b7704d5517a577b7aa5f8dac0c
   doi: 10.1021/jacs.5c09338
   approved: true
@@ -6549,6 +6622,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-95983f750fc15cd392bb55615ee8f506
   doi: 10.1038/s41598-026-42812-5
   approved: true
@@ -6649,6 +6723,7 @@ publications:
       diagnostic biomarkers, warranting further mechanistic and clinical validation studies.
     source_url: https://doi.org/10.1038/s41598-026-42812-5
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-95f73ae953db5e6db712a45515a77d65
   doi: 10.1111/jcpe.13836
   approved: true
@@ -6704,6 +6779,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-971a5a695568597b914068c43d6d137a
   doi: 10.12688/f1000research.164794.1
   approved: true
@@ -6771,6 +6847,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-9858a2dc23de59669a08c7e91f5a165c
   doi: 10.1002/jev2.70037
   approved: true
@@ -6831,6 +6908,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-985bca7bd58253f2a797bb4d2c752fae
   doi: 10.1111/adb.70022
   approved: true
@@ -6897,6 +6975,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-988ae66f52b050dfb1da41f59cf1d5fb
   doi: 10.1101/2024.12.19.629262
   approved: true
@@ -6966,6 +7045,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-99e704f057595d9e852a947490276576
   doi: 10.1002/chem.202400322
   approved: true
@@ -7081,6 +7161,7 @@ publications:
       in studying and addressing protein aggregates.
     source_url: https://doi.org/10.1002/chem.202400322
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-9cd97acaab875aec98ed40731324ed6b
   doi: 10.1016/j.isci.2025.112624
   approved: true
@@ -7159,6 +7240,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-9df0e9b0bdeb5350928e6244a6282f50
   doi: 10.1016/j.bbi.2023.02.014
   approved: true
@@ -7219,6 +7301,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-a4539311e98e5a9caba90051db4c7164
   doi: 10.15698/mic2024.05.822
   approved: true
@@ -7286,6 +7369,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-a54ebf3c4333566394268a87986f4805
   doi: 10.1016/j.celrep.2023.112084
   approved: true
@@ -7366,6 +7450,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-a5fa835634ec5d0da09c819e448a39c7
   doi: 10.1039/d4sc00390j
   approved: true
@@ -7442,6 +7527,7 @@ publications:
       and binding of the inhibitor to its corresponding target.
     source_url: https://doi.org/10.1039/d4sc00390j
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-a5fcbe0f1cc75d28a50e6052a0691acc
   doi: 10.20517/evcna.2026.07
   approved: true
@@ -7498,6 +7584,7 @@ publications:
       type: journal-article
       year: 2026
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-a6ed41d36bcc5625b4162bd79b020cbe
   doi: 10.1038/s41593-024-01592-9
   approved: true
@@ -7579,6 +7666,7 @@ publications:
       cell adhesion molecules is a critical initial step.
     source_url: https://doi.org/10.1038/s41593-024-01592-9
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-b1dac149554155708acb15248c5a0192
   doi: 10.1093/cvr/cvad041
   approved: true
@@ -7718,6 +7806,7 @@ publications:
       compromised energy production.'
     source_url: https://doi.org/10.1093/cvr/cvad041
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-ba302eedc2d7582fb117f280c085a19c
   doi: 10.1111/adb.13349
   approved: true
@@ -7776,6 +7865,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-bb77abfd7d445276ae6cfe35511e07fe
   doi: 10.2139/ssrn.4805454
   approved: true
@@ -7840,6 +7930,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-bc0ef6da61b65192b116cba3b53abcd4
   doi: 10.1038/s41586-025-08856-9
   approved: true
@@ -7978,6 +8069,7 @@ publications:
       POLG disorders and other severe conditions linked to depletion of mtDNA.
     source_url: https://doi.org/10.1038/s41586-025-08856-9
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-be1421625f6d57b88d68462973382b5e
   doi: 10.1016/j.jcis.2022.11.013
   approved: true
@@ -8044,6 +8136,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-c24f286024f25e3f8d84a950ee2aacba
   doi: 10.1007/978-1-0716-4905-3_14
   approved: true
@@ -8100,6 +8193,7 @@ publications:
       type: book-chapter
       year: 2026
     provider: crossref
+  cci_involvement: scientific-collaboration
 - id: cci-c2722009f935590a92713874c09122b7
   doi: 10.1101/2025.10.18.683246
   approved: true
@@ -8166,6 +8260,7 @@ publications:
       type: posted-content
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-c2edcf9992cb57bb991997b5dad728f8
   doi: 10.1186/s12916-026-04923-8
   approved: true
@@ -8286,6 +8381,7 @@ publications:
       discovery and functional research.'
     source_url: https://doi.org/10.1186/s12916-026-04923-8
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-c4dd6e714e165dde9f074818c3af5581
   doi: 10.1111/febs.16678
   approved: true
@@ -8361,6 +8457,7 @@ publications:
       type: journal-article
       year: 2022
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-c8ae27efb5e45bc2939009cd49d686a5
   doi: 10.1016/j.dsr.2024.104415
   approved: true
@@ -8423,6 +8520,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-c91e58003377594bb523d3f73f45f197
   doi: 10.3390/ijms25126555
   approved: true
@@ -8524,6 +8622,7 @@ publications:
       produced ketone bodies, at least during a shorter dietary challenge.
     source_url: https://doi.org/10.3390/ijms25126555
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-ca4e94b8b01f5e6ca6d1137a7af0eb9b
   doi: 10.1002/anie.202304098
   approved: true
@@ -8584,6 +8683,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-cdbe1963cd535639834e7717028ceba3
   doi: 10.1016/j.ejcb.2024.151430
   approved: true
@@ -8638,6 +8738,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-ce405a92196156ea82c10ea62eb5d03e
   doi: 10.26434/chemrxiv-2024-wkw04
   approved: true
@@ -8701,6 +8802,7 @@ publications:
       type: posted-content
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-cea9ced7b85b5b7ba3ed12ce1a1f4a87
   doi: 10.1016/j.cmet.2025.04.018
   approved: true
@@ -8766,6 +8868,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-d2db546438455e2ba6a44a99033bd35c
   doi: 10.1002/jex2.127
   approved: true
@@ -8849,6 +8952,7 @@ publications:
       emphasise the importance of the interstitial vesicle secretome as a major player of disease development.
     source_url: https://doi.org/10.1002/jex2.127
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-d5df3aa0c623521d8b5a05e6120ad274
   doi: 10.1007/s10571-023-01374-0
   approved: true
@@ -8947,6 +9051,7 @@ publications:
       flAPP/BACE1 colocalization in NPCs, although the cellular location was not determined.'
     source_url: https://doi.org/10.1007/s10571-023-01374-0
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: scientific-collaboration
 - id: cci-d7509d0a6a7d558e8591f856f42bce07
   doi: 10.1111/nan.12995
   approved: true
@@ -9050,6 +9155,7 @@ publications:
       insights have implications for therapy in these rare yet devastating and presently untreatable disorders.'
     source_url: https://doi.org/10.1111/nan.12995
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-d75900b1d019535481f8b8feb2d89055
   doi: 10.1039/d3sc05629e
   approved: true
@@ -9119,6 +9225,7 @@ publications:
       in the cells are gradually replaced with newly synthesized ones.
     source_url: https://doi.org/10.1039/d3sc05629e
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-d7d8de5acbed59bab4e3f3ba8193ea54
   doi: 10.64898/2026.04.09.717380
   approved: true
@@ -9219,6 +9326,7 @@ publications:
       type: posted-content
       year: 2026
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-d8aee486ff6f583e89eb52cefb48b949
   doi: 10.1002/jev2.70117
   approved: true
@@ -9284,6 +9392,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-dcaf2409c7b05661b4ddca45fe1e64d6
   doi: 10.1186/s12903-025-07588-6
   approved: true
@@ -9394,6 +9503,7 @@ publications:
       approach for dental caries.'
     source_url: https://doi.org/10.1186/s12903-025-07588-6
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-de40607bfbc857e3859069879dc16153
   doi: 10.1038/s41467-024-53045-3
   approved: true
@@ -9482,6 +9592,7 @@ publications:
       BIAs through engineering of heterologous plant enzymes.
     source_url: https://doi.org/10.1038/s41467-024-53045-3
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-debac0c4b3225989b537c50371688019
   doi: 10.1016/j.foodhyd.2024.110615
   approved: true
@@ -9550,6 +9661,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-e36075e60e115937a4efb6f0de0003c5
   doi: 10.1016/j.jbc.2023.104799
   approved: true
@@ -9620,6 +9732,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-e3e766d9fcdc586ea578c80542755fd8
   doi: 10.1016/j.jdent.2025.106098
   approved: true
@@ -9711,6 +9824,7 @@ publications:
     fingerprint: 45fd987037ccb03287cb778e27495234d206ae2ddfd3759ec1c7c6a9b438b638
     basis: existing_citation
     note: CCI accepted the existing citation and corrigendum DOI; retain the original table citation.
+  cci_involvement: service-provision
 - id: cci-e4d574719ccc5c62ae9cb53d0a86a5a2
   doi: 10.1186/s12951-023-01928-w
   approved: true
@@ -9804,6 +9918,7 @@ publications:
       of bacterial and viral infections.
     source_url: https://doi.org/10.1186/s12951-023-01928-w
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-e668962033065af1a5d79de35e46ff35
   doi: 10.1080/21505594.2026.2645859
   approved: true
@@ -9865,6 +9980,7 @@ publications:
       type: journal-article
       year: 2026
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-e728251e3f7457a68174a197c5a1fda9
   doi: 10.1002/adfm.202304053
   approved: true
@@ -9938,6 +10054,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-e981b1a220865d6bae8ebb587e61977c
   doi: 10.1021/acs.analchem.6c01191
   approved: true
@@ -10000,6 +10117,7 @@ publications:
       type: journal-article
       year: 2026
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-ea8ebefcd26c5ca7a52646904f8b1508
   doi: 10.1021/acschemneuro.3c00741
   approved: true
@@ -10056,6 +10174,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-eb51713942285479900ee621fd6b3ec8
   doi: 10.1002/jev2.70266
   approved: true
@@ -10128,6 +10247,7 @@ publications:
       HEK293F‐EV potentially could become an anti‐inflammatory therapeutic.
     source_url: https://doi.org/10.1002/jev2.70266
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-ec71aa844bdf5982b505c7b87f87fc78
   doi: 10.1101/2023.03.01.530627
   approved: true
@@ -10192,6 +10312,7 @@ publications:
       type: posted-content
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-eda894a926de5901865b58c3344cf348
   doi: 10.1089/brain.2022.0047
   approved: true
@@ -10261,6 +10382,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-f02c3504bf3e5bab8b692df0d93f76d8
   doi: 10.1002/anie.202400422
   approved: true
@@ -10336,6 +10458,7 @@ publications:
       opening a new direction to investigations of SGs involved neurodegenerative disease.
     source_url: https://doi.org/10.1002/anie.202400422
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-f08f7dae4e715068bbb42445868fbcc3
   doi: 10.1039/d4ta00055b
   approved: true
@@ -10412,6 +10535,7 @@ publications:
       against carbon monoxide, simultaneously allowing fast and selective hydrogen sensing.
     source_url: https://doi.org/10.1039/d4ta00055b
     license_url: http://creativecommons.org/licenses/by/3.0/
+  cci_involvement: service-provision
 - id: cci-f0ea1f0ec0275beb89b05d9cbb8b9d48
   doi: 10.1016/j.jlr.2023.100335
   approved: true
@@ -10467,6 +10591,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-f3159070b13f5ad185d0ef17a65b0079
   doi: 10.7150/thno.98199
   approved: true
@@ -10542,6 +10667,7 @@ publications:
       type: journal-article
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-f3632317d1095ae7a0db7849d9e0e496
   doi: 10.1038/s41598-025-90101-4
   approved: true
@@ -10620,6 +10746,7 @@ publications:
       useful parameters for monitoring keratinocyte differentiation.
     source_url: https://doi.org/10.1038/s41598-025-90101-4
     license_url: https://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-f6c5b5b366e053f0a502f194735a9010
   doi: 10.1038/s41592-023-01987-9
   approved: true
@@ -10821,6 +10948,7 @@ publications:
     provider: crossref
   reporting_years_override:
   - 2024
+  cci_involvement: scientific-collaboration
 - id: cci-f7cfee32be7a55e3b30b651fe7a21bdd
   doi: 10.1093/pnasnexus/pgad388
   approved: true
@@ -10896,6 +11024,7 @@ publications:
       a viable route for bundled strand reorientation, which should be further validated in future experiment.
     source_url: https://doi.org/10.1093/pnasnexus/pgad388
     license_url: https://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-f7dd22ba10ec58c4a41520759a0714f9
   doi: 10.1101/2023.09.27.559647
   approved: true
@@ -10966,6 +11095,7 @@ publications:
       type: posted-content
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-f86193a10fc75a9999dff0a6af2bdd6b
   doi: 10.1002/alz.13711
   approved: true
@@ -11043,6 +11173,7 @@ publications:
       type: journal-article
       year: 2024
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-f982f8f9d3425ef6b8b3794d4fef89d8
   doi: 10.1101/2025.05.08.652936
   approved: true
@@ -11107,6 +11238,7 @@ publications:
       type: posted-content
       year: 2025
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-fac80865c1485daca0247a12e04545dc
   doi: 10.1242/dev.201035
   approved: true
@@ -11182,6 +11314,7 @@ publications:
       cause diabetes in mammals.
     source_url: https://doi.org/10.1242/dev.201035
     license_url: http://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-fb778ecce71f5b02aef2bd784aa9d817
   doi: 10.1017/qrd.2026.10019
   approved: true
@@ -11268,6 +11401,7 @@ publications:
       release in exocytosis at human neurons may be a factor in determining plasticity.
     source_url: https://doi.org/10.1017/qrd.2026.10019
     license_url: http://creativecommons.org/licenses/by/4.0
+  cci_involvement: service-provision
 - id: cci-fba64ced2e5950a5a12334d5058d03d0
   doi: 10.1111/jne.13352
   approved: true
@@ -11364,6 +11498,7 @@ publications:
       to reduce body weight and food intake via activation of norepinephrine neurones in the mNTS.
     source_url: https://doi.org/10.1111/jne.13352
     license_url: http://creativecommons.org/licenses/by/4.0/
+  cci_involvement: service-provision
 - id: cci-fc182a93e23e5f1592a6aa0d1e86eb19
   doi: 10.2337/db22-0293
   approved: true
@@ -11463,6 +11598,7 @@ publications:
       type: journal-article
       year: 2022
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-fc672c04e48653649f8bb4da6bb28242
   doi: 10.1681/asn.0000000000000062
   approved: true
@@ -11527,6 +11663,7 @@ publications:
       type: journal-article
       year: 2023
     provider: crossref
+  cci_involvement: service-provision
 - id: cci-ff90ae991ff359a0a8269c566b99eacc
   doi: 10.1101/2025.04.10.648120
   approved: true
@@ -11610,3 +11747,4 @@ publications:
       type: posted-content
       year: 2025
     provider: crossref
+  cci_involvement: service-provision

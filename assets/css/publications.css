@@ -45,11 +45,12 @@
 .publications input[type="search"] { margin: 0; font-size: 1rem; }
 .publications-filter-row {
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(210px, 1.5fr);
   gap: 16px;
   align-items: end;
   margin-top: 16px;
 }
+.publications-clear { grid-column: 1 / -1; justify-self: end; }
 .publications button {
   min-height: 44px;
   padding: 9px 15px;
@@ -83,6 +84,22 @@
 }
 .publication-year { color: #263640; font-weight: 700; }
 .publication-type { font-size: .75rem; border: 1px solid #c3cdd3; border-radius: 3px; padding: 1px 6px; }
+.publication-involvement {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c9d3d9;
+  border-radius: 12px;
+  padding: 2px 9px;
+  background: #f0f3f5;
+  color: #374954;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+.publication-involvement[data-involvement="scientific-collaboration"] {
+  border-color: #b8d8d7;
+  background: #e8f3f2;
+  color: #205452;
+}
 .publication-card h2 { font-size: 1.2rem; line-height: 1.45; letter-spacing: 0; margin: 0 0 9px; }
 .publication-card h2 a { color: var(--publication-accent); text-decoration: none; }
 .publication-card h2 a:hover { text-decoration: underline; }
@@ -135,6 +152,9 @@
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .publications-filter-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
   .publications-intro h1 { font-size: 2rem; }

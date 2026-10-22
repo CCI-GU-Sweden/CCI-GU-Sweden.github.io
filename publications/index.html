@@ -35,6 +35,14 @@ module: /assets/js/publications.js
             <option value="title">Title A–Z</option>
           </select>
         </div>
+        <div>
+          <label for="publication-involvement">CCI Involvement</label>
+          <select id="publication-involvement" name="cci_involvement" aria-controls="publication-results">
+            <option value="">All involvement</option>
+            <option value="scientific-collaboration">Scientific Collaboration</option>
+            <option value="service-provision">Service Provision</option>
+          </select>
+        </div>
         <button type="button" class="publications-clear" data-clear>Clear filters</button>
       </div>
       <div class="publications-technologies" data-technology-controls hidden>

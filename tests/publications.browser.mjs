@@ -36,6 +36,8 @@ try {
   await page.goto(`${base}/publications/`);
   await ready(page);
   await count(page, 20);
+  const moduleURL = await page.locator('script[type="module"]').getAttribute('src');
+  assert.ok(new URL(moduleURL, base).searchParams.get('v'), 'Module URL must change when a new build is served');
   assert.equal(await page.locator("[name=year]").inputValue(), "");
   assert.equal(await page.locator("[name=sort]").inputValue(), "newest");
   assert.match(await page.locator("[data-status]").textContent(), /20 of 138/);
@@ -45,6 +47,44 @@ try {
   assert.equal(await page.locator(".project-logo").evaluate(img => img.complete && img.naturalWidth > 0), true);
   await page.screenshot({path: ".local/portal-testing/screenshots/desktop.png", fullPage: false});
   console.log("PASS: all years/newest default, initial results, navigation, and untagged catalogue");
+
+  const collaborationCount = catalogue.publications.filter(record => record.cci_involvement === "scientific-collaboration").length;
+  const serviceCount = catalogue.publications.filter(record => record.cci_involvement === "service-provision").length;
+  assert.equal(await page.locator('[name=cci_involvement]').inputValue(), "");
+  assert.equal(await page.locator('.publication-involvement').count(), 20);
+  await page.locator('[name=cci_involvement]').selectOption('scientific-collaboration');
+  await count(page, Math.min(20, collaborationCount));
+  assert.equal(await page.locator('[data-involvement="scientific-collaboration"]').count(), Math.min(20, collaborationCount));
+  assert.equal(new URL(page.url()).searchParams.get('involvement'), 'scientific-collaboration');
+  assert.equal(await page.locator('[data-clear]').isEnabled(), true);
+  await page.reload();
+  await ready(page);
+  assert.equal(await page.locator('[name=cci_involvement]').inputValue(), 'scientific-collaboration');
+  await count(page, Math.min(20, collaborationCount));
+  await page.locator('[name=cci_involvement]').selectOption('service-provision');
+  await count(page, Math.min(20, serviceCount));
+  assert.equal(await page.locator('[data-involvement="service-provision"]').count(), Math.min(20, serviceCount));
+  assert.match(await page.locator('[data-status]').textContent(), new RegExp(`of ${serviceCount}`));
+  await page.locator('[data-more]').click();
+  await count(page, Math.min(40, serviceCount));
+  const combinedYear = catalogue.publications.find(record => record.cci_involvement === 'scientific-collaboration').year;
+  await page.locator('[name=cci_involvement]').selectOption('scientific-collaboration');
+  await page.locator('[name=year]').selectOption(String(combinedYear));
+  const combinedCount = catalogue.publications.filter(record => record.cci_involvement === 'scientific-collaboration' && record.year === combinedYear).length;
+  await count(page, Math.min(20, combinedCount));
+  await page.locator('[name=q]').fill('zzzz-no-synthetic-match-zzzz');
+  await count(page, 0);
+  assert.equal(await page.locator('[data-empty]').isVisible(), true);
+  await page.locator('[data-clear]').click();
+  assert.equal(await page.locator('[name=cci_involvement]').inputValue(), '');
+  assert.equal(new URL(page.url()).search, '');
+  await page.goto(`${base}/publications/?involvement=unknown`);
+  await ready(page);
+  await count(page, 20);
+  assert.equal(await page.locator('[name=cci_involvement]').inputValue(), '');
+  await page.goto(`${base}/publications/`);
+  await ready(page);
+  console.log('PASS: involvement badges, both filters, combined search/year, pagination, URL restoration and reset');
 
   await page.locator("[data-more]").click();
   await count(page, 40);
@@ -85,13 +125,15 @@ try {
   console.log("PASS: sorting, empty state, reset, full author disclosure, and keyboard navigation");
 
   await page.locator("[data-clear]").click();
-  for (const width of [375, 768, 1024]) {
+  for (const width of [375, 561, 640, 768, 1024]) {
     await page.setViewportSize({width, height: 900});
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, `Overflow at ${width}px`);
   }
   await page.setViewportSize({width: 375, height: 812});
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({path: ".local/portal-testing/screenshots/mobile.png", fullPage: false});
+  await page.locator('.publications-controls').screenshot({path: '.local/portal-testing/screenshots/mobile-controls.png'});
+  await page.locator('.publication-card').first().screenshot({path: '.local/portal-testing/screenshots/mobile-card.png'});
   console.log("PASS: responsive layout at 375, 768, and 1024 pixels");
 
   const fixture = structuredClone(catalogue);

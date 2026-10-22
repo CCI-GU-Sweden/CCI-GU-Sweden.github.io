@@ -15,9 +15,22 @@ Clear filters restores all years/newest first.
 
 Search matches title, all authors, journal, DOI, and available technology
 labels. It ignores letter case and accent differences. Every search word must
-match somewhere in a record. Year, search, and technology filters combine;
+match somewhere in a record. Year, search, CCI involvement and technology filters combine;
 multiple selected technologies match any selected technology. Sort options
 are newest, oldest, and title A-Z. Filter state is retained in the URL.
+
+CCI Involvement appears after Sort by, with All involvement (default),
+Scientific Collaboration and Service Provision. Cards show a compact text
+badge beside the year/journal metadata; colour is supplementary to the text.
+The involvement URL parameter stores the selected value and restores it on
+reload or browser history navigation. Unknown URL values fall back to All.
+Clear filters also resets involvement. The controls wrap at tablet widths
+and stack on mobile. Missing involvement on legacy records is not inferred.
+
+Page-specific JavaScript/CSS URLs include a version: the build timestamp in
+local development and the GitHub revision in production (timestamp fallback).
+The catalogue fetch uses cache: no-store. This prevents an updated filter
+form from being paired with an older cached script or catalogue after a build.
 
 Technology controls are hidden until records have tags. No labels were
 inferred. Human-facing technology labels come from the public vocabulary
@@ -82,7 +95,7 @@ Screenshots are saved in .local/portal-testing/screenshots/.
 
 Browser checks cover the default view, result counts, navigation, pagination,
 DOI search, corrected years, URL restoration, sorting, empty state, reset,
-full author lists, keyboard focus, responsive widths, future technology
+full author lists, keyboard focus, involvement badges and filters, responsive widths, future technology
 filters, safe text rendering, and failed-request/retry recovery.
 
 Manual review before committing/releasing the portal

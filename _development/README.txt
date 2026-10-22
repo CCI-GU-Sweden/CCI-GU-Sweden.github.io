@@ -29,6 +29,12 @@ changes. Press Ctrl+C to stop. The server listens only on this computer.
 If Windows cannot reach the WSL preview, try the browser inside WSL or
 check WSL localhost forwarding before changing the server bind address.
 
+serve cci-page uses this same script. Each start clears generated Jekyll
+output/caches and rebuilds before serving. Development responses explicitly
+disable browser caching; page-specific assets also have versioned URLs and
+the publication catalogue bypasses the browser cache. These settings apply
+only to local preview. No shell-profile changes are needed after pulling.
+
 Check before publishing
 
    bash _development/site.sh check
@@ -54,10 +60,17 @@ Activate it when working on Python tools:
 
 It includes Python 3.12, Habanero (Crossref metadata), Requests (HTTP
 fallbacks), PyYAML (curated records), and pytest (data validation tests).
+Private full-text experiments additionally use Beautiful Soup and lxml for
+HTML/JATS XML parsing, markdownify for Markdown conversion, and pypdf with
+fonttools for PDF text extraction. These are development tools, not website
+build dependencies.
+
 The publication importer and manual curation commands are documented in
 _development/publications.txt.
 The catalogue view and its browser checks are described in
 _development/portal.txt.
+Private article-text collection and its resumable retrieval reports are
+described in _development/fulltext.txt.
 
 After changing environment.yml, update the environment with:
 

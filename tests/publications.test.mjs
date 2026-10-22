@@ -5,9 +5,9 @@ import {selectPublications, publicationURL} from "../assets/js/publications.js";
 // Synthetic fixtures: not part of the public catalogue.
 const records = [
   {id: "a", title: "Åström microscopy study", authors_text: "Anna Åström", authors: ["Anna Åström"], year: 2024,
-    journal: "Test Journal", doi: "10.1234/alpha", technologies: ["confocal", "light_sheet"]},
+    journal: "Test Journal", doi: "10.1234/alpha", technologies: ["confocal", "light_sheet"], cci_involvement: "scientific-collaboration"},
   {id: "b", title: "Beta tissue study", authors_text: "Jane Doe", year: 2025,
-    journal: "Other Journal", doi: "10.1234/beta", technologies: ["electron"]},
+    journal: "Other Journal", doi: "10.1234/beta", technologies: ["electron"], cci_involvement: "service-provision"},
   {id: "c", title: "Gamma microscopy", authors_text: "John Doe", year: 2024,
     journal: "Test Journal", doi: null, technologies: []},
 ];
@@ -27,6 +27,14 @@ test("year and technology filters combine with text search", () => {
 test("technology labels are searchable", () => {
   const labels = new Map([["confocal", "Optical sectioning"]]);
   assert.deepEqual(selectPublications(records, {query: "optical"}, labels).map(r => r.id), ["a"]);
+});
+
+test("CCI involvement filters combine with search, year, technologies and sorting", () => {
+  assert.deepEqual(selectPublications(records, {involvement: "scientific-collaboration"}).map(r => r.id), ["a"]);
+  assert.deepEqual(selectPublications(records, {involvement: "service-provision"}).map(r => r.id), ["b"]);
+  assert.deepEqual(selectPublications(records, {involvement: "scientific-collaboration", year: "2024", technologies: ["confocal"], query: "microscopy", sort: "oldest"}).map(r => r.id), ["a"]);
+  assert.equal(selectPublications(records, {involvement: "service-provision", year: "2024"}).length, 0);
+  assert.equal(selectPublications(records).length, 3, "Legacy records remain visible in the all view");
 });
 
 test("sorting is stable and does not mutate the catalogue", () => {
