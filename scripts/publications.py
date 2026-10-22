@@ -493,6 +493,10 @@ def validate(registry, vocabulary):
         if not isinstance(r.get("id"), str) or not r["id"] or r["id"] in ids:
             raise ValueError(f"Missing or duplicate ID: {r.get('id')}")
         ids.add(r["id"])
+        if "cci_involvement" in r and r["cci_involvement"] not in {"scientific-collaboration", "service-provision"}:
+            raise ValueError(f"{r['id']}: invalid cci_involvement")
+        if "cci_involvement_override" in r and r["cci_involvement_override"] not in {"scientific-collaboration", "service-provision"}:
+            raise ValueError(f"{r['id']}: invalid cci_involvement_override")
         doi = normalize_doi(r.get("doi"))
         if doi != r.get("doi") or doi and doi in dois:
             raise ValueError(f"Noncanonical or duplicate DOI: {r.get('doi')}")
@@ -547,6 +551,8 @@ def public_catalogue(registry, vocabulary):
                         "technologies": r["technologies"], "services": r["services"]})
         if r.get("abstract"):
             records[-1]["abstract"] = {key: r["abstract"][key] for key in ("text", "source_url", "license_url")}
+        if r.get("cci_involvement"):
+            records[-1]["cci_involvement"] = r["cci_involvement"]
     records.sort(key=lambda r: (-r["year"], comparable(r["title"]), r["id"]))
     public_vocabulary = {kind: [{key: entry[key] for key in ("id", "label", "parent") if key in entry}
                                 for entry in vocabulary[kind]]

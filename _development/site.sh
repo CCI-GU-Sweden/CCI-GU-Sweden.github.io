@@ -32,6 +32,9 @@ case "${1:-serve}" in
     if [[ "${1:-serve}" == check ]]; then
       bundle exec jekyll build --config _config.yaml,_development/config.yml --strict_front_matter
     else
+      # Recreate preview output and Jekyll caches before starting the watcher.
+      # The development config also tells browsers not to cache responses.
+      bundle exec jekyll clean --config _config.yaml,_development/config.yml
       exec bundle exec jekyll serve --config _config.yaml,_development/config.yml --livereload
     fi
     ;;

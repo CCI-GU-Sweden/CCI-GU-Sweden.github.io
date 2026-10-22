@@ -4,3 +4,8 @@ baseurl: ""
 host: "127.0.0.1"
 port: 4000
 repository: CCI-GU-Sweden/CCI-GU-Sweden.github.io
+webrick:
+  headers:
+    Cache-Control: "no-store, no-cache, must-revalidate, max-age=0"
+    Pragma: "no-cache"
+    Expires: "0"

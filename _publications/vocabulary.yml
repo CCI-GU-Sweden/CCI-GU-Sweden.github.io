@@ -1,3 +1,56 @@
-# Technology and service IDs will be agreed before labeling starts.
-technologies: []
-services: []
+# Initial technology vocabulary for curator review before labeling starts.
+# IDs are stable references; labels and definitions can be refined.
+# Publications may carry multiple labels. No parent relationships or automatic
+# assignment of broader labels have been agreed yet.
+# Detailed preparation, acquisition and analysis evidence remains private.
+technologies:
+  - id: light-microscopy
+    label: Light Microscopy
+    description: Optical microscopy methods used to image the study samples.
+    notes: Record specific modalities and sample preparation in the detailed evidence.
+
+  - id: electron-microscopy
+    label: Electron Microscopy
+    description: Electron-based microscopy methods used to image the study samples.
+    notes: Record specific modalities and sample preparation in the detailed evidence.
+
+  - id: image-analysis
+    label: Image Analysis
+    description: Computational processing or quantitative analysis of images.
+    notes: Record the software, processing steps and measurements when available.
+
+  - id: machine-learning-image-analysis
+    label: Machine Learning Image Analysis
+    description: Machine learning used for image processing or analysis.
+    notes: Machine learning applied only to non-image data does not establish this label.
+
+  - id: smart-microscopy
+    label: Smart Microscopy
+    description: Automated, adaptive or feedback-driven microscopy acquisition.
+    notes: Definition requires review, especially the boundary between routine automation and smart acquisition.
+
+  - id: multimodal-imaging
+    label: Multimodal Imaging
+    description: Multiple imaging modalities applied to similar or related samples within a study.
+    notes: Record which modalities and samples are involved; same-specimen correspondence is not required.
+
+  - id: correlative-imaging
+    label: Correlative Imaging
+    description: Different imaging modalities applied to the same specimen with explicit correspondence between observations.
+    notes: CLEM is a classic example. Record how observations of the same specimen are linked or registered.
+
+# These initial service categories describe CCI's involvement in a publication.
+# Initial policy: default to service provision when the current staff roster
+# yields no clear author/year match; former staff can be added and rerun later.
+# The dedicated registry key is cci_involvement; services lists remain available
+# for future specific service labels and are not automatically duplicated.
+services:
+  - id: service-provision
+    label: Service Provision
+    description: CCI support without identified staff co-authorship.
+    notes: Initial default for papers without a confirmed author/year match in the current roster, as requested by Rafa; acknowledgement and former staff can be reviewed later.
+
+  - id: scientific-collaboration
+    label: Scientific Collaboration
+    description: At least one CCI staff member is a co-author of the publication.
+    notes: Verify staff membership at the time of publication; co-authorship alone does not establish method development.

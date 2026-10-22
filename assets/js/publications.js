@@ -1,14 +1,19 @@
 const PAGE_SIZE = 20;
 const SORTS = new Set(["newest", "oldest", "title"]);
+const INVOLVEMENT_LABELS = new Map([
+  ["scientific-collaboration", "Scientific Collaboration"],
+  ["service-provision", "Service Provision"],
+]);
 
 export function normalizeSearch(value) {
   return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
 }
 
-export function selectPublications(records, {query = "", year = "", sort = "newest", technologies = []} = {}, labels = new Map()) {
+export function selectPublications(records, {query = "", year = "", sort = "newest", technologies = [], involvement = ""} = {}, labels = new Map()) {
   const terms = normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
   return records.filter(record => {
     if (year && String(record.year) !== String(year)) return false;
+    if (involvement && record.cci_involvement !== involvement) return false;
     const tags = record.technologies || [];
     if (technologies.length && !technologies.some(tag => tags.includes(tag))) return false;
     const text = normalizeSearch([record.title, record.authors_text, ...(record.authors || []),
@@ -49,6 +54,13 @@ function publicationCard(record, labels) {
   if (record.journal) meta.append(element("span", "publication-journal", record.journal));
   const type = {"posted-content": "Preprint", "book-chapter": "Book chapter"}[record.type];
   if (type) meta.append(element("span", "publication-type", type));
+  if (INVOLVEMENT_LABELS.has(record.cci_involvement)) {
+    const badge = element("span", "publication-involvement");
+    badge.dataset.involvement = record.cci_involvement;
+    badge.append(element("span", "publications-sr-only", "CCI involvement: "),
+      document.createTextNode(INVOLVEMENT_LABELS.get(record.cci_involvement)));
+    meta.append(badge);
+  }
   const title = element("h2");
   const url = publicationURL(record);
   if (url) {
@@ -133,6 +145,7 @@ export async function initializePublications(root) {
   const search = root.querySelector("[name=q]");
   const year = root.querySelector("[name=year]");
   const sort = root.querySelector("[name=sort]");
+  const involvement = root.querySelector("[name=cci_involvement]");
   const clear = root.querySelector("[data-clear]");
   const status = root.querySelector("[data-status]");
   const results = root.querySelector("#publication-results");
@@ -145,7 +158,7 @@ export async function initializePublications(root) {
   let technologyInputs = [];
 
   function state() {
-    return {query: search.value, year: year.value, sort: sort.value,
+    return {query: search.value, year: year.value, sort: sort.value, involvement: involvement.value,
       technologies: technologyInputs.filter(input => input.checked).map(input => input.value)};
   }
 
@@ -155,6 +168,7 @@ export async function initializePublications(root) {
     year.value = params.get("year") || "";
     if (year.selectedIndex < 0) year.value = "";
     sort.value = SORTS.has(params.get("sort")) ? params.get("sort") : "newest";
+    involvement.value = INVOLVEMENT_LABELS.has(params.get("involvement")) ? params.get("involvement") : "";
     for (const input of technologyInputs) input.checked = params.getAll("technology").includes(input.value);
   }
 
@@ -167,14 +181,15 @@ export async function initializePublications(root) {
     empty.hidden = matches.length !== 0;
     more.hidden = visible.length >= matches.length;
     more.textContent = `Show ${Math.min(PAGE_SIZE, matches.length - visible.length)} more publications`;
-    clear.disabled = !filters.query && !filters.year && !filters.technologies.length && filters.sort === "newest";
+    clear.disabled = !filters.query && !filters.year && !filters.involvement && !filters.technologies.length && filters.sort === "newest";
     results.setAttribute("aria-busy", "false");
     if (updateURL) {
       const url = new URL(window.location.href);
-      for (const key of ["q", "year", "sort", "technology"]) url.searchParams.delete(key);
+      for (const key of ["q", "year", "sort", "technology", "involvement"]) url.searchParams.delete(key);
       if (filters.query) url.searchParams.set("q", filters.query);
       if (filters.year) url.searchParams.set("year", filters.year);
       if (filters.sort !== "newest") url.searchParams.set("sort", filters.sort);
+      if (filters.involvement) url.searchParams.set("involvement", filters.involvement);
       for (const tag of filters.technologies) url.searchParams.append("technology", tag);
       window.history.replaceState(null, "", url);
     }
@@ -186,7 +201,7 @@ export async function initializePublications(root) {
     status.textContent = "Loading publications…";
     results.setAttribute("aria-busy", "true");
     try {
-      const response = await fetch(root.dataset.catalogueUrl);
+      const response = await fetch(root.dataset.catalogueUrl, {cache: "no-store"});
       if (!response.ok) throw new Error(`Catalogue HTTP ${response.status}`);
       const catalogue = await response.json();
       if (catalogue.schema_version !== 1 || !Array.isArray(catalogue.publications)) throw new Error("Unsupported catalogue");
@@ -234,6 +249,7 @@ export async function initializePublications(root) {
   });
   clear.addEventListener("click", () => {
     search.value = ""; year.value = ""; sort.value = "newest";
+    involvement.value = "";
     technologyInputs.forEach(input => { input.checked = false; });
     limit = PAGE_SIZE;
     render();

@@ -241,12 +241,50 @@ Public JSON top level: schema_version: 1, publications: list, and vocabulary
 with technologies/services lists. Public vocabulary entries contain only id,
 label, and optional parent; internal vocabulary notes are excluded. Each public
 record contains only id, doi, the bibliographic fields above, reporting_years,
-technologies, and services. It omits approval internals, original citations,
+technologies, services, and optional cci_involvement. It omits approval internals, original citations,
 retrieved payloads, overrides, tagging status, errors, and any curator notes.
 Optional public abstract objects are exported through a separate three-field
 allowlist; the private enrichment store is never part of the catalogue.
 Records are sorted by publication year descending, normalized title, then ID.
 No generated timestamps are included, so repeated builds are byte-stable.
+
+CCI involvement classification
+
+The canonical registry key cci_involvement is one of scientific-collaboration
+or service-provision. Classification is independent of specific service and
+technology lists; these are not duplicated automatically. This field is
+exported to the catalogue and displayed as a badge and filter. The private
+roster, matching evidence and cci_involvement_override are not exported.
+
+The private roster is private_data/cci-staff.yml. It records full names,
+verified publication variants and inclusive CCI membership periods. null
+end_year means ongoing; an empty period list means unknown dates. Expertise
+does not establish technology use in any individual publication.
+
+Generate a private report without changing the registry:
+
+    python scripts/classify_cci_involvement.py
+
+Apply the classification to the registry:
+
+    python scripts/classify_cci_involvement.py --apply
+
+Full author names are matched after normalizing case, accents, whitespace and
+hyphens. No initials or fuzzy names are automatically resolved. The effective
+bibliographic publication year, including curator overrides, determines staff
+membership; reporting years do not. Shared full names require review.
+
+Per Rafa's initial policy, unmatched papers default to service-provision.
+This default does not independently verify acknowledgements or rule out
+former staff missing from the roster. Adding former staff and rerunning can
+correct those classifications. Private evidence is recorded in
+private_data/cci-involvement.json, .csv and .md, including matching authors,
+staff IDs, publication years, membership periods and classification basis.
+
+For a manual correction that should survive roster reruns, set the record's
+cci_involvement_override to either allowed classification, then rerun --apply.
+DOI enrichment does not change involvement or its override; rerun this separate
+classifier if author lists or bibliographic years change.
 
 Testing
 
