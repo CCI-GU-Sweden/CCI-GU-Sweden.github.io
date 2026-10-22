@@ -1,0 +1,216 @@
+PUBLICATION DATA WORKFLOW
+
+Status: data import and curation tools. The searchable portal is a later step.
+All commands run locally. Nothing here pushes, merges, or deploys the site.
+
+Activate the environment and work from the repository directory:
+
+    conda activate cci-page
+    cd /home/xcamra/projects/CCI-GU-Sweden.github.io
+
+Files
+
+- _publications/registry.yml: canonical human-editable records, including
+  original citations, retrieved metadata, approval, and manual overrides.
+- _publications/vocabulary.yml: accepted technology/service IDs. Empty until
+  CCI agrees the labels. All imported records currently have empty tags.
+- assets/data/publications.json: generated public catalogue; never hand-edit.
+- .local/publications-cache/: successful normalized DOI responses. Ignored
+  by Git. Normal imports reuse the cache; refresh explicitly recontacts APIs.
+- private_data/publications-import-report.json and .csv: local comparison
+  reports. These and the source tables are excluded from Git and Jekyll.
+
+The registry and vocabulary are intended to be versioned. They must contain
+only shareable data: anything committed to a public repository is public,
+even when Jekyll excludes it from the generated website. Keep private curator
+notes in private_data. The public JSON uses an explicit field allowlist.
+
+Initial table import
+
+    python scripts/publications.py import-tables private_data/CCI_publications_*.md
+
+Both five-column and numbered six-column tables are accepted. All imported
+articles are approved, per CCI's decision. Approval does not depend on tagging
+or metadata availability. Original citations and reporting years are retained.
+DOI duplicates become one record with all original citations and reporting
+years. Different preprint/published DOIs remain separate records.
+
+The importer compares normalized titles, first-author names, years, and source
+names. Formatting differences in source names and one-year differences are
+informational. Substantial title/author differences or missing provider fields
+require review. This is a comparison heuristic, not proof of bibliographic
+identity. Inspect the original and retrieved citations in the JSON report.
+
+DOI metadata is preferred over the source tables for bibliographic fields.
+An updated author list is adopted when the title matches and required fields
+are present, while the difference is reported for review. Substantial title
+changes, correction/retraction DOIs, incomplete metadata, and failed lookups
+keep the existing citation for review. Explicit curator overrides always win.
+Final print/issue dates take priority over earlier online-first dates when
+both are supplied. Crossref is tried first, followed by DOI CSL negotiation.
+The original DOI cell is retained, including citation punctuation/disclaimers.
+
+Optional contact identification for Crossref's polite pool:
+
+    export CROSSREF_MAILTO='your-real-contact-address'
+
+Do not put an invented address or personal credentials in the source code.
+
+Representative sample (does not replace the canonical registry)
+
+    python scripts/publications.py --registry private_data/sample-registry.yml --report private_data/sample-import-report.json import-tables private_data/CCI_publications_*.md --sample
+
+To repeat a cached import without network access, put --offline before the
+subcommand. Uncached DOIs are reported as failed lookups and retain citations.
+
+Adding a new DOI
+
+    python scripts/publications.py add --doi '10.1234/replace-with-real-doi' --interactive
+
+The helper retrieves metadata, displays the entry, and optionally prompts for
+corrections. New additions default to approved: false. Use --approved only
+after CCI has confirmed inclusion. The initial tables are already approved.
+The importer is not a full-text or technology classification tool.
+
+If lookup fails, use --interactive to supply the required fields, or use the
+manual command below. Missing fields cause an error without saving the new
+record. No approval is inferred from the success of a DOI lookup.
+
+Manual addition (with or without an optional --doi)
+
+    python scripts/publications.py add --manual --title 'Article title' --author 'First Author' --author 'Second Author' --journal 'Journal or publication source' --year 2026 --publication-url 'https://example.org/article' --approved
+
+For interactive author entry, separate full names with semicolons. Original
+table author strings remain intact when provider authors are unavailable;
+authors_text is then the display/search fallback and authors is an empty list.
+
+Corrections
+
+Find the stable cci-... ID in the registry or report. Replace RECORD_ID below:
+
+    python scripts/publications.py show RECORD_ID
+    python scripts/publications.py edit RECORD_ID --interactive
+    python scripts/publications.py edit RECORD_ID --title 'Corrected title'
+    python scripts/publications.py edit RECORD_ID --doi '10.1234/correct-doi'
+    python scripts/publications.py edit RECORD_ID --accept-retrieved
+    python scripts/publications.py edit RECORD_ID --no-approved
+    python scripts/publications.py edit RECORD_ID --year 2025 --reporting-year 2025
+
+Year overrides can select the final journal-issue year instead of the earlier
+online year. --reporting-year also limits annual reporting to the chosen year;
+it survives refresh and reimport. Original source years remain in the citation
+history. Repeat --reporting-year if multiple reporting years are intentional.
+
+Record an explicit decision on a flagged discrepancy:
+
+    python scripts/publications.py review RECORD_ID --note 'Keep the existing citation; discrepancy accepted'
+    python scripts/publications.py review RECORD_ID --use-retrieved --note 'Use the complete retrieved citation'
+
+The first preserves the existing citation; the second chooses the retrieved
+citation as the baseline while keeping existing explicit overrides. It still
+allows future provider updates. Accepted discrepancies remain documented and are not
+reopened by identical metadata refreshes. Changed provider metadata triggers
+a new comparison rather than inheriting acceptance silently.
+
+Explicit bibliographic corrections live in overrides and win over retrieved
+metadata. The edit --accept-retrieved command explicitly locks all provider
+fields in overrides; use review --use-retrieved for normal provider-following
+acceptance. Remove an override deliberately in YAML if that field should follow
+provider updates again. IDs do not change when DOI or title is corrected.
+The original source citations stay available for comparison; comparison flags
+remain visible even after corrections. Do not change source-table line order
+and then reimport: file/line provenance is also used to recognize corrected
+records on repeat imports. Use registry editing after the initial migration.
+
+Refresh and export
+
+    python scripts/publications.py refresh
+    python scripts/publications.py refresh --id RECORD_ID
+    python scripts/publications.py validate
+    python scripts/publications.py build
+
+Refresh preserves approval, tags, manual overrides, reporting years, and last
+known good metadata when a provider is unavailable. It produces an updated
+comparison report. Inspect the Git diff before accepting metadata changes.
+Validate and build do not use the network. Build includes approved records,
+including records without technology tags or automatic metadata matches.
+
+On-demand DOI update checks
+
+    python scripts/publications.py check-updates
+    python scripts/publications.py check-updates --id RECORD_ID
+
+These commands fetch fresh metadata and compare every stored bibliographic
+field against the last retrieved snapshot. They write private_data/doi-updates
+JSON and TXT reports with before/after values. They do not change the registry
+or public catalogue. Successful responses update only the local lookup cache.
+Failed API requests are reported as failures, not as unchanged records.
+Manual overrides are identified as protected fields in the report.
+
+CCI approval, contributions, technology/service labels, and tagging decisions
+are outside provider updates. Explicit publication/reporting-year overrides
+also remain protected. The source tables stay as import history; they do not
+overwrite newer provider metadata. Never use provider text as CCI attribution.
+
+To include a live check with a catalogue build:
+
+    python scripts/publications.py build --check-updates
+
+It reports updates without applying them, then builds the existing registry.
+An API failure stops this optional network-dependent build. Normal build and
+validate remain offline and reproducible. Live checks cannot use --offline.
+
+For a future CI check, check-updates --fail-on-changes exits with code 2 when
+changes are detected, 3 on lookup failures, and 0 otherwise. No schedule or
+CI automation has been enabled. Review the report, then use refresh (optionally
+with --id) to apply provider metadata according to the matching policy above.
+
+Schema, version 1
+
+Registry top level: schema_version: 1, publications: list.
+Each registry record contains:
+
+- id: immutable cci-... internal identifier; DOI imports derive a stable UUID.
+- doi: normalized lowercase DOI, or null for publications without a valid DOI.
+- approved: boolean CCI inclusion decision.
+- technologies/services: zero or more vocabulary IDs; multiple tags supported.
+- tagging_status: pending or reviewed; independent of publication approval.
+- reporting_years: sorted source-list years, preserved across enrichment.
+- reporting_years_override: optional explicit curator-selected reporting years.
+- original_citations: source filename/line, original bibliographic fields and
+  DOI cell, plus any DOI parsing error or disclaimer warning.
+- metadata: baseline usable citation (from source or matched provider).
+- retrieved: optional provider name, DOI, and normalized candidate metadata.
+- overrides: explicit manual bibliographic fields; never refreshed away.
+- metadata_check: status plus field comparison issues. Statuses include
+  not_checked, matched, accepted, review, lookup_failed, and manual_required.
+- metadata_review: optional recorded acceptance decision and a fingerprint
+  of the reviewed provider/source data; excluded from the public catalogue.
+- last_lookup_error: optional failed-lookup/refresh details.
+
+Bibliographic fields: title, authors (list of full names), authors_text,
+journal (publication source, also used for chapters/preprints), year,
+publication_url (HTTP/HTTPS or null), and type (provider work type or null).
+
+Public JSON top level: schema_version: 1, publications: list, and vocabulary
+with technologies/services lists. Public vocabulary entries contain only id,
+label, and optional parent; internal vocabulary notes are excluded. Each public
+record contains only id, doi, the bibliographic fields above, reporting_years,
+technologies, and services. It omits approval internals, original citations,
+retrieved payloads, overrides, tagging status, errors, and any curator notes.
+Records are sorted by publication year descending, normalized title, then ID.
+No generated timestamps are included, so repeated builds are byte-stable.
+
+Testing
+
+    python -m pytest -q tests/test_publications.py
+    bash _development/site.sh check
+
+Tests use synthetic citations and mocked/cached responses; they never call
+external metadata services. Live import reports are separate evidence of
+actual provider results, not substitutes for human review of discrepancies.
+
+References
+
+https://habanero.readthedocs.io/en/latest/modules/crossref.html
+https://www.crossref.org/documentation/retrieve-metadata/content-negotiation/

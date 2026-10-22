@@ -1,0 +1,64 @@
+---
+layout: default
+title: Publications
+description: Explore publications from Centre for Cellular Imaging users and staff.
+permalink: /publications/
+stylesheet: /assets/css/publications.css
+module: /assets/js/publications.js
+---
+<div class="publications" data-publications data-catalogue-url="{{ '/assets/data/publications.json' | relative_url }}">
+  <header class="publications-intro">
+    <p class="publications-eyebrow">Centre for Cellular Imaging</p>
+    <h1>Publications</h1>
+    <p>Explore research from CCI users and staff. Search by title, author, journal, or DOI.</p>
+  </header>
+
+  <form class="publications-controls" role="search" aria-label="Search publications">
+    <fieldset disabled>
+      <legend class="publications-sr-only">Find publications</legend>
+      <div class="publications-search">
+        <label for="publication-search">Search publications</label>
+        <input id="publication-search" name="q" type="search" placeholder="Title, author, journal, or DOI" autocomplete="off" aria-controls="publication-results">
+      </div>
+      <div class="publications-filter-row">
+        <div>
+          <label for="publication-year">Publication year</label>
+          <select id="publication-year" name="year" aria-controls="publication-results">
+            <option value="">All years</option>
+          </select>
+        </div>
+        <div>
+          <label for="publication-sort">Sort by</label>
+          <select id="publication-sort" name="sort" aria-controls="publication-results">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </div>
+        <button type="button" class="publications-clear" data-clear>Clear filters</button>
+      </div>
+      <div class="publications-technologies" data-technology-controls hidden>
+        <fieldset>
+          <legend>Technology <span>(match any selected)</span></legend>
+          <div data-technology-options></div>
+        </fieldset>
+      </div>
+    </fieldset>
+  </form>
+
+  <div class="publications-status">
+    <p data-status role="status" aria-live="polite" aria-atomic="true">Loading publications…</p>
+  </div>
+  <button type="button" class="publications-retry" data-retry hidden>Try again</button>
+  <div class="publications-empty" data-empty hidden>
+    <h2>No publications found</h2>
+    <p>Try a different search term or clear the filters to see all publications.</p>
+  </div>
+  <ol id="publication-results" class="publications-list" aria-label="Publications" aria-busy="true"></ol>
+  <button type="button" class="publications-more" data-more hidden>Show more publications</button>
+
+  <noscript>
+    <p>This catalogue needs JavaScript. You can also browse the
+      <a href="https://www.gu.se/en/core-facilities/core-facilities-research-infrastructures/centre-for-cellular-imaging-cci/publications-from-cci-users-and-staff">CCI publication list on the University of Gothenburg website</a>.</p>
+  </noscript>
+</div>

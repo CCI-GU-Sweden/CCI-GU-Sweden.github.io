@@ -1,0 +1,11 @@
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.sass-cache/
+/.bundle/
+/.local/
+/vendor/
+/private_data/
+__pycache__/
+.pytest_cache/
+*.pyc
