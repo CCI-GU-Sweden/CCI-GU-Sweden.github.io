@@ -24,8 +24,12 @@ export function selectPublications(records, {query = "", year = "", sort = "newe
 
 export function publicationURL(record) {
   if (record.doi) return `https://doi.org/${encodeURI(record.doi).replace(/[?#]/g, char => encodeURIComponent(char))}`;
+  return externalURL(record.publication_url);
+}
+
+function externalURL(value) {
   try {
-    const url = new URL(record.publication_url);
+    const url = new URL(value);
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;
   } catch { return null; }
 }
@@ -56,11 +60,56 @@ function publicationCard(record, labels) {
   const authors = record.authors || [];
   const preview = authors.length > 5 ? `${authors.slice(0, 5).join("; ")}; et al.` : record.authors_text || authors.join("; ");
   article.append(element("p", "publication-authors", preview));
+  const disclosures = element("div", "publication-disclosures");
+  const controls = element("div", "publication-disclosure-controls");
+  const panels = element("div", "publication-disclosure-panels");
+  function addDisclosure(key, label, content) {
+    const button = element("button", "publication-disclosure-toggle");
+    button.type = "button";
+    button.id = `${record.id}-${key}-toggle`;
+    button.dataset.disclosure = key;
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-controls", `${record.id}-${key}-panel`);
+    const arrow = element("span", "publication-disclosure-arrow", "▸");
+    arrow.setAttribute("aria-hidden", "true");
+    button.append(arrow, document.createTextNode(label));
+    content.id = `${record.id}-${key}-panel`;
+    content.setAttribute("role", "region");
+    content.setAttribute("aria-labelledby", button.id);
+    content.hidden = true;
+    button.addEventListener("click", () => {
+      const open = button.getAttribute("aria-expanded") !== "true";
+      button.setAttribute("aria-expanded", String(open));
+      content.hidden = !open;
+    });
+    controls.append(button);
+    panels.append(content);
+  }
   if (authors.length > 5) {
-    const details = element("details");
-    details.append(element("summary", "", `All ${authors.length} authors`),
-      element("p", "publication-authors", authors.join("; ")));
-    article.append(details);
+    const content = element("div");
+    content.append(element("p", "publication-authors", authors.join("; ")));
+    addDisclosure("authors", `All ${authors.length} authors`, content);
+  }
+  if (typeof record.abstract?.text === "string" && record.abstract.text.trim()) {
+    const content = element("div", "publication-abstract-text");
+    for (const paragraph of record.abstract.text.split(/\n\s*\n/).filter(text => text.trim())) {
+      content.append(element("p", "", paragraph.trim()));
+    }
+    const attribution = element("p", "publication-abstract-source");
+    for (const [label, value] of [["Abstract source", record.abstract.source_url], ["Reuse licence", record.abstract.license_url]]) {
+      const href = externalURL(value);
+      if (!href) continue;
+      if (attribution.childNodes.length) attribution.append(document.createTextNode(" · "));
+      const link = element("a", "", label);
+      link.href = href;
+      attribution.append(link);
+    }
+    if (attribution.childNodes.length) content.append(attribution);
+    addDisclosure("abstract", "Abstract", content);
+  }
+  if (controls.childNodes.length) {
+    disclosures.append(controls, panels);
+    article.append(disclosures);
   }
   if (url) {
     const reference = element("div", "publication-doi");

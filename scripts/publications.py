@@ -5,8 +5,10 @@ from __future__ import annotations
 import argparse
 import copy
 import csv
+from datetime import date
 import hashlib
 import html
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
@@ -29,6 +31,7 @@ CACHE = ROOT / ".local/publications-cache"
 REPORT = ROOT / "private_data/publications-import-report.json"
 OUTPUT = ROOT / "assets/data/publications.json"
 UPDATES = ROOT / "private_data/doi-updates.json"
+ABSTRACT_STORE = ROOT / "private_data/publication-abstracts.json"
 FIELDS = {"title", "authors", "authors_text", "journal", "year", "publication_url", "type"}
 
 
@@ -135,8 +138,88 @@ def first(value):
     return (value[0] if value else None) if isinstance(value, list) else value
 
 
+class AbstractText(HTMLParser):
+    """Convert provider JATS/HTML into paragraphs of plain text, never HTML."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+        self.suppressed = 0
+
+    def handle_starttag(self, tag, attrs):
+        tag = tag.split(":")[-1]
+        if tag in {"script", "style"}:
+            self.suppressed += 1
+        elif not self.suppressed and tag in {"p", "title", "sec", "br", "div", "li"}:
+            self.parts.append("\n\n")
+
+    def handle_endtag(self, tag):
+        tag = tag.split(":")[-1]
+        if tag in {"script", "style"}:
+            self.suppressed = max(0, self.suppressed - 1)
+        elif not self.suppressed and tag in {"p", "title", "sec", "div", "li"}:
+            self.parts.append("\n\n")
+
+    def handle_data(self, text):
+        if not self.suppressed:
+            self.parts.append(text)
+
+
+def abstract_text(value):
+    if not isinstance(value, str) or not value.strip():
+        return None
+    parser = AbstractText()
+    parser.feed(value)
+    text = "\n\n".join(re.sub(r"\s+", " ", part).strip()
+                        for part in re.split(r"\n\s*\n", "".join(parser.parts)) if part.strip())
+    text = re.sub(r"^Abstract\s*\n+", "", text, flags=re.I).strip()
+    if re.fullmatch(r"(?:Abstract|(?:No abstract(?: is)? available(?: for this article)?|Abstract not available)\.?)", text, re.I):
+        return None
+    return text or None
+
+
+def reusable_abstract_license(url):
+    """Conservative initial public-display allowlist: CC BY and CC0."""
+    return isinstance(url, str) and bool(re.fullmatch(
+        r"https?://(?:www\.)?creativecommons\.org/(?:licenses/by/(?:1\.0|2\.0|2\.5|3\.0|4\.0)|publicdomain/zero/1\.0)/?(?:legalcode(?:\.[a-z]+)?/?)?",
+        url, re.I))
+
+
+def extract_abstract(data, doi):
+    text = abstract_text(data.get("abstract"))
+    if not text:
+        return None
+    licenses = data.get("license", [])
+    if isinstance(licenses, str):
+        licenses = [{"URL": licenses}]
+    if not isinstance(licenses, list):
+        licenses = []
+    candidates, public_license = [], None
+    for entry in licenses:
+        if not isinstance(entry, dict) or not safe_url(entry.get("URL")):
+            continue
+        start = entry.get("start") or {}
+        starts_on = str(start.get("date-time", ""))[:10] if isinstance(start, dict) else ""
+        try:
+            if starts_on:
+                starts_on = date.fromisoformat(starts_on).isoformat()
+            elif isinstance(start, dict):
+                parts = start.get("date-parts", [])
+                if parts and parts[0]:
+                    y, m, d = (parts[0] + [1, 1])[:3]
+                    starts_on = date(y, m, d).isoformat()
+        except (ValueError, TypeError, IndexError):
+            starts_on = "unknown"
+        version = entry.get("content-version") or "unspecified"
+        candidates.append({"url": entry["URL"], "content_version": version, "starts_on": starts_on or None})
+        if (reusable_abstract_license(entry["URL"]) and version in {"vor", "unspecified"}
+                and (not starts_on or starts_on <= date.today().isoformat())):
+            public_license = entry["URL"]
+    return {"text": text, "source_url": f"https://doi.org/{doi}",
+            "licenses": candidates, "public_license_url": public_license}
+
+
 def normalize_metadata(data):
-    """Accept Crossref or CSL JSON; retain no abstracts, private notes, or HTML."""
+    """Normalize bibliography; optional abstract enrichment is stored separately."""
     title = clean(first(data.get("title")))
     authors = [clean(a.get("literal") or " ".join(filter(None, [a.get("given"), a.get("family")])))
                for a in data.get("author", [])]
@@ -159,15 +242,16 @@ def normalize_metadata(data):
 
 
 class MetadataClient:
-    def __init__(self, cache=CACHE, offline=False, refresh=False, mailto=None):
+    def __init__(self, cache=CACHE, offline=False, refresh=False, mailto=None, include_abstracts=False):
         self.cache, self.offline, self.refresh = Path(cache), offline, refresh
+        self.include_abstracts = include_abstracts
         self.crossref = Crossref(mailto=mailto, timeout=20, ua_string="CCI-publications/1.0")
 
     def lookup(self, doi):
         doi = normalize_doi(doi)
         path = self.cache / (hashlib.sha256(doi.encode()).hexdigest() + ".json")
         cached = read_json(path) if path.exists() else None
-        if cached and not self.refresh:
+        if cached and not self.refresh and (not self.include_abstracts or "abstract" in cached):
             return {**cached, "cached": True}
         if self.offline:
             raise LookupError(f"No cached metadata for {doi}")
@@ -187,7 +271,8 @@ class MetadataClient:
                         data = response.json()
                     if normalize_doi(data.get("DOI")) != doi:
                         raise ValueError("Provider returned a different DOI")
-                    result = {"doi": doi, "provider": provider, "metadata": normalize_metadata(data)}
+                    result = {"doi": doi, "provider": provider, "metadata": normalize_metadata(data),
+                              "abstract": extract_abstract(data, doi)}
                     write_json(path, result)
                     time.sleep(0.25)
                     return result
@@ -305,6 +390,57 @@ def effective_metadata(record):
     return {**record["metadata"], **record["overrides"]}
 
 
+def fetch_abstracts(registry, client, store=ABSTRACT_STORE, record_ids=None):
+    """Keep all available abstracts private; export only eligible, matched text."""
+    previous = read_json(store) if Path(store).exists() else {"abstracts": []}
+    saved = {entry["id"]: entry for entry in previous["abstracts"]}
+    results = []
+    for number, record in enumerate(registry["publications"], 1):
+        if record_ids is not None and record["id"] not in record_ids:
+            continue
+        print(f"Abstract [{number}/{len(registry['publications'])}] {record['doi'] or record['id']}", flush=True)
+        entry = {"id": record["id"], "doi": record["doi"], "abstract": None}
+        if not record["doi"]:
+            entry["status"] = "no_doi"
+        else:
+            try:
+                result = client.lookup(record["doi"])
+                if result.get("refresh_error"):
+                    raise LookupError(result["refresh_error"])
+                candidate = result.get("abstract")
+                entry.update(abstract=candidate, provider=result["provider"])
+                if not candidate and saved.get(record["id"], {}).get("doi") == record["doi"]:
+                    entry["abstract"] = saved[record["id"]].get("abstract")
+                title_issues = compare_metadata(effective_metadata(record), result["metadata"])
+                identity_issue = any(i["field"] == "title" and i["severity"] == "review" for i in title_issues)
+                if not candidate:
+                    entry["status"] = "not_available"
+                elif identity_issue:
+                    entry["status"] = "identity_review"
+                    entry["retrieved_title"] = result["metadata"]["title"]
+                elif candidate.get("public_license_url"):
+                    record["abstract"] = {"text": candidate["text"], "source_url": candidate["source_url"],
+                                          "license_url": candidate["public_license_url"]}
+                    entry["status"] = "publicly_displayable"
+                else:
+                    entry["status"] = "private_only"
+                # A successful new response governs public eligibility. The
+                # private store retains text even when it must not be exported.
+                if entry["status"] != "publicly_displayable":
+                    record.pop("abstract", None)
+            except LookupError as exc:
+                entry = {**saved.get(record["id"], entry), "status": "failed", "error": str(exc)}
+                # An outage must not erase a previously retrieved abstract.
+        saved[record["id"]] = entry
+        results.append(entry)
+    summary = {status: sum(e["status"] == status for e in results)
+               for status in ("publicly_displayable", "private_only", "not_available", "identity_review", "failed", "no_doi")}
+    write_json(store, {"schema_version": 1, "summary": summary,
+                       "abstracts": sorted(saved.values(), key=lambda e: e["id"])})
+    print(json.dumps(summary, indent=2))
+    return summary
+
+
 def check_updates(registry, client, output=UPDATES, record_ids=None):
     """Compare live provider metadata to the last retrieval without editing records."""
     records = []
@@ -389,6 +525,12 @@ def validate(registry, vocabulary):
             raise ValueError(f"{r['id']}: authors must be a list of names")
         if m.get("publication_url") is not None and not safe_url(m["publication_url"]):
             raise ValueError(f"{r['id']}: publication_url must be an HTTP(S) URL")
+        if r.get("abstract") is not None:
+            abstract = r["abstract"]
+            if (not isinstance(abstract, dict) or not isinstance(abstract.get("text"), str)
+                    or not abstract["text"].strip() or not safe_url(abstract.get("source_url"))
+                    or not reusable_abstract_license(abstract.get("license_url"))):
+                raise ValueError(f"{r['id']}: invalid public abstract or missing reuse license")
 
 
 def public_catalogue(registry, vocabulary):
@@ -403,6 +545,8 @@ def public_catalogue(registry, vocabulary):
                         **{field: m.get(field) for field in sorted(FIELDS)},
                         "reporting_years": r["reporting_years"],
                         "technologies": r["technologies"], "services": r["services"]})
+        if r.get("abstract"):
+            records[-1]["abstract"] = {key: r["abstract"][key] for key in ("text", "source_url", "license_url")}
     records.sort(key=lambda r: (-r["year"], comparable(r["title"]), r["id"]))
     public_vocabulary = {kind: [{key: entry[key] for key in ("id", "label", "parent") if key in entry}
                                 for entry in vocabulary[kind]]
@@ -542,6 +686,9 @@ def main(argv=None):
     importer.add_argument("--sample", action="store_true")
     refresh = commands.add_parser("refresh")
     refresh.add_argument("--id", action="append", help="Refresh only these record IDs (repeatable)")
+    abstracts = commands.add_parser("fetch-abstracts")
+    abstracts.add_argument("--id", action="append")
+    abstracts.add_argument("--refresh", action="store_true", help="Recheck providers even when abstract metadata is cached")
     updates = commands.add_parser("check-updates")
     updates.add_argument("--id", action="append")
     updates.add_argument("--output", type=Path, default=UPDATES)
@@ -576,7 +723,7 @@ def main(argv=None):
         sub.add_argument("--type")
     args = parser.parse_args(argv)
     vocabulary = read_registry(args.vocabulary)
-    if args.command in {"validate", "build", "refresh", "edit", "show", "review", "check-updates"} and not args.registry.exists():
+    if args.command in {"validate", "build", "refresh", "edit", "show", "review", "check-updates", "fetch-abstracts"} and not args.registry.exists():
         raise ValueError(f"Registry not found: {args.registry}; import tables or add a record first")
     registry = read_registry(args.registry) if args.registry.exists() else {"schema_version": 1, "publications": []}
     if args.command == "check-updates" or args.command == "build" and args.check_updates:
@@ -594,7 +741,14 @@ def main(argv=None):
             return 2 if args.fail_on_changes and summary["changed"] else 0
         if summary["failed"]:
             raise ValueError("Live metadata check failed; see private_data/doi-updates.txt")
-    if args.command == "import-tables":
+    if args.command == "fetch-abstracts":
+        selected = set(args.id) if args.id else None
+        if selected and selected - {r["id"] for r in registry["publications"]}:
+            raise ValueError("Unknown ID requested for abstract enrichment")
+        fetch_abstracts(registry, MetadataClient(args.cache, args.offline, refresh=args.refresh,
+                                               mailto=args.mailto, include_abstracts=True),
+                        store=ABSTRACT_STORE, record_ids=selected)
+    elif args.command == "import-tables":
         citations = read_tables(args.files)
         if args.sample:
             citations = sample_citations(citations)
@@ -636,6 +790,7 @@ def main(argv=None):
                 if doi != record["doi"]:
                     record["doi"] = doi
                     record.pop("retrieved", None)
+                    record.pop("abstract", None)
                     record.pop("last_lookup_error", None)
                     record["metadata_check"] = {"status": "not_checked", "issues": []}
                     record["overrides"]["publication_url"] = f"https://doi.org/{doi}" if doi else None
