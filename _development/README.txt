@@ -52,7 +52,8 @@ Activate it when working on Python tools:
 
 It includes Python 3.12, Habanero (Crossref metadata), Requests (HTTP
 fallbacks), PyYAML (curated records), and pytest (data validation tests).
-The DOI importer itself has not been implemented yet.
+The publication importer and manual curation commands are documented in
+_development/publications.txt.
 
 After changing environment.yml, update the environment with:
 

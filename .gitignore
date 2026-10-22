@@ -6,3 +6,6 @@
 /.local/
 /vendor/
 /private_data/
+__pycache__/
+.pytest_cache/
+*.pyc
