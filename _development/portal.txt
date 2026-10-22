@@ -1,0 +1,92 @@
+PUBLICATIONS PORTAL
+
+Branch: feature/publications-portal, based on data checkpoint e081085.
+The interface reads the generated catalogue; it does not edit records.
+
+Preview
+
+    serve cci-page
+
+Open http://localhost:4000/publications/ or use Publications in the navigation.
+The default view is all publication years, newest first, as requested by CCI.
+The list displays 20 records initially and loads further results on request.
+Clear filters restores all years/newest first.
+
+Search matches title, all authors, journal, DOI, and available technology
+labels. It ignores letter case and accent differences. Every search word must
+match somewhere in a record. Year, search, and technology filters combine;
+multiple selected technologies match any selected technology. Sort options
+are newest, oldest, and title A-Z. Filter state is retained in the URL.
+
+Technology controls are hidden until records have tags. No labels were
+inferred. Human-facing technology labels come from the public vocabulary
+generated from _publications/vocabulary.yml. The current 138 approved records
+remain unchanged by the portal. Long author lists can be expanded inline.
+
+Files
+
+- publications/index.html: page markup and controls.
+- assets/css/publications.css: page-scoped styles.
+- assets/js/publications.js: search/filter/sort, URL state, and DOM rendering.
+- _layouts/default.html: optional page-specific stylesheet/module loading.
+- _data/navigation.yml: Publications navigation link.
+- assets/css/style.scss: navigation may wrap to accommodate the extra link.
+
+All metadata text is rendered using textContent. Publication links use DOI
+URLs, or validated HTTP/HTTPS publication URLs for records without a DOI.
+The page fetches the catalogue once, then searches locally. No framework,
+backend, external search service, or production JavaScript dependency added.
+
+Automated checks
+
+    conda activate cci-page
+    python -m pytest -q tests/test_publications.py
+    node tests/publications.test.mjs
+    bash _development/site.sh check
+
+Node.js is needed for development tests, not for the website at runtime.
+The data-stage Conda environment does not install Node.js. This workstation
+already has Node 24 through nvm.
+
+Optional real-browser checks
+
+Install local tools once (they are ignored by Git):
+
+    npm install --prefix .local/portal-testing --no-save playwright@1.64.1
+    PLAYWRIGHT_BROWSERS_PATH=.local/portal-testing/browsers node .local/portal-testing/node_modules/playwright/cli.js install chromium
+
+Chromium needs Ubuntu shared libraries. If they are installed system-wide,
+no extra setup is needed. On this WSL workstation, libnspr4, libnss3, and
+libasound2t64 were downloaded/extracted inside
+.local/portal-testing/system-libs. test-portal.sh uses those local libraries
+when present. This does not change the system package installation.
+
+After building, run a separate test server in one terminal:
+
+    python3 -m http.server 4001 --bind 127.0.0.1 --directory _site
+
+Then run in another terminal:
+
+    bash _development/test-portal.sh
+
+To use a different server, set PUBLICATIONS_TEST_URL to its origin. Tests
+block external requests and use synthetic route-local fixtures for technology
+filters, unsafe text, and error handling. They never change the real catalogue.
+Screenshots are saved in .local/portal-testing/screenshots/.
+
+Browser checks cover the default view, result counts, navigation, pagination,
+DOI search, corrected years, URL restoration, sorting, empty state, reset,
+full author lists, keyboard focus, responsive widths, future technology
+filters, safe text rendering, and failed-request/retry recovery.
+
+Manual review before committing/releasing the portal
+
+- Inspect the page at desktop and phone widths.
+- Try a familiar author, article title, and DOI.
+- Filter a year, change the sort, and clear the filters.
+- Expand a long author list and follow a DOI link.
+- Confirm that the styling and navigation fit the facility website.
+
+Nothing is published by these commands. The publication-data step is already
+committed. Portal changes should be reviewed locally before their checkpoint
+commit; main remains the publishing branch.

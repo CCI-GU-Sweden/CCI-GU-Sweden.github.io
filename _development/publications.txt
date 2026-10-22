@@ -192,7 +192,9 @@ Bibliographic fields: title, authors (list of full names), authors_text,
 journal (publication source, also used for chapters/preprints), year,
 publication_url (HTTP/HTTPS or null), and type (provider work type or null).
 
-Public JSON top level: schema_version: 1, publications: list. Each public
+Public JSON top level: schema_version: 1, publications: list, and vocabulary
+with technologies/services lists. Public vocabulary entries contain only id,
+label, and optional parent; internal vocabulary notes are excluded. Each public
 record contains only id, doi, the bibliographic fields above, reporting_years,
 technologies, and services. It omits approval internals, original citations,
 retrieved payloads, overrides, tagging status, errors, and any curator notes.

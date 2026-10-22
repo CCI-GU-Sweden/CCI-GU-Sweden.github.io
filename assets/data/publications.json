@@ -3820,5 +3820,9 @@
       "year": 2022
     }
   ],
-  "schema_version": 1
+  "schema_version": 1,
+  "vocabulary": {
+    "services": [],
+    "technologies": []
+  }
 }

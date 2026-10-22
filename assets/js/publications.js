@@ -1,0 +1,207 @@
+const PAGE_SIZE = 20;
+const SORTS = new Set(["newest", "oldest", "title"]);
+
+export function normalizeSearch(value) {
+  return String(value ?? "").normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+}
+
+export function selectPublications(records, {query = "", year = "", sort = "newest", technologies = []} = {}, labels = new Map()) {
+  const terms = normalizeSearch(query).trim().split(/\s+/).filter(Boolean);
+  return records.filter(record => {
+    if (year && String(record.year) !== String(year)) return false;
+    const tags = record.technologies || [];
+    if (technologies.length && !technologies.some(tag => tags.includes(tag))) return false;
+    const text = normalizeSearch([record.title, record.authors_text, ...(record.authors || []),
+      record.journal, record.doi, ...tags.map(tag => labels.get(tag) || tag)].join(" "));
+    return terms.every(term => text.includes(term));
+  }).sort((a, b) => {
+    const titleOrder = a.title.localeCompare(b.title, "en", {sensitivity: "base"});
+    if (sort === "title") return titleOrder || a.id.localeCompare(b.id);
+    const years = sort === "oldest" ? a.year - b.year : b.year - a.year;
+    return years || titleOrder || a.id.localeCompare(b.id);
+  });
+}
+
+export function publicationURL(record) {
+  if (record.doi) return `https://doi.org/${encodeURI(record.doi).replace(/[?#]/g, char => encodeURIComponent(char))}`;
+  try {
+    const url = new URL(record.publication_url);
+    return ["http:", "https:"].includes(url.protocol) ? url.href : null;
+  } catch { return null; }
+}
+
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+function publicationCard(record, labels) {
+  const item = element("li");
+  const article = element("article", "publication-card");
+  const meta = element("div", "publication-meta");
+  meta.append(element("span", "publication-year", record.year));
+  if (record.journal) meta.append(element("span", "publication-journal", record.journal));
+  const type = {"posted-content": "Preprint", "book-chapter": "Book chapter"}[record.type];
+  if (type) meta.append(element("span", "publication-type", type));
+  const title = element("h2");
+  const url = publicationURL(record);
+  if (url) {
+    const link = element("a", "", record.title);
+    link.href = url;
+    title.append(link);
+  } else title.textContent = record.title;
+  article.append(meta, title);
+  const authors = record.authors || [];
+  const preview = authors.length > 5 ? `${authors.slice(0, 5).join("; ")}; et al.` : record.authors_text || authors.join("; ");
+  article.append(element("p", "publication-authors", preview));
+  if (authors.length > 5) {
+    const details = element("details");
+    details.append(element("summary", "", `All ${authors.length} authors`),
+      element("p", "publication-authors", authors.join("; ")));
+    article.append(details);
+  }
+  if (url) {
+    const reference = element("div", "publication-doi");
+    const link = element("a", "", record.doi ? `DOI: ${record.doi}` : "View publication");
+    link.href = url;
+    reference.append(link);
+    article.append(reference);
+  }
+  if (record.technologies?.length) {
+    const tags = element("div", "publication-tags");
+    for (const tag of record.technologies) tags.append(element("span", "publication-tag", labels.get(tag) || tag.replaceAll("_", " ")));
+    article.append(tags);
+  }
+  item.append(article);
+  return item;
+}
+
+export async function initializePublications(root) {
+  const form = root.querySelector("form");
+  const fieldset = form.querySelector("fieldset");
+  const search = root.querySelector("[name=q]");
+  const year = root.querySelector("[name=year]");
+  const sort = root.querySelector("[name=sort]");
+  const clear = root.querySelector("[data-clear]");
+  const status = root.querySelector("[data-status]");
+  const results = root.querySelector("#publication-results");
+  const more = root.querySelector("[data-more]");
+  const empty = root.querySelector("[data-empty]");
+  const retry = root.querySelector("[data-retry]");
+  let records = [];
+  let labels = new Map();
+  let limit = PAGE_SIZE;
+  let technologyInputs = [];
+
+  function state() {
+    return {query: search.value, year: year.value, sort: sort.value,
+      technologies: technologyInputs.filter(input => input.checked).map(input => input.value)};
+  }
+
+  function restoreURL() {
+    const params = new URLSearchParams(window.location.search);
+    search.value = params.get("q") || "";
+    year.value = params.get("year") || "";
+    if (year.selectedIndex < 0) year.value = "";
+    sort.value = SORTS.has(params.get("sort")) ? params.get("sort") : "newest";
+    for (const input of technologyInputs) input.checked = params.getAll("technology").includes(input.value);
+  }
+
+  function render(updateURL = true) {
+    const filters = state();
+    const matches = selectPublications(records, filters, labels);
+    const visible = matches.slice(0, limit);
+    results.replaceChildren(...visible.map(record => publicationCard(record, labels)));
+    status.textContent = matches.length ? `Showing ${visible.length} of ${matches.length} publication${matches.length === 1 ? "" : "s"}${matches.length !== records.length ? ` (${records.length} total)` : ""}` : "0 publications found";
+    empty.hidden = matches.length !== 0;
+    more.hidden = visible.length >= matches.length;
+    more.textContent = `Show ${Math.min(PAGE_SIZE, matches.length - visible.length)} more publications`;
+    clear.disabled = !filters.query && !filters.year && !filters.technologies.length && filters.sort === "newest";
+    results.setAttribute("aria-busy", "false");
+    if (updateURL) {
+      const url = new URL(window.location.href);
+      for (const key of ["q", "year", "sort", "technology"]) url.searchParams.delete(key);
+      if (filters.query) url.searchParams.set("q", filters.query);
+      if (filters.year) url.searchParams.set("year", filters.year);
+      if (filters.sort !== "newest") url.searchParams.set("sort", filters.sort);
+      for (const tag of filters.technologies) url.searchParams.append("technology", tag);
+      window.history.replaceState(null, "", url);
+    }
+  }
+
+  async function load() {
+    retry.hidden = true;
+    fieldset.disabled = true;
+    status.textContent = "Loading publications…";
+    results.setAttribute("aria-busy", "true");
+    try {
+      const response = await fetch(root.dataset.catalogueUrl);
+      if (!response.ok) throw new Error(`Catalogue HTTP ${response.status}`);
+      const catalogue = await response.json();
+      if (catalogue.schema_version !== 1 || !Array.isArray(catalogue.publications)) throw new Error("Unsupported catalogue");
+      records = catalogue.publications;
+      if (records.some(record => typeof record.title !== "string" || typeof record.id !== "string" || !Number.isInteger(record.year))) throw new Error("Invalid catalogue record");
+      labels = new Map((catalogue.vocabulary?.technologies || []).map(tag => [tag.id, tag.label]));
+      year.replaceChildren(element("option", "", "All years"));
+      year.firstChild.value = "";
+      for (const value of [...new Set(records.map(record => record.year))].sort((a, b) => b - a)) {
+        const option = element("option", "", value);
+        option.value = value;
+        year.append(option);
+      }
+      const options = root.querySelector("[data-technology-options]");
+      options.replaceChildren();
+      const tags = [...new Set(records.flatMap(record => record.technologies || []))].sort();
+      technologyInputs = tags.map(tag => {
+        const label = element("label");
+        const input = element("input");
+        input.type = "checkbox";
+        input.name = "technology";
+        input.value = tag;
+        label.append(input, document.createTextNode(labels.get(tag) || tag.replaceAll("_", " ")));
+        options.append(label);
+        return input;
+      });
+      root.querySelector("[data-technology-controls]").hidden = !tags.length;
+      restoreURL();
+      fieldset.disabled = false;
+      render(false);
+    } catch (error) {
+      status.textContent = "We couldn’t load the publications. Please try again.";
+      results.setAttribute("aria-busy", "false");
+      retry.hidden = false;
+      console.error("Publication catalogue could not be loaded", error);
+    }
+  }
+
+  form.addEventListener("submit", event => event.preventDefault());
+  form.addEventListener("input", event => {
+    if (event.target === search) { limit = PAGE_SIZE; render(); }
+  });
+  form.addEventListener("change", event => {
+    if (event.target !== search) { limit = PAGE_SIZE; render(); }
+  });
+  clear.addEventListener("click", () => {
+    search.value = ""; year.value = ""; sort.value = "newest";
+    technologyInputs.forEach(input => { input.checked = false; });
+    limit = PAGE_SIZE;
+    render();
+    search.focus();
+  });
+  more.addEventListener("click", () => {
+    const previousCount = results.children.length;
+    limit += PAGE_SIZE;
+    render();
+    results.children[previousCount]?.querySelector("h2 a")?.focus();
+  });
+  retry.addEventListener("click", load);
+  window.addEventListener("popstate", () => { restoreURL(); limit = PAGE_SIZE; render(false); });
+  await load();
+}
+
+if (typeof document !== "undefined") {
+  const root = document.querySelector("[data-publications]");
+  if (root) initializePublications(root);
+}

@@ -54,6 +54,8 @@ It includes Python 3.12, Habanero (Crossref metadata), Requests (HTTP
 fallbacks), PyYAML (curated records), and pytest (data validation tests).
 The publication importer and manual curation commands are documented in
 _development/publications.txt.
+The catalogue view and its browser checks are described in
+_development/portal.txt.
 
 After changing environment.yml, update the environment with:
 

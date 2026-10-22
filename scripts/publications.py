@@ -404,7 +404,10 @@ def public_catalogue(registry, vocabulary):
                         "reporting_years": r["reporting_years"],
                         "technologies": r["technologies"], "services": r["services"]})
     records.sort(key=lambda r: (-r["year"], comparable(r["title"]), r["id"]))
-    return {"schema_version": 1, "publications": records}
+    public_vocabulary = {kind: [{key: entry[key] for key in ("id", "label", "parent") if key in entry}
+                                for entry in vocabulary[kind]]
+                         for kind in ("technologies", "services")}
+    return {"schema_version": 1, "publications": records, "vocabulary": public_vocabulary}
 
 
 def write_text(path, text):

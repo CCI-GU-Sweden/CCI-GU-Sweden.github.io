@@ -424,3 +424,9 @@ def test_build_with_update_check_does_not_apply_changes(tmp_path, registry, voca
             "build", "--output", str(tmp_path / "public.json"), "--check-updates"])
     assert registry_path.read_bytes() == before
     assert p.read_json(tmp_path / "public.json")["publications"][0]["authors"] == []
+
+
+def test_public_vocabulary_excludes_internal_notes(registry, vocabulary):
+    vocabulary["technologies"][0].update(label="Confocal microscopy", notes="Synthetic private note")
+    exported = p.public_catalogue(registry, vocabulary)["vocabulary"]
+    assert exported["technologies"][0] == {"id": "confocal", "label": "Confocal microscopy"}
