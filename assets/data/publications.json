@@ -1,6 +1,11 @@
 {
   "publications": [
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1093/g3journal/jkag161",
+        "text": "Phosphatidylcholine (PC) is the most abundant phospholipid in eukaryotic membranes and is synthesized in part via the rate-limiting enzyme PCYT1A. In humans, hypomorphic PCYT1A variants cause diverse disorders. To define how graded reductions in PC synthesis affect organismal physiology, we generated and characterized a series of mutant alleles in the Caenorhabditis elegans homolog pcyt-1, including variants corresponding to disease-causing human mutations, as well as an auxin-inducible degradation allele. We identify a clear allelic hierarchy. The V146M variant is embryonic lethal, whereas A97T is largely benign. P154A is temperature-sensitive, and C211Y causes growth delay, reduced brood size, sterility, and lengthened lifespan at standard temperature. Phenotypes of C211Y are rescued by choline, CDP-choline, or PC supplementation, supporting reduced enzymatic function. Lipidomic profiling reveals that decreased PC synthesis consistently increases long-chain polyunsaturated fatty acids (LCPUFAs) in both PCs and phosphatidylethanolamine (PEs) at the expense of shorter saturated species, without markedly altering the PC/PE ratio at 20 °C. At elevated temperature, the P154A variant exhibits protein instability and a decreased PC/PE ratio. Despite significant lipid remodeling, canonical ER, mitochondrial, and metabolic stress GFP-based reporters are not activated; only the oxidative stress response is elevated, consistent with increased peroxidation-prone LCPUFAs in the pcyt-1 mutant. Acute auxin-induced degradation of PCYT-1 in larvae causes developmental arrest, while acute PCYT-1 degradation in adults disrupts oogenesis, demonstrating a continuous requirement for PC synthesis. Together, these findings establish a functional pcyt-1 allelic series and show that limiting PC synthesis drives compensatory remodeling toward LCPUFA-enriched membranes while rendering the germline particularly vulnerable."
+      },
       "authors": [
         "August Qvist",
         "Delaney Kaper",
@@ -108,6 +113,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-026-68968-2",
+        "text": "An unhealthy diet disrupts feeding behavior and the gut microbiota, but whether early-life dietary effects persist, or can be restored later in life, remains unclear. We investigated whether microbiota-targeted interventions (FOS + GOS or Bifidobacterium longum APC1472) could restore early-life high-fat/high-sugar (HFHS) diet-induced feeding alterations in adult female and male mice. HFHS exposure exclusively in early-life induced persistent, sex-specific feeding alterations in adult mice, despite normalized body weight. Early-life HFHS diet reduced hypothalamic cells expressing feeding-related markers (POMC, GHSR, PNOC, NOD2) in adult mice. Females were more vulnerable, with reduced LEPR + cells and disrupted arginine/tryptophan metabolism, while males showed impaired peptidoglycan sensing and steroid metabolism. We show that microbiota interventions restore these effects via distinct mechanisms. FOS + GOS induced extensive microbiome compositional shifts and sex-specific restoration of gut-brain pathways, while B. longum APC1472 induced greater behavioral restoration with minimal microbiome compositional changes. These findings highlight sex-specific vulnerabilities and mechanism-dependent therapeutic potential of microbiota-based interventions after exposure to early-life unhealthy diets."
+      },
       "authors": [
         "Cristina Cuesta-Marti",
         "Eduardo Ponce-España",
@@ -147,6 +157,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.3389/fbioe.2026.1797692",
+        "text": "Introduction\n\nGraphene oxide (GO) nanosheets have attracted significant interest as potential carriers for drug delivery due to their unique physicochemical properties and large surface area. However, concerns regarding their cytotoxicity and biodegradability must be addressed before clinical translation. In this study, we aimed to evaluate the biocompatibility and biodegradation of GO functionalized with polyethylene glycol (PEG) and polyethyleneimine (PEI), two commonly used polymers in biomedical applications.\n\nMethod\n\nThe interactions of GO, GO-PEG, and GO-PEI with granulocyte-like cells were investigated to determine their effects on cell viability and their susceptibility to immune-mediated degradation. Biodegradation of the materials was assessed using Raman spectroscopy after exposure to granulocyte-like cells, neutrophil extracellular traps (NETs), and myeloperoxidase (MPO), a key enzyme present in NETs. In addition, circular dichroism (CD) spectroscopy was used to evaluate structural changes in MPO upon interaction with the materials, and molecular dynamics simulations were performed to investigate the interaction of hypochlorous acid (HOCl), the catalytic product of MPO, with GO and its functionalized derivatives.\n\nResults and discussion\n\nThe results showed that functionalization with PEG or PEI significantly improved cell viability compared with pristine GO. Although GO was structurally modified by granulocyte-like cells, NETs, and MPO, GO-PEG did not show significant degradation under these conditions. In contrast, GO-PEI was susceptible to structural modification by both NETs and MPO. CD analysis indicated that MPO maintained a more stable secondary structure in the presence of GO-PEI compared with GO or GO-PEG under oxidative conditions, suggesting that MPO-generated HOCl may play a key role in GO-PEI degradation. Molecular dynamics simulations further demonstrated stronger interaction and retention of HOCl in GO-PEG and GO-PEI systems compared with pristine GO, indicating an enhanced interaction between oxidants and the functionalized materials. Overall, these findings demonstrate that polymer functionalization significantly influences the biocompatibility and immune-mediated structural modification of GO. Importantly, this study provides new mechanistic insights into how PEG and PEI modifications affect MPO-driven oxidative degradation pathways of graphene oxide-based nanomaterials. These results highlight GO-PEI as a biodegradable and biocompatible candidate for future biomedical and drug delivery applications."
+      },
       "authors": [
         "Mohsen Bahmani",
         "Asma Gholami",
@@ -197,6 +212,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/jev2.70266",
+        "text": "The biological functions of extracellular vesicles (EVs) depend on their cellular source. Further, different subpopulations of EVs from the same cells carry different cargo, but differences in their biological functions are less understood. We here identify a very small EV subpopulation released by HEK293F cells (miniEVs). These EVs, in contrast to the larger EVs, were found to have anti‐inflammatory properties. Quantitative proteomics identified a potential anti‐inflammatory molecule, Syndecan‐4 (SDC4), on the surface of the miniEVs, but not on larger EVs. We engineered HEK293F cells to overexpress SDC4, which results in the molecule being highly expressed in all EV subpopulations. Expression of SDC4, a proteoglycan, also increased the presence of heparan sulfate on the EV surface. Furthermore, these EVs were found to have potent anti‐inflammatory effects in vitro, which heparinase treatment could slightly reduce. Furthermore, the SDC4 EVs showed anti‐inflammatory effects in vivo in a model of peritonitis. We conclude that HEK293F miniEVs convey anti‐inflammatory properties, and SDC4‐expressing HEK293F‐EV potentially could become an anti‐inflammatory therapeutic."
+      },
       "authors": [
         "Lijuan Yu",
         "Markus Bergqvist",
@@ -219,6 +239,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1210/clinem/dgag212",
+        "text": "Context\n\nGlycogen storage diseases are inherited disorders of glycogen metabolism and are commonly associated with hypoglycemia, hepatic dysfunction, or skeletal and cardiac myopathy, depending on the affected enzyme. Glycogen storage disease type 15 (GSD15) is caused by pathogenic variants in GYG1, which encodes glycogenin-1, the autoglucosylating primer required for glycogen synthesis. GSD15 is characterized by cardiomyopathy and storage of abnormal glycogen and polyglucosan in cardiomyocytes.\n\nObjective\n\nTo understand the pathobiology of GSD15, we investigated the storage material in heart explants from 2 previously reported patients and described a new case of GSD15.\n\nMethods\n\nThe characteristic storage material was investigated using laser capture microdissection followed by quantitative mass spectrometry (MS) and immunohistochemistry comparing differentially abundant proteins in the storage material with normal-appearing cytoplasmic regions from the same patient. Global protein dysregulation in GSD15 was assessed by quantitative MS of whole-myocardial tissue samples from patients and normal controls.\n\nResults\n\nThe storage material was enriched in proteins involved in glycogen metabolism, including glycogen synthase, UDP-glucose pyrophosphorylase 2, glycogenin-1, glycogen phosphorylase, and glycogen debranching enzyme. Sequestosome 1 (p62) and desmin were also enriched, without evidence of increased autophagocytosis. Whole-tissue analyses revealed upregulation of cardiomyopathy-associated biomarkers and downregulation of mitochondrial proteins, suggesting impaired energy metabolism contributing to congestive heart failure.\n\nConclusion\n\nIn GSD15, storage of abnormal glycogen in cardiomyocytes is associated with enrichment of specific proteins involved in glycogen metabolism, contributing to dysregulation of glycogen turnover. This dysregulation results in polyglucosan accumulation, disruption of sarcomeric and mitochondrial architecture, and progressive fibrosis. No disease-modifying therapy currently exists for GSD15; future strategies based on substrate reduction, enhancement of autophagy, or gene therapy require further investigation."
+      },
       "authors": [
         "Kittichate Visuttijai",
         "Carola Hedberg-Oldfors",
@@ -247,6 +272,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1017/qrd.2026.10019",
+        "text": "During the past decade, emerging studies using electrochemistry and nanoscale imaging have demonstrated that partial exocytotic release is prevailing in neuroendocrine cell models. However, due to complicated structure and culture process, few studies have been carried out using neurons, especially human neurons. Here, dopamine (DA) release from individual vesicles and DA content stored within vesicles were quantified from induced pluripotent stem cell-derived DA neurons with electrochemical techniques. The results indicate that around 61% of the total vesicular DA content is released from these neurons during exocytosis. The vesicular content quantified in DA neurons is significantly higher than that in undifferentiated neural progenitor cells, owing to the increased appearance of dense-core vesicles that are able to store more DA molecules than the clear vesicles. When the neurons are differentiated with BAY-K8644, which stimulates neuronal maturation as well as DA release, the release fraction rises to 91%. The use of BAY-K8644 can be considered as chronic stimulation and leads to similar effects on exocytosis as repetitive stimulation, which triggers short-term plasticity. This study demonstrates partial release in DA transmission in human neurons and provides a link between neuronal maturation and the formation of plasticity. Furthermore, this work suggests that the fraction of release in exocytosis at human neurons may be a factor in determining plasticity."
+      },
       "authors": [
         "Chaoyi Gu",
         "Alicia Lork",
@@ -331,6 +361,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12916-026-04923-8",
+        "text": "Background\n\nExtracellular vesicles (EVs) isolated from tumor tissues carry disease-associated proteins and surface antigens, making them promising candidates for cancer diagnostics and immunotherapy. For EV-based approaches to reach clinical application, it is essential that functional EVs can be obtained from clinically accessible materials, including cryopreserved tumor tissues stored in biobanks. Whether cryopreservation alters EV integrity and function remains unclear. This study evaluates whether EVs derived from cryopreserved tumor tissues retain key molecular and biological properties required for diagnostic and therapeutic use.\n\nMethods\n\nEVs were isolated from human metastatic melanoma tissues processed immediately after surgical resection (fresh) or after storage at − 80 °C (frozen), using a protocol consistent with standard biobank procedures. EV isolation was performed through ultracentrifugation followed by an iodixanol density cushion. The resulting EVs were characterized by transmission electron microscopy, nanoparticle tracking analysis, and mass spectrometry to assess EV morphology, purity, and molecular composition. The diagnostic potential was evaluated by examining the presence of previously identified cancer-associated membrane proteins. Furthermore, therapeutic potential was assessed in vivo by co-administering EVs from fresh or frozen melanoma tissues with synthetic bacterial vesicles and evaluating their effects on tumor growth in melanoma-bearing mice.\n\nResults\n\nEVs from fresh and frozen tissues showed similar morphology, size distribution, yield, and purity. Moreover, the protein composition, including cancer-associated markers such as MT-CO2, COX6c, SLC24A22, HLA-DR, and Erlin2, was highly consistent between EVs derived from fresh and frozen tissues, with no relevant enrichment of intracellular or mitochondrial contaminants in frozen-derived EVs. Functionally, EVs from cryopreserved tissues combined with synthetic bacterial vesicles significantly inhibited tumor progression in vivo, demonstrating antitumor effects comparable to those of EVs from fresh tissues.\n\nConclusions\n\nOur results validate cryopreserved tissues as a reliable source of functional EVs, comparable to fresh tissues. This supports the potential use of existing biobanks for retrospective EV-based biomarker discovery and functional research."
+      },
       "authors": [
         "Daniele D´Arrigo",
         "Kyong-Su Park",
@@ -388,6 +423,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s13058-025-02209-0",
+        "text": "Background\n\nExtracellular vesicles (EVs) are emerging as non-invasive biomarkers in cancer, but their role in monitoring the response to neoadjuvant systemic treatment (NST) in patients with breast cancer remains unclear. This study aimed to assess whether EV concentration and surface marker profiles in plasma reflect treatment response and clinical outcome in patients with early-stage breast cancer receiving NST.\n\nMethods\n\nPlasma samples were collected from 59 patients with luminal B-like, HER2-positive, or triple-negative breast cancer before and after NST. EVs were isolated by size exclusion chromatography and characterized by nanoparticle tracking analysis, electron microscopy, Western blotting, and MACSPlex surface marker profiling. Paired samples were available for 29 patients, allowing longitudinal analysis.\n\nResults\n\nPatients who achieved pathological complete response (pCR) had significantly lower baseline EV concentrations than those with residual disease. Post-treatment EV levels were also lower in patients who remained free from distant metastasis and had improved breast cancer-specific survival. EV surface marker profiling revealed that CD69, CD29, and CD49e were reduced after NST, whereas CD44 was increased. Notably, EpCAM levels increased specifically in non-PCR patients, suggesting persistent tumor-derived EV release, whereas SSEA-4 levels increased only in patients who achieved pCR. Although EV concentrations and markers differed by subtype and outcome, changes in EV levels following NST were not independently predictive of prognosis.\n\nConclusions\n\nThese findings support the potential of plasma-derived EVs as dynamic biomarkers of treatment response, and suggest possible prognostic relevance in breast cancer. Validation in larger, independent cohorts is needed to assess their clinical applicability."
+      },
       "authors": [
         "Karin Ekström",
         "Nazia Riaz",
@@ -473,6 +513,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41598-026-42812-5",
+        "text": "Takotsubo syndrome (TS) is characterized by transient regional wall motion abnormalities (RWMA) of the heart following stress. Extracellular vesicles (EVs) play a significant role in cellular communication and disease pathophysiology, but remain unexplored in TS. Using a high-fidelity rat model of TS induced by isoprenaline infusion (n = 16), we isolated EVs from the tissue of affected apical and unaffected basal segments of the left ventricle at 24 h post-induction. The TS phenotype and cardiac function were assessed using high-resolution echocardiography. EVs were characterized by electron microscopy, western blot, and nanoparticle tracking analysis (NTA). Moreover, EV protein analysis was performed using tandem mass tag (TMT) proteomics. Pure, cup-shaped vesicles ranging from 50 to 500 nm were successfully isolated. NTA revealed lower particle concentrations in EVs isolated from the apex of TS24h hearts compared to their corresponding basal segments. Western blot experiments confirmed the presence of typical EV markers, including Flotillin 1, TSG101, and CD63. We identified 2093 proteins, with 238 differentially expressed (|FC| > 0.58, adj. P < 0.05) proteins between TS-apex and control-apex, and 562 between TS-apex and TS-base, indicating a unique molecular adaptation in the affected apex. Functional enrichment analysis showed increased abundance of proteins associated with immune response, tissue repair, and survival signalling pathways. Proteins related to mitochondrial function showed decreased abundance. Network analysis revealed an association between proteins involved in lipid processes and inflammation. Overall, this study presents the first proteomic characterization of EVs in TS hearts. Our results demonstrate a distinct EV protein abundance profile in the affected apical segments of TS hearts, with marked changes in proteins related to inflammatory responses, tissue repair mechanisms, energy metabolism, and cell survival pathways. This comprehensive proteomic profile of EVs in TS hearts provides potential candidates for therapeutic targets and diagnostic biomarkers, warranting further mechanistic and clinical validation studies."
+      },
       "authors": [
         "Ermir Zulfaj",
         "Amirali Nejat",
@@ -588,6 +633,11 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1172/jci.insight.202461",
+        "text": "The chronic inflammation of Crohn’s disease frequently leads to fibrosis and muscular hypertrophy of the intestinal wall. This often culminates in strictures, a serious condition lacking directed therapy. Severe pathological changes occur in the submucosa and muscularis propria intestinal wall layers of strictures, yet stricture-associated proteome changes in these layers is unexplored. We perform unbiased proteomics on submucosa and muscularis propria microdissected from transmural sections of strictured and nonstrictured ileum. Proteome changes in strictured submucosa reflected a transition from homeostasis to tissue remodeling, inflammation, and smooth muscle changes. Top submucosal features included reduced vascular components and lipid metabolism proteins accompanied by increased proteins with immune-, ECM-, or stress-related functions, including CTHRC1, TNC, IL-16, MZB1, and TXNDC5. In parallel, predominant changes in strictured muscularis propria included increased ECM (POSTN) and immune (mast cell CPA3) proteins alongside decreased proteins with lipid metabolic, mitochondrial, or key muscle functions. Finally, trends of differentially expressed proteins along nonstrictured submucosa suggest progressive profibrotic tissue remodeling and muscle expansion as proximity to strictures increases. The comprehensive proteome map presented here offers tissue-layer-resolved insight into the stricture microenvironment and potential drivers of fibrotic disease, providing a valuable resource to fuel biomarker and therapeutic target research."
+      },
       "authors": [
         "Johannes Alfredsson",
         "Carina Sihlbom Wallem",
@@ -693,6 +743,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/admi.202500252",
+        "text": "Mesenchymal stem cells (MSCs) and their nanosized extracellular vesicles (EVs) are anti‐inflammatory and immunoregulatory. Further, HEK293F cells can be engineered to express the anti‐inflammatory membrane molecule CD24. It is hypothesized that the anti‐inflammatory effects of MSC‐EV and HEK293F‐CD24‐EVs can be enhanced when loaded with a peptide targeting the myeloid differentiation primary response 88 (Myd88). EVs isolated from MSCs or HEK293F cells overexpressing CD24 are characterized by transmission electron microscopy (TEM), western blot (WB), and nanoflow cytometry. A lipid‐anchor anti‐Myd88 peptide is loaded in the EVs, and anti‐inflammatory effects are analyzed in RAW 264.7 cells and an NFκB reporter human monocyte cell (Luc‐THP‐1) exposed to natural LPS. Both MSC‐EVs and HEK293F‐CD24‐EVs lower IL‐6 release from the RAW264.7 by 30–40% and the NFκB activity in the Luc‐THP‐1 reporter monocyte cell line is reduced by 15–25%. Additional and synergistic inhibition of IL‐6 release is observed with EVs loaded with the anti‐Myd88 peptide. The anti‐inflammatory capabilities of MSC‐EVs and HEK293F‐CD24‐EVs are confirmed, and show that a loaded anti‐Myd88 peptide results in synergistically enhanced anti‐inflammatory effects for both EVs. Both MSC‐EVs and HEK293F‐CD24‐EVs may be suitable for clinical translation and are amenable to loading with peptides that enhance their anti‐inflammatory effects."
+      },
       "authors": [
         "Burçin İrem Abas",
         "Markus Bergqvist",
@@ -717,6 +772,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d4lc00509k",
+        "text": "Definitive endoderm (DE) cells derived from human iPSCs are seeded into the perfused liver-lobule-on-chip to enable 3D maturation and zonation. After 20 days on-chip, the hepatocyte-like cells exhibit in vivo -like zonated protein expression profiles. Graphical abstract image created with BioRender.com."
+      },
       "authors": [
         "Philip Dalsbecker",
         "Siiri Suominen",
@@ -802,6 +862,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/jex2.70043",
+        "text": "Extracellular vesicles (EVs) are cell‐produced, membrane‐surrounded vesicles that harbour the biological features of donor cells. In the current study, we are the first to isolate and characterize EVs isolated from human precision‐cut liver slices (PCLS), obtained from both healthy and metabolic dysfunction‐associated steatohepatitis (MASH) cirrhotic livers. PCLS derived from patients can faithfully represent disease conditions in humans. EVs were isolated from human PCLS after incubating in normal medium or modified medium that mimics the pathophysiological environment of metabolic dysfunction associated liver disease (MASLD). MASH PCLS produced higher amounts of EVs compared to healthy PCLS (p < 0.001). Mass spectrometry revealed that around 300 proteins were significantly different in EVs derived from MASH PCLS versus healthy PCLS (FDR < 0.05), irrespective of the type of medium. Significantly changed EV proteins were largely involved in signalling receptor binding function and showed potential in promoting fibrosis. In the liver, these ligand‐associated receptors are highly expressed in hepatic stellate cells, and the MASH EVs functionally promoted the activation of hepatic stellate cells. Furthermore, the amounts of EpCAM and ITGA3 in EVs were positively associated with the progression of MASLD, which suggests the use of liver‐derived EVs as potential biomarkers for MASLD. Characterization of EVs derived from human PCLS may assist future studies in investigating the pathogenesis and identifying liver‐specific EVs as biomarkers of MASLD."
+      },
       "authors": [
         "Yana Geng",
         "Ke Luo",
@@ -882,6 +947,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d4cb00313f",
+        "text": "Development of a novel fluorescent probe for endogenous BTK imaging using evobrutinib as a scaffold. Evo-2 enabled real-time visualisation of BTK dynamics in living cells while preserving its enzymatic activity."
+      },
       "authors": [
         "Anna P. Valaka",
         "Hampus Nyström",
@@ -909,6 +979,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1101/2025.07.05.663259",
+        "text": "The biological functions of extracellular vesicles (EVs) depend on their cellular source. Further, different subpopulations of EVs from the same cells carry different cargo, but differences in their biological functions are less understood. We here identify a very small EV subpopulation released by HEK293F cells (miniEVs). These EVs, in contrast to the larger EVs, were found to have anti-inflammatory properties. Quantitative proteomics identified a potential anti-inflammatory molecule, Syndecan-4 (SDC4), on the surface of the miniEVs, but not larger EVs. We engineered HEK293F cells to overexpress SDC4, which results in the molecule being highly expressed in all EV subpopulations. Expression of SDC4, a proteoglycan, also increased the presence of heparan sulfate on the EV surface. Furthermore, these EVs were found to have potent anti-inflammatory effects in vitro , which heparinase treatment could slightly reduce. Furthermore, the SDC4 EVs showed anti-inflammatory effects in vivo in a model of peritonitis. We conclude that HEK293F EVs can be engineered to become anti-inflammatory, and that SDC4-expressing HEK293F-EV potentially could become an anti-inflammatory therapeutic."
+      },
       "authors": [
         "Lijuan Yu",
         "Markus Bergqvist",
@@ -931,6 +1006,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12951-025-03125-3",
+        "text": "Extracellular vesicles (EVs) are taken up by most cells, however specific or preferential cell targeting remains a hurdle. This study aims to develop an EV that targets cells involved in inflammation, specifically those expressing intercellular adhesion molecule-1 (ICAM-1). To target these cells, we overexpress the ICAM-1 binding receptor “lymphocyte function-associated antigen-1” (LFA-1) in HEK293F cells, by sequential transfection of plasmids of the two LFA-1 subunits, ITGAL and ITGB2 (CD11a and CD18). The LFA-1 receptor was strongly overexpressed on the EVs released by the transfected cells. We further loaded these EVs with a therapeutic peptide, targeting myeloid differentiation primary response 88 (Myd88; EVMyd88), through a developed EV open-and-close procedure. Myd88 is a downstream common intracellular messenger for most TLR-receptors. EV expression of LFA-1 increases EV binding to ICAM-1-expressing cells, an effect that was dose-dependently inhibited by a specific neutralizing ICAM-1 antibody. Further, activated human endothelial cells treated with LFA-1 EVMyd88 had increased uptake of these EVs, resulting in dose-dependent inhibition of induced release of IL-8, presumably by targeting Myd88. We conclude that LFA-1-expressing EVMyd88 may be a candidate suitable for delivering therapeutic peptides in inflammatory diseases associated with TLR-activation.\n\nGraphical Abstract"
+      },
       "authors": [
         "Markus Bergqvist",
         "Kyong-Su Park",
@@ -1008,6 +1088,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12903-025-07588-6",
+        "text": "Background\n\nA bactericidal technique utilizing hydrogen peroxide (H₂O₂) photolysis, which generates hydroxyl radicals, was developed. Since it has demonstrated the potential to kill in vitro Streptococcus mutans biofilms, this technique has the possibility to be applied to dental caries. However, its efficacy on in vivo cariogenic dental biofilms remains unclear. This study aimed to evaluate the bactericidal effect of H₂O₂ photolysis on in vivo biofilms obtained from volunteers, focusing on its potential application in dental caries treatment.\n\nMethods\n\nSixteen participants, prescreened for the presence of S. mutans and/or lactobacilli in their saliva, wore custom-made splints with hydroxyapatite (HA) discs for 5 days. The discs with 5-day-old biofilms were subjected to H₂O₂ photolysis or control treatments such as H₂O₂, light-emitting diode (LED) irradiation, or water for 90 s, followed by bacterial culturing and quantitative real-time polymerase chain reaction (qPCR). Statistical significances were assessed using the Steel–Dwass test. Scanning electron microscopy (SEM) and 16S rRNA gene sequencing were also used for biofilm evaluation. Discs with treated-biofilms were reinserted for an additional 5 days to evaluate biofilm regrowth and community shifts.\n\nResults\n\nSEM confirmed biofilm formation on HA surfaces. Bactericidal assays showed that the 90-s treatment with H₂O₂ photolysis significantly reduced viable bacterial counts, achieving a 3.5 log colony-forming unit (CFU)/specimen for total bacteria and a 2.6 log CFU/specimen for total streptococci, compared with 5.9- and 5.4 log CFU/specimen in the untreated controls, respectively ( p < 0.05). qPCR confirmed that the bacterial proportion was initially equivalent across the groups and remained unchanged after regrowth. The 16 S sequencing revealed a diverse microbial community dominated by Streptococcus spp . No significant differences in alpha or beta diversity were observed between the treatment groups even after regrowth.\n\nConclusion\n\nThese findings suggest that the H₂O₂ photolysis technique can kill bacteria within in vivo biofilms. The observed bactericidal effect supports the potentiality of H₂O₂ photolysis as a promising adjunctive approach for dental caries."
+      },
       "authors": [
         "Midori Shirato",
         "Anna Lehrkinder",
@@ -1047,6 +1132,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41598-025-90101-4",
+        "text": "Rapid developments in the field of organotypic cultures have generated a growing need for effective and non-invasive methods for quality control during tissue development. In this study, we correlate metabolic changes with epidermal differentiation and demonstrate that multiphoton microscopy with fluorescence lifetime imaging (MPM-FLIM) can be applied to monitor epidermal differentiation of keratinocytes with respect to proliferative and differentiated states. In a 2D keratinocyte tissue culture model, increased expression of differentiation markers keratin-1 and keratin-10 was induced with calcium supplementation. An accompanying shift from glycolysis to mitochondrial respiration was detected in metabolic flux assays. Analysis of MPM-FLIM images acquired at 750 nm and 900 nm excitation revealed a decreased relative fraction of intracellular NADH and FAD after high calcium treatment, consistent with increased oxidative phosphorylation. Epidermal differentiation could be monitored over a 96 h period. Discrimination analysis based on k-means clustering generated clusters that correlated well with the duration of high Ca 2+ treatment, suggesting that MPM-FLIM can provide useful parameters for monitoring keratinocyte differentiation."
+      },
       "authors": [
         "Monika Malak",
         "Chen Qian",
@@ -1093,6 +1183,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1210/endocr/bqae166",
+        "text": "Ghrelin, the endogenous ligand of the growth hormone secretagogue receptor (GHSR), promotes food intake and other feeding behaviors, and stimulates growth hormone (GH) release from the pituitary. Growth hormone secretagogues (GHS), such as GHRP-6 and MK-0677, are synthetic GHSR ligands that activate orexigenic neuropeptide Y neurons that coexpress agouti-related peptide (AgRP) in the arcuate nucleus of the hypothalamus when administered systemically. Systemic GHRP-6 also stimulates GH release in humans and rats. Thus, GHS and ghrelin have therapeutic relevance in patients who could benefit from its orexigenic and/or GH-releasing effects. This study examined whether intranasal delivery of ghrelin, GHRP-6, or MK-0677 engages the brain ghrelin signaling system.\n\nEffective compounds and doses were selected based on increased food intake after intranasal application in mice. Only GHRP-6 (5 mg/kg) increased food intake without adverse effects, prompting detailed analysis of meal patterns, neuronal activation in the arcuate nucleus (via Fos mapping) and neurochemical identification of c-fos messenger RNA (mRNA)-expressing neurons using RNAscope. We also assessed the effect of intranasal GHRP-6 on serum GH levels.\n\nIntranasal GHRP-6 increased food intake by increasing meal frequency and size. Fos expression in the arcuate nucleus was higher in GHRP-6–treated mice than in saline controls. When examining the neurochemical identity of c-fos-mRNA–expressing neurons, we found coexpression with 63.5 ± 1.9% Ghsr mRNA, 79 ± 6.8% Agrp mRNA, and 11.4 ± 2.5% Ghrh mRNA, demonstrating GHRP-6's ability to engage arcuate nucleus neurons involved in food intake and GH release. Additionally, intranasal GHRP-6 elevated GH serum levels. These findings suggest that intranasal GHRP-6, but not ghrelin or MK-0677, can engage the brain ghrelin signaling system."
+      },
       "authors": [
         "Renée Poelman",
         "Marie V Le May",
@@ -1141,6 +1236,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-025-60059-y",
+        "text": "DNA polymerase γ (POLγ), responsible for mitochondrial DNA replication, consists of a catalytic POLγA subunit and two accessory POLγB subunits. Mutations in POLG, which encodes POLγA, lead to various mitochondrial diseases. We investigated the most common POLG mutations (A467T, W748S, G848S, Y955C) by characterizing human and mouse POLγ variants. Our data reveal that these mutations significantly impair POLγ activities, with mouse variants exhibiting milder defects. Cryogenic electron microscopy highlighted structural differences between human and mouse POLγ, particularly in the POLγB subunit, which may explain the higher activity of mouse POLγ and the reduced severity of mutations in mice. We further generated a panel of mouse models mirroring common human POLG mutations, providing crucial insights into the pathogenesis of POLG-related disorders and establishing robust models for therapeutic development. Our findings emphasize the importance of POLγB in modulating the severity of POLG mutations."
+      },
       "authors": [
         "Samantha Corrà",
         "Alessandro Zuppardo",
@@ -1203,6 +1303,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41591-024-03400-0",
+        "text": "Patients with Alzheimer’s disease (AD) with little or no quantifiable insoluble brain tau neurofibrillary tangle (NFT) pathology demonstrate stronger clinical benefits of therapies than those with advanced NFTs. The formation of NFTs can be prevented by targeting the intermediate soluble tau assemblies (STAs). However, biochemical understanding and biomarkers of STAs are lacking. We show that Tris-buffered saline-soluble tau aggregates from autopsy-verified AD brain tissues include the core sequence ~tau 258–368 . In neuropathological assessments, antibodies against the phosphorylation sites serine-262 and serine-356 within the STA core almost exclusively stained granular (that is, prefibrillar) tau aggregates in pre-NFTs while antibodies against phosphorylation at serine-202 and threonine-205 and threonine-231, outside the STA core, stained the entire spectrum of tau aggregates in pre-NFTs and mature NFTs, dystrophic neurites and neuropil threads in the hippocampus. Functionally, a recombinantly produced STA core peptide robustly altered neuronal excitability and synaptic transmission in mouse hippocampal brain slices. Furthermore, we developed a cerebrospinal fluid assay that differentiated STAs in AD from non-AD tauopathies, correlated with the severity of NFT burden and cognitive decline independently of amyloid beta deposition, and with tau positron emission tomography uptake across Braak NFT stages. Together, our findings inform about the status of early-stage tau aggregation, reveal aggregation-relevant phosphorylation epitopes in tau and offer a diagnostic biomarker and targeted therapeutic opportunities for AD."
+      },
       "authors": [
         "Tohidul Islam",
         "Emily Hill",
@@ -1375,6 +1480,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41586-025-08856-9",
+        "text": "Mammalian mitochondrial DNA (mtDNA) is replicated by DNA polymerase γ (POLγ), a heterotrimeric complex consisting of a catalytic POLγA subunit and two accessory POLγB subunits 1 . More than 300 mutations in POLG , the gene encoding the catalytic subunit, have been linked to severe, progressive conditions with high rates of morbidity and mortality, for which no treatment exists 2 . Here we report on the discovery and characterization of PZL-A, a first-in-class small-molecule activator of mtDNA synthesis that is capable of restoring function to the most common mutant variants of POLγ. PZL-A binds to an allosteric site at the interface between the catalytic POLγA subunit and the proximal POLγB subunit, a region that is unaffected by nearly all disease-causing mutations. The compound restores wild-type-like activity to mutant forms of POLγ in vitro and activates mtDNA synthesis in cells from paediatric patients with lethal POLG disease, thereby enhancing biogenesis of the oxidative phosphorylation machinery and cellular respiration. Our work demonstrates that a small molecule can restore function to mutant DNA polymerases, offering a promising avenue for treating POLG disorders and other severe conditions linked to depletion of mtDNA."
+      },
       "authors": [
         "Sebastian Valenzuela",
         "Xuefeng Zhu",
@@ -1423,6 +1533,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1101/2025.08.18.670881",
+        "text": "Smart microscopy is transforming life sciences by automating experimental imaging workflows and enabling real-time adaptation based on feedback from images and other data streams. This shift increases throughput, improves reproducibility, and expands the functional capabilities of microscopes. However, the current landscape is highly fragmented. Academic researchers often develop custom solutions for specific scientific needs, while industry offerings are typically proprietary and tied to specific hardware. This diversity, while fostering innovation, also creates major challenges in interoperability, reproducibility, and standardization, which slows progress and adaption. This article presents a collaborative effort between academic and industry leaders to survey the current state of smart microscopy, highlight representative implementations, and identify common technical and organizational barriers. We propose a framework for greater interoperability based on shared standards, modular software design, and community-driven development. Our goal is to support collaboration across the field and lay the groundwork for a more connected, reusable, and accessible smart microscopy ecosystem. We conclude with a call to action for researchers, hardware developers, and institutions to join in building an open, interoperable foundation that will unlock the full potential of smart microscopy in life science research."
+      },
       "authors": [
         "Lucien Hinderling",
         "Hannah S. Heil",
@@ -1565,6 +1680,11 @@
       "year": 2025
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s43856-025-00756-3",
+        "text": "Background\n\nDental implants are one of the most frequently used medical devices for therapeutic purposes in dentistry. Peri-implantitis is a severe, microbial biofilm-associated condition, characterized by inflammation in peri-implant soft tissues and destruction of supporting bone. It has been suggested that metal particles originating from the implant may influence the local host response to microbial biofilms.\n\nMethods\n\nSoft tissue biopsies were collected from implant sites with and without peri-implantitis in 21 patients. Micro Proton-induced X-ray Emission (µ-PIXE) analysis was used to localize, quantify and characterize titanium micro-particles within tissues. RNA sequencing was performed to evaluate potential associations between titanium micro-particles and gene expression profiles in peri-implantitis lesions.\n\nResults\n\nTitanium micro-particles are consistent findings in soft tissues surrounding dental implants. Their occurrence varies across patients but not between sites with and without peri-implantitis within the same individual. Most particles reside in a 2-mm wide tissue portion close to the implant/tissue interface. The time in function of the implants does not influence the volumetric density of titanium micro-particles, while implant systems do. Fourteen differentially expressed genes are identified when comparing peri-implantitis samples with high and low densities of titanium micro-particles. The gene-set enrichment analysis reveals functions related to the regulation of the immune response and epithelial development.\n\nConclusions\n\nThe present results indicate that titanium micro-particles are commonly found in tissues surrounding dental implants and are not associated with the occurrence of peri-implantitis."
+      },
       "authors": [
         "Carlotta Dionigi",
         "Gyula Nagy",
@@ -1637,6 +1757,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d4ta00055b",
+        "text": "Core:shell architecture of Teflon AF:Pd coated with PMMA, which generates a protective barrier against carbon monoxide, simultaneously allowing fast and selective hydrogen sensing."
+      },
       "authors": [
         "I. Östergren",
         "I. Darmadi",
@@ -1663,6 +1788,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1096/fj.202400293rr",
+        "text": "To investigate how the fatty acid composition of brain phospholipids influences brain‐specific processes, we leveraged the AdipoR2 (adiponectin receptor 2) knockout mouse model in which the brain is enlarged, and cellular membranes are excessively rich in saturated fatty acids. Lipidomics analysis of brains at 2, 7, and 18 months of age showed that phosphatidylcholines, which make up about two‐thirds of all cerebrum membrane lipids, contain a gross excess of saturated fatty acids in AdipoR2 knockout mice, and that this is mostly attributed to an excess palmitic acid (C16:0) at the expense of oleic acid (C18:1), consistent with a defect in fatty acid desaturation and elongation in the mutant. Specifically, there was a ~12% increase in the overall saturated fatty acid content within phosphatidylcholines and a ~30% increase in phosphatidylcholines containing two palmitic acids. Phosphatidylethanolamines, sphingomyelins, ceramides, lactosylceramides, and dihydroceramides also showed an excess of saturated fatty acids in the AdipoR2 knockout mice while nervonic acid (C24:1) was enriched at the expense of shorter saturated fatty acids in glyceroceramides. Similar defects were found in the cerebellum and myelin sheaths. Histology showed that cell density is lower in the cerebrum of AdipoR2 knockout mice, but electron microscopy did not detect reproducible defects in the ultrastructure of cerebrum neurons, though proteomics analysis showed an enrichment of electron transport chain proteins in the cerebellum. Behavioral tests showed that older (33 weeks old) AdipoR2 knockout mice are hyperactive and anxious compared to control mice of a similar age. Also, in contrast to control mice, the AdipoR2 knockout mice do not gain weight in old age but do have normal lifespans. We conclude that an excess fatty acid saturation in brain phospholipids is accompanied by hyperactivity but seems otherwise well tolerated."
+      },
       "authors": [
         "Mario Ruiz",
         "Ranjan Devkota",
@@ -1694,6 +1824,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d4sc00390j",
+        "text": "An all-photonic method is described, in which (i) the release of an active kinase inhibitor is controlled externally with light; and (ii) fluorescence is employed to report both the release and binding of the inhibitor to its corresponding target."
+      },
       "authors": [
         "Cassandra L. Fleming",
         "Carlos Benitez-Martin",
@@ -1721,6 +1856,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/anie.202400422",
+        "text": "An overreactive stress granule (SG) pathway and long‐lived, stable SGs formation are thought to participate in the progress of neurodegenerative diseases (NDs). To understand if and how SGs contribute to disorders of neurotransmitter release in NDs, we examined the interaction between extracellular isolated SGs and vesicles. Amperometry shows that the vesicular content increases and dynamics of vesicle opening slow down after vesicles are treated with SGs, suggesting larger vesicles are formed. Data from transmission electron microscopy (TEM) clearly shows that a portion of large dense‐core vesicles (LDCVs) with double/multiple cores appear, thus confirming that SGs induce homotypic fusion between LDCVs. This might be a protective step to help cells to survive following high oxidative stress. A hypothetical mechanism is proposed whereby enriched mRNA or protein in the shell of SGs is likely to bind intrinsically disordered protein (IDP) regions of vesicle associated membrane protein (VAMP) driving a disrupted membrane between two closely buddled vesicles to fuse with each other to form double‐core vesicles. Our results show that SGs induce homotypic fusion of LDCVs, providing better understanding of how SGs intervene in pathological processes and opening a new direction to investigations of SGs involved neurodegenerative disease."
+      },
       "authors": [
         "Hui Gu",
         "Chaoyi Gu",
@@ -1765,6 +1905,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.3390/ijms25010581",
+        "text": "Astrocytes are pivotal for synaptic transmission and may also play a role in the induction and expression of synaptic plasticity, including endocannabinoid-mediated long-term depression (eCB-LTD). In the dorsolateral striatum (DLS), eCB signaling plays a major role in balancing excitation and inhibition and promoting habitual learning. The aim of this study was to outline the role of astrocytes in regulating eCB signaling in the DLS. To this end, we employed electrophysiological slice recordings combined with metabolic, chemogenetic and pharmacological approaches in an attempt to selectively suppress astrocyte function. High-frequency stimulation induced eCB-mediated LTD (HFS-LTD) in brain slices from both male and female rats. The metabolic uncoupler fluorocitrate (FC) reduced the probability of transmitter release and depressed synaptic output in a manner that was independent on cannabinoid 1 receptor (CB1R) activation. Fluorocitrate did not affect the LTD induced by the CB1R agonist WIN55,212-2, but enhanced CB1R-dependent HFS-LTD. Reduced neurotransmission and facilitated HFS-LTD were also observed during chemogenetic manipulation using Gi-coupled DREADDs targeting glial fibrillary acidic protein (GFAP)-expressing cells, during the pharmacological inhibition of connexins using carbenoxolone disodium, or during astrocytic glutamate uptake using TFB-TBOA. While pretreatment with the N-methyl-D-aspartate (NMDA) receptor antagonist 2-amino-5-phosphonopentanoic acid (APV) failed to prevent synaptic depression induced by FC, it blocked the facilitation of HFS-LTD. While the lack of tools to disentangle astrocytes from neurons is a major limitation of this study, our data collectively support a role for astrocytes in modulating basal neurotransmission and eCB-mediated synaptic plasticity."
+      },
       "authors": [
         "Louise Adermark",
         "Rosita Stomberg",
@@ -1786,6 +1931,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1128/aem.00247-24",
+        "text": "The aim of this study was to identify a Bifidobacterium strain that improves the performance of Limosilactobacillus reuteri DSM 17938. Initial tests showed that Bifidobacterium longum subsp. longum strains boosted the growth of DSM 17938 during in vivo- like conditions. Further characterization revealed that one of the strains, BG-L47, had better bile and acid tolerance compared to BG-L48, as well as mucus adhesion compared to both BG-L48 and the control strain BB536. BG-L47 also had the capacity to metabolize a broad range of carbohydrates and sugar alcohols. Mapping of glycoside hydrolase (GH) genes of BG-L47 and BB536 revealed many GHs associated with plant-fiber utilization. However, BG-L47 had a broader phenotypic fiber utilization capacity. In addition, B. longum subsp. longum cells boosted the bioactivity of extracellular membrane vesicles (MV) produced by L. reuteri DSM 17938 during co-cultivation. Secreted 5′-nucleotidase (5′NT), an enzyme that converts AMP into the signal molecule adenosine, was increased in MV boosted by BG-L47. The MV exerted an improved antagonistic effect on the pain receptor transient receptor potential vanilloid 1 (TRPV1) and increased the expression of the immune development markers IL-6 and IL-1ß in a peripheral blood mononuclear cell (PBMC) model. Finally, the safety of BG-L47 was evaluated both by genome safety assessment and in a human safety study. Microbiota analysis showed that the treatment did not induce significant changes in the composition. In conclusion, B. longum subsp. longum BG-L47 has favorable physiological properties, can boost the in vitro activity of L. reuteri DSM 17938, and is safe for consumption, making it a candidate for further evaluation in probiotic studies.\n\nIMPORTANCE\n\nBy using probiotics that contain a combination of strains with synergistic properties, the likelihood of achieving beneficial interactions with the host can increase. In this study, we first performed a broad screening of Bifidobacterium longum subsp. longum strains in terms of synergistic potential and physiological properties. We identified a superior strain, BG-L47, with favorable characteristics and potential to boost the activity of the known probiotic strain Limosilactobacillus reuteri DSM 17938. Furthermore, we demonstrated that BG-L47 is safe for consumption in a human randomized clinical study and by performing a genome safety assessment. This work illustrates that bacteria–bacteria interactions differ at the strain level and further provides a strategy for finding and selecting companion strains of probiotics."
+      },
       "authors": [
         "Ludwig Ermann Lundberg",
         "Punya Pallabi Mishra",
@@ -1960,6 +2110,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.3389/fbiom.2024.1338115",
+        "text": "Correlated Multimodal Imaging (CMI) gathers information about the same specimen with two or more modalities that–combined–create a composite and complementary view of the sample (including insights into structure, function, dynamics and molecular composition). CMI allows one to reach beyond what is possible with a single modality and describe biomedical processes within their overall spatio-temporal context and gain a mechanistic understanding of cells, tissues, and organisms in health and disease by untangling their molecular mechanisms within their native environment. The field of CMI has grown substantially over the last decade and previously unanswerable biological questions have been solved by applying novel CMI workflows. To disseminate these workflows and comprehensively share the scattered knowledge present within the CMI community, an initiative was started to bring together imaging, image analysis, and biomedical scientists and work towards an open community that promotes and disseminates the field of CMI. This community project was funded for the last 4 years by an EU COST Action called COMULIS (COrrelated MUltimodal imaging in the LIfe Sciences). In this review we share some of the showcases and lessons learnt from the action. We also briefly look ahead at how we anticipate building on this initial initiative."
+      },
       "authors": [
         "Pavitra Sokke Rudraiah",
         "Rafael Camacho",
@@ -1998,6 +2153,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-024-53045-3",
+        "text": "Protoberberine alkaloids and benzophenanthridine alkaloids (BZDAs) are subgroups of benzylisoquinoline alkaloids (BIAs), which represent a diverse class of plant-specialized natural metabolites with many pharmacological properties. Microbial biosynthesis has been allowed for accessibility and scalable production of high-value BIAs. Here, we engineer Saccharomyces cerevisiae to de novo produce a series of protoberberines and BZDAs, including palmatine, berberine, chelerythrine, sanguinarine and chelirubine. An ER compartmentalization strategy is developed to improve vacuole protein berberine bridge enzyme (BBE) activity, resulting in >200% increase on the production of the key intermediate ( S )-scoulerine. Another promiscuous vacuole protein dihydrobenzophenanthridine oxidase (DBOX) has been identified to catalyze two-electron oxidation on various tetrahydroprotoberberines at N7-C8 position and dihydrobenzophenanthridine alkaloids. Furthermore, cytosolically expressed DBOX can alleviate the limitation on BBE. This study highlights the potential of microbial cell factories for the biosynthesis of a diverse group of BIAs through engineering of heterologous plant enzymes."
+      },
       "authors": [
         "Xiang Jiao",
         "Xiaozhi Fu",
@@ -2072,6 +2232,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1093/dote/doae034",
+        "text": "Summary\n\nEosinophilic esophagitis (EoE) and gastroesophageal reflux disease (GERD) share many histopathological features; therefore, markers for differentiation are of diagnostic interest and may add to the understanding of the underlying mechanisms. The nitrergic system is upregulated in GERD and probably also in EoE. Esophageal biopsies of patients with EoE (n = 20), GERD (n = 20), and healthy volunteers (HVs) (n = 15) were exposed to antibodies against inducible nitric oxide synthase (iNOS), nitrotyrosine, eosinophilic peroxidase, eotaxin-3, and galectin-3. The stained object glasses were randomized, digitized, and blindly analyzed regarding the expression of DAB (3,3′-diaminobenzidine) by a protocol developed in QuPath software. A statistically significant overexpression of iNOS was observed in patients with any of the two inflammatory diseases compared with that in HVs. Eotaxin-3 could differentiate HVs versus inflammatory states. Gastroesophageal reflux patients displayed the highest levels of nitrotyrosine. Neither iNOS nor nitrotyrosine alone were able to differentiate between the two diseases. For that purpose, eosinophil peroxidase was a better candidate, as the mean levels increased stepwise from HVs via GERD to EoE. iNOS and nitrotyrosine are significantly overexpressed in patients with EoE and GERD compared with healthy controls, but only eosinophil peroxidase could differentiate the two types of esophagitis. The implications of the finding of the highest levels of nitrotyrosine among gastroesophageal reflux patients are discussed."
+      },
       "authors": [
         "John Plate",
         "Mogens Bove",
@@ -2145,6 +2310,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.3390/ijms25126555",
+        "text": "Consumption of a high-fat diet (HFD) has been suggested as a contributing factor behind increased intestinal permeability in obesity, leading to increased plasma levels of microbial endotoxins and, thereby, increased systemic inflammation. We and others have shown that HFD can induce jejunal expression of the ketogenic rate-limiting enzyme mitochondrial 3-hydroxy-3-methylglutaryl-CoA synthase (HMGCS). HMGCS is activated via the free fatty acid binding nuclear receptor PPAR-α, and it is a key enzyme in ketone body synthesis that was earlier believed to be expressed exclusively in the liver. The function of intestinal ketogenesis is unknown but has been described in suckling rats and mice pups, possibly in order to allow large molecules, such as immunoglobulins, to pass over the intestinal barrier. Therefore, we hypothesized that ketone bodies could regulate intestinal barrier function, e.g., via regulation of tight junction proteins. The primary aim was to compare the effects of HFD that can induce intestinal ketogenesis to an equicaloric carbohydrate diet on inflammatory responses, nutrition sensing, and intestinal permeability in human jejunal mucosa. Fifteen healthy volunteers receiving a 2-week HFD diet compared to a high-carbohydrate diet were compared. Blood samples and mixed meal tests were performed at the end of each dietary period to examine inflammation markers and postprandial endotoxemia. Jejunal biopsies were assessed for protein expression using Western blotting, immunohistochemistry, and morphometric characteristics of tight junctions by electron microscopy. Functional analyses of permeability and ketogenesis were performed in Caco-2 cells, mice, and human enteroids. Ussing chambers were used to analyze permeability. CRP and ALP values were within normal ranges and postprandial endotoxemia levels were low and did not differ between the two diets. The PPARα receptor was ketone body-dependently reduced after HFD. None of the tight junction proteins studied, nor the basal electrical parameters, were different between the two diets. However, the ketone body inhibitor hymeglusin increased resistance in mucosal biopsies. In addition, the tight junction protein claudin-3 was increased by ketone inhibition in human enteroids. The ketone body β-Hydroxybutyrate (βHB) did not, however, change the mucosal transition of the large-size molecular FD4-probe or LPS in Caco-2 and mouse experiments. We found that PPARα expression was inhibited by the ketone body βHB. As PPARα regulates HMGCS expression, the ketone bodies thus exert negative feedback signaling on their own production. Furthermore, ketone bodies were involved in the regulation of permeability on intestinal mucosal cells in vitro and ex vivo. We were not, however, able to reproduce these effects on intestinal permeability in vivo in humans when comparing two weeks of high-fat with high-carbohydrate diet in healthy volunteers. Further, neither the expression of inflammation markers nor the aggregate tight junction proteins were changed. Thus, it seems that not only HFD but also other factors are needed to permit increased intestinal permeability in vivo. This indicates that the healthy gut can adapt to extremes of macro-nutrients and increased levels of intestinally produced ketone bodies, at least during a shorter dietary challenge."
+      },
       "authors": [
         "Anna Casselbrant",
         "Erik Elias",
@@ -2169,6 +2339,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41593-024-01592-9",
+        "text": "The formation of mammalian synapses entails the precise alignment of presynaptic release sites with postsynaptic receptors but how nascent cell–cell contacts translate into assembly of presynaptic specializations remains unclear. Guided by pioneering work in invertebrates, we hypothesized that in mammalian synapses, liprin-α proteins directly link trans -synaptic initial contacts to downstream steps. Here we show that, in human neurons lacking all four liprin-α isoforms, nascent synaptic contacts are formed but recruitment of active zone components and accumulation of synaptic vesicles is blocked, resulting in ‘empty’ boutons and loss of synaptic transmission. Interactions with presynaptic cell adhesion molecules of either the LAR-RPTP family or neurexins via CASK are required to localize liprin-α to nascent synaptic sites. Liprin-α subsequently recruits presynaptic components via a direct interaction with ELKS proteins. Thus, assembly of human presynaptic terminals is governed by a hierarchical sequence of events in which the recruitment of liprin-α proteins by presynaptic cell adhesion molecules is a critical initial step."
+      },
       "authors": [
         "Berta Marcó de la Cruz",
         "Joaquín Campos",
@@ -2218,6 +2393,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s44303-024-00010-w",
+        "text": "Multimodal bioimaging is a broad term used to describe experimental workflows that employ two or more different imaging modalities. Such approaches have been in use across life science domains for several years but these remain relatively limited in scope, in part due to the complexity of undertaking these types of analysis. Expanding these workflows to encompass diverse, emerging technology holds potential to revolutionize our understanding of spatial biology. In this perspective we reflect on the instrument and workflows in current use, emerging areas to consider and our experience of the barriers to broader adoption and progress. We propose several enabling solutions across the different challenge areas, emerging opportunities for consideration and highlight some of the key community activities to help move the field forward."
+      },
       "authors": [
         "Johanna Bischof",
         "Georgina Fletcher",
@@ -2327,6 +2507,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.7554/elife.88256",
+        "text": "In tumors with WT p53, alternate mechanisms of p53 inactivation are reported. Here, we have identified a long noncoding RNA, PITAR ( p 53 I nactivating T RIM28 A ssociated R NA), as an inhibitor of p53. PITAR is an oncogenic Cancer/testis lncRNA and is highly expressed in glioblastoma (GBM) and glioma stem-like cells (GSC). We establish that TRIM28 mRNA, which encodes a p53-specific E3 ubiquitin ligase, is a direct target of PITAR. PITAR interaction with TRIM28 RNA stabilized TRIM28 mRNA, which resulted in increased TRIM28 protein levels and reduced p53 steady-state levels due to enhanced p53 ubiquitination. DNA damage activated PITAR , in addition to p53, in a p53-independent manner, thus creating an incoherent feedforward loop to inhibit the DNA damage response by p53. While PITAR silencing inhibited the growth of WT p53 containing GSCs in vitro and reduced glioma tumor growth in vivo, its overexpression enhanced the tumor growth in a TRIM28 -dependent manner and promoted resistance to Temozolomide. Thus, we establish an alternate way of p53 inactivation by PITAR , which maintains low p53 levels in normal cells and attenuates the DNA damage response by p53. Finally, we propose PITAR as a potential GBM therapeutic target."
+      },
       "authors": [
         "Samarjit Jana",
         "Mainak Mondal",
@@ -2355,6 +2540,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1111/nan.12995",
+        "text": "Aims\n\nPolyglucosan storage disorders represent an emerging field within neurodegenerative and neuromuscular conditions, including Lafora disease (EPM2A, EPM2B), adult polyglucosan body disease (APBD, GBE1), polyglucosan body myopathies associated with RBCK1 deficiency (PGBM1, RBCK1) or glycogenin‐1 deficiency (PGBM2, GYG1). While the storage material primarily comprises glycans, this study aimed to gain deeper insights into the protein components by proteomic profiling of the storage material in glycogenin‐1 deficiency.\n\nMethods\n\nWe employed molecular genetic analyses, quantitative mass spectrometry of laser micro‐dissected polyglucosan bodies and muscle homogenate, immunohistochemistry and western blot analyses in muscle tissue from a 45‐year‐old patient with proximal muscle weakness from late teenage years due to polyglucosan storage myopathy.\n\nResults\n\nThe muscle tissue exhibited a complete absence of glycogenin‐1 due to a novel homozygous deep intronic variant in GYG1 (c.7+992T>G), introducing a pseudo‐exon causing frameshift and a premature stop codon. Accumulated proteins in the polyglucosan bodies constituted components of glycogen metabolism, protein quality control pathways and desmin. Muscle fibres containing polyglucosan bodies frequently exhibited depletion of normal glycogen.\n\nConclusions\n\nThe absence of glycogenin‐1, a protein important for glycogen synthesis initiation, causes storage of polyglucosan that displays accumulation of several proteins, including those essential for glycogen synthesis, sequestosome 1/p62 and desmin, mirroring findings in RBCK1 deficiency. These results suggest shared pathogenic pathways across different diseases exhibiting polyglucosan storage. Such insights have implications for therapy in these rare yet devastating and presently untreatable disorders."
+      },
       "authors": [
         "Kittichate Visuttijai",
         "Carola Hedberg‐Oldfors",
@@ -2377,6 +2567,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/jex2.127",
+        "text": "Colon cancer is one of the most commonly occurring tumours among both women and men, and over the past decades the incidence has been on the rise. As such, the need for biomarker identification as well as an understanding of the underlying disease mechanism has never been greater. Extracellular vesicles are integral mediators of cell‐to‐cell communication and offer a unique opportunity to study the machinery that drives disease progression, and they also function as vectors for potential biomarkers. Tumour tissue and healthy mucosal tissue from the colons of ten patients were used to isolate tissue‐resident EVs that were subsequently subjected to global quantitative proteomic analysis through LC‐MS/MS. In total, more than 2000 proteins were identified, with most of the common EV markers being among them. Bioinformatics revealed a clear underrepresentation of proteins involved in energy production and cellular adhesion in tumour EVs, while proteins involved in protein biosynthesis were overrepresented. Additionally, 53 membrane proteins were found to be significantly upregulated in tumour EVs. Among them were several proteins with enzymatic functions that degrade the extracellular matrix, and three of these, Fibroblast activating factor (FAP), Cell surface hyaluronidase (CEMIP2), as well as Ephrin receptor B3 (EPHB3), were validated and found to be consistent with the global quantitative results. These stark differences in the proteomes between healthy and cancerous tissue emphasise the importance of the interstitial vesicle secretome as a major player of disease development."
+      },
       "authors": [
         "Aleksander Cvjetkovic",
         "Nasibeh Karimi",
@@ -2401,6 +2596,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/chem.202400322",
+        "text": "This study presents the synthesis and characterization of two fluorescent norbornadiene (NBD) photoswitches, each incorporating two conjugated pyrene units. Expanding on the limited repertoire of reported photoswitchable fluorescent NBDs, we explore their properties with a focus on applications in bioimaging of amyloid beta (Aβ) plaques. While the fluorescence emission of the NBD decreases upon photoisomerization, aligning with what has been previously reported, for the first time we observed luminescence after irradiation of the quadricyclane (QC) isomer. We deduce how the observed emission is induced by photoisomerization to the excited state of the parent isomer (NBD) which is then the emitting species. Thorough characterizations including NMR, UV‐Vis, fluorescence, X‐ray structural analysis and density functional theory (DFT) calculations provide a comprehensive understanding of these systems. Notably, one NBD‐QC system exhibits exceptional durability. Additionally, these molecules serve as effective fluorescent stains targeting Aβ plaques in situ, with observed NBD/QC switching within the plaques. Molecular docking simulations explore NBD interactions with amyloid, unveiling novel binding modes. These insights mark a crucial advancement in the comprehension and design of future photochromic NBDs for bioimaging applications and beyond, emphasizing their potential in studying and addressing protein aggregates."
+      },
       "authors": [
         "Shima Ghasemi",
         "Monika Shamsabadi",
@@ -2437,6 +2637,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1111/jmi.13307",
+        "text": "In the dynamic landscape of scientific research, imaging core facilities are vital hubs propelling collaboration and innovation at the technology development and dissemination frontier. Here, we present a collaborative effort led by Global BioImaging (GBI), introducing international recommendations geared towards elevating the careers of Imaging Scientists in core facilities. Despite the critical role of Imaging Scientists in modern research ecosystems, challenges persist in recognising their value, aligning performance metrics and providing avenues for career progression and job security. The challenges encompass a mismatch between classic academic career paths and service‐oriented roles, resulting in a lack of understanding regarding the value and impact of Imaging Scientists and core facilities and how to evaluate them properly. They further include challenges around sustainability, dedicated training opportunities and the recruitment and retention of talent. Structured across these interrelated sections, the recommendations within this publication aim to propose globally applicable solutions to navigate these challenges. These recommendations apply equally to colleagues working in other core facilities and research institutions through which access to technologies is facilitated and supported. This publication emphasises the pivotal role of Imaging Scientists in advancing research programs and presents a blueprint for fostering their career progression within institutions all around the world."
+      },
       "authors": [
         "Graham D. Wright",
         "Kerry A. Thompson",
@@ -2553,6 +2758,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d3sc05629e",
+        "text": "Protein turnover is a critical process for accurate cellular function, in which damaged proteins in the cells are gradually replaced with newly synthesized ones."
+      },
       "authors": [
         "Alicia A. Lork",
         "Stefania Rabasco",
@@ -2595,6 +2805,11 @@
       "year": 2024
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1242/jcs.262322",
+        "text": "Bioimage analysis (BIA), a crucial discipline in biological research, overcomes the limitations of subjective analysis in microscopy through the creation and application of quantitative and reproducible methods. The establishment of dedicated BIA support within academic institutions is vital to improving research quality and efficiency and can significantly advance scientific discovery. However, a lack of training resources, limited career paths and insufficient recognition of the contributions made by bioimage analysts prevent the full realization of this potential. This Perspective – the result of the recent The Company of Biologists Workshop ‘Effectively Communicating Bioimage Analysis’, which aimed to summarize the global BIA landscape, categorize obstacles and offer possible solutions – proposes strategies to bring about a cultural shift towards recognizing the value of BIA by standardizing tools, improving training and encouraging formal credit for contributions. We also advocate for increased funding, standardized practices and enhanced collaboration, and we conclude with a call to action for all stakeholders to join efforts in advancing BIA."
+      },
       "authors": [
         "Beth A. Cimini",
         "Peter Bankhead",
@@ -2735,6 +2950,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1242/dev.201035",
+        "text": "Neuropeptides, including insulin, are important regulators of physiological functions of the organisms. Trafficking through the Golgi is crucial for the regulation of secretion of insulin-like peptides. ASNA-1 (TRC40) and ENPL-1 (GRP94) are conserved insulin secretion regulators in Caenorhabditis elegans (and mammals), and mouse Grp94 mutants display type 2 diabetes. ENPL-1/GRP94 binds proinsulin and regulates proinsulin levels in C. elegans and mammalian cells. Here, we have found that ASNA-1 and ENPL-1 cooperate to regulate insulin secretion in worms via a physical interaction that is independent of the insulin-binding site of ENPL-1. The interaction occurs in DAF-28/insulin-expressing neurons and is sensitive to changes in DAF-28 pro-peptide levels. Consistently, ASNA-1 acted in neurons to promote DAF-28/insulin secretion. The chaperone form of ASNA-1 was likely the interaction partner of ENPL-1. Loss of asna-1 disrupted Golgi trafficking pathways. ASNA-1 localization to the Golgi was affected in enpl-1 mutants and ENPL-1 overexpression partially bypassed the ASNA-1 requirement. Taken together, we find a functional interaction between ENPL-1 and ASNA-1 that is necessary to maintain proper insulin secretion in C. elegans and provides insights into how their loss might cause diabetes in mammals."
+      },
       "authors": [
         "Agnieszka Podraza-Farhanieh",
         "Dorota Raj",
@@ -2783,6 +3003,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1007/s10571-023-01374-0",
+        "text": "Alzheimer’s disease (AD) is characterized pathologically by amyloid β (Aβ)-containing plaques. Generation of Aβ from amyloid precursor protein (APP) by two enzymes, β- and γ-secretase, has therefore been in the AD research spotlight for decades. Despite this, how the physical interaction of APP with the secretases influences APP processing is not fully understood. Herein, we compared two genetically identical human iPSC-derived neuronal cell types: low Aβ-secreting neuroprogenitor cells (NPCs) and high Aβ-secreting mature neurons, as models of low versus high Aβ production. We investigated levels of substrate, enzymes and products of APP amyloidogenic processing and correlated them with the proximity of APP to β- and γ-secretase in endo-lysosomal organelles. In mature neurons, increased colocalization of full-length APP with the β-secretase BACE1 correlated with increased β-cleavage product sAPPβ. Increased flAPP/BACE1 colocalization was mainly found in early endosomes. In the same way, increased colocalization of APP-derived C-terminal fragment (CTF) with presenilin-1 (PSEN1), the catalytic subunit of γ-secretase, was seen in neurons as compared to NPCs. Furthermore, most of the interaction of APP with BACE1 in low Aβ-secreting NPCs seemed to derive from CTF, the remaining APP part after BACE1 cleavage, indicating a possible novel product-enzyme inhibition. In conclusion, our results suggest that interaction of APP and APP cleavage products with their secretases can regulate Aβ production both positively and negatively. β- and γ-Secretases are difficult targets for AD treatment due to their ubiquitous nature and wide range of substrates. Therefore, targeting APP-secretase interactions could be a novel treatment strategy for AD.\n\nGraphical Abstract\n\nColocalization of APP species with BACE1 in a novel model of low- versus high-Aβ secretion—Two genetically identical human iPSC-derived neuronal cell types: low Aβ-secreting neuroprogenitor cells (NPCs) and high Aβ secreting mature neurons, were compared. Increased full-length APP (flAPP)/BACE1 colocalization in early endosomes was seen in neurons, while APP-CTF/BACE1 colocalization was much higher than flAPP/BACE1 colocalization in NPCs, although the cellular location was not determined."
+      },
       "authors": [
         "Sandra Roselli",
         "Tugce Munise Satir",
@@ -2807,6 +3032,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1088/1748-605x/acdebb",
+        "text": "Establishing a vascular network in biofabricated tissue grafts is essential for ensuring graft survival. Such networks are dependent on the ability of the scaffold material to facilitate endothelial cell adhesion; however, the clinical translation potential of tissue-engineered scaffolds is hindered by the lack of available autologous sources of vascular cells. Here, we present a novel approach to achieving autologous endothelialisation in nanocellulose-based scaffolds by using adipose tissue-derived vascular cells on nanocellulose-based scaffolds. We used sodium periodate-mediated bioconjugation to covalently bind laminin to the scaffold surface and isolated the stromal vascular fraction and endothelial progenitor cells (EPCs; CD31+CD45−) from human lipoaspirate. Additionally, we assessed the adhesive capacity of scaffold bioconjugation in vitro using both adipose tissue-derived cell populations and human umbilical vein endothelial cells. The results showed that the bioconjugated scaffold exhibited remarkably higher cell viability and scaffold surface coverage by adhesion regardless of cell type, whereas control groups comprising cells on non-bioconjugated scaffolds exhibited minimal cell adhesion across all cell types. Furthermore, on culture day 3, EPCs seeded on laminin-bioconjugated scaffolds showed positive immunofluorescence staining for the endothelial markers CD31 and CD34, suggesting that the scaffolds promoted progenitor differentiation into mature endothelial cells. These findings present a possible strategy for generating autologous vasculature and thereby increase the clinical relevance of 3D-bioprinted nanocellulose-based constructs."
+      },
       "authors": [
         "Kristin Oskarsdotter",
         "Karin Säljö",
@@ -2834,6 +3064,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1093/cvr/cvad041",
+        "text": "Aims\n\nPro-protein convertase subtilisin-kexin type 9 (PCSK9), which is expressed mainly in the liver and at low levels in the heart, regulates cholesterol levels by directing low-density lipoprotein receptors to degradation. Studies to determine the role of PCSK9 in the heart are complicated by the close link between cardiac function and systemic lipid metabolism. Here, we sought to elucidate the function of PCSK9 specifically in the heart by generating and analysing mice with cardiomyocyte-specific Pcsk9 deficiency (CM-Pcsk9−/− mice) and by silencing Pcsk9 acutely in a cell culture model of adult cardiomyocyte-like cells.\n\nMethods and results\n\nMice with cardiomyocyte-specific deletion of Pcsk9 had reduced contractile capacity, impaired cardiac function, and left ventricular dilatation at 28 weeks of age and died prematurely. Transcriptomic analyses revealed alterations of signalling pathways linked to cardiomyopathy and energy metabolism in hearts from CM-Pcsk9−/− mice vs. wild-type littermates. In agreement, levels of genes and proteins involved in mitochondrial metabolism were reduced in CM-Pcsk9−/− hearts. By using a Seahorse flux analyser, we showed that mitochondrial but not glycolytic function was impaired in cardiomyocytes from CM-Pcsk9−/− mice. We further showed that assembly and activity of electron transport chain (ETC) complexes were altered in isolated mitochondria from CM-Pcsk9−/− mice. Circulating lipid levels were unchanged in CM-Pcsk9−/− mice, but the lipid composition of mitochondrial membranes was altered. In addition, cardiomyocytes from CM-Pcsk9−/− mice had an increased number of mitochondria–endoplasmic reticulum contacts and alterations in the morphology of cristae, the physical location of the ETC complexes. We also showed that acute Pcsk9 silencing in adult cardiomyocyte-like cells reduced the activity of ETC complexes and impaired mitochondrial metabolism.\n\nConclusion\n\nPCSK9, despite its low expression in cardiomyocytes, contributes to cardiac metabolic function, and PCSK9 deficiency in cardiomyocytes is linked to cardiomyopathy, impaired heart function, and compromised energy production."
+      },
       "authors": [
         "Marion Laudette",
         "Malin Lindbom",
@@ -2901,6 +3136,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-023-38568-5",
+        "text": "Cisplatin kills proliferating cells via DNA damage but also has profound effects on post-mitotic cells in tumors, kidneys, and neurons. However, the effects of cisplatin on post-mitotic cells are still poorly understood. Among model systems, C. elegans adults are unique in having completely post-mitotic somatic tissues. The p38 MAPK pathway controls ROS detoxification via SKN-1/NRF and immune responses via ATF-7/ATF2. Here, we show that p38 MAPK pathway mutants are sensitive to cisplatin, but while cisplatin exposure increases ROS levels, skn-1 mutants are resistant. Cisplatin exposure leads to phosphorylation of PMK-1/MAPK and ATF-7 and the IRE-1/TRF-1 signaling module functions upstream of the p38 MAPK pathway to activate signaling. We identify the response proteins whose increased abundance depends on IRE-1/p38 MAPK activity as well as cisplatin exposure. Four of these proteins are necessary for protection from cisplatin toxicity, which is characterized by necrotic death. We conclude that the p38 MAPK pathway-driven proteins are crucial for adult cisplatin resilience."
+      },
       "authors": [
         "Dorota Raj",
         "Bashar Kraish",
@@ -2924,6 +3164,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12935-023-02916-8",
+        "text": "Background\n\nMetastatic disease is the major cause of cancer-related deaths. Increasing evidence shows that primary tumor cells can promote metastasis by preparing the local microenvironment of distant organs, inducing the formation of the so-called “pre-metastatic niche”. In recent years, several studies have highlighted that among the tumor-derived molecular components active in pre-metastatic niche formation, small extracellular vesicles (sEVs) play a crucial role. Regarding liver metastasis, the ability of tumor-derived sEVs to affect the activities of non-parenchymal cells such as Kupffer cells and hepatic stellate cells is well described, while the effects on hepatocytes, the most conspicuous and functionally relevant hepatic cellular component, remain unknown.\n\nMethods\n\nsEVs isolated from SW480 and SW620 CRC cells and from clinical samples of CRC patients and healthy subjects were used to treat human healthy hepatocytes (THLE-2 cells). RT-qPCR, Western blot and confocal microscopy were applied to investigate the effects of this treatment.\n\nResults\n\nOur study shows for the first time that TGFβ1-carrying CRC_sEVs impair the morphological and functional properties of healthy human hepatocytes by triggering their TGFβ1/SMAD-dependent EMT. These abilities of CRC_sEVs were further confirmed by evaluating the effects elicited on hepatocytes by sEVs isolated from plasma and biopsies from CRC patients.\n\nConclusions\n\nSince it is known that EMT of hepatocytes leads to the formation of a fibrotic environment, a well-known driver of metastasis, these results suggest that CRC_sEV-educated hepatocytes could have an active and until now neglected role during liver metastasis formation."
+      },
       "authors": [
         "Marzia Pucci",
         "Marta Moschetti",
@@ -3043,6 +3288,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s13148-023-01498-6",
+        "text": "Background\n\nBrain tumours are the leading cause of cancer-related death in children, and there is no effective treatment. A growing body of evidence points to deregulated epigenetics as a tumour driver, particularly in paediatric cancers as they have relatively few genomic alterations, and key driver mutations have been identified in histone 3 (H3). Cancer stem cells (CSC) are implicated in tumour development, relapse and therapy resistance and thus particularly important to target. We therefore aimed to identify novel epigenetic treatment targets in CSC derived from H3-mutated high-grade glioma (HGG) through a CRISPR-Cas9 knockout screen.\n\nResults\n\nThe knockout screen identified more than 100 novel genes essential for the growth of CSC derived from paediatric HGG with H3K27M mutation. We successfully validated 12 of the 13 selected hits by individual knockout in the same two CSC lines, and for the top six hits we included two additional CSC lines derived from H3 wild-type paediatric HGG. Knockout of these genes led to a significant decrease in CSC growth, and altered stem cell and differentiation markers.\n\nConclusions\n\nThe screen robustly identified essential genes known in the literature, but also many novel genes essential for CSC growth in paediatric HGG. Six of the novel genes (UBE2N, CHD4,LSM11, KANSL1, KANSL3andEED)were validated individually thus demonstrating their importance for CSC growth in H3-mutated and wild-type HGG. These genes should be further studied and evaluated as novel treatment targets in paediatric HGG."
+      },
       "authors": [
         "Anna Wenger",
         "Ida Karlsson",
@@ -3117,6 +3367,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12951-023-01928-w",
+        "text": "The development of vaccines based on outer membrane vesicles (OMV) that naturally bud off from bacteria is an evolving field in infectious diseases. However, the inherent inflammatory nature of OMV limits their use as human vaccines. This study employed an engineered vesicle technology to develop synthetic bacterial vesicles (SyBV) that activate the immune system without the severe immunotoxicity of OMV. SyBV were generated from bacterial membranes through treatment with detergent and ionic stress. SyBV induced less inflammatory responses in macrophages and in mice compared to natural OMV. Immunization with SyBV or OMV induced comparable antigen-specific adaptive immunity. Specifically, immunization with Pseudomonas aeruginosa-derived SyBV protected mice against bacterial challenge, and this was accompanied by significant reduction in lung cell infiltration and inflammatory cytokines. Further, immunization with Escherichia coli-derived SyBV protected mice against E. coli sepsis, comparable to OMV-immunized group. The protective activity of SyBV was driven by the stimulation of B-cell and T-cell immunity. Also, SyBV were engineered to display the SARS-CoV-2 S1 protein on their surface, and these vesicles induced specific S1 protein antibody and T-cell responses. Collectively, these results demonstrate that SyBV may be a safe and efficient vaccine platform for the prevention of bacterial and viral infections."
+      },
       "authors": [
         "Kyong-Su Park",
         "Kristina Svennerholm",
@@ -3145,6 +3400,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s12931-023-02310-y",
+        "text": "Background\n\nAllergic asthma is associated with airflow obstruction and hyper-responsiveness that arises from airway inflammation and remodeling. Cell therapy with mesenchymal stem cells (MSC) has been shown to attenuate inflammation in asthma models, and similar effects have recently been observed using extracellular vesicles (EV) obtained from these cells. Biologically functional vesicles can also be artificially generated from MSC by extruding cells through membranes to produce EV-mimetic nanovesicles (NV). In this study, we aimed to determine the effects of different MSC-derived vesicles in a murine model of allergic airway inflammation.\n\nMethods\n\nEV were obtained through sequential centrifugation of serum-free media conditioned by human bone marrow MSC for 24 h. NV were produced through serial extrusion of the whole cells through filters. Both types of vesicles underwent density gradient purification and were quantified through nanoparticle tracking analysis. C57BL/6 mice were sensitized to ovalbumin (OVA, 8 µg), and then randomly divided into the OVA group (intranasally exposed to 100 µg OVA for 5 days) and control group (exposed to PBS). The mice were then further divided into groups that received 2 × 109 EV or NV (intranasally or intraperitoneally) or PBS immediately following the first OVA exposure.\n\nResults\n\nAdministration of EV and NV reduced cellularity and eosinophilia in bronchoalveolar lavage (BAL) fluid in OVA-sensitized and OVA-exposed mice. In addition, NV treatment resulted in decreased numbers of inflammatory cells within the lung tissue, and this was associated with lower levels of Eotaxin-2 in both BAL fluid and lung tissue. Furthermore, both intranasal and systemic administration of NV were effective in reducing inflammatory cells; however, systemic delivery resulted in a greater reduction of eosinophilia in the lung tissue.\n\nConclusions\n\nTaken together, our results indicate that MSC-derived NV significantly reduce OVA-induced allergic airway inflammation to a level comparable to EV. Thus, cell-derived NV may be a novel EV-mimetic therapeutic candidate for treating allergic diseases such as asthma."
+      },
       "authors": [
         "Elga Bandeira",
         "Su Chul Jang",
@@ -3168,6 +3428,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.3390/pharmaceutics15020391",
+        "text": "Doxorubicin (DOX) is extensively used in chemotherapy, but it has serious side effects and is inefficient against some cancers, e.g., hepatocarcinoma. To ameliorate the delivery of DOX and reduce its side effects, we designed a pH-responsive delivery system based on graphene oxide (GO) that is capable of a targeted drug release in the acidic tumor microenvironment. GO itself disrupted glutathione biosynthesis and induced reactive oxygen species (ROS) accumulation in human cells. It induced IL17-directed JAK-STAT signaling and VEGF gene expression, leading to increased cell proliferation as an unwanted effect. To counter this, GO was conjugated with the antioxidant, ginsenoside Rg3, prior to loading with DOX. The conjugation of Rg3 to GO significantly reduced the toxicity of the GO carrier by abolishing ROS production. Furthermore, treatment of cells with GO–Rg3 did not induce IL17-directed JAK-STAT signaling and VEGF gene expression—nor cell proliferation—suggesting GO–Rg3 as a promising drug carrier. The anticancer activity of GO–Rg3–DOX conjugates was investigated against Huh7 hepatocarcinoma and MDA-MB-231 breast cancer cells. GO–Rg3–DOX conjugates significantly reduced cancer cell viability, primarily via downregulation of transcription regulatory genes and upregulation of apoptosis genes. GO–Rg3 is an effective, biocompatible, and pH responsive DOX carrier with potential to improve chemotherapy—at least against liver and breast cancers."
+      },
       "authors": [
         "Shadi Rahimi",
         "Daniel van Leeuwen",
@@ -3194,6 +3459,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1093/pnasnexus/pgad388",
+        "text": "The respiratory tract of larger animals is cleared by sweeping bundled strands along the airway surface. These bundled strands can be millimetric in length and consist of MUC5B mucin. They are produced by submucosal glands, and upon emerging from these glands, the long axis of the bundled strands is oriented along the cilia-mediated flow toward the oral cavity. However, after release, the bundled strands are found to have turned orthogonal to the flow, which maximizes their clearance potential. How this unexpected reorientation is accomplished is presently not well understood. Recent experiments suggest that the reorientation process involves bundled strands sticking to MUC5AC mucus threads, which are tethered to the goblet cells. Such goblet cells are present in small numbers throughout the airway epithelium. Here, we develop a minimal model for reorientation of bundled mucus strands through adhesive interactions with surface goblet cells. Our simulations reveal that goblet cell interactions can reorient the bundled strands within 10 mm of release—making reorientation on the length scale of the tracheal tube feasible—and can stabilize the orthogonal orientation. Our model also reproduces other experimental observations such as strong velocity fluctuations and significant slow-down of the bundled strand with respect to the cilia-mediated flow. We further provide insight into the strand turning mechanism by examining the effect of strand shape on the impulse exerted by a single goblet cell. We conclude that goblet cell–mediated reorientation is a viable route for bundled strand reorientation, which should be further validated in future experiment."
+      },
       "authors": [
         "Meike F Bos",
         "Anna Ermund",
@@ -3447,6 +3717,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "https://doi.org/10.1039/d3cp01147j",
+        "text": "Here, we present the non-linear spectroscopic characterization of the fluorescent nucleobase analogue 2CNqA as a monomer and inside an antisense oligonucleotide. Its applicability as a 2P fluorescent reporter is demonstrated using live cell imaging."
+      },
       "authors": [
         "Jesper R. Nilsson",
         "Carlos Benitez-Martin",
@@ -3518,6 +3793,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1111/jne.13352",
+        "text": "We previously provided evidence supporting the existence of a novel leptin‐independent body weight homeostat (“the gravitostat”) that senses body weight and then initiates a homeostatic feed‐back regulation of body weight. We, herein, hypothesize that this feed‐back regulation involves a CNS mechanism. To identify populations of neurones of importance for the putative feed‐back signal induced by increased loading, high‐fat diet‐fed rats or mice were implanted intraperitoneally or subcutaneously with capsules weighing ∼15% (Load) or ∼2.5% (Control) of body weight. At 3–5 days after implantation, neuronal activation was assessed in different parts of the brain/brainstem by immunohistochemical detection of FosB. Implantation of weighted capsules, both subcutaneous and intraperitoneal, induced FosB in specific neurones in the medial nucleus of the solitary tract (mNTS), known to integrate information about the metabolic status of the body. These neurones also expressed tyrosine hydroxylase (TH) and dopamine‐beta‐hydroxylase (DbH), a pattern typical of norepinephrine neurones. In functional studies, we specifically ablated norepinephrine neurones in mNTS, which attenuated the feed‐back regulation of increased load on body weight and food intake. In conclusion, increased load appears to reduce body weight and food intake via activation of norepinephrine neurones in the mNTS."
+      },
       "authors": [
         "Jovana Zlatkovic",
         "Adrià Dalmau Gasull",
@@ -3568,6 +3848,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-023-43867-y",
+        "text": "The bark is the outermost defense of trees against microbial attack, largely thanks to toxicity and prevalence of extractive compounds. Nevertheless, bark decomposes in nature, though by which species and mechanisms remains unknown. Here, we have followed the development of microbial enrichments growing on spruce bark over six months, by monitoring both chemical changes in the material and performing community and metagenomic analyses. Carbohydrate metabolism was unexpectedly limited, and instead a key activity was metabolism of extractives. Resin acid degradation was principally linked to community diversification with specific bacteria revealed to dominate the process. Metagenome-guided isolation facilitated the recovery of the dominant enrichment strain in pure culture, which represents a new species ( Pseudomonas abieticivorans sp. nov.), that can grow on resin acids as a sole carbon source. Our results illuminate key stages in degradation of an abundant renewable resource, and how defensive extractive compounds have major roles in shaping microbiomes."
+      },
       "authors": [
         "Amanda Sörensen Ristinmaa",
         "Albert Tafur Rangel",
@@ -3681,6 +3966,11 @@
       "year": 2023
     },
     {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41598-023-41188-0",
+        "text": "ER-to-Golgi trafficking partakes in the sorting of misfolded cytoplasmic proteins to reduce their cytological toxicity. We show here that yeast Sec7, a protein involved in proliferation of the Golgi, is part of this pathway and participates in an Hsp70-dependent formation of insoluble protein deposits (IPOD). Sec7 associates with the disaggregase Hsp104 during a mild heat shock and increases the rate of Hsp104 diffusion in an Hsp70-dependent manner when overproduced. Sec7 overproduction increased formation of IPODs from smaller aggregates and mitigated the toxicity of Huntingtin exon-1 upon heat stress while Sec7 depletion increased sensitivity to aẞ42 of the Alzheimer’s disease and α-synuclein of the Parkinson’s disease, suggesting a role of Sec7 in mitigating proteotoxicity."
+      },
       "authors": [
         "Roja Babazadeh",
         "Kara L. Schneider",

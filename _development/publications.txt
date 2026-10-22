@@ -165,6 +165,49 @@ changes are detected, 3 on lookup failures, and 0 otherwise. No schedule or
 CI automation has been enabled. Review the report, then use refresh (optionally
 with --id) to apply provider metadata according to the matching policy above.
 
+Optional abstract enrichment
+
+    python scripts/publications.py fetch-abstracts
+    python scripts/publications.py fetch-abstracts --id RECORD_ID
+    python scripts/publications.py fetch-abstracts --refresh
+    python scripts/publications.py build
+
+Available abstracts are retrieved through the existing Crossref/DOI metadata
+services, not by scraping publisher pages. Cached bibliography-only responses
+are upgraded when abstracts are requested. Later runs reuse the enriched
+cache; --refresh explicitly checks providers again. Missing abstracts and
+lookup failures do not affect approval or publication inclusion.
+
+All returned abstracts are retained as plain text in
+private_data/publication-abstracts.json, with DOI, record ID, provider, source
+URL, and available license information. This is a persistent local enrichment
+store for future agent-assisted research tasks. It is ignored by Git and
+excluded from Jekyll. If a provider later omits an abstract, the private store
+keeps the previous text; an API outage also preserves the last known data.
+
+Public display uses a conservative initial allowlist: a currently applicable
+CC BY or CC0 license for the published version (or unspecified version).
+Other license combinations, unknown licenses, and embargoed licenses remain
+private. This is a display policy, not a declaration that every license outside
+the allowlist prohibits reuse. Institutional policies still govern internal
+research/agent processing; private storage does not grant new usage rights.
+
+Only eligible abstracts with a matching article title enter the canonical
+shareable registry and generated public JSON. Other abstracts are never
+embedded in a hidden HTML panel, public JSON, or committed registry. Public
+abstract objects contain only text, source_url, and license_url. JATS/HTML
+markup is converted to plain paragraphs, rendered with textContent.
+
+Abstract collection changes only the optional abstract field. It does not
+refresh the bibliography, change year overrides, or touch approval, CCI
+contributions, technologies, services, or tagging decisions. Abstract storage
+and the public disclosure UI are separate from any future LLM labeling work.
+
+Current collection (2026-10-22): 138 DOIs checked, 101 abstracts returned.
+58 are eligible for public display; 43 remain private-only; 37 were not
+available. There were no lookup failures or abstract-title review items.
+The local store is not a substitute for a separate institutional backup.
+
 Schema, version 1
 
 Registry top level: schema_version: 1, publications: list.
@@ -186,6 +229,8 @@ Each registry record contains:
   not_checked, matched, accepted, review, lookup_failed, and manual_required.
 - metadata_review: optional recorded acceptance decision and a fingerprint
   of the reviewed provider/source data; excluded from the public catalogue.
+- abstract: optional public plain-text abstract object with source_url and
+  license_url. Restricted/unknown-license abstracts belong only in private_data.
 - last_lookup_error: optional failed-lookup/refresh details.
 
 Bibliographic fields: title, authors (list of full names), authors_text,
@@ -198,6 +243,8 @@ label, and optional parent; internal vocabulary notes are excluded. Each public
 record contains only id, doi, the bibliographic fields above, reporting_years,
 technologies, and services. It omits approval internals, original citations,
 retrieved payloads, overrides, tagging status, errors, and any curator notes.
+Optional public abstract objects are exported through a separate three-field
+allowlist; the private enrichment store is never part of the catalogue.
 Records are sorted by publication year descending, normalized title, then ID.
 No generated timestamps are included, so repeated builds are byte-stable.
 

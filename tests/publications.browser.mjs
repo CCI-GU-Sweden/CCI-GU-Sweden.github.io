@@ -77,8 +77,8 @@ try {
   await page.locator("[name=q]").fill("10.1038/s41592-023-01987-9");
   await count(page, 1);
   assert.equal(await page.locator(".publication-year").textContent(), "2024");
-  await page.locator(".publication-card summary").click();
-  assert.equal(await page.locator(".publication-card details").getAttribute("open"), "");
+  await page.locator('[data-disclosure="authors"]').click();
+  assert.equal(await page.locator('[data-disclosure="authors"]').getAttribute("aria-expanded"), "true");
   await page.locator("[name=q]").focus();
   await page.keyboard.press("Tab");
   assert.equal(await page.evaluate(() => document.activeElement.id), "publication-year");
@@ -98,8 +98,12 @@ try {
   fixture.publications = fixture.publications.slice(0, 2);
   fixture.publications[0].title = "Synthetic fixture <img src=x onerror=window.__injected=1>";
   fixture.publications[0].technologies = ["confocal", "light_sheet"];
+  fixture.publications[0].authors = ["Synthetic A", "Synthetic B", "Synthetic C", "Synthetic D", "Synthetic E", "Synthetic F"];
+  fixture.publications[0].abstract = {text: "Synthetic abstract first paragraph.\n\nSecond paragraph <script>window.__injected=1</script>.",
+    source_url: "https://doi.org/10.1234/synthetic", license_url: "https://creativecommons.org/licenses/by/4.0/"};
   fixture.publications[1].title = "Synthetic second fixture";
   fixture.publications[1].technologies = ["electron"];
+  delete fixture.publications[1].abstract;
   fixture.vocabulary = {technologies: [
     {id: "confocal", label: "Confocal microscopy"},
     {id: "light_sheet", label: "Light-sheet microscopy"},
@@ -111,6 +115,26 @@ try {
   await count(page, 2);
   assert.equal(await page.locator(".publication-card img").count(), 0);
   assert.equal(await page.evaluate(() => window.__injected), undefined);
+  const abstractButton = page.locator('[data-disclosure="abstract"]');
+  assert.equal(await abstractButton.count(), 1);
+  const abstractPanel = page.locator(".publication-abstract-text");
+  assert.equal(await abstractPanel.isVisible(), false);
+  const authorButton = page.locator('[data-disclosure="authors"]').first();
+  const authorBox = await authorButton.boundingBox();
+  const abstractBox = await abstractButton.boundingBox();
+  assert.ok(Math.abs(authorBox.y - abstractBox.y) < 2, "Abstract control should sit beside the authors control");
+  assert.ok(abstractBox.x > authorBox.x, "Abstract should be on the right");
+  await abstractButton.focus();
+  await page.keyboard.press("Enter");
+  assert.equal(await abstractPanel.isVisible(), true);
+  assert.equal(await abstractPanel.locator("script").count(), 0);
+  assert.equal(await abstractPanel.locator("p").count(), 3);
+  await authorButton.click();
+  assert.equal(await abstractButton.getAttribute("aria-expanded"), "true");
+  assert.equal(await authorButton.getAttribute("aria-expanded"), "true");
+  await abstractButton.click();
+  assert.equal(await abstractPanel.isVisible(), false);
+  console.log("PASS: adjacent author/abstract controls, independent panels, keyboard access, and safe abstract text");
   await page.getByLabel("Confocal microscopy", {exact: true}).check();
   await count(page, 1);
   await page.getByLabel("Electron microscopy", {exact: true}).check();

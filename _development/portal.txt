@@ -1,6 +1,7 @@
 PUBLICATIONS PORTAL
 
-Branch: feature/publications-portal, based on data checkpoint e081085.
+Portal checkpoint: f1ada05, merged through PR #1 and published.
+Optional abstract enrichment is developed on feature/publications-abstracts.
 The interface reads the generated catalogue; it does not edit records.
 
 Preview
@@ -22,6 +23,11 @@ Technology controls are hidden until records have tags. No labels were
 inferred. Human-facing technology labels come from the public vocabulary
 generated from _publications/vocabulary.yml. The current 138 approved records
 remain unchanged by the portal. Long author lists can be expanded inline.
+The All X authors and Abstract disclosure buttons sit side by side. Each
+expands its own full-width panel underneath, with keyboard support. Abstract
+is shown only when public abstract text exists. Source and reuse-license
+links accompany that text. See _development/publications.txt for collection
+and private-storage details.
 
 Files
 
@@ -87,6 +93,7 @@ Manual review before committing/releasing the portal
 - Expand a long author list and follow a DOI link.
 - Confirm that the styling and navigation fit the facility website.
 
-Nothing is published by these commands. The publication-data step is already
-committed. Portal changes should be reviewed locally before their checkpoint
-commit; main remains the publishing branch.
+Nothing is published by these commands. The portal without abstracts was
+reviewed and published through PR #1. Abstract changes remain on their own
+feature branch until separately reviewed and merged. Main is the publishing
+branch. CCI also confirmed the published portal works in Brave on mobile.

@@ -430,3 +430,133 @@ def test_public_vocabulary_excludes_internal_notes(registry, vocabulary):
     vocabulary["technologies"][0].update(label="Confocal microscopy", notes="Synthetic private note")
     exported = p.public_catalogue(registry, vocabulary)["vocabulary"]
     assert exported["technologies"][0] == {"id": "confocal", "label": "Confocal microscopy"}
+
+
+def test_abstract_jats_to_plain_text_preserves_paragraphs():
+    text = p.abstract_text('<jats:abstract><jats:title>Abstract</jats:title><jats:p>First <jats:italic>paragraph</jats:italic> &amp; result.</jats:p><jats:p>Second paragraph.</jats:p><script>bad code</script></jats:abstract>')
+    assert text == "First paragraph & result.\n\nSecond paragraph."
+
+
+@pytest.mark.parametrize("value", [None, "", "  ", "<jats:p/>", "No abstract available.", "Abstract not available."])
+def test_missing_abstract_is_optional(value):
+    assert p.abstract_text(value) is None
+
+
+def test_abstract_license_provenance_and_private_candidate():
+    raw = {"abstract": "Synthetic abstract.", "license": [{"URL": "https://creativecommons.org/licenses/by/4.0/", "content-version": "vor"}]}
+    abstract = p.extract_abstract(raw, "10.1234/test")
+    assert abstract["source_url"] == "https://doi.org/10.1234/test"
+    assert abstract["public_license_url"] == "https://creativecommons.org/licenses/by/4.0/"
+    private = p.extract_abstract({"abstract": "Synthetic private abstract."}, "10.1234/test")
+    assert private["text"] == "Synthetic private abstract."
+    assert private["public_license_url"] is None
+
+
+@pytest.mark.parametrize("license", [
+    {"URL": "https://publisher.example/terms"},
+    {"URL": "https://creativecommons.org/licenses/by/4.0/", "content-version": "am"},
+    {"URL": "https://creativecommons.org/licenses/by/4.0/", "start": {"date-parts": [[2999, 1, 1]]}},
+    {"URL": "https://creativecommons.org/licenses/by/4.0/", "start": {"date-parts": [[2024, 99, 99]]}},
+    {"URL": "https://creativecommons.org/licenses/by/4.0/", "start": {"date-time": "unparseable"}},
+    {"URL": "https://creativecommons.org.evil.example/licenses/by/4.0/"},
+])
+def test_uncertain_abstract_licenses_remain_private(license):
+    abstract = p.extract_abstract({"abstract": "Synthetic abstract.", "license": [license]}, "10.1234/test")
+    assert abstract["public_license_url"] is None
+
+
+class AbstractClient(FakeClient):
+    def __init__(self, metadata, abstract):
+        super().__init__(metadata)
+        self.abstract = abstract
+
+    def lookup(self, doi):
+        return {**super().lookup(doi), "abstract": self.abstract}
+
+
+def test_private_abstract_never_exported_and_cci_fields_unchanged(registry, metadata, vocabulary, tmp_path):
+    before = copy.deepcopy(registry)
+    candidate = p.extract_abstract({"abstract": "Synthetic restricted abstract."}, "10.1234/test")
+    store = tmp_path / "abstracts.json"
+    summary = p.fetch_abstracts(registry, AbstractClient(metadata, candidate), store)
+    assert summary["private_only"] == 1
+    assert registry == before
+    assert p.read_json(store)["abstracts"][0]["abstract"]["text"] == "Synthetic restricted abstract."
+    assert "abstract" not in p.public_catalogue(registry, vocabulary)["publications"][0]
+
+
+def test_public_abstract_allowlist_and_bibliography_preserved(registry, metadata, vocabulary, tmp_path):
+    before = copy.deepcopy(registry["publications"][0])
+    candidate = p.extract_abstract({"abstract": "Synthetic open abstract.", "license": "https://creativecommons.org/licenses/by/4.0/"}, "10.1234/test")
+    summary = p.fetch_abstracts(registry, AbstractClient(metadata, candidate), tmp_path / "abstracts.json")
+    assert summary["publicly_displayable"] == 1
+    record = registry["publications"][0]
+    assert {k: v for k, v in record.items() if k != "abstract"} == before
+    record["abstract"]["notes"] = "Synthetic private note"
+    public = p.public_catalogue(registry, vocabulary)["publications"][0]
+    assert set(public["abstract"]) == {"text", "source_url", "license_url"}
+    assert public["abstract"]["text"] == "Synthetic open abstract."
+
+
+def test_abstract_for_different_title_needs_review(registry, metadata, tmp_path):
+    metadata["title"] = "A completely unrelated synthetic paper"
+    candidate = p.extract_abstract({"abstract": "Synthetic abstract.", "license": "https://creativecommons.org/licenses/by/4.0/"}, "10.1234/test")
+    summary = p.fetch_abstracts(registry, AbstractClient(metadata, candidate), tmp_path / "abstracts.json")
+    assert summary["identity_review"] == 1
+    assert "abstract" not in registry["publications"][0]
+
+
+def test_abstract_outage_retains_last_known_good_text(registry, metadata, tmp_path):
+    candidate = p.extract_abstract({"abstract": "Synthetic abstract.", "license": "https://creativecommons.org/licenses/by/4.0/"}, "10.1234/test")
+    store = tmp_path / "abstracts.json"
+    p.fetch_abstracts(registry, AbstractClient(metadata, candidate), store)
+    before = copy.deepcopy(registry)
+    summary = p.fetch_abstracts(registry, FakeClient(error=True), store)
+    assert summary["failed"] == 1
+    assert registry == before
+    assert p.read_json(store)["abstracts"][0]["abstract"]["text"] == "Synthetic abstract."
+
+
+def test_abstract_missing_on_refresh_keeps_private_history(registry, metadata, tmp_path):
+    candidate = p.extract_abstract({"abstract": "Synthetic retained abstract."}, "10.1234/test")
+    store = tmp_path / "abstracts.json"
+    p.fetch_abstracts(registry, AbstractClient(metadata, candidate), store)
+    summary = p.fetch_abstracts(registry, AbstractClient(metadata, None), store)
+    assert summary["not_available"] == 1
+    assert p.read_json(store)["abstracts"][0]["abstract"]["text"] == "Synthetic retained abstract."
+
+
+def test_unlicensed_public_abstract_rejected(registry, vocabulary):
+    registry["publications"][0]["abstract"] = {"text": "Synthetic private abstract.",
+                                               "source_url": "https://doi.org/10.1234/test", "license_url": None}
+    with pytest.raises(ValueError, match="public abstract"):
+        p.public_catalogue(registry, vocabulary)
+
+
+def test_old_bibliographic_cache_upgraded_for_abstracts(tmp_path, metadata, monkeypatch):
+    key = p.hashlib.sha256(b"10.1234/test").hexdigest() + ".json"
+    p.write_json(tmp_path / key, {"doi": "10.1234/test", "provider": "fixture", "metadata": metadata})
+    client = p.MetadataClient(tmp_path, include_abstracts=True)
+    calls = []
+
+    def works(**kwargs):
+        calls.append(kwargs)
+        return {"message": {"DOI": "10.1234/test", "title": ["Synthetic title"], "abstract": "Synthetic new abstract."}}
+
+    monkeypatch.setattr(client.crossref, "works", works)
+    monkeypatch.setattr(p.time, "sleep", lambda delay: None)
+    assert client.lookup("10.1234/test")["abstract"]["text"] == "Synthetic new abstract."
+    assert client.lookup("10.1234/test")["cached"]
+    assert len(calls) == 1
+
+
+def test_fetch_abstract_cli_saves_private_store(registry, metadata, vocabulary, tmp_path, monkeypatch):
+    registry_path, vocab_path, store = (tmp_path / name for name in ["registry.yml", "vocab.yml", "private.json"])
+    p.save_registry(registry_path, registry)
+    p.save_registry(vocab_path, vocabulary)
+    monkeypatch.setattr(p, "ABSTRACT_STORE", store)
+    monkeypatch.setattr(p, "MetadataClient", lambda *args, **kwargs: AbstractClient(metadata, None))
+    p.main(["--registry", str(registry_path), "--vocabulary", str(vocab_path),
+            "--report", str(tmp_path / "report.json"), "fetch-abstracts"])
+    assert store.exists()
+    assert p.read_registry(registry_path) == registry
