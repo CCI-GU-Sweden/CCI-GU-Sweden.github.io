@@ -24,7 +24,10 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "A pcyt-1 allelic series reveals in vivo consequences of reduced phosphatidylcholine synthesis in C. elegans",
       "type": "journal-article",
       "year": 2026
@@ -45,7 +48,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Bacterial membrane vesicles as effective immunotherapeutic agents in melanoma, colon, and breast cancer",
       "type": "journal-article",
       "year": 2026
@@ -110,7 +115,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Better reporting is better science: Community-defined minimal reporting requirements for light microscopy",
       "type": "journal-article",
       "year": 2026
@@ -155,7 +162,10 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar diet-induced alterations in feeding behavior in adult mice",
       "type": "journal-article",
       "year": 2026
@@ -188,7 +198,12 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Comparative biodegradation of functionalized graphene oxide nanosheets by myeloperoxidase and neutrophil extracellular traps",
       "type": "journal-article",
       "year": 2026
@@ -212,7 +227,10 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Correlating Molecule Counts with Stress Granule Size Using Novel Platinized Carbon Nanopore Electrodes",
       "type": "journal-article",
       "year": 2026
@@ -240,7 +258,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Development of Anti‐Inflammatory Extracellular Vesicles by Surface Expression of Syndecan‐4",
       "type": "journal-article",
       "year": 2026
@@ -274,7 +294,11 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Dysregulation of glycogen metabolism in cardiomyopathy caused by glycogenin-1 ( GYG1 ) missense variants",
       "type": "journal-article",
       "year": 2026
@@ -305,7 +329,12 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Electrochemical measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role for partial release in presynaptic plasticity",
       "type": "journal-article",
       "year": 2026
@@ -327,7 +356,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Electron Tomography-Based Reconstruction of Extracellular Vesicles in Tissue",
       "type": "book-chapter",
       "year": 2026
@@ -399,7 +430,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Frozen melanoma tissues yield extracellular vesicles with preserved diagnostic and immunogenic properties",
       "type": "journal-article",
       "year": 2026
@@ -460,7 +493,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Plasma extracellular vesicles reflect response and prognosis in patients with breast cancer undergoing neoadjuvant treatment",
       "type": "journal-article",
       "year": 2026
@@ -556,7 +591,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Proteomic analysis of tissue-derived extracellular vesicles shows region-specific molecular changes in a rat model of takotsubo syndrome",
       "type": "journal-article",
       "year": 2026
@@ -583,7 +620,9 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Quantitative proteomic and functional comparison of extracellular vesicles from multiple adipose tissue mesenchymal stem cell donors",
       "type": "journal-article",
       "year": 2026
@@ -646,7 +685,10 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "The mouse gastric surface epithelial cell and its response to early Helicobacter pylori infection",
       "type": "journal-article",
       "year": 2026
@@ -675,7 +717,10 @@
         2026
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential drivers of fibrosis progression",
       "type": "journal-article",
       "year": 2026

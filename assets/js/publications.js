@@ -146,6 +146,10 @@ export async function initializePublications(root) {
   const year = root.querySelector("[name=year]");
   const sort = root.querySelector("[name=sort]");
   const involvement = root.querySelector("[name=cci_involvement]");
+  const technologyPicker = root.querySelector("[data-technology-picker]");
+  const technologySummary = technologyPicker.querySelector("summary");
+  const technologyValue = root.querySelector("[data-technology-value]");
+  const clearTechnologies = root.querySelector("[data-clear-technologies]");
   const clear = root.querySelector("[data-clear]");
   const status = root.querySelector("[data-status]");
   const results = root.querySelector("#publication-results");
@@ -174,6 +178,9 @@ export async function initializePublications(root) {
 
   function render(updateURL = true) {
     const filters = state();
+    technologyValue.textContent = filters.technologies.length === 1 ? labels.get(filters.technologies[0]) || filters.technologies[0]
+      : filters.technologies.length ? `${filters.technologies.length} technologies selected` : "All technologies";
+    clearTechnologies.disabled = filters.technologies.length === 0;
     const matches = selectPublications(records, filters, labels);
     const visible = matches.slice(0, limit);
     results.replaceChildren(...visible.map(record => publicationCard(record, labels)));
@@ -224,11 +231,12 @@ export async function initializePublications(root) {
         input.type = "checkbox";
         input.name = "technology";
         input.value = tag;
+        input.setAttribute("aria-controls", "publication-results");
         label.append(input, document.createTextNode(labels.get(tag) || tag.replaceAll("_", " ")));
         options.append(label);
         return input;
       });
-      root.querySelector("[data-technology-controls]").hidden = !tags.length;
+      root.querySelector("[data-no-technologies]").hidden = tags.length > 0;
       restoreURL();
       fieldset.disabled = false;
       render(false);
@@ -251,6 +259,7 @@ export async function initializePublications(root) {
     search.value = ""; year.value = ""; sort.value = "newest";
     involvement.value = "";
     technologyInputs.forEach(input => { input.checked = false; });
+    technologyPicker.open = false;
     limit = PAGE_SIZE;
     render();
     search.focus();
@@ -262,6 +271,20 @@ export async function initializePublications(root) {
     results.children[previousCount]?.querySelector("h2 a")?.focus();
   });
   retry.addEventListener("click", load);
+  clearTechnologies.addEventListener("click", () => {
+    technologyInputs.forEach(input => { input.checked = false; });
+    limit = PAGE_SIZE;
+    render();
+  });
+  technologyPicker.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      technologyPicker.open = false;
+      technologySummary.focus();
+    }
+  });
+  document.addEventListener("pointerdown", event => {
+    if (!technologyPicker.contains(event.target)) technologyPicker.open = false;
+  });
   window.addEventListener("popstate", () => { restoreURL(); limit = PAGE_SIZE; render(false); });
   await load();
 }

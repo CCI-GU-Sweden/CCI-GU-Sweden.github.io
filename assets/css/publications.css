@@ -17,6 +17,7 @@
 }
 .publications-intro h1 { margin-top: 0; font-size: 2.5rem; }
 .publications-intro > p:last-child { color: var(--publication-muted); max-width: 62ch; }
+.publications-tagging-note { font-size: .875rem; }
 .publications-controls {
   background: #fff;
   border: 1px solid var(--publication-border);
@@ -25,7 +26,7 @@
   padding: 20px;
 }
 .publications fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
-.publications label, .publications legend {
+.publications label, .publications legend, .publications-filter-label {
   display: block;
   font-size: .875rem;
   font-weight: 700;
@@ -45,12 +46,49 @@
 .publications input[type="search"] { margin: 0; font-size: 1rem; }
 .publications-filter-row {
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(210px, 1.5fr);
+  grid-template-columns: minmax(110px, .8fr) minmax(130px, .9fr) minmax(190px, 1.3fr) minmax(190px, 1.3fr);
   gap: 16px;
   align-items: end;
   margin-top: 16px;
 }
 .publications-clear { grid-column: 1 / -1; justify-self: end; }
+.publications-technology-filter { position: relative; min-width: 0; }
+.publications-technology-filter summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 9px 11px;
+  border: 1px solid #8a979f;
+  border-radius: 4px;
+  background: #fff;
+  color: #24292f;
+  cursor: pointer;
+  list-style: none;
+}
+.publications-technology-filter summary::-webkit-details-marker { display: none; }
+.publications-technology-filter summary::after { content: "▾"; flex-shrink: 0; }
+.publications-technology-filter details[open] summary::after { content: "▴"; }
+.publications-technology-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-top: 4px;
+  padding: 12px;
+  border: 1px solid var(--publication-border);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 5px 16px #26364024;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.publications-technology-menu legend { font-weight: 400; color: var(--publication-muted); }
+.publications-technology-menu label { display: flex; align-items: center; gap: 8px; min-height: 44px; margin: 0; font-weight: 400; }
+.publications-technology-menu input { width: 18px; height: 18px; flex-shrink: 0; }
 .publications button {
   min-height: 44px;
   padding: 9px 15px;
@@ -138,11 +176,6 @@
 .publications-more { display: block; margin: 24px auto 0; }
 .publications-empty { text-align: center; padding: 32px 16px; border: 1px dashed var(--publication-border); margin-top: 20px; }
 .publications-empty h2 { font-size: 1.2rem; }
-.publications-technologies { border-top: 1px solid var(--publication-border); margin-top: 20px; padding-top: 16px; }
-.publications-technologies legend span { font-weight: 400; color: var(--publication-muted); }
-.publications-technologies [data-technology-options] { display: flex; flex-wrap: wrap; gap: 6px 18px; }
-.publications-technologies label { display: flex; align-items: center; gap: 7px; min-height: 44px; margin: 0; font-weight: 400; }
-.publications-technologies input { width: 18px; height: 18px; }
 .publications-sr-only {
   position: absolute;
   width: 1px;

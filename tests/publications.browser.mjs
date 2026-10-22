@@ -42,11 +42,45 @@ try {
   assert.equal(await page.locator("[name=sort]").inputValue(), "newest");
   assert.match(await page.locator("[data-status]").textContent(), /20 of 138/);
   assert.equal(await page.locator(".publication-year").first().textContent(), "2026");
-  assert.equal(await page.locator("[data-technology-controls]").isVisible(), false);
+  const assignedTags = [...new Set(catalogue.publications.flatMap(record => record.technologies || []))].sort();
+  assert.equal(await page.locator('[name=technology]').count(), assignedTags.length);
+  assert.equal(await page.locator('[data-technology-value]').textContent(), 'All technologies');
   assert.equal(await page.locator('nav a[href="/publications/"]').getAttribute("class"), "active");
   assert.equal(await page.locator(".project-logo").evaluate(img => img.complete && img.naturalWidth > 0), true);
   await page.screenshot({path: ".local/portal-testing/screenshots/desktop.png", fullPage: false});
-  console.log("PASS: all years/newest default, initial results, navigation, and untagged catalogue");
+  console.log("PASS: all years/newest default, initial results, navigation, and technology dropdown");
+
+  if (assignedTags.length) {
+    const firstTag = assignedTags[0];
+    await page.locator('[data-technology-picker] summary').click();
+    await page.locator(`[name=technology][value="${firstTag}"]`).check();
+    const firstMatches = catalogue.publications.filter(record => record.technologies?.includes(firstTag));
+    await count(page, Math.min(20, firstMatches.length));
+    assert.ok(new URL(page.url()).searchParams.getAll('technology').includes(firstTag));
+    await page.reload();
+    await ready(page);
+    assert.equal(await page.locator(`[name=technology][value="${firstTag}"]`).isChecked(), true);
+    if (assignedTags.length > 1) {
+      const secondTag = assignedTags[1];
+      await page.locator('[data-technology-picker] summary').focus();
+      await page.keyboard.press('Enter');
+      await page.locator(`[name=technology][value="${secondTag}"]`).check();
+      const matches = catalogue.publications.filter(record => record.technologies?.some(tag => [firstTag, secondTag].includes(tag)));
+      await count(page, Math.min(20, matches.length));
+      assert.equal(await page.locator('[data-technology-value]').textContent(), '2 technologies selected');
+      await page.locator(`[name=technology][value="${secondTag}"]`).press('Escape');
+      assert.equal(await page.locator('[data-technology-picker]').getAttribute('open'), null);
+      assert.equal(await page.locator('[data-technology-picker] summary').evaluate(node => node === document.activeElement), true);
+      await page.locator('[name=year]').selectOption('2026');
+      await page.locator('[name=cci_involvement]').selectOption('service-provision');
+      await count(page, Math.min(20, matches.filter(record => record.year === 2026 && record.cci_involvement === 'service-provision').length));
+    }
+    await page.locator('[data-clear]').click();
+    assert.equal(await page.locator('[name=technology]:checked').count(), 0);
+    assert.equal(await page.locator('[data-technology-value]').textContent(), 'All technologies');
+    assert.equal(new URL(page.url()).search, '');
+    console.log('PASS: real technology tags, multi-choice dropdown, URL restoration, combined filters, keyboard and reset');
+  }
 
   const collaborationCount = catalogue.publications.filter(record => record.cci_involvement === "scientific-collaboration").length;
   const serviceCount = catalogue.publications.filter(record => record.cci_involvement === "service-provision").length;
@@ -128,12 +162,19 @@ try {
   for (const width of [375, 561, 640, 768, 1024]) {
     await page.setViewportSize({width, height: 900});
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, `Overflow at ${width}px`);
+    await page.locator('[data-technology-picker] summary').click();
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, `Open technology menu overflow at ${width}px`);
+    await page.locator('[data-technology-picker] summary').press('Escape');
   }
   await page.setViewportSize({width: 375, height: 812});
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({path: ".local/portal-testing/screenshots/mobile.png", fullPage: false});
   await page.locator('.publications-controls').screenshot({path: '.local/portal-testing/screenshots/mobile-controls.png'});
   await page.locator('.publication-card').first().screenshot({path: '.local/portal-testing/screenshots/mobile-card.png'});
+  await page.locator('[data-technology-picker] summary').click();
+  await page.locator('[data-technology-picker]').scrollIntoViewIfNeeded();
+  await page.screenshot({path: '.local/portal-testing/screenshots/mobile-technologies.png'});
+  await page.locator('[data-technology-picker] summary').press('Escape');
   console.log("PASS: responsive layout at 375, 768, and 1024 pixels");
 
   const fixture = structuredClone(catalogue);
@@ -177,6 +218,7 @@ try {
   await abstractButton.click();
   assert.equal(await abstractPanel.isVisible(), false);
   console.log("PASS: adjacent author/abstract controls, independent panels, keyboard access, and safe abstract text");
+  await page.locator('[data-technology-picker] summary').click();
   await page.getByLabel("Confocal microscopy", {exact: true}).check();
   await count(page, 1);
   await page.getByLabel("Electron microscopy", {exact: true}).check();

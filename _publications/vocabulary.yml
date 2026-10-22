@@ -3,40 +3,43 @@
 # Publications may carry multiple labels. No parent relationships or automatic
 # assignment of broader labels have been agreed yet.
 # Detailed preparation, acquisition and analysis evidence remains private.
+# Tags describe the publication's technologies, independently of CCI's role.
+# Substantive review/protocol topics may be tagged; incidental mentions and
+# cited papers do not establish a tag. Used versus discussed stays in private evidence.
 technologies:
   - id: light-microscopy
     label: Light Microscopy
-    description: Optical microscopy methods used to image the study samples.
+    description: Optical microscopy methods used or substantively described in the publication.
     notes: Record specific modalities and sample preparation in the detailed evidence.
 
   - id: electron-microscopy
     label: Electron Microscopy
-    description: Electron-based microscopy methods used to image the study samples.
+    description: Electron-based microscopy methods used or substantively described in the publication.
     notes: Record specific modalities and sample preparation in the detailed evidence.
 
   - id: image-analysis
     label: Image Analysis
-    description: Computational processing or quantitative analysis of images.
+    description: Computational processing or quantitative analysis of images used or substantively described in the publication.
     notes: Record the software, processing steps and measurements when available.
 
   - id: machine-learning-image-analysis
     label: Machine Learning Image Analysis
-    description: Machine learning used for image processing or analysis.
+    description: Machine learning for image processing or analysis, used or substantively described in the publication.
     notes: Machine learning applied only to non-image data does not establish this label.
 
   - id: smart-microscopy
     label: Smart Microscopy
-    description: Automated, adaptive or feedback-driven microscopy acquisition.
+    description: Automated, adaptive or feedback-driven microscopy acquisition used or substantively described in the publication.
     notes: Definition requires review, especially the boundary between routine automation and smart acquisition.
 
   - id: multimodal-imaging
     label: Multimodal Imaging
-    description: Multiple imaging modalities applied to similar or related samples within a study.
+    description: Multiple imaging modalities applied to similar or related samples within a study or described workflow.
     notes: Record which modalities and samples are involved; same-specimen correspondence is not required.
 
   - id: correlative-imaging
     label: Correlative Imaging
-    description: Different imaging modalities applied to the same specimen with explicit correspondence between observations.
+    description: Different imaging modalities applied to the same specimen with explicit correspondence between observations, in an implemented or described workflow.
     notes: CLEM is a classic example. Record how observations of the same specimen are linked or registered.
 
 # These initial service categories describe CCI's involvement in a publication.

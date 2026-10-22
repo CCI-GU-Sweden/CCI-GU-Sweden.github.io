@@ -1,6 +1,6 @@
 PUBLICATION DATA WORKFLOW
 
-Status: data import and curation tools. The searchable portal is a later step.
+Status: publication registry, searchable portal and curation tools.
 All commands run locally. Nothing here pushes, merges, or deploys the site.
 
 Activate the environment and work from the repository directory:
@@ -12,8 +12,8 @@ Files
 
 - _publications/registry.yml: canonical human-editable records, including
   original citations, retrieved metadata, approval, and manual overrides.
-- _publications/vocabulary.yml: accepted technology/service IDs. Empty until
-  CCI agrees the labels. All imported records currently have empty tags.
+- _publications/vocabulary.yml: stable technology/service IDs, labels and
+  definitions. Detailed evidence is curated privately before assigning tags.
 - assets/data/publications.json: generated public catalogue; never hand-edit.
 - .local/publications-cache/: successful normalized DOI responses. Ignored
   by Git. Normal imports reuse the cache; refresh explicitly recontacts APIs.
@@ -299,3 +299,35 @@ References
 
 https://habanero.readthedocs.io/en/latest/modules/crossref.html
 https://www.crossref.org/documentation/retrieve-metadata/content-negotiation/
+
+Technology extraction and year-scoped local trials
+
+Technology labels describe the publication, regardless of whether CCI supplied
+that particular method. Substantive review/protocol topics can qualify;
+incidental mentions and reference lists do not. Keep used-versus-discussed
+context in private evidence. CCI involvement remains independent.
+
+Detailed findings cover sample preparation, acquisition, and image/data
+analysis, with input checksums and exact source locations. Raw model proposals
+and review tables remain under private_data/technology-review/. Only broad
+vocabulary IDs enter the public registry. Abstract-only evidence may establish
+a positive tag; omitted methods remain unknown, not absent.
+
+The initial 2026 trial selects effective bibliographic year 2026 (including
+manual year overrides), independently of reporting years and DOI suffixes.
+Other years remain untagged while this subset is reviewed locally. Extracted
+findings are reviewed into a separate assignment plan containing schema_version:
+1, year: 2026, and publications entries with id, doi and technologies lists.
+The importer does not directly trust or apply raw model output.
+
+Preview the curated assignment plan, then apply explicitly and rebuild JSON:
+
+    python scripts/apply_technology_tags.py private_data/technology-review/2026/assignments.json --year 2026
+    python scripts/apply_technology_tags.py private_data/technology-review/2026/assignments.json --year 2026 --apply
+    python scripts/publications.py build
+
+The importer checks IDs, DOIs, effective years and the vocabulary before any
+write. It rejects conflicting existing labels rather than replacing them
+silently. Publication approval, involvement and other metadata are preserved.
+The local trial leaves tagging_status pending until Rafa completes review;
+that internal status is not exported. Nothing is published until release.
