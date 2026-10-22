@@ -1,0 +1,49 @@
+JEKYLL THEME DEPENDENCIES
+
+The site uses Jekyll 3.10.0 and jekyll-theme-slate 0.2.0, matching GitHub Pages
+support. The same Slate theme is installed as a gem rather than downloaded
+and extracted as a remote-theme ZIP during each build.
+
+Security decision (2026-10-22)
+
+Dependabot alert #1 reported CVE-2026-85396 / GHSA-47m2-wp7j-p9vc, a rubyzip
+path traversal issue affecting versions below 3.4.0. The github-pages 232
+meta-gem pins jekyll-remote-theme 0.4.3, whose rubyzip constraint is below 3.0.
+This prevents a compatible one-package security upgrade within that bundle.
+
+The Gemfile now declares the Jekyll engine, supported Slate gem, Markdown
+parser, and needed plugins directly. Gemfile.lock no longer contains the
+github-pages meta-gem, jekyll-remote-theme, or rubyzip. The site configuration
+uses theme: jekyll-theme-slate and removes the remote-theme plugin. Explicit
+sass style: compact preserves the previous CSS output.
+
+Metadata, SEO, relative links, optional front matter, README indexing,
+default layouts, and titles from headings retain the versions used by the
+GitHub Pages bundle. Unused themes/plugins are no longer installed locally.
+The hosted GitHub Pages publishing source and deployment mechanism are
+unchanged; the supported theme works with its existing build environment.
+
+Validation performed
+
+- New dependency bundle resolves successfully (47 gems).
+- Strict-front-matter Jekyll build passes.
+- All generated output files match the pre-fix output after normalizing the
+  local preview hostname and revision query parameter; CSS/assets match exactly.
+- The new configuration also builds with the original GitHub Pages 232 bundle,
+  producing equivalent output without loading a remote theme.
+- Desktop/mobile browser interaction checks pass, including abstract panels.
+
+After pulling this change, run bash _development/site.sh setup and restart
+the preview server so the running Ruby process uses the updated bundle.
+
+Keep Gemfile.lock committed. Do not restore the full github-pages meta-gem
+without checking that its dependency constraints permit patched rubyzip
+versions. Removing the affected repository dependency should resolve the
+Dependabot alert after merge and GitHub's dependency rescan; the alert has
+not been manually dismissed.
+
+References
+
+https://github.com/CCI-GU-Sweden/CCI-GU-Sweden.github.io/security/dependabot/1
+https://github.com/advisories/GHSA-47m2-wp7j-p9vc
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll

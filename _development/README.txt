@@ -1,7 +1,9 @@
 LOCAL DEVELOPMENT
 
-This website uses Jekyll, the GitHub Pages gem bundle, and the remote Slate
-theme pages-themes/slate@v0.2.0. Node.js and Docker are not required.
+This website uses GitHub Pages-compatible Jekyll 3.10.0 and the Slate 0.2.0
+theme gem. The Gemfile lists the plugins this site uses. Node.js and Docker
+are not required to preview the site. See _development/dependencies.txt for
+the dependency security decision.
 
 Initial setup (Ubuntu / WSL)
 
@@ -88,7 +90,9 @@ Where to edit
 
 External dependencies
 
-The theme is downloaded during builds. Several documentation pages load
+The theme is installed as a gem during setup; builds do not download a theme
+ZIP. GitHub metadata and several documentation pages still use external
+services. Documentation pages load
 Markdown, PDFs, JavaScript libraries, and an iframe from other repositories
 or CDNs at runtime, so a complete preview needs internet access. Changes in
 this checkout do not change content hosted by those other repositories.

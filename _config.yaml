@@ -7,6 +7,7 @@ data_dir            : _data
 includes_dir        : _includes
 sass:
   sass_dir: _sass
+  style: compact
 collections:
   posts:
     output          : true
@@ -14,7 +15,7 @@ collections:
 title               : "Centre for Cellular Imaging, GU"
 description         : "World class research support"
 
-remote_theme        : pages-themes/slate@v0.2.0
+theme               : jekyll-theme-slate
 show_downloads      : false
 
 # Handling Reading
@@ -34,7 +35,7 @@ unpublished         : false
 
 # Plugins
 whitelist           : []
-plugins             : [jekyll-remote-theme]
+plugins             : [jekyll-github-metadata, jekyll-seo-tag, jekyll-relative-links, jekyll-optional-front-matter, jekyll-readme-index, jekyll-default-layout, jekyll-titles-from-headings]
 
 # Conversion
 markdown            : kramdown
