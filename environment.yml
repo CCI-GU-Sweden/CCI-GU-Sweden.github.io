@@ -1,0 +1,10 @@
+name: cci-page
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - habanero>=2.3,<3
+  - requests>=2.32,<3
+  - pyyaml>=6,<7
+  - pytest>=8,<10
