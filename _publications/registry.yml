@@ -3,7 +3,9 @@ publications:
 - id: cci-012dec16f3b55bd0b41c5be9717ef989
   doi: 10.1242/jcs.262322
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - machine-learning-image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -146,7 +148,10 @@ publications:
 - id: cci-04993b33bd695df5b8a93e7ee9ce9e4f
   doi: 10.1186/s12935-023-02916-8
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -393,7 +398,9 @@ publications:
 - id: cci-0b59616960d85694af04eb2210a8fea2
   doi: 10.1093/dote/doae034
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -490,7 +497,9 @@ publications:
 - id: cci-0f7199f77aec5dd898dc8dca3b5f134d
   doi: 10.1002/jev2.12408
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -704,7 +713,9 @@ publications:
 - id: cci-193c1f03cc7e5554950b8a9218ce88e7
   doi: 10.1002/jev2.12380
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -770,7 +781,10 @@ publications:
 - id: cci-19629611c59957be890ef938b221fa53
   doi: 10.1021/acschemneuro.4c00006
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -1046,7 +1060,9 @@ publications:
 - id: cci-1c30fa7a08f1520a95f5d4ca9deaaf8f
   doi: 10.7554/elife.88256
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -1138,7 +1154,8 @@ publications:
 - id: cci-1c62d83293e25cf18decc6f9bf7a5fa9
   doi: 10.1039/d4cb00313f
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -1218,7 +1235,9 @@ publications:
 - id: cci-21569a3284355288a34cc80d3bd269f0
   doi: 10.5037/jomr.2023.14302
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -1429,7 +1448,8 @@ publications:
 - id: cci-24c8ad51366f534e82e23996f601f984
   doi: 10.1039/d3cp01147j
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -1727,7 +1747,11 @@ publications:
 - id: cci-2c8151b852ce5c3a883fd7a3b8b19f57
   doi: 10.1101/2024.06.03.596890
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
+  - machine-learning-image-analysis
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -1811,7 +1835,9 @@ publications:
 - id: cci-2efb459b94265c1ea331783967657e66
   doi: 10.1002/jex2.70043
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -1904,7 +1930,11 @@ publications:
 - id: cci-32c6c4f386c05d1fb1a082f5ef3920a5
   doi: 10.1021/jacsau.2c00492
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -1976,7 +2006,9 @@ publications:
 - id: cci-34d0c493c6c65f168f05b48f44a0bf22
   doi: 10.1038/s41598-023-41188-0
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2052,7 +2084,10 @@ publications:
 - id: cci-363fdcc3305059c79d1f1b1e2b4bca59
   doi: 10.1111/mec.17817
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -2131,7 +2166,8 @@ publications:
 - id: cci-3759c15dd1855e498e642830f90ef7d2
   doi: 10.1101/2025.08.18.670881
   approved: true
-  technologies: []
+  technologies:
+  - smart-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2282,7 +2318,9 @@ publications:
 - id: cci-375e7ec02dc755e6b5a3218942db94b8
   doi: 10.1021/acssensors.2c02496
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2354,7 +2392,9 @@ publications:
 - id: cci-3798d9f2a0195b1db8eee4aa4338efb5
   doi: 10.1016/j.jmb.2025.169405
   approved: true
-  technologies: []
+  technologies:
+  - cryo-electron-microscopy
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2432,7 +2472,8 @@ publications:
 - id: cci-38c4274a0b355301ae93f0febc48905b
   doi: 10.1038/s41467-023-43867-y
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2514,7 +2555,8 @@ publications:
 - id: cci-3bef0edb97bb5eadbad6675798a69e53
   doi: 10.1111/clr.14136
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -2799,7 +2841,13 @@ publications:
 - id: cci-45988c618c5c5a68b3e52d0d348ba804
   doi: 10.1038/s44303-024-00010-w
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
+  - machine-learning-image-analysis
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -2955,7 +3003,8 @@ publications:
 - id: cci-485e4abcabad53cc93957faf426cc0dd
   doi: 10.3390/ijms25010581
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3035,7 +3084,11 @@ publications:
 - id: cci-4abe9d4b554558158d265d356a829442
   doi: 10.1021/acs.analchem.2c05302
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -3103,7 +3156,8 @@ publications:
 - id: cci-4b34fb239ec956c0be26c298faa782b2
   doi: 10.1186/s12951-025-03125-3
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3181,7 +3235,8 @@ publications:
 - id: cci-4b9ff6176d2854669a5d88fb27a55762
   doi: 10.1021/jacs.4c08450
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3246,7 +3301,8 @@ publications:
 - id: cci-5386bf76edef545fbd189b4c316c8d5f
   doi: 10.1002/admi.202500252
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3330,7 +3386,9 @@ publications:
 - id: cci-5a6f1a42ece25b9fa0ebbea64fb7fd28
   doi: 10.3390/pharmaceutics15020391
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3420,7 +3478,10 @@ publications:
 - id: cci-5a73c11b11ec5bf6aa72da6fbf839c0c
   doi: 10.1016/j.mtbio.2024.100997
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3479,7 +3540,9 @@ publications:
 - id: cci-5c291730530a537abc3c6ce6beca7b0f
   doi: 10.1210/endocr/bqae166
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3772,7 +3835,9 @@ publications:
 - id: cci-5fac0a6f4a735edb843ee5c5193d427b
   doi: 10.1038/s41467-023-38568-5
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -3945,7 +4010,9 @@ publications:
 - id: cci-62b6487059f9541d95254b8881a0385a
   doi: 10.1523/jneurosci.1516-22.2022
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -4002,7 +4069,11 @@ publications:
 - id: cci-62c3ee17f01857779592149d2a21552b
   doi: 10.1016/j.jcmgh.2025.101485
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -4173,7 +4244,10 @@ publications:
 - id: cci-63da63a05dcc51429da393cdff3d1e33
   doi: 10.1038/s41591-024-03400-0
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -4311,7 +4385,9 @@ publications:
 - id: cci-669b70c7b0e654fe9f2f798f5b4408a7
   doi: 10.1186/s13148-023-01498-6
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -4467,7 +4543,8 @@ publications:
 - id: cci-6b59a0a242cd5093b64fcce19fe169c7
   doi: 10.1172/jci162253
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -4564,7 +4641,9 @@ publications:
 - id: cci-785adee0dbc759a3ac0b43ec0af8b309
   doi: 10.1096/fba.2023-00030
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -4889,7 +4968,12 @@ publications:
 - id: cci-7c082368cb505f749ffc0514a57862d6
   doi: 10.1038/s43856-025-00756-3
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -4996,7 +5080,11 @@ publications:
 - id: cci-7c1d89bd9a7950c195c44f383a3a2435
   doi: 10.1038/s41467-025-60059-y
   approved: true
-  technologies: []
+  technologies:
+  - cryo-electron-microscopy
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -5447,7 +5535,9 @@ publications:
 - id: cci-82e5fff32978539592fd0f379af27d6d
   doi: 10.1186/s12931-023-02310-y
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -5553,7 +5643,10 @@ publications:
 - id: cci-85e32b8cd407532ebb8fde83683d8fdb
   doi: 10.1016/j.heliyon.2024.e32023
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
+  - machine-learning-image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -5744,7 +5837,8 @@ publications:
 - id: cci-8655e671581c53fbbf265d955da64679
   doi: 10.1128/aem.00247-24
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -5919,7 +6013,9 @@ publications:
 - id: cci-8d718ede348f522fb587cf4cbca9f01d
   doi: 10.3389/fbiom.2024.1338115
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -6571,7 +6667,9 @@ publications:
 - id: cci-940025b7704d5517a577b7aa5f8dac0c
   doi: 10.1021/jacs.5c09338
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -6744,7 +6842,8 @@ publications:
 - id: cci-95f73ae953db5e6db712a45515a77d65
   doi: 10.1111/jcpe.13836
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -6868,7 +6967,10 @@ publications:
 - id: cci-9858a2dc23de59669a08c7e91f5a165c
   doi: 10.1002/jev2.70037
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -6929,7 +7031,9 @@ publications:
 - id: cci-985bca7bd58253f2a797bb4d2c752fae
   doi: 10.1111/adb.70022
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -7066,7 +7170,8 @@ publications:
 - id: cci-99e704f057595d9e852a947490276576
   doi: 10.1002/chem.202400322
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -7182,7 +7287,8 @@ publications:
 - id: cci-9cd97acaab875aec98ed40731324ed6b
   doi: 10.1016/j.isci.2025.112624
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -7471,7 +7577,8 @@ publications:
 - id: cci-a5fa835634ec5d0da09c819e448a39c7
   doi: 10.1039/d4sc00390j
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -7606,7 +7713,11 @@ publications:
 - id: cci-a6ed41d36bcc5625b4162bd79b020cbe
   doi: 10.1038/s41593-024-01592-9
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -7688,7 +7799,8 @@ publications:
 - id: cci-b1dac149554155708acb15248c5a0192
   doi: 10.1093/cvr/cvad041
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -7952,7 +8064,10 @@ publications:
 - id: cci-bc0ef6da61b65192b116cba3b53abcd4
   doi: 10.1038/s41586-025-08856-9
   approved: true
-  technologies: []
+  technologies:
+  - cryo-electron-microscopy
+  - electron-microscopy
+  - image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -8216,7 +8331,9 @@ publications:
 - id: cci-c2722009f935590a92713874c09122b7
   doi: 10.1101/2025.10.18.683246
   approved: true
-  technologies: []
+  technologies:
+  - cryo-electron-microscopy
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -8405,7 +8522,9 @@ publications:
 - id: cci-c4dd6e714e165dde9f074818c3af5581
   doi: 10.1111/febs.16678
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -8646,7 +8765,11 @@ publications:
 - id: cci-ca4e94b8b01f5e6ca6d1137a7af0eb9b
   doi: 10.1002/anie.202304098
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - electron-microscopy
+  - image-analysis
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -8892,7 +9015,8 @@ publications:
 - id: cci-d2db546438455e2ba6a44a99033bd35c
   doi: 10.1002/jex2.127
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -8976,7 +9100,9 @@ publications:
 - id: cci-d5df3aa0c623521d8b5a05e6120ad274
   doi: 10.1007/s10571-023-01374-0
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -9179,7 +9305,11 @@ publications:
 - id: cci-d75900b1d019535481f8b8feb2d89055
   doi: 10.1039/d3sc05629e
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - electron-microscopy
+  - image-analysis
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -9350,7 +9480,10 @@ publications:
 - id: cci-d8aee486ff6f583e89eb52cefb48b949
   doi: 10.1002/jev2.70117
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -9416,7 +9549,8 @@ publications:
 - id: cci-dcaf2409c7b05661b4ddca45fe1e64d6
   doi: 10.1186/s12903-025-07588-6
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -9527,7 +9661,8 @@ publications:
 - id: cci-de40607bfbc857e3859069879dc16153
   doi: 10.1038/s41467-024-53045-3
   approved: true
-  technologies: []
+  technologies:
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -9685,7 +9820,9 @@ publications:
 - id: cci-e36075e60e115937a4efb6f0de0003c5
   doi: 10.1016/j.jbc.2023.104799
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -9848,7 +9985,8 @@ publications:
 - id: cci-e4d574719ccc5c62ae9cb53d0a86a5a2
   doi: 10.1186/s12951-023-01928-w
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10145,7 +10283,9 @@ publications:
 - id: cci-ea8ebefcd26c5ca7a52646904f8b1508
   doi: 10.1021/acschemneuro.3c00741
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -10276,7 +10416,8 @@ publications:
 - id: cci-ec71aa844bdf5982b505c7b87f87fc78
   doi: 10.1101/2023.03.01.530627
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10341,7 +10482,10 @@ publications:
 - id: cci-eda894a926de5901865b58c3344cf348
   doi: 10.1089/brain.2022.0047
   approved: true
-  technologies: []
+  technologies:
+  - correlative-imaging
+  - light-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -10411,7 +10555,8 @@ publications:
 - id: cci-f02c3504bf3e5bab8b692df0d93f76d8
   doi: 10.1002/anie.202400422
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10564,7 +10709,9 @@ publications:
 - id: cci-f0ea1f0ec0275beb89b05d9cbb8b9d48
   doi: 10.1016/j.jlr.2023.100335
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10620,7 +10767,9 @@ publications:
 - id: cci-f3159070b13f5ad185d0ef17a65b0079
   doi: 10.7150/thno.98199
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10696,7 +10845,9 @@ publications:
 - id: cci-f3632317d1095ae7a0db7849d9e0e496
   doi: 10.1038/s41598-025-90101-4
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -10775,7 +10926,9 @@ publications:
 - id: cci-f6c5b5b366e053f0a502f194735a9010
   doi: 10.1038/s41592-023-01987-9
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - machine-learning-image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -10977,7 +11130,9 @@ publications:
 - id: cci-f7cfee32be7a55e3b30b651fe7a21bdd
   doi: 10.1093/pnasnexus/pgad388
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - image-analysis
   services: []
   tagging_status: pending
   reporting_years:
@@ -11124,7 +11279,8 @@ publications:
 - id: cci-f86193a10fc75a9999dff0a6af2bdd6b
   doi: 10.1002/alz.13711
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -11202,7 +11358,8 @@ publications:
 - id: cci-f982f8f9d3425ef6b8b3794d4fef89d8
   doi: 10.1101/2025.05.08.652936
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -11267,7 +11424,9 @@ publications:
 - id: cci-fac80865c1485daca0247a12e04545dc
   doi: 10.1242/dev.201035
   approved: true
-  technologies: []
+  technologies:
+  - image-analysis
+  - light-microscopy
   services: []
   tagging_status: pending
   reporting_years:
@@ -11531,7 +11690,9 @@ publications:
 - id: cci-fc182a93e23e5f1592a6aa0d1e86eb19
   doi: 10.2337/db22-0293
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
+  - multimodal-imaging
   services: []
   tagging_status: pending
   reporting_years:
@@ -11631,7 +11792,8 @@ publications:
 - id: cci-fc672c04e48653649f8bb4da6bb28242
   doi: 10.1681/asn.0000000000000062
   approved: true
-  technologies: []
+  technologies:
+  - electron-microscopy
   services: []
   tagging_status: pending
   reporting_years:

@@ -17,6 +17,11 @@ technologies:
     description: Electron-based microscopy methods used or substantively described in the publication.
     notes: Record specific modalities and sample preparation in the detailed evidence.
 
+  - id: cryo-electron-microscopy
+    label: Cryo-EM
+    description: Cryogenic electron microscopy used or substantively described in the publication, including single-particle cryo-EM and cryo-electron tomography.
+    notes: Assign alongside Electron Microscopy when independently supported. Cryosectioning, frozen storage, negative staining alone and incidental references to earlier cryo-EM structures do not establish this label.
+
   - id: image-analysis
     label: Image Analysis
     description: Computational processing or quantitative analysis of images used or substantively described in the publication.

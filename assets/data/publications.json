@@ -743,7 +743,11 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "A Non‐Centrifugation Method to Concentrate and Purify Extracellular Vesicles Using Superabsorbent Polymer Followed by Size Exclusion Chromatography",
       "type": "journal-article",
       "year": 2025
@@ -835,7 +839,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "An Anti‐Myd88 Peptide Synergistically Enhances the Anti‐Inflammatory Effects of Extracellular Vesicles from Naïve Umbilical Cord MSC or HEK293F CD24 Overexpressing Cells",
       "type": "journal-article",
       "year": 2025
@@ -961,7 +967,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Characterization of Extracellular Vesicles Derived From Human Precision‐Cut Liver Slices in Metabolic Dysfunction‐Associated Steatotic Liver Disease",
       "type": "journal-article",
       "year": 2025
@@ -990,7 +999,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "cryo-electron-microscopy",
+        "electron-microscopy"
+      ],
       "title": "Cryo-EM exposes diverse polymorphism in IAPP mutants to guide the rational design of peptide-based therapeutics",
       "type": "journal-article",
       "year": 2025
@@ -1016,7 +1028,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "cryo-electron-microscopy",
+        "electron-microscopy"
+      ],
       "title": "Cryo-EM structure of CLCA1 identifies CLCA1 as a founding member of a novel metzincin family",
       "type": "posted-content",
       "year": 2025
@@ -1049,7 +1064,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Design and application of a fluorescent probe for imaging of endogenous Bruton's tyrosine kinase with preserved enzymatic activity",
       "type": "journal-article",
       "year": 2025
@@ -1106,7 +1123,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Extracellular vesicle surface engineering with integrins (ITGAL & ITGB2) to specifically target ICAM-1-expressing endothelial cells",
       "type": "journal-article",
       "year": 2025
@@ -1162,7 +1181,11 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Genome‐Wide Adaptation to a Complex Environmental Gradient in a Keystone Phytoplankton Species",
       "type": "journal-article",
       "year": 2025
@@ -1191,7 +1214,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Impact of hydrogen peroxide photolysis on viable bacterial count and composition of in vivo dental biofilm—an ex vivo study",
       "type": "journal-article",
       "year": 2025
@@ -1237,7 +1262,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Insights into metabolic changes during epidermal differentiation as revealed by multiphoton microscopy with fluorescence lifetime imaging",
       "type": "journal-article",
       "year": 2025
@@ -1289,7 +1317,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Intranasal Delivery of a Ghrelin Mimetic Engages the Brain Ghrelin Signaling System in Mice",
       "type": "journal-article",
       "year": 2025
@@ -1360,7 +1391,12 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "cryo-electron-microscopy",
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Modelling POLG mutations in mice unravels a critical role of POLγΒ in regulating phenotypic severity",
       "type": "journal-article",
       "year": 2025
@@ -1436,7 +1472,11 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Phospho-tau serine-262 and serine-356 as biomarkers of pre-tangle soluble tau assemblies in Alzheimer’s disease",
       "type": "journal-article",
       "year": 2025
@@ -1461,7 +1501,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Proteomic and lipidomic profiling of immune cell-derived subpopulations of extracellular vesicles",
       "type": "posted-content",
       "year": 2025
@@ -1492,7 +1534,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Real-time genome imaging of host interactions in adeno-associated virus genome release",
       "type": "journal-article",
       "year": 2025
@@ -1517,7 +1561,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Reduced Alcohol Consumption Following Ablation of Cholinergic Interneurons in the Nucleus Accumbens of Wistar Rats",
       "type": "journal-article",
       "year": 2025
@@ -1568,7 +1615,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Single-Entity Resolution Single-Cell Nanosensor Reveals Reactive Oxygen Species at Stress Granules Are Formed by Interfacial Redox Chemistry",
       "type": "journal-article",
       "year": 2025
@@ -1622,7 +1672,11 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "cryo-electron-microscopy",
+        "electron-microscopy",
+        "image-analysis"
+      ],
       "title": "Small molecules restore mutant mitochondrial DNA polymerase activity",
       "type": "journal-article",
       "year": 2025
@@ -1680,7 +1734,9 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "smart-microscopy"
+      ],
       "title": "Smart Microscopy: Current Implementations and a Roadmap for Interoperability",
       "type": "posted-content",
       "year": 2025
@@ -1704,7 +1760,11 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "STING Agonist Drug Delivery by Bacterial Extracellular Vesicles Induces Synergistic Immuno‐Oncology Responses and Efficient Inhibition of Tumour Growth",
       "type": "journal-article",
       "year": 2025
@@ -1733,7 +1793,10 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Stress granule formation is regulated by signaling machinery involving Sch9/Ypk1, sphingolipids, and Ubi4",
       "type": "journal-article",
       "year": 2025
@@ -1773,7 +1836,12 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Therapeutic Potential of STE20-Type Kinase STK25 Inhibition for the Prevention and Treatment of Metabolically Induced Hepatocellular Carcinoma",
       "type": "journal-article",
       "year": 2025
@@ -1804,7 +1872,13 @@
         2025
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Titanium micro-particles are commonly found in soft tissues surrounding dental implants",
       "type": "journal-article",
       "year": 2025
@@ -1955,7 +2029,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "All-photonic kinase inhibitors: light-controlled release-and-report inhibition",
       "type": "journal-article",
       "year": 2024
@@ -1982,7 +2058,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Amperometry and Electron Microscopy show Stress Granules Induce Homotypic Fusion of Catecholamine Vesicles",
       "type": "journal-article",
       "year": 2024
@@ -2006,7 +2084,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Analyzing Fusion Pore Dynamics and Counting the Number of Acetylcholine Molecules Released by Exocytosis",
       "type": "journal-article",
       "year": 2024
@@ -2033,7 +2113,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Astrocytic Regulation of Endocannabinoid-Dependent Synaptic Plasticity in the Dorsolateral Striatum",
       "type": "journal-article",
       "year": 2024
@@ -2065,7 +2147,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Bifidobacterium longum subsp. longum BG-L47 boosts growth and activity of Limosilactobacillus reuteri DSM 17938 and its extracellular membrane vesicles",
       "type": "journal-article",
       "year": 2024
@@ -2123,7 +2207,12 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy",
+        "machine-learning-image-analysis",
+        "multimodal-imaging"
+      ],
       "title": "Chemical signatures delineate heterogeneous amyloid plaque populations across the Alzheimer’s disease spectrum",
       "type": "posted-content",
       "year": 2024
@@ -2195,7 +2284,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "machine-learning-image-analysis"
+      ],
       "title": "Community-developed checklists for publishing images and image analyses",
       "type": "journal-article",
       "year": 2024
@@ -2261,7 +2353,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "multimodal-imaging"
+      ],
       "title": "Correlated multimodal imaging in life sciences: lessons learnt",
       "type": "journal-article",
       "year": 2024
@@ -2294,7 +2389,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "De novo production of protoberberine and benzophenanthridine alkaloids through metabolic engineering of yeast",
       "type": "journal-article",
       "year": 2024
@@ -2343,7 +2440,11 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy",
+        "machine-learning-image-analysis"
+      ],
       "title": "Exposing kinetic disparities between inflammasome readouts using time-resolved analysis",
       "type": "journal-article",
       "year": 2024
@@ -2373,7 +2474,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Expression of inducible nitric oxide synthase, nitrotyrosine, eosinophilic peroxidase, eotaxin-3, and galectin-3 in patients with gastroesophageal reflux disease, eosinophilic esophagitis, and in healthy controls: a semiquantitative image analysis of 3,3′-diaminobenzidine-stained esophageal biopsies",
       "type": "journal-article",
       "year": 2024
@@ -2424,7 +2528,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Heat inactivation of foetal bovine serum performed after EV‐depletion influences the proteome of cell‐derived extracellular vesicles",
       "type": "journal-article",
       "year": 2024
@@ -2485,7 +2592,12 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Liprin-α proteins are master regulators of human presynapse assembly",
       "type": "journal-article",
       "year": 2024
@@ -2546,7 +2658,14 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy",
+        "machine-learning-image-analysis",
+        "multimodal-imaging"
+      ],
       "title": "Multimodal bioimaging across disciplines and scales: challenges, opportunities and breaking down barriers",
       "type": "journal-article",
       "year": 2024
@@ -2607,7 +2726,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Novel ultrasensitive immunoassay for the selective quantification of tau oligomers and related soluble aggregates",
       "type": "journal-article",
       "year": 2024
@@ -2628,7 +2749,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Omega-3 and -6 Fatty Acids Alter the Membrane Lipid Composition and Vesicle Size to Regulate Exocytosis and Storage of Catecholamines",
       "type": "journal-article",
       "year": 2024
@@ -2662,7 +2786,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "PITAR, a DNA damage-inducible cancer/testis long noncoding RNA, inactivates p53 by binding and stabilizing TRIM28 mRNA",
       "type": "journal-article",
       "year": 2024
@@ -2720,7 +2847,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Proteomic profiling of tumour tissue‐derived extracellular vesicles in colon cancer",
       "type": "journal-article",
       "year": 2024
@@ -2762,7 +2891,9 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Pyrene Functionalized Norbornadiene‐Quadricyclane Fluorescent Photoswitches: Characterization of their Spectral Properties and Application in Imaging of Amyloid Beta Plaques",
       "type": "journal-article",
       "year": 2024
@@ -2863,7 +2994,11 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Spatial Neurolipidomics at the Single Amyloid-β Plaque Level in Postmortem Human Alzheimer’s Disease Brain",
       "type": "journal-article",
       "year": 2024
@@ -2915,7 +3050,12 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "electron-microscopy",
+        "image-analysis",
+        "multimodal-imaging"
+      ],
       "title": "Subcellular protein turnover in human neural progenitor cells revealed by correlative electron microscopy and nanoscale secondary ion mass spectrometry imaging",
       "type": "journal-article",
       "year": 2024
@@ -2991,7 +3131,10 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "machine-learning-image-analysis"
+      ],
       "title": "The crucial role of bioimage analysts in scientific research and publication",
       "type": "journal-article",
       "year": 2024
@@ -3038,7 +3181,11 @@
         2024
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Viridibacillus culture derived silver nanoparticles exert potent anticancer action in 2D and 3D models of lung cancer via mitochondrial depolarization-mediated apoptosis",
       "type": "journal-article",
       "year": 2024
@@ -3085,7 +3232,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "A Novel and Functionally Diverse Class of Acetylcholine-Gated Ion Channels",
       "type": "journal-article",
       "year": 2023
@@ -3112,7 +3262,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "A proinsulin-dependent interaction between ENPL-1 and ASNA-1 in neurons is required to maintain insulin secretion in C. elegans",
       "type": "journal-article",
       "year": 2023
@@ -3140,7 +3293,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "AdipoR2 recruits protein interactors to promote fatty acid elongation and membrane fluidity",
       "type": "journal-article",
       "year": 2023
@@ -3170,7 +3326,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "APP-BACE1 Interaction and Intracellular Localization Regulate Aβ Production in iPSC-Derived Cortical Neurons",
       "type": "journal-article",
       "year": 2023
@@ -3248,7 +3407,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Cardiomyocyte-specific PCSK9 deficiency compromises mitochondrial bioenergetics and heart function",
       "type": "journal-article",
       "year": 2023
@@ -3306,7 +3467,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Cisplatin toxicity is counteracted by the activation of the p38/ATF-7 signaling pathway in post-mitotic C. elegans",
       "type": "journal-article",
       "year": 2023
@@ -3344,7 +3508,11 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Colorectal cancer-derived small extracellular vesicles induce TGFβ1-mediated epithelial to mesenchymal transition of hepatocytes",
       "type": "journal-article",
       "year": 2023
@@ -3381,7 +3549,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis"
+      ],
       "title": "Complement C3a treatment accelerates recovery after stroke via modulation of astrocyte reactivity and cortical connectivity",
       "type": "journal-article",
       "year": 2023
@@ -3408,7 +3578,12 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Correlative Chemical Imaging and Spatial Chemometrics Delineate Alzheimer Plaque Heterogeneity at High Spatial Resolution",
       "type": "journal-article",
       "year": 2023
@@ -3434,7 +3609,11 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Correlative Chemical Imaging Identifies Amyloid Peptide Signatures of Neuritic Plaques and Dystrophy in Human Sporadic Alzheimer's Disease",
       "type": "journal-article",
       "year": 2023
@@ -3461,7 +3640,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "CRISPR-Cas9 knockout screen identifies novel treatment targets in childhood high-grade glioma",
       "type": "journal-article",
       "year": 2023
@@ -3487,7 +3669,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Decontamination of biofilm‐contaminated implant surfaces: An in vitro evaluation",
       "type": "journal-article",
       "year": 2023
@@ -3550,7 +3734,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Detoxified synthetic bacterial membrane vesicles as a vaccine platform against bacteria and SARS-CoV-2",
       "type": "journal-article",
       "year": 2023
@@ -3579,7 +3765,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Effects of mesenchymal stem cell-derived nanovesicles in experimental allergic airway inflammation",
       "type": "journal-article",
       "year": 2023
@@ -3611,7 +3800,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Ginsenoside Rg3 Reduces the Toxicity of Graphene Oxide Used for pH-Responsive Delivery of Doxorubicin to Liver and Breast Cancer Cells",
       "type": "journal-article",
       "year": 2023
@@ -3638,7 +3830,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis"
+      ],
       "title": "Goblet cell interactions reorient bundled mucus strands for efficient airway clearance",
       "type": "journal-article",
       "year": 2023
@@ -3691,7 +3886,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Heat inactivation of foetal bovine serum causes protein contamination of extracellular vesicles",
       "type": "posted-content",
       "year": 2023
@@ -3714,7 +3911,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Inflammatory Gene Profile and Particle Presence in Peri-Implant Mucosa: a Pilot Study on 9 Patients",
       "type": "journal-article",
       "year": 2023
@@ -3741,7 +3941,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Investigating New Applications of a Photoswitchable Fluorescent Norbornadiene as a Multifunctional Probe for Delineation of Amyloid Plaque Polymorphism",
       "type": "journal-article",
       "year": 2023
@@ -3911,7 +4114,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "light-microscopy"
+      ],
       "title": "Multiphoton characterization and live cell imaging using fluorescent adenine analogue 2CNqA",
       "type": "journal-article",
       "year": 2023
@@ -3935,7 +4140,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Podocyte Geranylgeranyl Transferase Type-I Is Essential for Maintenance of the Glomerular Filtration Barrier",
       "type": "journal-article",
       "year": 2023
@@ -3958,7 +4165,12 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "electron-microscopy",
+        "image-analysis",
+        "multimodal-imaging"
+      ],
       "title": "Quantitative Nanoscale Secondary Ion Mass Spectrometry (NanoSIMS) Imaging of Individual Vesicles to Investigate the Relation between Fraction of Chemical Release and Vesicle Size",
       "type": "journal-article",
       "year": 2023
@@ -4046,7 +4258,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Resin acids play key roles in shaping microbial communities during degradation of spruce bark",
       "type": "journal-article",
       "year": 2023
@@ -4068,7 +4282,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "light-microscopy"
+      ],
       "title": "Striking membrane defects in AdipoR-deficient cells",
       "type": "journal-article",
       "year": 2023
@@ -4090,7 +4307,9 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy"
+      ],
       "title": "Surface decontamination of explanted peri‐implantitis‐affected implants",
       "type": "journal-article",
       "year": 2023
@@ -4115,7 +4334,12 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "correlative-imaging",
+        "image-analysis",
+        "light-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Tetramodal Chemical Imaging Delineates the Lipid–Amyloid Peptide Interplay at Single Plaques in Transgenic Alzheimer’s Disease Models",
       "type": "journal-article",
       "year": 2023
@@ -4167,7 +4391,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "The yeast guanine nucleotide exchange factor Sec7 is a bottleneck in spatial protein quality control and detoxifies neurological disease proteins",
       "type": "journal-article",
       "year": 2023
@@ -4191,7 +4418,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis"
+      ],
       "title": "Three‐dimensional reconstruction of interstitial extracellular vesicles in human liver as determined by electron tomography",
       "type": "journal-article",
       "year": 2023
@@ -4222,7 +4452,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "image-analysis"
+      ],
       "title": "Two different isoforms of osteopontin modulate myelination and axonal integrity",
       "type": "journal-article",
       "year": 2023
@@ -4260,7 +4493,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "electron-microscopy",
+        "multimodal-imaging"
+      ],
       "title": "Elevated Adipocyte Membrane Phospholipid Saturation Does Not Compromise Insulin Signaling",
       "type": "journal-article",
       "year": 2022
@@ -4287,7 +4523,10 @@
         2023
       ],
       "services": [],
-      "technologies": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
       "title": "Regulatory mechanisms of HMGB1 and its receptors in polycystic ovary syndrome‐driven gravid uterine inflammation",
       "type": "journal-article",
       "year": 2022
@@ -4313,6 +4552,10 @@
       {
         "id": "electron-microscopy",
         "label": "Electron Microscopy"
+      },
+      {
+        "id": "cryo-electron-microscopy",
+        "label": "Cryo-EM"
       },
       {
         "id": "image-analysis",
