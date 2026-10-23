@@ -3606,6 +3606,7 @@
       "journal": "Brain Connectivity",
       "publication_url": "https://doi.org/10.1089/brain.2022.0047",
       "reporting_years": [
+        2022,
         2023
       ],
       "services": [],
@@ -3770,6 +3771,47 @@
         "light-microscopy"
       ],
       "title": "Effects of mesenchymal stem cell-derived nanovesicles in experimental allergic airway inflammation",
+      "type": "journal-article",
+      "year": 2023
+    },
+    {
+      "authors": [
+        "Henrik Palmgren",
+        "Kasparas Petkevicius",
+        "Stefano Bartesaghi",
+        "Andrea Ahnmark",
+        "Mario Ruiz",
+        "Ralf Nilsson",
+        "Lars Löfgren",
+        "Matthew S. Glover",
+        "Anne-Christine Andréasson",
+        "Liselotte Andersson",
+        "Cécile Becquart",
+        "Michael Kurczy",
+        "Bengt Kull",
+        "Simonetta Wallin",
+        "Daniel Karlsson",
+        "Sonja Hess",
+        "Marcello Maresca",
+        "Mohammad Bohlooly-Y",
+        "Xiao-Rong Peng",
+        "Marc Pilon"
+      ],
+      "authors_text": "Henrik Palmgren; Kasparas Petkevicius; Stefano Bartesaghi; Andrea Ahnmark; Mario Ruiz; Ralf Nilsson; Lars Löfgren; Matthew S. Glover; Anne-Christine Andréasson; Liselotte Andersson; Cécile Becquart; Michael Kurczy; Bengt Kull; Simonetta Wallin; Daniel Karlsson; Sonja Hess; Marcello Maresca; Mohammad Bohlooly-Y; Xiao-Rong Peng; Marc Pilon",
+      "cci_involvement": "service-provision",
+      "doi": "10.2337/db22-0293",
+      "id": "cci-fc182a93e23e5f1592a6aa0d1e86eb19",
+      "journal": "Diabetes",
+      "publication_url": "https://doi.org/10.2337/db22-0293",
+      "reporting_years": [
+        2023
+      ],
+      "services": [],
+      "technologies": [
+        "electron-microscopy",
+        "multimodal-imaging"
+      ],
+      "title": "Elevated Adipocyte Membrane Phospholipid Saturation Does Not Compromise Insulin Signaling",
       "type": "journal-article",
       "year": 2023
     },
@@ -4233,6 +4275,36 @@
       "year": 2023
     },
     {
+      "authors": [
+        "Min Hu",
+        "Yuehui Zhang",
+        "Yaxing Lu",
+        "Jing Han",
+        "Tingting Guo",
+        "Peng Cui",
+        "Mats Brännström",
+        "Linus R. Shao",
+        "Håkan Billig"
+      ],
+      "authors_text": "Min Hu; Yuehui Zhang; Yaxing Lu; Jing Han; Tingting Guo; Peng Cui; Mats Brännström; Linus R. Shao; Håkan Billig",
+      "cci_involvement": "service-provision",
+      "doi": "10.1111/febs.16678",
+      "id": "cci-c4dd6e714e165dde9f074818c3af5581",
+      "journal": "The FEBS Journal",
+      "publication_url": "https://doi.org/10.1111/febs.16678",
+      "reporting_years": [
+        2023
+      ],
+      "services": [],
+      "technologies": [
+        "image-analysis",
+        "light-microscopy"
+      ],
+      "title": "Regulatory mechanisms of HMGB1 and its receptors in polycystic ovary syndrome‐driven gravid uterine inflammation",
+      "type": "journal-article",
+      "year": 2023
+    },
+    {
       "abstract": {
         "license_url": "https://creativecommons.org/licenses/by/4.0",
         "source_url": "https://doi.org/10.1038/s41467-023-43867-y",
@@ -4462,74 +4534,1868 @@
     },
     {
       "authors": [
-        "Henrik Palmgren",
-        "Kasparas Petkevicius",
-        "Stefano Bartesaghi",
-        "Andrea Ahnmark",
-        "Mario Ruiz",
-        "Ralf Nilsson",
-        "Lars Löfgren",
-        "Matthew S. Glover",
-        "Anne-Christine Andréasson",
-        "Liselotte Andersson",
-        "Cécile Becquart",
-        "Michael Kurczy",
-        "Bengt Kull",
-        "Simonetta Wallin",
-        "Daniel Karlsson",
-        "Sonja Hess",
-        "Marcello Maresca",
-        "Mohammad Bohlooly-Y",
-        "Xiao-Rong Peng",
-        "Marc Pilon"
+        "Erik Elebring",
+        "Ville Wallenius",
+        "Anna Casselbrant",
+        "Neil Docherty",
+        "Carel le Roux",
+        "Hanns-Ulrich Marschall",
+        "Lars Fändriks"
       ],
-      "authors_text": "Henrik Palmgren; Kasparas Petkevicius; Stefano Bartesaghi; Andrea Ahnmark; Mario Ruiz; Ralf Nilsson; Lars Löfgren; Matthew S. Glover; Anne-Christine Andréasson; Liselotte Andersson; Cécile Becquart; Michael Kurczy; Bengt Kull; Simonetta Wallin; Daniel Karlsson; Sonja Hess; Marcello Maresca; Mohammad Bohlooly-Y; Xiao-Rong Peng; Marc Pilon",
+      "authors_text": "Erik Elebring; Ville Wallenius; Anna Casselbrant; Neil Docherty; Carel le Roux; Hanns-Ulrich Marschall; Lars Fändriks",
       "cci_involvement": "service-provision",
-      "doi": "10.2337/db22-0293",
-      "id": "cci-fc182a93e23e5f1592a6aa0d1e86eb19",
-      "journal": "Diabetes",
-      "publication_url": "https://doi.org/10.2337/db22-0293",
+      "doi": "10.3390/nu14091961",
+      "id": "cci-ea395557f9fd5304b6cc7282da6f5aaf",
+      "journal": "Nutrients",
+      "publication_url": "https://doi.org/10.3390/nu14091961",
       "reporting_years": [
-        2023
+        2022
       ],
       "services": [],
-      "technologies": [
-        "electron-microscopy",
-        "multimodal-imaging"
-      ],
-      "title": "Elevated Adipocyte Membrane Phospholipid Saturation Does Not Compromise Insulin Signaling",
+      "technologies": [],
+      "title": "A Fatty Diet Induces a Jejunal Ketogenesis Which Inhibits Local SGLT1-Based Glucose Transport via an Acetylation Mechanism—Results from a Randomized Cross-Over Study between Iso-Caloric High-Fat versus High-Carbohydrate Diets in Healthy Volunteers",
       "type": "journal-article",
       "year": 2022
     },
     {
       "authors": [
-        "Min Hu",
-        "Yuehui Zhang",
-        "Yaxing Lu",
-        "Jing Han",
-        "Tingting Guo",
-        "Peng Cui",
-        "Mats Brännström",
-        "Linus R. Shao",
-        "Håkan Billig"
+        "Mario Ruiz",
+        "Emma Svensk",
+        "Elinor Einarsson",
+        "Erik Podda Grahn",
+        "Marc Pilon"
       ],
-      "authors_text": "Min Hu; Yuehui Zhang; Yaxing Lu; Jing Han; Tingting Guo; Peng Cui; Mats Brännström; Linus R. Shao; Håkan Billig",
+      "authors_text": "Mario Ruiz; Emma Svensk; Elinor Einarsson; Erik Podda Grahn; Marc Pilon",
       "cci_involvement": "service-provision",
-      "doi": "10.1111/febs.16678",
-      "id": "cci-c4dd6e714e165dde9f074818c3af5581",
-      "journal": "The FEBS Journal",
-      "publication_url": "https://doi.org/10.1111/febs.16678",
+      "doi": "10.1016/j.bbamem.2022.183959",
+      "id": "cci-d833738371bf5481bf4500bfadbf696c",
+      "journal": "Biochimica et Biophysica Acta (BBA) - Biomembranes",
+      "publication_url": "https://doi.org/10.1016/j.bbamem.2022.183959",
       "reporting_years": [
-        2023
+        2022
       ],
       "services": [],
-      "technologies": [
-        "image-analysis",
-        "light-microscopy"
-      ],
-      "title": "Regulatory mechanisms of HMGB1 and its receptors in polycystic ovary syndrome‐driven gravid uterine inflammation",
+      "technologies": [],
+      "title": "A small molecule screen for paqr-2 suppressors identifies Tyloxapol as a membrane fluidizer for C. elegans and mammalian cells",
       "type": "journal-article",
       "year": 2022
+    },
+    {
+      "authors": [
+        "Ritesh K. Baboota",
+        "Aidin Rawshani",
+        "Laurianne Bonnet",
+        "Xiangyu Li",
+        "Hong Yang",
+        "Adil Mardinoglu",
+        "Tamar Tchkonia",
+        "James L. Kirkland",
+        "Anne Hoffmann",
+        "Arne Dietrich",
+        "Jeremie Boucher",
+        "Matthias Blüher",
+        "Ulf Smith"
+      ],
+      "authors_text": "Ritesh K. Baboota; Aidin Rawshani; Laurianne Bonnet; Xiangyu Li; Hong Yang; Adil Mardinoglu; Tamar Tchkonia; James L. Kirkland; Anne Hoffmann; Arne Dietrich; Jeremie Boucher; Matthias Blüher; Ulf Smith",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s42255-022-00620-x",
+      "id": "cci-45c09bf18491599e8615e247cad44fee",
+      "journal": "Nature Metabolism",
+      "publication_url": "https://doi.org/10.1038/s42255-022-00620-x",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "BMP4 and Gremlin 1 regulate hepatic cell senescence during clinical progression of NAFLD/NASH",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Debashish Banerjee",
+        "Nikhil B. Nayakawde",
+        "Deepti Antony",
+        "Meghshree Deshmukh",
+        "Sudip Ghosh",
+        "Carina Sihlbom",
+        "Evelin Berger",
+        "Uzair Ul Haq",
+        "Michael Olausson"
+      ],
+      "authors_text": "Debashish Banerjee; Nikhil B. Nayakawde; Deepti Antony; Meghshree Deshmukh; Sudip Ghosh; Carina Sihlbom; Evelin Berger; Uzair Ul Haq; Michael Olausson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1089/ten.tea.2021.0146",
+      "id": "cci-a3202a78022456699ebe2d83f617774c",
+      "journal": "Tissue Engineering Part A",
+      "publication_url": "https://doi.org/10.1089/ten.tea.2021.0146",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Characterization of Decellularized Implants for Extracellular Matrix Integrity and Immune Response Elicitation",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Karin Ekström",
+        "Rossella Crescitelli",
+        "Hafsteinn Ingi Pétursson",
+        "Junko Johansson",
+        "Cecilia Lässer",
+        "Roger Olofsson Bagge"
+      ],
+      "authors_text": "Karin Ekström; Rossella Crescitelli; Hafsteinn Ingi Pétursson; Junko Johansson; Cecilia Lässer; Roger Olofsson Bagge",
+      "cci_involvement": "service-provision",
+      "doi": "10.1186/s12885-021-08870-w",
+      "id": "cci-b3d6c2e6511259619905710a748953e7",
+      "journal": "BMC Cancer",
+      "publication_url": "https://doi.org/10.1186/s12885-021-08870-w",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Characterization of surface markers on extracellular vesicles isolated from lymphatic exudate from patients with breast cancer",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Wojciech Michno",
+        "Srinivas Koutarapu",
+        "Rafael Camacho",
+        "Christina Toomey",
+        "Katie Stringer",
+        "Karolina Minta",
+        "Junyue Ge",
+        "Durga Jha",
+        "Julia Fernandez‐Rodriguez",
+        "Gunnar Brinkmalm",
+        "Henrik Zetterberg",
+        "Kaj Blennow",
+        "Natalie S. Ryan",
+        "Tammaryn Lashley",
+        "Jörg Hanrieder"
+      ],
+      "authors_text": "Wojciech Michno; Srinivas Koutarapu; Rafael Camacho; Christina Toomey; Katie Stringer; Karolina Minta; Junyue Ge; Durga Jha; Julia Fernandez‐Rodriguez; Gunnar Brinkmalm; Henrik Zetterberg; Kaj Blennow; Natalie S. Ryan; Tammaryn Lashley; Jörg Hanrieder",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.1111/jnc.15694",
+      "id": "cci-479a10062c185658826d42fa661c69be",
+      "journal": "Journal of Neurochemistry",
+      "publication_url": "https://doi.org/10.1111/jnc.15694",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Chemical traits of cerebral amyloid angiopathy in familial British‐, Danish‐, and non‐Alzheimerʼs dementias",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Brendan Dolan",
+        "Anna Ermund",
+        "Beatriz Martinez-Abad",
+        "Malin E. V. Johansson",
+        "Gunnar C. Hansson"
+      ],
+      "authors_text": "Brendan Dolan; Anna Ermund; Beatriz Martinez-Abad; Malin E. V. Johansson; Gunnar C. Hansson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1126/scisignal.abl5848",
+      "id": "cci-2f68d9e2d2fc557ba61d338d9d4295d0",
+      "journal": "Science Signaling",
+      "publication_url": "https://doi.org/10.1126/scisignal.abl5848",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Clearance of small intestinal crypts involves goblet cell mucus secretion by intracellular granule rupture and enterocyte ion transport",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Jelena Lovrić",
+        "Neda Najafinobar",
+        "Michael E. Kurczy",
+        "Olivier De Castro",
+        "Antje Biesemeier",
+        "Lena von Sydow",
+        "Magnus Klarqvist",
+        "Tom Wirtz",
+        "Per Malmberg"
+      ],
+      "authors_text": "Jelena Lovrić; Neda Najafinobar; Michael E. Kurczy; Olivier De Castro; Antje Biesemeier; Lena von Sydow; Magnus Klarqvist; Tom Wirtz; Per Malmberg",
+      "cci_involvement": "service-provision",
+      "doi": "10.1021/acs.analchem.2c02675",
+      "id": "cci-b6301afd6945572f9b4871004297adcd",
+      "journal": "Analytical Chemistry",
+      "publication_url": "https://doi.org/10.1021/acs.analchem.2c02675",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Correlative High-Resolution Imaging of Iron Uptake in Lung Macrophages",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Rossella Crescitelli",
+        "Stefan Filges",
+        "Nasibeh Karimi",
+        "Ornella Urzì",
+        "Tamara Alonso-Agudo",
+        "Anders Ståhlberg",
+        "Jan Lötvall",
+        "Cecilia Lässer",
+        "Roger Olofsson Bagge"
+      ],
+      "authors_text": "Rossella Crescitelli; Stefan Filges; Nasibeh Karimi; Ornella Urzì; Tamara Alonso-Agudo; Anders Ståhlberg; Jan Lötvall; Cecilia Lässer; Roger Olofsson Bagge",
+      "cci_involvement": "service-provision",
+      "doi": "10.3389/fcell.2022.1028854",
+      "id": "cci-5e4dd74a180c5987b3b4325519dea5b8",
+      "journal": "Frontiers in Cell and Developmental Biology",
+      "publication_url": "https://doi.org/10.3389/fcell.2022.1028854",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Extracellular vesicle DNA from human melanoma tissues contains cancer-specific mutations",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Cristina Iribarren",
+        "Sofia Nordlander",
+        "Johanna Sundin",
+        "Stefan Isaksson",
+        "Otto Savolainen",
+        "Hans Törnblom",
+        "Maria K. Magnusson",
+        "Magnus Simrén",
+        "Lena Öhman"
+      ],
+      "authors_text": "Cristina Iribarren; Sofia Nordlander; Johanna Sundin; Stefan Isaksson; Otto Savolainen; Hans Törnblom; Maria K. Magnusson; Magnus Simrén; Lena Öhman",
+      "cci_involvement": "service-provision",
+      "doi": "10.1111/nmo.14390",
+      "id": "cci-edb344054f025bd490a4f0b4f4c1a439",
+      "journal": "Neurogastroenterology & Motility",
+      "publication_url": "https://doi.org/10.1111/nmo.14390",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Fecal luminal factors from patients with irritable bowel syndrome induce distinct gene expression of colonoids",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Malin Lindén",
+        "Christoffer Vannas",
+        "Tobias Österlund",
+        "Lisa Andersson",
+        "Ayman Osman",
+        "Mandy Escobar",
+        "Henrik Fagman",
+        "Anders Ståhlberg",
+        "Pierre Åman"
+      ],
+      "authors_text": "Malin Lindén; Christoffer Vannas; Tobias Österlund; Lisa Andersson; Ayman Osman; Mandy Escobar; Henrik Fagman; Anders Ståhlberg; Pierre Åman",
+      "cci_involvement": "service-provision",
+      "doi": "10.1002/1878-0261.13195",
+      "id": "cci-2c2ccb9f873856b6af55b0d27cac900c",
+      "journal": "Molecular Oncology",
+      "publication_url": "https://doi.org/10.1002/1878-0261.13195",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "FET fusion oncoproteins interact with BRD4 and SWI/SNF chromatin remodelling complex subtypes in sarcoma",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Simon Stenberg",
+        "Jing Li",
+        "Arne B Gjuvsland",
+        "Karl Persson",
+        "Erik Demitz-Helin",
+        "Carles González Peña",
+        "Jia-Xing Yue",
+        "Ciaran Gilchrist",
+        "Timmy Ärengård",
+        "Payam Ghiaci",
+        "Lisa Larsson-Berglund",
+        "Martin Zackrisson",
+        "Silvana Smits",
+        "Johan Hallin",
+        "Johanna L Höög",
+        "Mikael Molin",
+        "Gianni Liti",
+        "Stig W Omholt",
+        "Jonas Warringer"
+      ],
+      "authors_text": "Simon Stenberg; Jing Li; Arne B Gjuvsland; Karl Persson; Erik Demitz-Helin; Carles González Peña; Jia-Xing Yue; Ciaran Gilchrist; Timmy Ärengård; Payam Ghiaci; Lisa Larsson-Berglund; Martin Zackrisson; Silvana Smits; Johan Hallin; Johanna L Höög; Mikael Molin; Gianni Liti; Stig W Omholt; Jonas Warringer",
+      "cci_involvement": "service-provision",
+      "doi": "10.7554/elife.76095",
+      "id": "cci-7edfc459f179513b8f3621fd719d2a6d",
+      "journal": "eLife",
+      "publication_url": "https://doi.org/10.7554/elife.76095",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Genetically controlled mtDNA deletions prevent ROS damage by arresting oxidative phosphorylation",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Sagar Mahale",
+        "Meenakshi Setia",
+        "Bharat Prajapati",
+        "Santhilal Subhash",
+        "Mukesh Pratap Yadav",
+        "Subazini Thankaswamy Kosalai",
+        "Ananya Deshpande",
+        "Jagannath Kuchlyan",
+        "Mirco Di Marco",
+        "Fredrik Westerlund",
+        "L. Marcus Wilhelmsson",
+        "Chandrasekhar Kanduri",
+        "Meena Kanduri"
+      ],
+      "authors_text": "Sagar Mahale; Meenakshi Setia; Bharat Prajapati; Santhilal Subhash; Mukesh Pratap Yadav; Subazini Thankaswamy Kosalai; Ananya Deshpande; Jagannath Kuchlyan; Mirco Di Marco; Fredrik Westerlund; L. Marcus Wilhelmsson; Chandrasekhar Kanduri; Meena Kanduri",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41467-022-32537-0",
+      "id": "cci-6d2f782a0b2151dc99a2cbd0644f2d6f",
+      "journal": "Nature Communications",
+      "publication_url": "https://doi.org/10.1038/s41467-022-32537-0",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "HnRNPK maintains single strand RNA through controlling double-strand RNA in mammalian cells",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Dorota Raj",
+        "Agnieszka Podraza-Farhanieh",
+        "Pablo Gallego",
+        "Gautam Kao",
+        "Peter Naredi"
+      ],
+      "authors_text": "Dorota Raj; Agnieszka Podraza-Farhanieh; Pablo Gallego; Gautam Kao; Peter Naredi",
+      "cci_involvement": "service-provision",
+      "doi": "10.1371/journal.pgen.1010538",
+      "id": "cci-0725650c2533576c9936249ae75a0c3b",
+      "journal": "PLOS Genetics",
+      "publication_url": "https://doi.org/10.1371/journal.pgen.1010538",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Identification of C. elegans ASNA-1 domains and tissue requirements that differentially influence platinum sensitivity and growth control",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Syam Nair",
+        "Anna-Lena Leverin",
+        "Eridan Rocha-Ferreira",
+        "Kristina S. Sobotka",
+        "Claire Thornton",
+        "Carina Mallard",
+        "Henrik Hagberg"
+      ],
+      "authors_text": "Syam Nair; Anna-Lena Leverin; Eridan Rocha-Ferreira; Kristina S. Sobotka; Claire Thornton; Carina Mallard; Henrik Hagberg",
+      "cci_involvement": "service-provision",
+      "doi": "10.3390/cells11071193",
+      "id": "cci-8509e52b4f725f6baa9552019c9aeae7",
+      "journal": "Cells",
+      "publication_url": "https://doi.org/10.3390/cells11071193",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Induction of Mitochondrial Fragmentation and Mitophagy after Neonatal Hypoxia–Ischemia",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Nicolas Martin",
+        "Britt Wassmur",
+        "Danielle Slomberg",
+        "Jérôme Labille",
+        "Tobias Lammel"
+      ],
+      "authors_text": "Nicolas Martin; Britt Wassmur; Danielle Slomberg; Jérôme Labille; Tobias Lammel",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.ecoenv.2022.113984",
+      "id": "cci-fa12f0934d555ffda6dff3631d79efed",
+      "journal": "Ecotoxicology and Environmental Safety",
+      "publication_url": "https://doi.org/10.1016/j.ecoenv.2022.113984",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Influence of TiO2 nanocomposite UV filter surface chemistry and their interactions with organic UV filters on uptake and toxicity toward cultured fish gill cells",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Cécile Becquart",
+        "Rouven Stulz",
+        "Aurélien Thomen",
+        "Maryam Dost",
+        "Neda Najafinobar",
+        "Anders Dahlén",
+        "Shalini Andersson",
+        "Andrew G. Ewing",
+        "Michael E. Kurczy"
+      ],
+      "authors_text": "Cécile Becquart; Rouven Stulz; Aurélien Thomen; Maryam Dost; Neda Najafinobar; Anders Dahlén; Shalini Andersson; Andrew G. Ewing; Michael E. Kurczy",
+      "cci_involvement": "service-provision",
+      "doi": "10.1021/acs.analchem.2c02111",
+      "id": "cci-106076d25e5457f4979255ac5bbaa839",
+      "journal": "Analytical Chemistry",
+      "publication_url": "https://doi.org/10.1021/acs.analchem.2c02111",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Intracellular Absolute Quantification of Oligonucleotide Therapeutics by NanoSIMS",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Michael Olausson",
+        "Deepti Antony",
+        "Martin Johansson",
+        "Galina Travnikova",
+        "Nikhil B. Nayakawde",
+        "Debashish Banerjee",
+        "John Mackay Søfteland",
+        "Damiano Ognissanti",
+        "Moa Andresen Bergström",
+        "Ola Hammarsten",
+        "Goditha U. Premaratne"
+      ],
+      "authors_text": "Michael Olausson; Deepti Antony; Martin Johansson; Galina Travnikova; Nikhil B. Nayakawde; Debashish Banerjee; John Mackay Søfteland; Damiano Ognissanti; Moa Andresen Bergström; Ola Hammarsten; Goditha U. Premaratne",
+      "cci_involvement": "service-provision",
+      "doi": "10.1097/tp.0000000000004235",
+      "id": "cci-0bdb337c76b657cb9a6f8c795fef68bb",
+      "journal": "Transplantation",
+      "publication_url": "https://doi.org/10.1097/tp.0000000000004235",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Long-term Transplant Function After Thrombolytic Treatment Ex Vivo of Donated Kidneys Retrieved 4 to 5 H After Circulatory Death",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Michelle Lindström",
+        "Lihua Chen",
+        "Shan Jiang",
+        "Dan Zhang",
+        "Yuan Gao",
+        "Ju Zheng",
+        "Xinxin Hao",
+        "Xiaoxue Yang",
+        "Arpitha Kabbinale",
+        "Johannes Thoma",
+        "Lisa C. Metzger",
+        "Deyuan Y. Zhang",
+        "Xuefeng Zhu",
+        "Huisheng Liu",
+        "Claes M. Gustafsson",
+        "Björn M. Burmann",
+        "Joris Winderickx",
+        "Per Sunnerhagen",
+        "Beidong Liu"
+      ],
+      "authors_text": "Michelle Lindström; Lihua Chen; Shan Jiang; Dan Zhang; Yuan Gao; Ju Zheng; Xinxin Hao; Xiaoxue Yang; Arpitha Kabbinale; Johannes Thoma; Lisa C. Metzger; Deyuan Y. Zhang; Xuefeng Zhu; Huisheng Liu; Claes M. Gustafsson; Björn M. Burmann; Joris Winderickx; Per Sunnerhagen; Beidong Liu",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41467-022-31282-8",
+      "id": "cci-2b14e978efcc5ed09e0bab5e116b44c7",
+      "journal": "Nature Communications",
+      "publication_url": "https://doi.org/10.1038/s41467-022-31282-8",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Lsm7 phase-separated condensates trigger stress granule formation",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Yuki Ichioka",
+        "Jan Derks",
+        "Gunnar Dahlén",
+        "Tord Berglundh",
+        "Lena Larsson"
+      ],
+      "authors_text": "Yuki Ichioka; Jan Derks; Gunnar Dahlén; Tord Berglundh; Lena Larsson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1002/jbm.b.34978",
+      "id": "cci-dc5a79e5415252ee80b608b7652f3fb0",
+      "journal": "Journal of Biomedical Materials Research Part B: Applied Biomaterials",
+      "publication_url": "https://doi.org/10.1002/jbm.b.34978",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Mechanical removal of biofilm on titanium discs: An in vitro study",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Anna Casselbrant",
+        "Ville Wallenius",
+        "Erik Elebring",
+        "Hanns-Ulrich Marschall",
+        "Bengt R. Johansson",
+        "Herbert F. Helander",
+        "Lars Fändriks"
+      ],
+      "authors_text": "Anna Casselbrant; Ville Wallenius; Erik Elebring; Hanns-Ulrich Marschall; Bengt R. Johansson; Herbert F. Helander; Lars Fändriks",
+      "cci_involvement": "service-provision",
+      "doi": "10.3390/nu14194123",
+      "id": "cci-f5d67a66909d5dd4994069b805183d63",
+      "journal": "Nutrients",
+      "publication_url": "https://doi.org/10.3390/nu14194123",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Morphological Adaptation in the Jejunal Mucosa after Iso-Caloric High-Fat versus High-Carbohydrate Diets in Healthy Volunteers: Data from a Randomized Crossover Study",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Emma Kay",
+        "Rouven Stulz",
+        "Cécile Becquart",
+        "Jelena Lovric",
+        "Carolina Tängemo",
+        "Aurélien Thomen",
+        "Dženita Baždarević",
+        "Neda Najafinobar",
+        "Anders Dahlén",
+        "Anna Pielach",
+        "Julia Fernandez-Rodriguez",
+        "Roger Strömberg",
+        "Carina Ämmälä",
+        "Shalini Andersson",
+        "Michael Kurczy"
+      ],
+      "authors_text": "Emma Kay; Rouven Stulz; Cécile Becquart; Jelena Lovric; Carolina Tängemo; Aurélien Thomen; Dženita Baždarević; Neda Najafinobar; Anders Dahlén; Anna Pielach; Julia Fernandez-Rodriguez; Roger Strömberg; Carina Ämmälä; Shalini Andersson; Michael Kurczy",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.3390/pharmaceutics14020463",
+      "id": "cci-4542bcb4ae655f04be431cf0319dc5fb",
+      "journal": "Pharmaceutics",
+      "publication_url": "https://doi.org/10.3390/pharmaceutics14020463",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "NanoSIMS Imaging Reveals the Impact of Ligand-ASO Conjugate Stability on ASO Subcellular Distribution",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Iris Hardege",
+        "Julia Morud",
+        "Jingfang Yu",
+        "Tatiana S. Wilson",
+        "Frank C. Schroeder",
+        "William R. Schafer"
+      ],
+      "authors_text": "Iris Hardege; Julia Morud; Jingfang Yu; Tatiana S. Wilson; Frank C. Schroeder; William R. Schafer",
+      "cci_involvement": "service-provision",
+      "doi": "10.1073/pnas.2201783119",
+      "id": "cci-e886bd79e6fa56c68ca37dd857793bdd",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "publication_url": "https://doi.org/10.1073/pnas.2201783119",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Neuronally produced betaine acts via a ligand-gated ion channel to control behavioral states",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Xuefeng Zhu",
+        "Xie Xie",
+        "Hrishikesh Das",
+        "Benedict G. Tan",
+        "Yonghong Shi",
+        "Ali Al-Behadili",
+        "Bradley Peter",
+        "Elisa Motori",
+        "Sebastian Valenzuela",
+        "Viktor Posse",
+        "Claes M. Gustafsson",
+        "B. Martin Hällberg",
+        "Maria Falkenberg"
+      ],
+      "authors_text": "Xuefeng Zhu; Xie Xie; Hrishikesh Das; Benedict G. Tan; Yonghong Shi; Ali Al-Behadili; Bradley Peter; Elisa Motori; Sebastian Valenzuela; Viktor Posse; Claes M. Gustafsson; B. Martin Hällberg; Maria Falkenberg",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.cell.2022.05.006",
+      "id": "cci-5b56467051cc5b04bb98cc34091fe687",
+      "journal": "Cell",
+      "publication_url": "https://doi.org/10.1016/j.cell.2022.05.006",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Non-coding 7S RNA inhibits transcription via mitochondrial RNA polymerase dimerization",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Susanna Larsson",
+        "Petronella Kettunen",
+        "Helena Carén"
+      ],
+      "authors_text": "Susanna Larsson; Petronella Kettunen; Helena Carén",
+      "cci_involvement": "service-provision",
+      "doi": "10.3390/brainsci12050625",
+      "id": "cci-67267bdce89c5ec6b3fec34f7d7d33bc",
+      "journal": "Brain Sciences",
+      "publication_url": "https://doi.org/10.3390/brainsci12050625",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Orthotopic Transplantation of Human Paediatric High-Grade Glioma in Zebrafish Larvae",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Christer Thomsen",
+        "Edoardo Malfatti",
+        "Ana Jovanovic",
+        "Mark Roberts",
+        "Ognian Kalev",
+        "Christopher Lindberg",
+        "Anders Oldfors"
+      ],
+      "authors_text": "Christer Thomsen; Edoardo Malfatti; Ana Jovanovic; Mark Roberts; Ognian Kalev; Christopher Lindberg; Anders Oldfors",
+      "cci_involvement": "service-provision",
+      "doi": "10.1111/nan.12761",
+      "id": "cci-ec1dd0d609c453ec95e907c3aa88551a",
+      "journal": "Neuropathology and Applied Neurobiology",
+      "publication_url": "https://doi.org/10.1111/nan.12761",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Proteomic characterisation of polyglucosan bodies in skeletal muscle in RBCK1 deficiency",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Jose C. Bonilla",
+        "Jesper L. Sørensen",
+        "Amalie S. Warming",
+        "Mathias P. Clausen"
+      ],
+      "authors_text": "Jose C. Bonilla; Jesper L. Sørensen; Amalie S. Warming; Mathias P. Clausen",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.foodhyd.2022.108010",
+      "id": "cci-d2370a5006865acfbe9a46f70a37a46f",
+      "journal": "Food Hydrocolloids",
+      "publication_url": "https://doi.org/10.1016/j.foodhyd.2022.108010",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Quantitative image analysis of protein foam microstructure and its correlation with rheological properties: Egg white foam",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Markus Aswendt",
+        "Ulrika Wilhelmsson",
+        "Frederique Wieters",
+        "Anna Stokowska",
+        "Felix Johannes Schmitt",
+        "Niklas Pallast",
+        "Yolanda de Pablo",
+        "Lava Mohammed",
+        "Mathias Hoehn",
+        "Marcela Pekna",
+        "Milos Pekny"
+      ],
+      "authors_text": "Markus Aswendt; Ulrika Wilhelmsson; Frederique Wieters; Anna Stokowska; Felix Johannes Schmitt; Niklas Pallast; Yolanda de Pablo; Lava Mohammed; Mathias Hoehn; Marcela Pekna; Milos Pekny",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.pneurobio.2021.102199",
+      "id": "cci-901b44316412558e9e77b134aff74f9e",
+      "journal": "Progress in Neurobiology",
+      "publication_url": "https://doi.org/10.1016/j.pneurobio.2021.102199",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Reactive astrocytes prevent maladaptive plasticity after ischemic stroke",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Mario Ruiz",
+        "Ranjan Devkota",
+        "Dimitra Panagaki",
+        "Per-Olof Bergh",
+        "Delaney Kaper",
+        "Marcus Henricsson",
+        "Ali Nik",
+        "Kasparas Petkevicius",
+        "Johanna L. Höög",
+        "Mohammad Bohlooly-Y",
+        "Peter Carlsson",
+        "Jan Borén",
+        "Marc Pilon"
+      ],
+      "authors_text": "Mario Ruiz; Ranjan Devkota; Dimitra Panagaki; Per-Olof Bergh; Delaney Kaper; Marcus Henricsson; Ali Nik; Kasparas Petkevicius; Johanna L. Höög; Mohammad Bohlooly-Y; Peter Carlsson; Jan Borén; Marc Pilon",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41467-022-34931-0",
+      "id": "cci-cb6a1a86860a5476a5bae58d2bfed301",
+      "journal": "Nature Communications",
+      "publication_url": "https://doi.org/10.1038/s41467-022-34931-0",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Sphingosine 1-phosphate mediates adiponectin receptor signaling essential for lipid homeostasis and embryogenesis",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Wojciech Michno",
+        "Patrick M. Wehrli",
+        "Srinivas Koutarapu",
+        "Christian Marsching",
+        "Karolina Minta",
+        "Junyue Ge",
+        "Sven W. Meyer",
+        "Henrik Zetterberg",
+        "Kaj Blennow",
+        "Corinna Henkel",
+        "Janina Oetjen",
+        "Carsten Hopf",
+        "Jörg Hanrieder"
+      ],
+      "authors_text": "Wojciech Michno; Patrick M. Wehrli; Srinivas Koutarapu; Christian Marsching; Karolina Minta; Junyue Ge; Sven W. Meyer; Henrik Zetterberg; Kaj Blennow; Corinna Henkel; Janina Oetjen; Carsten Hopf; Jörg Hanrieder",
+      "cci_involvement": "service-provision",
+      "doi": "10.1111/jnc.15557",
+      "id": "cci-8c51b8a0b4e551e593aefd3a7712106b",
+      "journal": "Journal of Neurochemistry",
+      "publication_url": "https://doi.org/10.1111/jnc.15557",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Structural amyloid plaque polymorphism is associated with distinct lipid accumulations revealed by trapped ion mobility mass spectrometry imaging",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Weixiao Yuan Wahlgren",
+        "Elin Claesson",
+        "Iida Tuure",
+        "Sergio Trillo-Muyo",
+        "Szabolcs Bódizs",
+        "Janne A. Ihalainen",
+        "Heikki Takala",
+        "Sebastian Westenhoff"
+      ],
+      "authors_text": "Weixiao Yuan Wahlgren; Elin Claesson; Iida Tuure; Sergio Trillo-Muyo; Szabolcs Bódizs; Janne A. Ihalainen; Heikki Takala; Sebastian Westenhoff",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41467-022-34893-3",
+      "id": "cci-7562957a8e675f50b3d3a8b5a9b5fa4b",
+      "journal": "Nature Communications",
+      "publication_url": "https://doi.org/10.1038/s41467-022-34893-3",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Structural mechanism of signal transduction in a phytochrome histidine kinase",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Juan Song",
+        "Gisela Nilsson",
+        "Yiran Xu",
+        "Aura Zelco",
+        "Eridan Rocha-Ferreira",
+        "Yafeng Wang",
+        "Xiaoli Zhang",
+        "Shan Zhang",
+        "Joakim Ek",
+        "Henrik Hagberg",
+        "Changlian Zhu",
+        "Xiaoyang Wang"
+      ],
+      "authors_text": "Juan Song; Gisela Nilsson; Yiran Xu; Aura Zelco; Eridan Rocha-Ferreira; Yafeng Wang; Xiaoli Zhang; Shan Zhang; Joakim Ek; Henrik Hagberg; Changlian Zhu; Xiaoyang Wang",
+      "cci_involvement": "service-provision",
+      "doi": "10.1177/0271678x221098811",
+      "id": "cci-1a24a9d36dcf5467ba446b8df9f93c13",
+      "journal": "Journal of Cerebral Blood Flow & Metabolism",
+      "publication_url": "https://doi.org/10.1177/0271678x221098811",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Temporal brain transcriptome analysis reveals key pathological events after germinal matrix hemorrhage in neonatal rats",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Jorge Cuéllar",
+        "Josefine Vallin",
+        "Andreas Svanström",
+        "Moisés Maestro-López",
+        "María Teresa Bueno-Carrasco",
+        "W. Grant Ludlam",
+        "Barry M. Willardson",
+        "José M. Valpuesta",
+        "Julie Grantham"
+      ],
+      "authors_text": "Jorge Cuéllar; Josefine Vallin; Andreas Svanström; Moisés Maestro-López; María Teresa Bueno-Carrasco; W. Grant Ludlam; Barry M. Willardson; José M. Valpuesta; Julie Grantham",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.jmb.2021.167399",
+      "id": "cci-a08782f2e4ef569aa9ed0b6d1f80594a",
+      "journal": "Journal of Molecular Biology",
+      "publication_url": "https://doi.org/10.1016/j.jmb.2021.167399",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The Molecular Chaperone CCT Sequesters Gelsolin and Protects it from Cleavage by Caspase-3",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Iris Stoltenborg",
+        "Fiona Peris-Sampedro",
+        "Erik Schéle",
+        "Marie V. Le May",
+        "Roger A. H. Adan",
+        "Suzanne L. Dickson"
+      ],
+      "authors_text": "Iris Stoltenborg; Fiona Peris-Sampedro; Erik Schéle; Marie V. Le May; Roger A. H. Adan; Suzanne L. Dickson",
+      "cci_involvement": "service-provision",
+      "doi": "10.3390/ijms23010559",
+      "id": "cci-ed58623817b05b318e2683b1e86dd7cd",
+      "journal": "International Journal of Molecular Sciences",
+      "publication_url": "https://doi.org/10.3390/ijms23010559",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "TRAPing Ghrelin-Activated Circuits: A Novel Tool to Identify, Target and Control Hormone-Responsive Populations in TRAP2 Mice",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Kara L. Schneider",
+        "Doryaneh Ahmadpour",
+        "Katharina S. Keuenhof",
+        "Anna Maria Eisele-Bürger",
+        "Lisa Larsson Berglund",
+        "Frederik Eisele",
+        "Roja Babazadeh",
+        "Johanna L. Höög",
+        "Thomas Nyström",
+        "Per O. Widlund"
+      ],
+      "authors_text": "Kara L. Schneider; Doryaneh Ahmadpour; Katharina S. Keuenhof; Anna Maria Eisele-Bürger; Lisa Larsson Berglund; Frederik Eisele; Roja Babazadeh; Johanna L. Höög; Thomas Nyström; Per O. Widlund",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.jbc.2022.102476",
+      "id": "cci-e80e75f6be5355e4a62dde7c3e62d03b",
+      "journal": "Journal of Biological Chemistry",
+      "publication_url": "https://doi.org/10.1016/j.jbc.2022.102476",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Using reporters of different misfolded proteins reveals differential strategies in processing protein aggregates",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Tho Duc Khanh Nguyen",
+        "Lisa Mellander",
+        "Alicia Lork",
+        "Aurélien Thomen",
+        "Mai Philipsen",
+        "Michael E. Kurczy",
+        "Nhu T.N. Phan",
+        "Andrew G. Ewing"
+      ],
+      "authors_text": "Tho Duc Khanh Nguyen; Lisa Mellander; Alicia Lork; Aurélien Thomen; Mai Philipsen; Michael E. Kurczy; Nhu T.N. Phan; Andrew G. Ewing",
+      "cci_involvement": "service-provision",
+      "doi": "10.1021/acsnano.2c00344",
+      "id": "cci-694d4e77581b5de08e48d8dd48aba04b",
+      "journal": "ACS Nano",
+      "publication_url": "https://doi.org/10.1021/acsnano.2c00344",
+      "reporting_years": [
+        2022
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Visualization of Partial Exocytotic Content Release and Chemical Transport into Nanovesicles in Cells",
+      "type": "journal-article",
+      "year": 2022
+    },
+    {
+      "authors": [
+        "Ranjan Devkota",
+        "Delaney Kaper",
+        "Rakesh Bodhicharla",
+        "Marcus Henricsson",
+        "Jan Borén",
+        "Marc Pilon"
+      ],
+      "authors_text": "Ranjan Devkota; Delaney Kaper; Rakesh Bodhicharla; Marcus Henricsson; Jan Borén; Marc Pilon",
+      "cci_involvement": "service-provision",
+      "doi": "10.1093/genetics/iyab093",
+      "id": "cci-694dde1e3cf852a5b18eda12d1145a07",
+      "journal": "Genetics",
+      "publication_url": "https://doi.org/10.1093/genetics/iyab093",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "A genetic titration of membrane composition in Caenorhabditis elegans reveals its importance for multiple cellular and physiological traits",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Dorota Raj",
+        "Ola Billing",
+        "Agnieszka Podraza-Farhanieh",
+        "Bashar Kraish",
+        "Oskar Hemmingsson",
+        "Gautam Kao",
+        "Peter Naredi"
+      ],
+      "authors_text": "Dorota Raj; Ola Billing; Agnieszka Podraza-Farhanieh; Bashar Kraish; Oskar Hemmingsson; Gautam Kao; Peter Naredi",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41598-021-88085-y",
+      "id": "cci-b3b9b0e3eebf510ea973381bf5b15b12",
+      "journal": "Scientific Reports",
+      "publication_url": "https://doi.org/10.1038/s41598-021-88085-y",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Alternative redox forms of ASNA-1 separate insulin signaling from tail-anchored protein targeting and cisplatin resistance in C. elegans",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Aimilia Lydia Kalafateli",
+        "Tugce Munise Satir",
+        "Daniel Vallöf",
+        "Henrik Zetterberg",
+        "Elisabet Jerlhag"
+      ],
+      "authors_text": "Aimilia Lydia Kalafateli; Tugce Munise Satir; Daniel Vallöf; Henrik Zetterberg; Elisabet Jerlhag",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.pneurobio.2020.101969",
+      "id": "cci-0f6d6ff01ae75603a5476d241c7d5c00",
+      "journal": "Progress in Neurobiology",
+      "publication_url": "https://doi.org/10.1016/j.pneurobio.2020.101969",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "An amylin and calcitonin receptor agonist modulates alcohol behaviors by acting on reward-related areas in the brain",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Elisabeth E. L. Nyström",
+        "Beatriz Martinez-Abad",
+        "Liisa Arike",
+        "George M. H. Birchenough",
+        "Eric B. Nonnecke",
+        "Patricia A. Castillo",
+        "Frida Svensson",
+        "Charles L. Bevins",
+        "Gunnar C. Hansson",
+        "Malin E. V. Johansson"
+      ],
+      "authors_text": "Elisabeth E. L. Nyström; Beatriz Martinez-Abad; Liisa Arike; George M. H. Birchenough; Eric B. Nonnecke; Patricia A. Castillo; Frida Svensson; Charles L. Bevins; Gunnar C. Hansson; Malin E. V. Johansson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1126/science.abb1590",
+      "id": "cci-28c04839a630527b8809d656a90a5a39",
+      "journal": "Science",
+      "publication_url": "https://doi.org/10.1126/science.abb1590",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "An intercrypt subpopulation of goblet cells is essential for colonic mucus barrier function",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Karolina S Jabbar",
+        "Brendan Dolan",
+        "Lisbeth Eklund",
+        "Catharina Wising",
+        "Anna Ermund",
+        "Åsa Johansson",
+        "Hans Törnblom",
+        "Magnus Simren",
+        "Gunnar C Hansson"
+      ],
+      "authors_text": "Karolina S Jabbar; Brendan Dolan; Lisbeth Eklund; Catharina Wising; Anna Ermund; Åsa Johansson; Hans Törnblom; Magnus Simren; Gunnar C Hansson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1136/gutjnl-2020-321466",
+      "id": "cci-8e5dd3ceae2a510aa2b84194894ca67f",
+      "journal": "Gut",
+      "publication_url": "https://doi.org/10.1136/gutjnl-2020-321466",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Association between Brachyspira and irritable bowel syndrome with diarrhoea",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Andrea Pozo-Rodrigálvarez",
+        "YiXian Li",
+        "Anna Stokowska",
+        "Jingyun Wu",
+        "Verena Dehm",
+        "Hana Sourkova",
+        "Harry Steinbusch",
+        "Carina Mallard",
+        "Henrik Hagberg",
+        "Milos Pekny",
+        "Marcela Pekna"
+      ],
+      "authors_text": "Andrea Pozo-Rodrigálvarez; YiXian Li; Anna Stokowska; Jingyun Wu; Verena Dehm; Hana Sourkova; Harry Steinbusch; Carina Mallard; Henrik Hagberg; Milos Pekny; Marcela Pekna",
+      "cci_involvement": "service-provision",
+      "doi": "10.3389/fimmu.2021.768198",
+      "id": "cci-5c88927daa715865b51ee4dedebdbc65",
+      "journal": "Frontiers in Immunology",
+      "publication_url": "https://doi.org/10.3389/fimmu.2021.768198",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "C3a Receptor Signaling Inhibits Neurodegeneration Induced by Neonatal Hypoxic-Ischemic Brain Injury",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Liza Lind",
+        "Alexandra Svensson",
+        "Karolina Thörn",
+        "Malgorzata Krzyzowska",
+        "Kristina Eriksson"
+      ],
+      "authors_text": "Liza Lind; Alexandra Svensson; Karolina Thörn; Malgorzata Krzyzowska; Kristina Eriksson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1007/s13365-020-00940-2",
+      "id": "cci-2e5b4c1c866450cdbad697b1cb043415",
+      "journal": "Journal of NeuroVirology",
+      "publication_url": "https://doi.org/10.1007/s13365-020-00940-2",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "CD8+ T cells in the central nervous system of mice with herpes simplex infection are highly activated and express high levels of CCR5 and CXCR3",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "E. Axel Andersson",
+        "Carina Mallard",
+        "C. Joakim Ek"
+      ],
+      "authors_text": "E. Axel Andersson; Carina Mallard; C. Joakim Ek",
+      "cci_involvement": "service-provision",
+      "doi": "10.1186/s12987-021-00240-9",
+      "id": "cci-c4b648ab2d385a02a035f6477b71dea8",
+      "journal": "Fluids and Barriers of the CNS",
+      "publication_url": "https://doi.org/10.1186/s12987-021-00240-9",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Circulating tight-junction proteins are potential biomarkers for blood–brain barrier function in a model of neonatal hypoxic/ischemic brain injury",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Nikhil B. Nayakawde",
+        "Ketaki Methe",
+        "Goditha U. Premaratne",
+        "Debashish Banerjee",
+        "Michael Olausson"
+      ],
+      "authors_text": "Nikhil B. Nayakawde; Ketaki Methe; Goditha U. Premaratne; Debashish Banerjee; Michael Olausson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1089/ten.tea.2020.0054",
+      "id": "cci-69616a7156615be8a1f9a680612ac9b6",
+      "journal": "Tissue Engineering Part A",
+      "publication_url": "https://doi.org/10.1089/ten.tea.2020.0054",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Combined Use of Detergents and Ultrasonication for Generation of an Acellular Pig Larynx",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "John S. Fletcher",
+        "Sanna Sämfors",
+        "Josefine Vallin",
+        "Andreas Svanström",
+        "Julie Grantham"
+      ],
+      "authors_text": "John S. Fletcher; Sanna Sämfors; Josefine Vallin; Andreas Svanström; Julie Grantham",
+      "cci_involvement": "service-provision",
+      "doi": "10.1007/s00216-020-03013-9",
+      "id": "cci-bc5113e6a4e05d96b59e405f54631721",
+      "journal": "Analytical and Bioanalytical Chemistry",
+      "publication_url": "https://doi.org/10.1007/s00216-020-03013-9",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Correlated fluorescence microscopy and multi-ion beam secondary ion mass spectrometry imaging reveals phosphatidylethanolamine increases in the membrane of cancer cells over-expressing the molecular chaperone subunit CCTδ",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Weixiao Yuan Wahlgren",
+        "David Golonka",
+        "Sebastian Westenhoff",
+        "Andreas Möglich"
+      ],
+      "authors_text": "Weixiao Yuan Wahlgren; David Golonka; Sebastian Westenhoff; Andreas Möglich",
+      "cci_involvement": "service-provision",
+      "doi": "10.3389/fpls.2021.663751",
+      "id": "cci-4f63782f20e050fabf6384aaf30f8167",
+      "journal": "Frontiers in Plant Science",
+      "publication_url": "https://doi.org/10.3389/fpls.2021.663751",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Cryo-Electron Microscopy of Arabidopsis thaliana Phytochrome A in Its Pr State Reveals Head-to-Head Homodimeric Architecture",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Julia Morud",
+        "Iris Hardege",
+        "He Liu",
+        "Taihong Wu",
+        "Myung-Kyu Choi",
+        "Swaraj Basu",
+        "Yun Zhang",
+        "William R. Schafer"
+      ],
+      "authors_text": "Julia Morud; Iris Hardege; He Liu; Taihong Wu; Myung-Kyu Choi; Swaraj Basu; Yun Zhang; William R. Schafer",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.cub.2021.07.036",
+      "id": "cci-b002d5c8bd1d5691aa41c9419aa56afa",
+      "journal": "Current Biology",
+      "publication_url": "https://doi.org/10.1016/j.cub.2021.07.036",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Deorphanization of novel biogenic amine-gated ion channels identifies a new serotonin receptor for learning",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Robin Öz",
+        "Jing L Wang",
+        "Raphael Guerois",
+        "Gaurav Goyal",
+        "Sriram KK",
+        "Virginie Ropars",
+        "Rajhans Sharma",
+        "Firat Koca",
+        "Jean-Baptiste Charbonnier",
+        "Mauro Modesti",
+        "Terence R Strick",
+        "Fredrik Westerlund"
+      ],
+      "authors_text": "Robin Öz; Jing L Wang; Raphael Guerois; Gaurav Goyal; Sriram KK; Virginie Ropars; Rajhans Sharma; Firat Koca; Jean-Baptiste Charbonnier; Mauro Modesti; Terence R Strick; Fredrik Westerlund",
+      "cci_involvement": "service-provision",
+      "doi": "10.1093/nar/gkab083",
+      "id": "cci-673a3cf4e6fc542d9b701ec549fed7b7",
+      "journal": "Nucleic Acids Research",
+      "publication_url": "https://doi.org/10.1093/nar/gkab083",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Dynamics of Ku and bacterial non-homologous end-joining characterized using single DNA molecule analysis",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Mario Ruiz",
+        "Henrik Palmgren",
+        "Marcus Henricsson",
+        "Ranjan Devkota",
+        "Himjyot Jaiswal",
+        "Marcello Maresca",
+        "Mohammad Bohlooly-Y",
+        "Xiao-Rong Peng",
+        "Jan Borén",
+        "Marc Pilon"
+      ],
+      "authors_text": "Mario Ruiz; Henrik Palmgren; Marcus Henricsson; Ranjan Devkota; Himjyot Jaiswal; Marcello Maresca; Mohammad Bohlooly-Y; Xiao-Rong Peng; Jan Borén; Marc Pilon",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.bbalip.2021.158884",
+      "id": "cci-c134565648fc547797bffddda34e8dc6",
+      "journal": "Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids",
+      "publication_url": "https://doi.org/10.1016/j.bbalip.2021.158884",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Extensive transcription mis-regulation and membrane defects in AdipoR2-deficient cells challenged with saturated fatty acids",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Wojciech Michno",
+        "Katie M. Stringer",
+        "Thomas Enzlein",
+        "Melissa K. Passarelli",
+        "Stephane Escrig",
+        "Karina Vitanova",
+        "Jack Wood",
+        "Kaj Blennow",
+        "Henrik Zetterberg",
+        "Anders Meibom",
+        "Carsten Hopf",
+        "Frances A. Edwards",
+        "Jörg Hanrieder"
+      ],
+      "authors_text": "Wojciech Michno; Katie M. Stringer; Thomas Enzlein; Melissa K. Passarelli; Stephane Escrig; Karina Vitanova; Jack Wood; Kaj Blennow; Henrik Zetterberg; Anders Meibom; Carsten Hopf; Frances A. Edwards; Jörg Hanrieder",
+      "cci_involvement": "service-provision",
+      "doi": "10.1126/sciadv.abg4855",
+      "id": "cci-f673e14193c05175997c9417945f507b",
+      "journal": "Science Advances",
+      "publication_url": "https://doi.org/10.1126/sciadv.abg4855",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Following spatial Aβ aggregation dynamics in evolving Alzheimer’s disease pathology by imaging stable isotope labeling kinetics",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Marie V. Le May",
+        "Fiona Peris-Sampedro",
+        "Iris Stoltenborg",
+        "Erik Schéle",
+        "Tina Bake",
+        "Roger A. H. Adan",
+        "Suzanne L. Dickson"
+      ],
+      "authors_text": "Marie V. Le May; Fiona Peris-Sampedro; Iris Stoltenborg; Erik Schéle; Tina Bake; Roger A. H. Adan; Suzanne L. Dickson",
+      "cci_involvement": "service-provision",
+      "doi": "10.3389/fnins.2021.633018",
+      "id": "cci-1a68c81faf4551cba837c34ccf1a9d99",
+      "journal": "Frontiers in Neuroscience",
+      "publication_url": "https://doi.org/10.3389/fnins.2021.633018",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Functional and Neurochemical Identification of Ghrelin Receptor (GHSR)-Expressing Cells of the Lateral Parabrachial Nucleus in Mice",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Fiona Peris-Sampedro",
+        "Iris Stoltenborg",
+        "Marie V. Le May",
+        "Jeffrey M. Zigman",
+        "Roger A.H. Adan",
+        "Suzanne L. Dickson"
+      ],
+      "authors_text": "Fiona Peris-Sampedro; Iris Stoltenborg; Marie V. Le May; Jeffrey M. Zigman; Roger A.H. Adan; Suzanne L. Dickson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.molmet.2021.101223",
+      "id": "cci-6d1ebcedae7b54e383a0960e80c64651",
+      "journal": "Molecular Metabolism",
+      "publication_url": "https://doi.org/10.1016/j.molmet.2021.101223",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Genetic deletion of the ghrelin receptor (GHSR) impairs growth and blunts endocrine response to fasting in Ghsr-IRES-Cre mice",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Ida Östergren",
+        "Amir Masoud Pourrahimi",
+        "Iwan Darmadi",
+        "Robson da Silva",
+        "Alicja Stolaś",
+        "Sarah Lerch",
+        "Barbara Berke",
+        "Manuel Guizar-Sicairos",
+        "Marianne Liebi",
+        "Giacomo Foli",
+        "Vincenzo Palermo",
+        "Matteo Minelli",
+        "Kasper Moth-Poulsen",
+        "Christoph Langhammer",
+        "Christian Müller"
+      ],
+      "authors_text": "Ida Östergren; Amir Masoud Pourrahimi; Iwan Darmadi; Robson da Silva; Alicja Stolaś; Sarah Lerch; Barbara Berke; Manuel Guizar-Sicairos; Marianne Liebi; Giacomo Foli; Vincenzo Palermo; Matteo Minelli; Kasper Moth-Poulsen; Christoph Langhammer; Christian Müller",
+      "cci_involvement": "service-provision",
+      "doi": "10.1021/acsami.1c01968",
+      "id": "cci-05936e5909815f5fad6f5dc8644e6737",
+      "journal": "ACS Applied Materials & Interfaces",
+      "publication_url": "https://doi.org/10.1021/acsami.1c01968",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Highly Permeable Fluorinated Polymer Nanocomposites for Plasmonic Hydrogen Sensing",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Azar Omrani",
+        "Veronne A.J. de Vrind",
+        "Bart Lodder",
+        "Iris Stoltenborg",
+        "Karlijn Kooij",
+        "Inge G. Wolterink-Donselaar",
+        "Mieneke C.M. Luijendijk-Berg",
+        "Keith M. Garner",
+        "Lisanne J. van’t Sant",
+        "Annemieke Rozeboom",
+        "Suzanne L. Dickson",
+        "Frank J. Meye",
+        "Roger A.H. Adan"
+      ],
+      "authors_text": "Azar Omrani; Veronne A.J. de Vrind; Bart Lodder; Iris Stoltenborg; Karlijn Kooij; Inge G. Wolterink-Donselaar; Mieneke C.M. Luijendijk-Berg; Keith M. Garner; Lisanne J. van’t Sant; Annemieke Rozeboom; Suzanne L. Dickson; Frank J. Meye; Roger A.H. Adan",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.biopsych.2021.02.017",
+      "id": "cci-11a62fa09b96567582eb113011999e0e",
+      "journal": "Biological Psychiatry",
+      "publication_url": "https://doi.org/10.1016/j.biopsych.2021.02.017",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Identification of Novel Neurocircuitry Through Which Leptin Targets Multiple Inputs to the Dopamine System to Reduce Food Reward Seeking",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Elena Layunta",
+        "Sofia Jäverfelt",
+        "Brendan Dolan",
+        "Liisa Arike",
+        "Thaher Pelaseyed"
+      ],
+      "authors_text": "Elena Layunta; Sofia Jäverfelt; Brendan Dolan; Liisa Arike; Thaher Pelaseyed",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.celrep.2021.108757",
+      "id": "cci-e3a2d1db938f5904b07738fa2f91bcad",
+      "journal": "Cell Reports",
+      "publication_url": "https://doi.org/10.1016/j.celrep.2021.108757",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "IL-22 promotes the formation of a MUC17 glycocalyx barrier in the postnatal small intestine during weaning",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Yuki Ichioka",
+        "Jan Derks",
+        "Gunnar Dahlén",
+        "Tord Berglundh",
+        "Lena Larsson"
+      ],
+      "authors_text": "Yuki Ichioka; Jan Derks; Gunnar Dahlén; Tord Berglundh; Lena Larsson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41598-021-02220-3",
+      "id": "cci-d5fba4bb9a4f5541912eed618085ae16",
+      "journal": "Scientific Reports",
+      "publication_url": "https://doi.org/10.1038/s41598-021-02220-3",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "In vitro evaluation of chemical decontamination of titanium discs",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Rossella Crescitelli",
+        "Cecilia Lässer",
+        "Jan Lötvall"
+      ],
+      "authors_text": "Rossella Crescitelli; Cecilia Lässer; Jan Lötvall",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41596-020-00466-1",
+      "id": "cci-7ef001b5c1795e83a4d2ecb0e4357ef2",
+      "journal": "Nature Protocols",
+      "publication_url": "https://doi.org/10.1038/s41596-020-00466-1",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Isolation and characterization of extracellular vesicle subpopulations from tissues",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Stefania Rabasco",
+        "Tho D. K. Nguyen",
+        "Chaoyi Gu",
+        "Michael E. Kurczy",
+        "Nhu T. N. Phan",
+        "Andrew G. Ewing"
+      ],
+      "authors_text": "Stefania Rabasco; Tho D. K. Nguyen; Chaoyi Gu; Michael E. Kurczy; Nhu T. N. Phan; Andrew G. Ewing",
+      "cci_involvement": "service-provision",
+      "doi": "10.3390/ijms23010160",
+      "id": "cci-eb318baa4dba53fb8cfa5fdf4d498498",
+      "journal": "International Journal of Molecular Sciences",
+      "publication_url": "https://doi.org/10.3390/ijms23010160",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Localization and Absolute Quantification of Dopamine in Discrete Intravesicular Compartments Using NanoSIMS Imaging",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Mohamad Moustafa Ali",
+        "Mirco Di Marco",
+        "Sagar Mahale",
+        "Daniel Jachimowicz",
+        "Subazini Thankaswamy Kosalai",
+        "Silke Reischl",
+        "Luisa Statello",
+        "Kankadeb Mishra",
+        "Catarina Darnfors",
+        "Meena Kanduri",
+        "Chandrasekhar Kanduri"
+      ],
+      "authors_text": "Mohamad Moustafa Ali; Mirco Di Marco; Sagar Mahale; Daniel Jachimowicz; Subazini Thankaswamy Kosalai; Silke Reischl; Luisa Statello; Kankadeb Mishra; Catarina Darnfors; Meena Kanduri; Chandrasekhar Kanduri",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41388-021-01696-7",
+      "id": "cci-c6cd8487f55e53d2a30a52720fc8ba2e",
+      "journal": "Oncogene",
+      "publication_url": "https://doi.org/10.1038/s41388-021-01696-7",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "LY6K-AS lncRNA is a lung adenocarcinoma prognostic biomarker and regulator of mitotic progression",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Ulrike Boehm",
+        "Glyn Nelson",
+        "Claire M. Brown",
+        "Steve Bagley",
+        "Peter Bajcsy",
+        "Johanna Bischof",
+        "Aurelien Dauphin",
+        "Ian M. Dobbie",
+        "John E. Eriksson",
+        "Orestis Faklaris",
+        "Julia Fernandez-Rodriguez",
+        "Alexia Ferrand",
+        "Laurent Gelman",
+        "Ali Gheisari",
+        "Hella Hartmann",
+        "Christian Kukat",
+        "Alex Laude",
+        "Miso Mitkovski",
+        "Sebastian Munck",
+        "Alison J. North",
+        "Tobias M. Rasse",
+        "Ute Resch-Genger",
+        "Lucas C. Schuetz",
+        "Arne Seitz",
+        "Caterina Strambio-De-Castillia",
+        "Jason R. Swedlow",
+        "Roland Nitschke"
+      ],
+      "authors_text": "Ulrike Boehm; Glyn Nelson; Claire M. Brown; Steve Bagley; Peter Bajcsy; Johanna Bischof; Aurelien Dauphin; Ian M. Dobbie; John E. Eriksson; Orestis Faklaris; Julia Fernandez-Rodriguez; Alexia Ferrand; Laurent Gelman; Ali Gheisari; Hella Hartmann; Christian Kukat; Alex Laude; Miso Mitkovski; Sebastian Munck; Alison J. North; Tobias M. Rasse; Ute Resch-Genger; Lucas C. Schuetz; Arne Seitz; Caterina Strambio-De-Castillia; Jason R. Swedlow; Roland Nitschke",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.1038/s41592-021-01162-y",
+      "id": "cci-68e3f69b56e655faaad3a4270b1ada79",
+      "journal": "Nature Methods",
+      "publication_url": "https://doi.org/10.1038/s41592-021-01162-y",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "QUAREP-LiMi: a community endeavor to advance quality assessment and reproducibility in light microscopy",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Tobias Hofving",
+        "Erik Elias",
+        "Anna Rehammar",
+        "Linda Inge",
+        "Gülay Altiparmak",
+        "Marta Persson",
+        "Erik Kristiansson",
+        "Martin E. Johansson",
+        "Ola Nilsson",
+        "Yvonne Arvidsson"
+      ],
+      "authors_text": "Tobias Hofving; Erik Elias; Anna Rehammar; Linda Inge; Gülay Altiparmak; Marta Persson; Erik Kristiansson; Martin E. Johansson; Ola Nilsson; Yvonne Arvidsson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1186/s12885-021-07786-9",
+      "id": "cci-fc79702d09ff5d33a9d4d4b66f603c57",
+      "journal": "BMC Cancer",
+      "publication_url": "https://doi.org/10.1186/s12885-021-07786-9",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "SMAD4 haploinsufficiency in small intestinal neuroendocrine tumors",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Kyong‐Su Park",
+        "Kristina Svennerholm",
+        "Rossella Crescitelli",
+        "Cecilia Lässer",
+        "Inta Gribonika",
+        "Jan Lötvall"
+      ],
+      "authors_text": "Kyong‐Su Park; Kristina Svennerholm; Rossella Crescitelli; Cecilia Lässer; Inta Gribonika; Jan Lötvall",
+      "cci_involvement": "service-provision",
+      "doi": "10.1002/jev2.12120",
+      "id": "cci-619f64c6c03e543c91820ead2755f955",
+      "journal": "Journal of Extracellular Vesicles",
+      "publication_url": "https://doi.org/10.1002/jev2.12120",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Synthetic bacterial vesicles combined with tumour extracellular vesicles as cancer immunotherapy",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Ranjan Devkota",
+        "Marcus Henricsson",
+        "Jan Borén",
+        "Marc Pilon"
+      ],
+      "authors_text": "Ranjan Devkota; Marcus Henricsson; Jan Borén; Marc Pilon",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.bbalip.2021.158883",
+      "id": "cci-f47adb7497305f3091eeb46eccd961e5",
+      "journal": "Biochimica et Biophysica Acta (BBA) - Molecular and Cell Biology of Lipids",
+      "publication_url": "https://doi.org/10.1016/j.bbalip.2021.158883",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The C. elegans PAQR-2 and IGLR-2 membrane homeostasis proteins are uniquely essential for tolerating dietary saturated fats",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Erik Ehrencrona",
+        "Sjoerd van der Post",
+        "Pablo Gallego",
+        "Christian V. Recktenwald",
+        "Ana M. Rodriguez-Pineiro",
+        "Maria-Jose Garcia-Bonete",
+        "Sergio Trillo-Muyo",
+        "Malin Bäckström",
+        "Gunnar C. Hansson",
+        "Malin E.V. Johansson"
+      ],
+      "authors_text": "Erik Ehrencrona; Sjoerd van der Post; Pablo Gallego; Christian V. Recktenwald; Ana M. Rodriguez-Pineiro; Maria-Jose Garcia-Bonete; Sergio Trillo-Muyo; Malin Bäckström; Gunnar C. Hansson; Malin E.V. Johansson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.jbc.2021.100871",
+      "id": "cci-0cb6775eb59d5f0da61aeeeaf7bc1f18",
+      "journal": "Journal of Biological Chemistry",
+      "publication_url": "https://doi.org/10.1016/j.jbc.2021.100871",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The IgGFc-binding protein FCGBP is secreted with all GDPH sequences cleaved but maintained by interfragment disulfide bonds",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Jasmine Chebli",
+        "Maryam Rahmati",
+        "Tammaryn Lashley",
+        "Brigitta Edeman",
+        "Anders Oldfors",
+        "Henrik Zetterberg",
+        "Alexandra Abramsson"
+      ],
+      "authors_text": "Jasmine Chebli; Maryam Rahmati; Tammaryn Lashley; Brigitta Edeman; Anders Oldfors; Henrik Zetterberg; Alexandra Abramsson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41598-021-98487-7",
+      "id": "cci-4cbffb1e170d5982a40669df4a0557c2",
+      "journal": "Scientific Reports",
+      "publication_url": "https://doi.org/10.1038/s41598-021-98487-7",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The localization of amyloid precursor protein to ependymal cilia in vertebrates and its role in ciliogenesis and brain development in zebrafish",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Min Jiang",
+        "Xie Xie",
+        "Xuefeng Zhu",
+        "Shan Jiang",
+        "Dusanka Milenkovic",
+        "Jelena Misic",
+        "Yonghong Shi",
+        "Nirwan Tandukar",
+        "Xinping Li",
+        "Ilian Atanassov",
+        "Louise Jenninger",
+        "Emily Hoberg",
+        "Sara Albarran-Gutierrez",
+        "Zsolt Szilagyi",
+        "Bertil Macao",
+        "Stefan J. Siira",
+        "Valerio Carelli",
+        "Jack D. Griffith",
+        "Claes M. Gustafsson",
+        "Thomas J. Nicholls",
+        "Aleksandra Filipovska",
+        "Nils-Göran Larsson",
+        "Maria Falkenberg"
+      ],
+      "authors_text": "Min Jiang; Xie Xie; Xuefeng Zhu; Shan Jiang; Dusanka Milenkovic; Jelena Misic; Yonghong Shi; Nirwan Tandukar; Xinping Li; Ilian Atanassov; Louise Jenninger; Emily Hoberg; Sara Albarran-Gutierrez; Zsolt Szilagyi; Bertil Macao; Stefan J. Siira; Valerio Carelli; Jack D. Griffith; Claes M. Gustafsson; Thomas J. Nicholls; Aleksandra Filipovska; Nils-Göran Larsson; Maria Falkenberg",
+      "cci_involvement": "service-provision",
+      "doi": "10.1126/sciadv.abf8631",
+      "id": "cci-d9a165b3e17f5778bdf6e0e1f7c6a626",
+      "journal": "Science Advances",
+      "publication_url": "https://doi.org/10.1126/sciadv.abf8631",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The mitochondrial single-stranded DNA binding protein is essential for initiation of mtDNA replication",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Min Hu",
+        "Yuehui Zhang",
+        "Xin Li",
+        "Peng Cui",
+        "Amanda Nancy Sferruzzi-Perri",
+        "Mats Brännström",
+        "Linus R Shao",
+        "Håkan Billig"
+      ],
+      "authors_text": "Min Hu; Yuehui Zhang; Xin Li; Peng Cui; Amanda Nancy Sferruzzi-Perri; Mats Brännström; Linus R Shao; Håkan Billig",
+      "cci_involvement": "service-provision",
+      "doi": "10.1210/clinem/dgaa951",
+      "id": "cci-c7238a0d467d54979fc8a4d9b86732b2",
+      "journal": "The Journal of Clinical Endocrinology & Metabolism",
+      "publication_url": "https://doi.org/10.1210/clinem/dgaa951",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "TLR4-Associated IRF-7 and NFκB Signaling Act as a Molecular Link Between Androgen and Metformin Activities and Cytokine Synthesis in the PCOS Endometrium",
+      "type": "journal-article",
+      "year": 2021
+    },
+    {
+      "authors": [
+        "Arvind Manikantan Padma",
+        "Laura Carrière",
+        "Frida Krokström Karlsson",
+        "Edina Sehic",
+        "Sara Bandstein",
+        "Tom Tristan Tiemann",
+        "Mihai Oltean",
+        "Min Jong Song",
+        "Mats Brännström",
+        "Mats Hellström"
+      ],
+      "authors_text": "Arvind Manikantan Padma; Laura Carrière; Frida Krokström Karlsson; Edina Sehic; Sara Bandstein; Tom Tristan Tiemann; Mihai Oltean; Min Jong Song; Mats Brännström; Mats Hellström",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41536-021-00136-0",
+      "id": "cci-41a5042908285e8f8d20d259880d4175",
+      "journal": "npj Regenerative Medicine",
+      "publication_url": "https://doi.org/10.1038/s41536-021-00136-0",
+      "reporting_years": [
+        2021
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Towards a bioengineered uterus: bioactive sheep uterus scaffolds are effectively recellularized by enzymatic preconditioning",
+      "type": "journal-article",
+      "year": 2021
     }
   ],
   "schema_version": 1,

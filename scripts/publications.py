@@ -68,17 +68,56 @@ def read_tables(paths):
     citations = []
     for path in paths:
         count = 0
+        columns, section_year = None, None
+        aliases = {"author": "authors_text", "authors": "authors_text", "year": "year",
+                   "title": "title", "journal": "journal", "source": "journal",
+                   "article": "citation_text", "doi": "doi"}
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             if not line.lstrip().startswith("|"):
+                if line.strip():
+                    columns = None
+                heading = re.match(r"^#{1,6}\s+(.+)", line)
+                if heading:
+                    year = re.fullmatch(r"(20\d{2})", heading[1].strip())
+                    section_year = int(year[1]) if year else None
                 continue
-            cells = [clean(c) for c in re.split(r"(?<!\\)\|", line.strip().strip("|"))]
-            if not any(re.fullmatch(r"20\d{2}", c) for c in cells):
+            row_text = line.strip()[1:]
+            if row_text.endswith("|"):
+                row_text = row_text[:-1]
+            cells = [clean(c) for c in re.split(r"(?<!\\)\|", row_text)]
+            if all(re.fullmatch(r":?-+:?", c) for c in cells):
                 continue
-            if len(cells) == 6 and cells[0].isdigit():
-                cells = cells[1:]
-            if len(cells) != 5 or not re.fullmatch(r"20\d{2}", cells[1]):
-                raise ValueError(f"Unsupported table row: {path.name}:{line_number}")
-            authors, year, title, journal, raw_doi = cells
+            if "doi" in [c.lower() for c in cells]:
+                columns = [aliases.get(c.lower()) for c in cells]
+                recognized = [c for c in columns if c]
+                if len(recognized) != len(set(recognized)):
+                    raise ValueError(f"Repeated table column: {path.name}:{line_number}")
+                continue
+            if columns is not None:
+                if len(cells) == len(columns) + 1 and cells[0].isdigit():
+                    cells = cells[1:]
+                if len(cells) != len(columns):
+                    raise ValueError(f"Unsupported table row: {path.name}:{line_number}")
+                values = {key: value for key, value in zip(columns, cells) if key}
+                authors, title, journal = (values.get(k, "") for k in ("authors_text", "title", "journal"))
+                raw_doi = values.get("doi", "")
+                raw_year = values.get("year")
+                if raw_year and not re.fullmatch(r"20\d{2}", raw_year):
+                    raise ValueError(f"Invalid year: {path.name}:{line_number}")
+                year = int(raw_year) if raw_year else section_year
+            else:
+                # Compatibility with the original five-column and numbered tables.
+                if not any(re.fullmatch(r"20\d{2}", c) for c in cells):
+                    continue
+                if len(cells) == 6 and cells[0].isdigit():
+                    cells = cells[1:]
+                if len(cells) != 5 or not re.fullmatch(r"20\d{2}", cells[1]):
+                    raise ValueError(f"Unsupported table row: {path.name}:{line_number}")
+                authors, year, title, journal, raw_doi = cells
+                year = int(year)
+                values = {}
+            if not raw_doi and not (authors and title and journal and year):
+                raise ValueError(f"Missing DOI or complete manual citation: {path.name}:{line_number}")
             # One source table appends a preprint disclaimer inside the DOI cell.
             doi_text = re.sub(r"\s+This content is a preprint.*$", "", raw_doi, flags=re.I)
             try:
@@ -86,13 +125,17 @@ def read_tables(paths):
                 error = None
             except ValueError as exc:
                 doi, error = None, str(exc)
+            if not doi and not (authors and title and journal and year):
+                raise ValueError(f"Valid DOI or complete manual citation required: {path.name}:{line_number}: {error or raw_doi}")
             citations.append({
                 "file": path.name, "line": line_number,
                 "title": title, "authors_text": authors, "journal": journal,
-                "year": int(year), "original_doi": raw_doi,
+                "year": year, "original_doi": raw_doi,
                 "doi": doi, "doi_error": error,
                 "doi_warning": "Preprint disclaimer removed from DOI cell" if doi_text != raw_doi else None,
             })
+            if values.get("citation_text"):
+                citations[-1]["citation_text"] = values["citation_text"]
             count += 1
         if not count:
             raise ValueError(f"No publication rows found in {path}")
@@ -108,7 +151,13 @@ def import_citations(citations, registry=None):
     for citation in citations:
         doi = citation["doi"]
         record_id = identifier(doi, citation)
-        record = by_source.get((citation["file"], citation["line"])) or (by_doi.get(doi) if doi else by_id.get(record_id))
+        source_record = by_source.get((citation["file"], citation["line"]))
+        # Preserve explicit DOI corrections on an unchanged source citation, but
+        # don't confuse a reordered table row with its former occupant.
+        if source_record and not any(c["file"] == citation["file"] and c["line"] == citation["line"]
+                                     and c["doi"] == doi for c in source_record["original_citations"]):
+            source_record = None
+        record = (by_doi.get(doi) if doi else None) or source_record or by_id.get(record_id)
         if record is None:
             record = {
                 "id": record_id, "doi": doi, "approved": True,
@@ -129,7 +178,8 @@ def import_citations(citations, registry=None):
         if citation not in record["original_citations"]:
             record["original_citations"].append(copy.deepcopy(citation))
         by_source[(citation["file"], citation["line"])] = record
-        record["reporting_years"] = record.get("reporting_years_override", sorted(set(record["reporting_years"] + [citation["year"]])))
+        source_years = [citation["year"]] if citation["year"] is not None else []
+        record["reporting_years"] = record.get("reporting_years_override", sorted(set(record["reporting_years"] + source_years)))
     records.sort(key=lambda r: r["id"])
     return registry
 
@@ -302,14 +352,14 @@ def compare_metadata(citation, metadata):
     # Book-chapter citations can embed the containing book/editor after the title.
     title = re.split(r"\.\s+In:\s", citation["title"], maxsplit=1)[0]
     similarity = SequenceMatcher(None, comparable(title), comparable(metadata["title"])).ratio()
-    if similarity < 0.85:
+    if title and similarity < 0.85:
         issues.append({"field": "title", "severity": "review", "similarity": round(similarity, 3)})
     correction = re.match(r"^(corrigendum|erratum|correction|retraction)\b", comparable(metadata["title"]))
     if correction and not comparable(title).startswith(correction[0]):
         issues.append({"field": "title", "severity": "review", "reason": "DOI may identify a correction or retraction rather than the cited article"})
     if metadata.get("year") is None:
         issues.append({"field": "year", "severity": "review", "reason": "missing provider year"})
-    elif metadata["year"] != citation["year"]:
+    elif citation.get("year") is not None and metadata["year"] != citation["year"]:
         issues.append({"field": "year", "severity": "review" if abs(metadata["year"] - citation["year"]) > 1 else "info"})
     # Author formatting differs across years. Compare the first surname, not initials.
     first_author = comparable(citation["authors_text"]).split()
@@ -317,12 +367,12 @@ def compare_metadata(citation, metadata):
         issues.append({"field": "authors", "severity": "review", "reason": "missing provider authors"})
     elif first_author and first_author[0] not in comparable(metadata["authors"][0]).split():
         issues.append({"field": "authors", "severity": "review", "reason": "first author differs"})
-    if comparable(citation["journal"]) != comparable(metadata.get("journal")):
+    if not metadata.get("journal") or (citation["journal"] and comparable(citation["journal"]) != comparable(metadata.get("journal"))):
         issues.append({"field": "journal", "severity": "info" if metadata.get("journal") else "review", "reason": "source formatting or name differs"})
     return issues
 
 
-def enrich(registry, client, record_ids=None):
+def enrich(registry, client, record_ids=None, prefer_retrieved_ids=None):
     for number, record in enumerate(registry["publications"], 1):
         if record_ids is not None and record["id"] not in record_ids:
             continue
@@ -341,12 +391,15 @@ def enrich(registry, client, record_ids=None):
         record.pop("last_lookup_error", None)
         if retrieved.get("refresh_error"):
             record["last_lookup_error"] = retrieved["refresh_error"]
+            # A cached fallback after a failed live check is not a new update.
+            # In particular, don't regress newer manually supplied metadata.
+            continue
         record["retrieved"] = {k: v for k, v in retrieved.items() if k in {"doi", "provider", "metadata"}}
         issues = []
         for citation in record["original_citations"]:
             issues.extend({**issue, "file": citation["file"], "line": citation["line"]}
                           for issue in compare_metadata(citation, retrieved["metadata"]))
-        if not record["original_citations"]:
+        if not any(c.get("title") for c in record["original_citations"]):
             # DOI-only additions need a person to check the returned citation.
             status = "review"
         else:
@@ -362,8 +415,15 @@ def enrich(registry, client, record_ids=None):
         source_selected = (record.get("metadata_review", {}).get("basis") == "existing_citation" and
                            record.get("metadata_review", {}).get("fingerprint") == review_fingerprint(record))
         provider_complete = all(retrieved["metadata"].get(field) for field in ("title", "authors", "authors_text", "journal", "year"))
-        if not identity_issue and not source_selected and provider_complete:
+        # An already registered DOI is its identity: publication-stage changes
+        # may update the title as well as authors/year. Explicit curator choices
+        # and correction/retraction warnings still require review.
+        trusted_doi = record["id"] in (prefer_retrieved_ids or set())
+        correction_issue = any(i.get("reason", "").startswith("DOI may identify") for i in issues)
+        if (not identity_issue or trusted_doi and not correction_issue) and not source_selected and provider_complete:
             record["metadata"] = copy.deepcopy(retrieved["metadata"])
+        if not record["reporting_years"] and type(record["metadata"].get("year")) is int:
+            record["reporting_years"] = [record["metadata"]["year"]]
         review = record.get("metadata_review", {})
         if review.get("fingerprint") == review_fingerprint(record):
             record["metadata_check"]["status"] = "accepted"
@@ -373,6 +433,28 @@ def review_fingerprint(record):
     content = {"doi": record["doi"], "retrieved": record.get("retrieved"),
                "original_citations": record["original_citations"]}
     return hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def import_table_records(citations, registry, client):
+    """Merge DOI identities, refresh each selected record once, and report changes."""
+    before = {r["id"]: copy.deepcopy(r["metadata"]) for r in registry["publications"]}
+    registry = import_citations(citations, registry)
+    source_keys = {(c["file"], c["line"], c["doi"]) for c in citations}
+    selected = {r["id"] for r in registry["publications"]
+                if any((c["file"], c["line"], c["doi"]) in source_keys for c in r["original_citations"])}
+    enrich(registry, client, selected, prefer_retrieved_ids=set(before))
+    updates = []
+    for record in registry["publications"]:
+        if record["id"] not in selected:
+            continue
+        previous = before.get(record["id"], {})
+        changes = {field: {"before": previous.get(field), "after": record["metadata"].get(field)}
+                   for field in sorted(FIELDS) if previous.get(field) != record["metadata"].get(field)}
+        status = ("lookup_failed" if record.get("last_lookup_error") else
+                  "new" if record["id"] not in before else "updated" if changes else
+                  "review_required" if record.get("retrieved", {}).get("metadata") != record["metadata"] else "unchanged")
+        updates.append({"id": record["id"], "doi": record["doi"], "status": status, "changes": changes})
+    return registry, updates
 
 
 def accept_review(record, use_retrieved=False, note=""):
@@ -584,7 +666,7 @@ def save_registry(path, registry):
     write_text(path, yaml.safe_dump(registry, allow_unicode=True, sort_keys=False, width=100))
 
 
-def write_report(path, registry):
+def write_report(path, registry, import_updates=None):
     rows = []
     for r in registry["publications"]:
         rows.append({"id": r["id"], "doi": r["doi"], "status": r["metadata_check"]["status"],
@@ -596,10 +678,18 @@ def write_report(path, registry):
     summary = {"records": len(rows), "source_rows": sum(len(r["original_citations"]) for r in rows),
                "duplicates": sum(r["duplicate"] for r in rows),
                "statuses": {s: sum(r["status"] == s for r in rows) for s in sorted({r["status"] for r in rows})}}
-    write_json(path, {"summary": summary, "records": rows})
+    report = {"summary": summary, "records": rows}
+    if import_updates is not None:
+        report["import_updates"] = import_updates
+    write_json(path, report)
     review_lines = ["CCI publication import review", "", json.dumps(summary, indent=2), "",
                     "Matches are automated comparisons, not a substitute for bibliographic review.",
-                    "Source citations remain authoritative for flagged entries until corrected.", ""]
+                    "Inspect flagged differences and import changes; explicit curator overrides remain protected.", ""]
+    if import_updates is not None:
+        review_lines.extend(["This import (bibliographic metadata only):",
+                             *[f"{r['doi'] or r['id']}: {r['status']}" +
+                               (" (" + ", ".join(sorted(r['changes'])) + ")" if r['changes'] else "")
+                               for r in import_updates], ""])
     for row in rows:
         if row["status"] == "matched" and not row["duplicate"]:
             continue
@@ -611,6 +701,8 @@ def write_report(path, registry):
         for citation in row["original_citations"]:
             review_lines.extend([f"Source: {citation['file']}:{citation['line']} ({citation['year']})",
                                  f"  Title: {citation['title']}", f"  Authors: {citation['authors_text']}"])
+            if citation.get("citation_text"):
+                review_lines.append("  Original citation: " + citation["citation_text"])
         candidate = (row["retrieved"] or {}).get("metadata", {})
         if candidate:
             review_lines.extend([f"Retrieved title: {candidate['title']}", f"Retrieved authors: {candidate['authors_text']}"])
@@ -630,7 +722,7 @@ def write_report(path, registry):
             candidate = (r["retrieved"] or {}).get("metadata", {})
             writer.writerow([r["id"], r["doi"], r["status"], r["duplicate"],
                              "; ".join(str(c["year"]) for c in r["original_citations"]),
-                             " | ".join(c["title"] for c in r["original_citations"]),
+                             " | ".join(c["title"] or c.get("citation_text", "") for c in r["original_citations"]),
                              candidate.get("year"), candidate.get("title"), json.dumps(r["issues"]), r["lookup_error"]])
     print(json.dumps(summary, indent=2))
     return summary
@@ -728,6 +820,7 @@ def main(argv=None):
         sub.add_argument("--publication-url")
         sub.add_argument("--type")
     args = parser.parse_args(argv)
+    import_updates = None
     vocabulary = read_registry(args.vocabulary)
     if args.command in {"validate", "build", "refresh", "edit", "show", "review", "check-updates", "fetch-abstracts"} and not args.registry.exists():
         raise ValueError(f"Registry not found: {args.registry}; import tables or add a record first")
@@ -758,9 +851,8 @@ def main(argv=None):
         citations = read_tables(args.files)
         if args.sample:
             citations = sample_citations(citations)
-        registry = import_citations(citations, registry)
-        ids = {identifier(c["doi"], c) for c in citations}
-        enrich(registry, MetadataClient(args.cache, args.offline, mailto=args.mailto), ids)
+        registry, import_updates = import_table_records(
+            citations, registry, MetadataClient(args.cache, args.offline, refresh=not args.offline, mailto=args.mailto))
     elif args.command == "refresh":
         selected = set(args.id) if args.id else None
         if selected and selected - {r["id"] for r in registry["publications"]}:
@@ -818,6 +910,10 @@ def main(argv=None):
         if record["doi"] and not effective_metadata(record).get("publication_url"):
             record["overrides"]["publication_url"] = f"https://doi.org/{record['doi']}"
         print(json.dumps(record, ensure_ascii=False, indent=2))
+    if import_updates is not None:
+        # Keep a useful private report even when a DOI-only lookup failed and
+        # incomplete metadata prevents writing the canonical registry.
+        write_report(args.report, registry, import_updates)
     validate(registry, vocabulary)
     if args.command == "show":
         record = next((r for r in registry["publications"] if r["id"] == args.id), None)
@@ -832,7 +928,8 @@ def main(argv=None):
     else:
         registry["publications"].sort(key=lambda r: r["id"])
         save_registry(args.registry, registry)
-        write_report(args.report, registry)
+        if import_updates is None:
+            write_report(args.report, registry)
 
 
 if __name__ == "__main__":

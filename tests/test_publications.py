@@ -74,6 +74,179 @@ def test_duplicate_merges_provenance_not_citations(registry, citation):
     assert record["approved"] is True
 
 
+def test_article_doi_table_keeps_citation_and_section_years(tmp_path):
+    path = tmp_path / "incoming.md"
+    path.write_text("# Publications (2021–2024)\n\n## 2024\n\n| Article | DOI |\n| --- | --- |\n"
+                    "| Full citation, not just a title. | [link](https://doi.org/10.1234/TEST) |\n"
+                    "\n## 2021\n\n| Article | DOI |\n| --- | --- |\n| Other citation | 10.1234/other |\n")
+    rows = p.read_tables([path])
+    assert [r["year"] for r in rows] == [2024, 2021]
+    assert rows[0]["doi"] == "10.1234/test"
+    assert rows[0]["citation_text"] == "Full citation, not just a title."
+    assert rows[0]["title"] == rows[0]["authors_text"] == rows[0]["journal"] == ""
+
+
+def test_doi_only_table_can_use_retrieved_year(tmp_path, metadata, vocabulary):
+    path = tmp_path / "incoming.md"
+    path.write_text("| DOI |\n| --- |\n| 10.1234/test |\n")
+    rows = p.read_tables([path])
+    assert rows[0]["year"] is None
+    result, updates = p.import_table_records(rows, {"schema_version": 1, "publications": []}, FakeClient(metadata))
+    record = result["publications"][0]
+    assert record["metadata"] == metadata
+    assert record["reporting_years"] == [2024]
+    assert record["metadata_check"]["status"] == "review"
+    assert updates[0]["status"] == "new"
+    p.validate(result, vocabulary)
+
+
+def test_optional_columns_can_be_reordered_and_year_overrides_heading(tmp_path):
+    path = tmp_path / "incoming.md"
+    path.write_text("## 2021\n| DOI | Title | Year |\n| --- | --- | --- |\n"
+                    "| 10.1234/test | Actual title | 2024 |\n")
+    row = p.read_tables([path])[0]
+    assert row["title"] == "Actual title"
+    assert row["year"] == 2024
+    assert row["authors_text"] == row["journal"] == ""
+
+
+@pytest.mark.parametrize("cell", ["", "n/a", "bad-doi"])
+def test_doi_only_table_rejects_missing_identity(tmp_path, cell):
+    path = tmp_path / "incoming.md"
+    path.write_text(f"| DOI |\n| --- |\n|{cell}|\n")
+    with pytest.raises(ValueError, match="DOI"):
+        p.read_tables([path])
+
+
+def test_reordered_rows_match_doi_not_previous_line(registry, citation):
+    other = {**citation, "line": 4, "doi": "10.1234/other", "title": "Other paper"}
+    registry = p.import_citations([other], registry)
+    swapped = [{**other, "line": 3}, {**citation, "line": 4}]
+    result = p.import_citations(swapped, registry)
+    assert len(result["publications"]) == 2
+    for record in result["publications"]:
+        assert all(c["doi"] == record["doi"] for c in record["original_citations"])
+
+
+def test_repeat_import_reports_unchanged_and_checks_once(registry, citation, metadata):
+    p.enrich(registry, FakeClient(metadata))
+    calls = []
+
+    class CountingClient(FakeClient):
+        def lookup(self, doi):
+            calls.append(doi)
+            return super().lookup(doi)
+
+    result, updates = p.import_table_records([citation, citation], registry, CountingClient(metadata))
+    assert calls == [citation["doi"]]
+    assert result == registry
+    assert updates == [{"id": registry["publications"][0]["id"], "doi": citation["doi"],
+                        "status": "unchanged", "changes": {}}]
+
+
+def test_repeat_import_updates_bibliography_but_preserves_curation(registry, citation, metadata):
+    record = registry["publications"][0]
+    record.update(approved=False, technologies=["confocal"], services=["synthetic-service"],
+                  tagging_status="reviewed", cci_involvement="scientific-collaboration",
+                  cci_involvement_override="scientific-collaboration", notes="Curator annotation")
+    record["overrides"] = {"year": 2023}
+    record["reporting_years_override"] = record["reporting_years"] = [2024]
+    protected = {key: copy.deepcopy(value) for key, value in record.items()
+                 if key not in {"metadata", "metadata_check"}}
+    updated = {**metadata, "title": "Final publication title", "year": 2025}
+    result, updates = p.import_table_records([citation], registry, FakeClient(updated))
+    after = result["publications"][0]
+    assert after["metadata"] == updated
+    assert all(after[key] == value for key, value in protected.items())
+    assert p.effective_metadata(after)["year"] == 2023
+    assert updates[0]["status"] == "updated"
+    assert updates[0]["changes"]["title"]["after"] == updated["title"]
+
+
+def test_repeat_import_outage_preserves_record(registry, citation):
+    before = copy.deepcopy(registry)
+    result, updates = p.import_table_records([citation], registry, FakeClient(error=True))
+    assert updates[0]["status"] == "lookup_failed"
+    assert updates[0]["changes"] == {}
+    assert result["publications"][0]["metadata"] == before["publications"][0]["metadata"]
+    assert registry == before
+
+
+def test_repeat_import_does_not_replace_metadata_with_incomplete_response(registry, citation, metadata):
+    metadata["journal"] = ""
+    result, updates = p.import_table_records([citation], registry, FakeClient(metadata))
+    assert result["publications"][0]["metadata"] == registry["publications"][0]["metadata"]
+    assert result["publications"][0]["metadata_check"]["status"] == "review"
+    assert updates[0]["changes"] == {}
+    assert updates[0]["status"] == "review_required"
+
+
+def test_failed_live_check_does_not_regress_metadata_from_cached_fallback(registry, citation, metadata):
+    record = registry["publications"][0]
+    record["metadata"]["title"] = "Newer manually supplied title"
+
+    class StaleClient(FakeClient):
+        def lookup(self, doi):
+            return {**super().lookup(doi), "refresh_error": "Provider unavailable"}
+
+    result, updates = p.import_table_records([citation], registry, StaleClient(metadata))
+    assert result["publications"][0]["metadata"] == record["metadata"]
+    assert updates[0]["status"] == "lookup_failed"
+    assert updates[0]["changes"] == {}
+
+
+def test_reimport_keeps_manual_doi_correction_and_refreshes_preserved_id(registry, citation, metadata):
+    record = registry["publications"][0]
+    record["doi"] = "10.1234/corrected"
+    record["id"] = "explicitly-preserved-id"
+    calls = []
+
+    class CorrectedClient(FakeClient):
+        def lookup(self, doi):
+            calls.append(doi)
+            return super().lookup(doi)
+
+    result, updates = p.import_table_records([citation], registry, CorrectedClient(metadata))
+    assert len(result["publications"]) == 1
+    assert calls == ["10.1234/corrected"]
+    assert updates[0]["id"] == "explicitly-preserved-id"
+
+
+def test_import_cli_forces_live_refresh_and_writes_change_report(tmp_path, monkeypatch, registry, metadata, vocabulary):
+    path = tmp_path / "incoming.md"
+    path.write_text("| DOI |\n| --- |\n| 10.1234/test |\n")
+    registry_path, vocab_path, report = (tmp_path / name for name in ("registry.yml", "vocab.yml", "report.json"))
+    p.save_registry(registry_path, registry)
+    p.save_registry(vocab_path, vocabulary)
+    options = []
+
+    def client_factory(*args, **kwargs):
+        options.append(kwargs)
+        return FakeClient(metadata)
+
+    monkeypatch.setattr(p, "MetadataClient", client_factory)
+    p.main(["--registry", str(registry_path), "--vocabulary", str(vocab_path), "--report", str(report),
+            "import-tables", str(path)])
+    assert options[0]["refresh"] is True
+    assert p.read_json(report)["import_updates"][0]["status"] == "updated"
+    assert len(p.read_registry(registry_path)["publications"]) == 1
+
+
+def test_failed_doi_only_import_writes_report_without_overwriting_registry(tmp_path, monkeypatch, vocabulary):
+    path = tmp_path / "incoming.md"
+    path.write_text("| DOI |\n| --- |\n| 10.1234/test |\n")
+    registry_path, vocab_path, report = (tmp_path / name for name in ("registry.yml", "vocab.yml", "report.json"))
+    p.save_registry(registry_path, {"schema_version": 1, "publications": []})
+    before = registry_path.read_bytes()
+    p.save_registry(vocab_path, vocabulary)
+    monkeypatch.setattr(p, "MetadataClient", lambda *a, **k: FakeClient(error=True))
+    with pytest.raises(ValueError, match="title is required"):
+        p.main(["--registry", str(registry_path), "--vocabulary", str(vocab_path), "--report", str(report),
+                "import-tables", str(path)])
+    assert registry_path.read_bytes() == before
+    assert p.read_json(report)["import_updates"][0]["status"] == "lookup_failed"
+
+
 def test_no_doi_has_stable_id(citation):
     citation["doi"] = None
     assert p.import_citations([citation]) == p.import_citations([citation])
