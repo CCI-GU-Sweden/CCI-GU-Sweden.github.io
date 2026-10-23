@@ -41,7 +41,7 @@ form from being paired with an older cached script or catalogue after a build.
 
 The technology dropdown remains available when there are no assigned tags,
 showing an empty-state message. Human-facing labels come from the public
-vocabulary generated from _publications/vocabulary.yml. The current 138 approved records
+vocabulary generated from _publications/vocabulary.yml. Approved registry records
 remain unchanged by the portal. Long author lists can be expanded inline.
 Technology assignment now covers year batches from 2022 through 2026; some
 publications remain untagged when available text does not support a label.

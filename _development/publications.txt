@@ -29,11 +29,40 @@ Initial table import
 
     python scripts/publications.py import-tables private_data/CCI_publications_*.md
 
-Both five-column and numbered six-column tables are accepted. All imported
+Tables can contain just a DOI column. Authors, Year, Title, Journal/Source and
+Article (a full citation kept for reference) are optional named columns in any
+order. A heading such as "## 2021" supplies the reporting year when a Year cell
+is absent; without either, the retrieved publication year is used. Article
+text is not treated as a structured title. Original five-column and numbered
+six-column tables remain supported, including legacy rows without a header.
+
+For example, the combined 2021-2024 source can be read directly:
+
+    python scripts/publications.py import-tables private_data/publications-to-add-2026-10-24.md
+
+All imported
 articles are approved, per CCI's decision. Approval does not depend on tagging
 or metadata availability. Original citations and reporting years are retained.
 DOI duplicates become one record with all original citations and reporting
 years. Different preprint/published DOIs remain separate records.
+
+Re-importing an existing DOI is expected. Online imports check fresh provider
+metadata once per selected record, even when a cached response exists. Equal
+bibliographic metadata is left unchanged; changed metadata for an existing DOI
+is adopted when the provider fields are complete. Technology/service tags,
+CCI involvement, approval, manual overrides and other annotations are retained.
+An explicit citation-review choice or a correction/retraction warning can still
+require review. New DOI identities still use supplied structured citation fields
+for mismatch checks. DOI-only records are marked for review because no source
+title is available for comparison. --offline uses saved responses only and cannot
+check for new provider updates.
+
+The private JSON report includes import_updates, listing new, updated, unchanged,
+review-required and failed lookups, with before/after bibliographic fields. The text report gives
+a summary; full Article citations are preserved in reports and provenance. If a
+DOI-only lookup fails, the report is written but an incomplete canonical registry
+is not saved: supply the required metadata manually or retry the lookup. Valid
+existing records survive temporary provider failures.
 
 The importer compares normalized titles, first-author names, years, and source
 names. Formatting differences in source names and one-year differences are
@@ -42,10 +71,12 @@ require review. This is a comparison heuristic, not proof of bibliographic
 identity. Inspect the original and retrieved citations in the JSON report.
 
 DOI metadata is preferred over the source tables for bibliographic fields.
-An updated author list is adopted when the title matches and required fields
-are present, while the difference is reported for review. Substantial title
-changes, correction/retraction DOIs, incomplete metadata, and failed lookups
-keep the existing citation for review. Explicit curator overrides always win.
+An updated author list is adopted when required fields are present, while the
+difference is reported for review. For a new DOI, substantial title changes
+keep the source citation for review. Existing DOI identities may also receive
+updated titles during re-import. Correction/retraction warnings, incomplete
+metadata and failed lookups retain the existing citation for review. Explicit
+curator overrides always win.
 Final print/issue dates take priority over earlier online-first dates when
 both are supplied. Crossref is tried first, followed by DOI CSL negotiation.
 The original DOI cell is retained, including citation punctuation/disclaimers.

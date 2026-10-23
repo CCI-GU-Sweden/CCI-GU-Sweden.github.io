@@ -40,8 +40,8 @@ try {
   assert.ok(new URL(moduleURL, base).searchParams.get('v'), 'Module URL must change when a new build is served');
   assert.equal(await page.locator("[name=year]").inputValue(), "");
   assert.equal(await page.locator("[name=sort]").inputValue(), "newest");
-  assert.match(await page.locator("[data-status]").textContent(), /20 of 138/);
-  assert.equal(await page.locator(".publication-year").first().textContent(), "2026");
+  assert.match(await page.locator("[data-status]").textContent(), new RegExp(`20 of ${catalogue.publications.length}\\b`));
+  assert.equal(await page.locator(".publication-year").first().textContent(), String(Math.max(...catalogue.publications.map(record => record.year))));
   const assignedTags = [...new Set(catalogue.publications.flatMap(record => record.technologies || []))].sort();
   assert.equal(await page.locator('[name=technology]').count(), assignedTags.length);
   assert.equal(await page.locator('[data-technology-value]').textContent(), 'All technologies');
@@ -122,11 +122,11 @@ try {
 
   await page.locator("[data-more]").click();
   await count(page, 40);
-  assert.match(await page.locator("[data-status]").textContent(), /40 of 138/);
+  assert.match(await page.locator("[data-status]").textContent(), new RegExp(`40 of ${catalogue.publications.length}\\b`));
   assert.equal(await page.evaluate(() => document.activeElement === document.querySelectorAll(".publication-card h2 a")[20]), true);
   await page.locator("[name=year]").selectOption("2025");
   await count(page, 20);
-  assert.match(await page.locator("[data-status]").textContent(), /of 36/);
+  assert.match(await page.locator("[data-status]").textContent(), new RegExp(`of ${catalogue.publications.filter(record => record.year === 2025).length}\\b`));
   await page.locator("[name=q]").fill("10.1093/jxb/erae387");
   await count(page, 1);
   assert.equal(await page.locator(".publication-year").textContent(), "2025");
@@ -143,7 +143,7 @@ try {
   assert.equal(await page.locator("[name=sort]").inputValue(), "newest");
   assert.equal(new URL(page.url()).search, "");
   await page.locator("[name=sort]").selectOption("oldest");
-  assert.equal(await page.locator(".publication-year").first().textContent(), "2022");
+  assert.equal(await page.locator(".publication-year").first().textContent(), String(Math.min(...catalogue.publications.map(record => record.year))));
   await page.locator("[name=q]").fill("zzzz-no-synthetic-match-zzzz");
   await count(page, 0);
   assert.equal(await page.locator("[data-empty]").isVisible(), true);
