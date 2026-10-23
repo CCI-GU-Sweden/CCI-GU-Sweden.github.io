@@ -29,6 +29,38 @@ Initial table import
 
     python scripts/publications.py import-tables private_data/CCI_publications_*.md
 
+PubMed fallback
+
+The DOI column also accepts PMID:12345678 or an explicit PubMed link such as
+https://pubmed.ncbi.nlm.nih.gov/12345678/. Identifier is an alternative header
+name. Bare numbers are rejected to avoid ambiguity. DOI values keep using
+Crossref/DOI metadata; PMID values use NCBI EFetch XML, with the same requests
+dependency, local cache, offline mode and fresh-check behavior on import.
+
+PMID records can have doi: null. They are matched by PMID across files/row
+reordering and display a PubMed link when no DOI is known. PMID and PMCID are
+searchable in the portal. PubMed abstracts remain private unless independently
+eligible for public display under the existing abstract policy.
+
+Missing DOI metadata in PubMed is recorded as doi_status: not-listed; this
+does not prove no DOI exists. A manually confirmed absence can be recorded with
+an optional "DOI status" table column containing confirmed-unavailable, or:
+
+    python scripts/publications.py edit RECORD_ID --doi-status confirmed-unavailable
+
+When PubMed later supplies a DOI, the PMID record keeps its internal ID and
+annotations and doi_status becomes available. A new PMID that resolves to an
+already registered DOI is merged into that DOI record. If both identifiers
+already belong to separate registry records, import stops for explicit curation
+instead of silently discarding one record's annotations. Provider reference-list
+identifiers are never treated as identifiers of the article being imported.
+
+Refresh and update checks use PubMed for PMID-only records, skipping DOI APIs.
+Failed requests retain existing metadata; incomplete new records are reported
+without overwriting the canonical registry. PMID/PMCID are allowed public fields;
+curator DOI-status annotations, source citations and raw provider data stay out
+of the generated public JSON.
+
 Tables can contain just a DOI column. Authors, Year, Title, Journal/Source and
 Article (a full citation kept for reference) are optional named columns in any
 order. A heading such as "## 2021" supplies the reporting year when a Year cell
