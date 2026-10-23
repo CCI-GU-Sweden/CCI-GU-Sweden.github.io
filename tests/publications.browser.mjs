@@ -159,6 +159,16 @@ try {
   console.log("PASS: sorting, empty state, reset, full author disclosure, and keyboard navigation");
 
   await page.locator("[data-clear]").click();
+  const pmidOnly = catalogue.publications.find(record => record.pmid && !record.doi);
+  if (pmidOnly) {
+    await page.locator('[name=q]').fill(`PMID:${pmidOnly.pmid}`);
+    await count(page, 1);
+    assert.equal(await page.getByRole('link', {name: `PubMed: ${pmidOnly.pmid}`, exact: true}).getAttribute('href'),
+      `https://pubmed.ncbi.nlm.nih.gov/${pmidOnly.pmid}/`);
+    assert.equal(await page.locator('.publication-card h2').textContent(), pmidOnly.title);
+    await page.locator('[data-clear]').click();
+    console.log('PASS: imported PMID-only publication search and PubMed reference');
+  }
   for (const width of [375, 561, 640, 768, 1024]) {
     await page.setViewportSize({width, height: 900});
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), true, `Overflow at ${width}px`);
@@ -185,6 +195,9 @@ try {
   fixture.publications[0].abstract = {text: "Synthetic abstract first paragraph.\n\nSecond paragraph <script>window.__injected=1</script>.",
     source_url: "https://doi.org/10.1234/synthetic", license_url: "https://creativecommons.org/licenses/by/4.0/"};
   fixture.publications[1].title = "Synthetic second fixture";
+  fixture.publications[1].doi = null;
+  fixture.publications[1].pmid = "12345678";
+  fixture.publications[1].publication_url = "https://pubmed.ncbi.nlm.nih.gov/12345678/";
   fixture.publications[1].technologies = ["electron"];
   delete fixture.publications[1].abstract;
   fixture.vocabulary = {technologies: [
@@ -195,6 +208,13 @@ try {
   await page.route("**/assets/data/publications.json", route => route.fulfill({json: fixture}));
   await page.goto(`${base}/publications/`);
   await ready(page);
+  await count(page, 2);
+  assert.equal(await page.getByRole('link', {name: 'PubMed: 12345678', exact: true}).getAttribute('href'),
+    'https://pubmed.ncbi.nlm.nih.gov/12345678/');
+  await page.locator('[name=q]').fill('PMID:12345678');
+  await count(page, 1);
+  assert.equal(await page.locator('.publication-card h2').textContent(), 'Synthetic second fixture');
+  await page.locator('[data-clear]').click();
   await count(page, 2);
   assert.equal(await page.locator(".publication-card img").count(), 0);
   assert.equal(await page.evaluate(() => window.__injected), undefined);

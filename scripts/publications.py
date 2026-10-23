@@ -19,6 +19,7 @@ import unicodedata
 from difflib import SequenceMatcher
 from urllib.parse import quote, unquote
 import uuid
+import xml.etree.ElementTree as ET
 
 from habanero import Crossref
 import requests
@@ -59,8 +60,29 @@ def safe_url(value):
     return isinstance(value, str) and bool(re.match(r"^https?://[^\s/]+(?:/[^\s]*)?$", value))
 
 
+def normalize_pmid(value):
+    value = str(value or "").strip()
+    link = re.fullmatch(r"\[.*\]\((.*)\)", value)
+    if link:
+        value = link[1]
+    value = re.sub(r"^(?:pmid:\s*|https?://pubmed\.ncbi\.nlm\.nih\.gov/)", "", value, flags=re.I).rstrip("/")
+    if not re.fullmatch(r"[1-9]\d*", value):
+        raise ValueError(f"Invalid PMID: {value!r}")
+    return value
+
+
+def parse_identifier(value):
+    text = str(value or "").strip()
+    target = re.fullmatch(r"\[.*\]\((.*)\)", text)
+    target = target[1] if target else text
+    if re.match(r"^(?:pmid:|https?://pubmed\.ncbi\.nlm\.nih\.gov/)", target, re.I):
+        return None, normalize_pmid(text)
+    return normalize_doi(text), None
+
+
 def identifier(doi, citation):
-    key = doi or f"{citation['title']}|{citation['authors_text']}|{citation['year']}"
+    key = doi or (f"pmid:{citation['pmid']}" if citation.get("pmid") else
+                  f"{citation['title']}|{citation['authors_text']}|{citation['year']}")
     return "cci-" + uuid.uuid5(uuid.NAMESPACE_URL, key).hex
 
 
@@ -71,7 +93,8 @@ def read_tables(paths):
         columns, section_year = None, None
         aliases = {"author": "authors_text", "authors": "authors_text", "year": "year",
                    "title": "title", "journal": "journal", "source": "journal",
-                   "article": "citation_text", "doi": "doi"}
+                   "article": "citation_text", "doi": "doi", "identifier": "doi",
+                   "doi status": "doi_status"}
         for line_number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
             if not line.lstrip().startswith("|"):
                 if line.strip():
@@ -87,7 +110,7 @@ def read_tables(paths):
             cells = [clean(c) for c in re.split(r"(?<!\\)\|", row_text)]
             if all(re.fullmatch(r":?-+:?", c) for c in cells):
                 continue
-            if "doi" in [c.lower() for c in cells]:
+            if {"doi", "identifier"} & {c.lower() for c in cells}:
                 columns = [aliases.get(c.lower()) for c in cells]
                 recognized = [c for c in columns if c]
                 if len(recognized) != len(set(recognized)):
@@ -121,12 +144,12 @@ def read_tables(paths):
             # One source table appends a preprint disclaimer inside the DOI cell.
             doi_text = re.sub(r"\s+This content is a preprint.*$", "", raw_doi, flags=re.I)
             try:
-                doi = normalize_doi(doi_text)
+                doi, pmid = parse_identifier(doi_text)
                 error = None
             except ValueError as exc:
-                doi, error = None, str(exc)
-            if not doi and not (authors and title and journal and year):
-                raise ValueError(f"Valid DOI or complete manual citation required: {path.name}:{line_number}: {error or raw_doi}")
+                doi, pmid, error = None, None, str(exc)
+            if not doi and not pmid and not (authors and title and journal and year):
+                raise ValueError(f"Valid DOI/PMID or complete manual citation required: {path.name}:{line_number}: {error or raw_doi}")
             citations.append({
                 "file": path.name, "line": line_number,
                 "title": title, "authors_text": authors, "journal": journal,
@@ -134,6 +157,12 @@ def read_tables(paths):
                 "doi": doi, "doi_error": error,
                 "doi_warning": "Preprint disclaimer removed from DOI cell" if doi_text != raw_doi else None,
             })
+            if pmid:
+                citations[-1]["pmid"] = pmid
+            if values.get("doi_status"):
+                if values["doi_status"] != "confirmed-unavailable" or doi:
+                    raise ValueError(f"Invalid DOI status: {path.name}:{line_number}")
+                citations[-1]["doi_status"] = values["doi_status"]
             if values.get("citation_text"):
                 citations[-1]["citation_text"] = values["citation_text"]
             count += 1
@@ -146,18 +175,23 @@ def import_citations(citations, registry=None):
     registry = copy.deepcopy(registry or {"schema_version": 1, "publications": []})
     records = registry["publications"]
     by_doi = {r["doi"]: r for r in records if r["doi"]}
+    by_pmid = {r["pmid"]: r for r in records if r.get("pmid")}
     by_id = {r["id"]: r for r in records}
     by_source = {(c["file"], c["line"]): r for r in records for c in r["original_citations"]}
     for citation in citations:
         doi = citation["doi"]
+        pmid = citation.get("pmid")
         record_id = identifier(doi, citation)
         source_record = by_source.get((citation["file"], citation["line"]))
         # Preserve explicit DOI corrections on an unchanged source citation, but
         # don't confuse a reordered table row with its former occupant.
         if source_record and not any(c["file"] == citation["file"] and c["line"] == citation["line"]
-                                     and c["doi"] == doi for c in source_record["original_citations"]):
+                                     and c["doi"] == doi and c.get("pmid") == pmid for c in source_record["original_citations"]):
             source_record = None
-        record = (by_doi.get(doi) if doi else None) or source_record or by_id.get(record_id)
+        doi_record, pmid_record = by_doi.get(doi), by_pmid.get(pmid)
+        if doi_record and pmid_record and doi_record['id'] != pmid_record['id']:
+            raise ValueError(f"DOI {doi} and PMID {pmid} identify separate existing records; curate their merge explicitly")
+        record = doi_record or pmid_record or source_record or by_id.get(record_id)
         if record is None:
             record = {
                 "id": record_id, "doi": doi, "approved": True,
@@ -167,7 +201,7 @@ def import_citations(citations, registry=None):
                     "title": citation["title"], "authors": [],
                     "authors_text": citation["authors_text"], "journal": citation["journal"],
                     "year": citation["year"], "type": None,
-                    "publication_url": f"https://doi.org/{doi}" if doi else None,
+                    "publication_url": f"https://doi.org/{doi}" if doi else (f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else None),
                 },
                 "overrides": {}, "metadata_check": {"status": "not_checked", "issues": []},
             }
@@ -175,6 +209,18 @@ def import_citations(citations, registry=None):
             by_id[record_id] = record
             if doi:
                 by_doi[doi] = record
+        if pmid:
+            if record.get("pmid") and record['pmid'] != pmid:
+                raise ValueError(f"Conflicting PubMed identifiers for {record['id']}")
+            if record.get("doi") and doi and record['doi'] != doi:
+                raise ValueError(f"Conflicting DOI for PMID {pmid}; curate the identifier change explicitly")
+            record['pmid'] = pmid
+            by_pmid[pmid] = record
+            if doi and not record.get('doi'):
+                record['doi'] = doi
+                by_doi[doi] = record
+            if citation.get('doi_status') and not record.get('doi'):
+                record['doi_status'] = citation['doi_status']
         if citation not in record["original_citations"]:
             record["original_citations"].append(copy.deepcopy(citation))
         by_source[(citation["file"], citation["line"])] = record
@@ -291,10 +337,70 @@ def normalize_metadata(data):
     }
 
 
+def normalize_pubmed(xml, pmid):
+    """Read the requested article, never identifiers/authors from its references."""
+    pmid = normalize_pmid(pmid)
+    root = ET.fromstring(xml)
+    article = next((a for a in root.findall('./PubmedArticle')
+                    if a.findtext('./MedlineCitation/PMID') == pmid), None)
+    if article is None:
+        raise ValueError(f"PubMed returned no article for PMID {pmid}")
+
+    def text(path):
+        node = article.find(path)
+        return clean(''.join(node.itertext())) if node is not None else ''
+
+    identifiers = {n.get('IdType'): n.text for n in article.findall('./PubmedData/ArticleIdList/ArticleId')}
+    if any(n.text != pmid for n in article.findall('./PubmedData/ArticleIdList/ArticleId[@IdType="pubmed"]')):
+        raise ValueError('PubMed returned a different PMID')
+    doi_values = [n.text for n in article.findall('./PubmedData/ArticleIdList/ArticleId[@IdType="doi"]')] + [n.text for n in article.findall(
+        './MedlineCitation/Article/ELocationID[@EIdType="doi"]') if n.get('ValidYN', 'Y') == 'Y']
+    dois = {normalize_doi(v) for v in doi_values if v}
+    if len(dois) > 1:
+        raise ValueError('PubMed returned conflicting article DOIs')
+    doi = next(iter(dois), None)
+    authors = []
+    for a in article.findall('./MedlineCitation/Article/AuthorList/Author'):
+        name = a.findtext('CollectiveName') or ' '.join(filter(None, [
+            a.findtext('ForeName') or a.findtext('Initials'), a.findtext('LastName'), a.findtext('Suffix')]))
+        if clean(name):
+            authors.append(clean(name))
+    pubdate = text('./MedlineCitation/Article/Journal/JournalIssue/PubDate/Year') or text(
+        './MedlineCitation/Article/Journal/JournalIssue/PubDate/MedlineDate')
+    year = re.search(r'\b(\d{4})\b', pubdate)
+    title = text('./MedlineCitation/Article/ArticleTitle')
+    if not title:
+        raise ValueError('PubMed returned no article title')
+    url = f'https://pubmed.ncbi.nlm.nih.gov/{pmid}/'
+    paragraphs = []
+    for n in article.findall('./MedlineCitation/Article/Abstract/AbstractText'):
+        body = clean(''.join(n.itertext()))
+        if body:
+            paragraphs.append((n.get('Label') + ': ' if n.get('Label') else '') + body)
+    result = {'pmid': pmid, 'doi': doi, 'provider': 'pubmed', 'metadata': {
+        'title': title, 'authors': authors, 'authors_text': '; '.join(authors),
+        'journal': text('./MedlineCitation/Article/Journal/Title'),
+        'year': int(year[1]) if year else None, 'type': 'journal-article', 'publication_url': url},
+        'abstract': {'text': '\n\n'.join(paragraphs), 'source_url': url,
+                     'licenses': [], 'public_license_url': None} if paragraphs else None}
+    if identifiers.get('pmc'):
+        result['pmcid'] = identifiers['pmc']
+    return result
+
+
+def provider_error(provider, exc):
+    # HTTP exception strings can include contact emails in request URLs.
+    if isinstance(exc, requests.RequestException):
+        status = getattr(getattr(exc, 'response', None), 'status_code', None)
+        return f'{provider}: {type(exc).__name__}' + (f' (HTTP {status})' if status else '')
+    return f'{provider}: {type(exc).__name__}: {str(exc)[:180]}'
+
+
 class MetadataClient:
     def __init__(self, cache=CACHE, offline=False, refresh=False, mailto=None, include_abstracts=False):
         self.cache, self.offline, self.refresh = Path(cache), offline, refresh
         self.include_abstracts = include_abstracts
+        self.mailto = mailto
         self.crossref = Crossref(mailto=mailto, timeout=20, ua_string="CCI-publications/1.0")
 
     def lookup(self, doi):
@@ -335,11 +441,44 @@ class MetadataClient:
                         if delay <= 30:
                             time.sleep(delay)
                             continue
-                    errors.append(f"{provider}: {type(exc).__name__}: {str(exc)[:180]}")
+                    errors.append(provider_error(provider, exc))
                     break
         if cached:
             return {**cached, "cached": True, "refresh_error": "; ".join(errors)}
         raise LookupError("; ".join(errors))
+
+    def lookup_pubmed(self, pmid):
+        pmid = normalize_pmid(pmid)
+        path = self.cache / (hashlib.sha256(f'pmid:{pmid}'.encode()).hexdigest() + '.json')
+        cached = read_json(path) if path.exists() else None
+        if cached and not self.refresh:
+            return {**cached, 'cached': True}
+        if self.offline:
+            raise LookupError(f'No cached PubMed metadata for PMID {pmid}')
+        for attempt in range(3):
+            try:
+                params = {'db': 'pubmed', 'id': pmid, 'retmode': 'xml', 'tool': 'CCI-publications'}
+                if self.mailto:
+                    params['email'] = self.mailto
+                response = requests.get('https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi',
+                                        params=params, timeout=20)
+                response.raise_for_status()
+                result = normalize_pubmed(response.content, pmid)
+                write_json(path, result)
+                time.sleep(0.35)
+                return result
+            except Exception as exc:
+                status = getattr(getattr(exc, 'response', None), 'status_code', None)
+                if status in {429, 502, 503, 504} and attempt < 2:
+                    retry_after = getattr(exc.response, 'headers', {}).get('Retry-After', '')
+                    delay = int(retry_after) if retry_after.isdigit() else 2 ** attempt
+                    if delay <= 30:
+                        time.sleep(delay)
+                        continue
+                error = provider_error('PubMed', exc)
+                if cached:
+                    return {**cached, 'cached': True, 'refresh_error': error}
+                raise LookupError(error) from exc
 
 
 def comparable(text):
@@ -372,16 +511,25 @@ def compare_metadata(citation, metadata):
     return issues
 
 
-def enrich(registry, client, record_ids=None, prefer_retrieved_ids=None):
+def lookup_record(client, record):
+    return client.lookup(record['doi']) if record.get('doi') else client.lookup_pubmed(record['pmid'])
+
+
+def enrich(registry, client, record_ids=None, prefer_retrieved_ids=None, prefetched_pubmed=None):
     for number, record in enumerate(registry["publications"], 1):
         if record_ids is not None and record["id"] not in record_ids:
             continue
         print(f"[{number}/{len(registry['publications'])}] {record['doi'] or record['id']}", flush=True)
-        if not record["doi"]:
+        if not record["doi"] and not record.get('pmid'):
             record["metadata_check"] = {"status": "manual_required", "issues": []}
             continue
         try:
-            retrieved = client.lookup(record["doi"])
+            if record.get('pmid') in (prefetched_pubmed or {}):
+                retrieved = prefetched_pubmed[record['pmid']]
+                if isinstance(retrieved, LookupError):
+                    raise retrieved
+            else:
+                retrieved = lookup_record(client, record)
         except LookupError as exc:
             # A transient refresh failure must not erase previously usable metadata.
             record["last_lookup_error"] = str(exc)
@@ -394,7 +542,19 @@ def enrich(registry, client, record_ids=None, prefer_retrieved_ids=None):
             # A cached fallback after a failed live check is not a new update.
             # In particular, don't regress newer manually supplied metadata.
             continue
-        record["retrieved"] = {k: v for k, v in retrieved.items() if k in {"doi", "provider", "metadata"}}
+        if retrieved.get('pmid'):
+            record['pmid'] = retrieved['pmid']
+            if retrieved.get('doi'):
+                if any(r['id'] != record['id'] and r.get('doi') == retrieved['doi'] for r in registry['publications']):
+                    raise ValueError(f"Discovered DOI {retrieved['doi']} belongs to another record; curate the merge explicitly")
+                if record.get('doi') and record['doi'] != retrieved['doi']:
+                    raise ValueError(f"Conflicting DOI for PMID {record['pmid']}")
+                record['doi'] = retrieved['doi']
+            record['doi_status'] = ('available' if record.get('doi') else
+                                    record.get('doi_status', 'not-listed'))
+            if retrieved.get('pmcid'):
+                record['pmcid'] = retrieved['pmcid']
+        record["retrieved"] = {k: v for k, v in retrieved.items() if k in {"doi", "pmid", "pmcid", "provider", "metadata"}}
         issues = []
         for citation in record["original_citations"]:
             issues.extend({**issue, "file": citation["file"], "line": citation["line"]}
@@ -438,11 +598,29 @@ def review_fingerprint(record):
 def import_table_records(citations, registry, client):
     """Merge DOI identities, refresh each selected record once, and report changes."""
     before = {r["id"]: copy.deepcopy(r["metadata"]) for r in registry["publications"]}
+    identifiers_before = {r['id']: {key: r.get(key) for key in ('doi', 'pmid', 'pmcid', 'doi_status')}
+                          for r in registry['publications']}
+    citations = copy.deepcopy(citations)
+    prefetched = {}
+    # Resolve PMID aliases before merging: an article may already be registered
+    # under the DOI returned by PubMed. Repeated PMID rows trigger one lookup.
+    for citation in citations:
+        pmid = citation.get('pmid')
+        if not pmid:
+            continue
+        if pmid not in prefetched:
+            try:
+                prefetched[pmid] = client.lookup_pubmed(pmid)
+            except LookupError as exc:
+                prefetched[pmid] = exc
+        result = prefetched[pmid]
+        if not isinstance(result, LookupError) and not result.get('refresh_error'):
+            citation['doi'] = result.get('doi')
     registry = import_citations(citations, registry)
-    source_keys = {(c["file"], c["line"], c["doi"]) for c in citations}
+    source_keys = {(c["file"], c["line"], c["doi"], c.get('pmid')) for c in citations}
     selected = {r["id"] for r in registry["publications"]
-                if any((c["file"], c["line"], c["doi"]) in source_keys for c in r["original_citations"])}
-    enrich(registry, client, selected, prefer_retrieved_ids=set(before))
+                if any((c["file"], c["line"], c["doi"], c.get('pmid')) in source_keys for c in r["original_citations"])}
+    enrich(registry, client, selected, prefer_retrieved_ids=set(before), prefetched_pubmed=prefetched)
     updates = []
     for record in registry["publications"]:
         if record["id"] not in selected:
@@ -450,10 +628,17 @@ def import_table_records(citations, registry, client):
         previous = before.get(record["id"], {})
         changes = {field: {"before": previous.get(field), "after": record["metadata"].get(field)}
                    for field in sorted(FIELDS) if previous.get(field) != record["metadata"].get(field)}
+        identity_changes = {key: {'before': value, 'after': record.get(key)}
+                            for key, value in identifiers_before.get(record['id'], {}).items()
+                            if value != record.get(key)}
         status = ("lookup_failed" if record.get("last_lookup_error") else
-                  "new" if record["id"] not in before else "updated" if changes else
+                  "new" if record["id"] not in before else "updated" if changes or identity_changes else
                   "review_required" if record.get("retrieved", {}).get("metadata") != record["metadata"] else "unchanged")
         updates.append({"id": record["id"], "doi": record["doi"], "status": status, "changes": changes})
+        if record.get('pmid'):
+            updates[-1]['pmid'] = record['pmid']
+        if identity_changes:
+            updates[-1]['identifier_changes'] = identity_changes
     return registry, updates
 
 
@@ -482,11 +667,11 @@ def fetch_abstracts(registry, client, store=ABSTRACT_STORE, record_ids=None):
             continue
         print(f"Abstract [{number}/{len(registry['publications'])}] {record['doi'] or record['id']}", flush=True)
         entry = {"id": record["id"], "doi": record["doi"], "abstract": None}
-        if not record["doi"]:
+        if not record["doi"] and not record.get('pmid'):
             entry["status"] = "no_doi"
         else:
             try:
-                result = client.lookup(record["doi"])
+                result = lookup_record(client, record)
                 if result.get("refresh_error"):
                     raise LookupError(result["refresh_error"])
                 candidate = result.get("abstract")
@@ -532,16 +717,20 @@ def check_updates(registry, client, output=UPDATES, record_ids=None):
         print(f"Checking [{number}/{len(registry['publications'])}] {record['doi'] or record['id']}", flush=True)
         item = {"id": record["id"], "doi": record["doi"], "changes": {},
                 "protected_fields": sorted(record["overrides"])}
-        if not record["doi"]:
+        if record.get('pmid'):
+            item['pmid'] = record['pmid']
+        if not record["doi"] and not record.get('pmid'):
             item["status"] = "no_doi"
         else:
             try:
-                latest = client.lookup(record["doi"])
+                latest = lookup_record(client, record)
                 if latest.get("refresh_error"):
                     raise LookupError(latest["refresh_error"])
                 previous = (record.get("retrieved") or {}).get("metadata", record["metadata"])
                 item["changes"] = {field: {"before": previous.get(field), "after": latest["metadata"].get(field)}
                                    for field in sorted(FIELDS) if previous.get(field) != latest["metadata"].get(field)}
+                if not record.get('doi') and latest.get('doi'):
+                    item['changes']['doi'] = {'before': None, 'after': latest['doi']}
                 item["status"] = "changed" if item["changes"] else "unchanged"
                 item["provider"] = latest["provider"]
             except LookupError as exc:
@@ -555,7 +744,7 @@ def check_updates(registry, client, output=UPDATES, record_ids=None):
     for item in records:
         if item["status"] == "unchanged":
             continue
-        lines.append(f"{item['doi'] or item['id']}: {item['status']}")
+        lines.append(f"{item['doi'] or ('PMID:' + item['pmid'] if item.get('pmid') else item['id'])}: {item['status']}")
         for field, change in item["changes"].items():
             protected = " (manual override protected)" if field in item["protected_fields"] else ""
             lines.extend([field + protected, "  Before: " + str(change["before"]), "  After: " + str(change["after"])])
@@ -570,7 +759,7 @@ def check_updates(registry, client, output=UPDATES, record_ids=None):
 def validate(registry, vocabulary):
     if registry.get("schema_version") != 1 or not isinstance(registry.get("publications"), list):
         raise ValueError("Expected schema_version: 1 and a publications list")
-    ids, dois = set(), set()
+    ids, dois, pmids = set(), set(), set()
     for r in registry["publications"]:
         if not isinstance(r.get("id"), str) or not r["id"] or r["id"] in ids:
             raise ValueError(f"Missing or duplicate ID: {r.get('id')}")
@@ -584,6 +773,17 @@ def validate(registry, vocabulary):
             raise ValueError(f"Noncanonical or duplicate DOI: {r.get('doi')}")
         if doi:
             dois.add(doi)
+        if r.get('pmid') is not None:
+            pmid = normalize_pmid(r['pmid'])
+            if pmid != r['pmid'] or pmid in pmids:
+                raise ValueError(f"Noncanonical or duplicate PMID: {r['pmid']}")
+            pmids.add(pmid)
+        if r.get('pmcid') is not None and not re.fullmatch(r'PMC[1-9]\d*', str(r['pmcid'])):
+            raise ValueError(f"Invalid PMCID: {r['pmcid']}")
+        if 'doi_status' in r:
+            if (r['doi_status'] not in {'available', 'not-listed', 'confirmed-unavailable'} or
+                    (r['doi_status'] == 'available') != bool(doi)):
+                raise ValueError(f"Invalid DOI status: {r['id']}")
         if type(r.get("approved")) is not bool:
             raise ValueError(f"{r['id']}: approved must be boolean")
         for field in ("technologies", "services"):
@@ -635,6 +835,9 @@ def public_catalogue(registry, vocabulary):
             records[-1]["abstract"] = {key: r["abstract"][key] for key in ("text", "source_url", "license_url")}
         if r.get("cci_involvement"):
             records[-1]["cci_involvement"] = r["cci_involvement"]
+        for key in ('pmid', 'pmcid'):
+            if r.get(key):
+                records[-1][key] = r[key]
     records.sort(key=lambda r: (-r["year"], comparable(r["title"]), r["id"]))
     public_vocabulary = {kind: [{key: entry[key] for key in ("id", "label", "parent") if key in entry}
                                 for entry in vocabulary[kind]]
@@ -669,7 +872,7 @@ def save_registry(path, registry):
 def write_report(path, registry, import_updates=None):
     rows = []
     for r in registry["publications"]:
-        rows.append({"id": r["id"], "doi": r["doi"], "status": r["metadata_check"]["status"],
+        rows.append({"id": r["id"], "doi": r["doi"], "pmid": r.get('pmid'), "status": r["metadata_check"]["status"],
                      "issues": r["metadata_check"]["issues"], "lookup_error": r.get("last_lookup_error"),
                      "original_citations": r["original_citations"],
                      "retrieved": r.get("retrieved"), "review_decision": r.get("metadata_review"),
@@ -686,14 +889,15 @@ def write_report(path, registry, import_updates=None):
                     "Matches are automated comparisons, not a substitute for bibliographic review.",
                     "Inspect flagged differences and import changes; explicit curator overrides remain protected.", ""]
     if import_updates is not None:
-        review_lines.extend(["This import (bibliographic metadata only):",
-                             *[f"{r['doi'] or r['id']}: {r['status']}" +
-                               (" (" + ", ".join(sorted(r['changes'])) + ")" if r['changes'] else "")
+        review_lines.extend(["This import (bibliographic metadata and identifiers):",
+                             *[f"{r['doi'] or ('PMID:' + r['pmid'] if r.get('pmid') else r['id'])}: {r['status']}" +
+                               (" (" + ", ".join(sorted(set(r['changes']) | set(r.get('identifier_changes', {})))) + ")"
+                                if r['changes'] or r.get('identifier_changes') else "")
                                for r in import_updates], ""])
     for row in rows:
         if row["status"] == "matched" and not row["duplicate"]:
             continue
-        review_lines.extend([f"{row['id']} | {row['doi']} | {row['status']}"])
+        review_lines.extend([f"{row['id']} | {row['doi'] or ('PMID:' + row['pmid'] if row.get('pmid') else 'no identifier')} | {row['status']}"])
         if row["duplicate"]:
             review_lines.append("Repeated DOI: one registry record, all source years retained.")
         if row["review_decision"]:
@@ -717,13 +921,13 @@ def write_report(path, registry, import_updates=None):
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream)
-        writer.writerow(["id", "doi", "status", "duplicate", "source_years", "source_titles", "retrieved_year", "retrieved_title", "issues", "lookup_error"])
+        writer.writerow(["id", "doi", "status", "duplicate", "source_years", "source_titles", "retrieved_year", "retrieved_title", "issues", "lookup_error", "pmid"])
         for r in rows:
             candidate = (r["retrieved"] or {}).get("metadata", {})
             writer.writerow([r["id"], r["doi"], r["status"], r["duplicate"],
                              "; ".join(str(c["year"]) for c in r["original_citations"]),
                              " | ".join(c["title"] or c.get("citation_text", "") for c in r["original_citations"]),
-                             candidate.get("year"), candidate.get("title"), json.dumps(r["issues"]), r["lookup_error"]])
+                             candidate.get("year"), candidate.get("title"), json.dumps(r["issues"]), r["lookup_error"], r.get('pmid')])
     print(json.dumps(summary, indent=2))
     return summary
 
@@ -819,6 +1023,7 @@ def main(argv=None):
         sub.add_argument("--reporting-year", type=int, action="append", help="Override reporting years (repeatable)")
         sub.add_argument("--publication-url")
         sub.add_argument("--type")
+        sub.add_argument("--doi-status", choices=['available', 'not-listed', 'confirmed-unavailable'])
     args = parser.parse_args(argv)
     import_updates = None
     vocabulary = read_registry(args.vocabulary)
@@ -887,6 +1092,8 @@ def main(argv=None):
                     raise ValueError(f"DOI already exists: {doi}")
                 if doi != record["doi"]:
                     record["doi"] = doi
+                    if 'doi_status' in record:
+                        record['doi_status'] = 'available' if doi else 'not-listed'
                     record.pop("retrieved", None)
                     record.pop("abstract", None)
                     record.pop("last_lookup_error", None)
@@ -898,6 +1105,8 @@ def main(argv=None):
                 # Explicit acceptance locks these fields against future refreshes.
                 record["overrides"].update(record["retrieved"]["metadata"])
         record["overrides"].update(manual_fields(args))
+        if args.doi_status is not None:
+            record['doi_status'] = args.doi_status
         if args.reporting_year:
             record["reporting_years_override"] = sorted(set(args.reporting_year))
             record["reporting_years"] = record["reporting_years_override"][:]

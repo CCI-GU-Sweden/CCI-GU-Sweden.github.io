@@ -17,7 +17,8 @@ export function selectPublications(records, {query = "", year = "", sort = "newe
     const tags = record.technologies || [];
     if (technologies.length && !technologies.some(tag => tags.includes(tag))) return false;
     const text = normalizeSearch([record.title, record.authors_text, ...(record.authors || []),
-      record.journal, record.doi, ...tags.map(tag => labels.get(tag) || tag)].join(" "));
+      record.journal, record.doi, record.pmid, record.pmcid, record.pmid ? `PMID:${record.pmid}` : "",
+      ...tags.map(tag => labels.get(tag) || tag)].join(" "));
     return terms.every(term => text.includes(term));
   }).sort((a, b) => {
     const titleOrder = a.title.localeCompare(b.title, "en", {sensitivity: "base"});
@@ -29,6 +30,7 @@ export function selectPublications(records, {query = "", year = "", sort = "newe
 
 export function publicationURL(record) {
   if (record.doi) return `https://doi.org/${encodeURI(record.doi).replace(/[?#]/g, char => encodeURIComponent(char))}`;
+  if (/^[1-9]\d*$/.test(record.pmid || "")) return `https://pubmed.ncbi.nlm.nih.gov/${record.pmid}/`;
   return externalURL(record.publication_url);
 }
 
@@ -125,7 +127,8 @@ function publicationCard(record, labels) {
   }
   if (url) {
     const reference = element("div", "publication-doi");
-    const link = element("a", "", record.doi ? `DOI: ${record.doi}` : "View publication");
+    const link = element("a", "", record.doi ? `DOI: ${record.doi}` :
+      /^[1-9]\d*$/.test(record.pmid || "") ? `PubMed: ${record.pmid}` : "View publication");
     link.href = url;
     reference.append(link);
     article.append(reference);

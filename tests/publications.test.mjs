@@ -51,4 +51,13 @@ test("publication links use DOI or safe HTTP URLs", () => {
   assert.equal(publicationURL({publication_url: "javascript:alert(1)"}), null);
   assert.equal(publicationURL({publication_url: "https://example.org/article"}), "https://example.org/article");
   assert.equal(publicationURL({}), null);
+  assert.equal(publicationURL({doi: null, pmid: "12345678"}), "https://pubmed.ncbi.nlm.nih.gov/12345678/");
+  assert.equal(publicationURL({pmid: "123/evil"}), null);
+});
+
+test("PMID records are searchable by bare ID and explicit prefix", () => {
+  const withPMID = [{...records[2], pmid: "12345678", pmcid: "PMC777777"}];
+  assert.equal(selectPublications(withPMID, {query: "12345678"}).length, 1);
+  assert.equal(selectPublications(withPMID, {query: "PMID:12345678"}).length, 1);
+  assert.equal(selectPublications(withPMID, {query: "PMC777777"}).length, 1);
 });
