@@ -724,7 +724,23 @@ publications:
     doi: 10.3389/fbioe.2026.1797692
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 9
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.3389/fbioe.2026.1797692
+    doi: 10.3389/fbioe.2026.1797692
+    doi_error: null
+    doi_warning: null
+    citation_text: Bahmani M, Gholami A, Ghaeidamini M, Cao Z, Gharib-Zahedi MR, Sanpui P, Esbjörner EK,
+      Eriksson LA, Mijakovic I, Rahimi S. (2026). Comparative biodegradation of functionalized graphene
+      oxide nanosheets by myeloperoxidase and neutrophil extracellular traps. Front Bioeng Biotechnol.
+      2026 May 13;14:1797692.
   metadata:
+    title: Comparative biodegradation of functionalized graphene oxide nanosheets by myeloperoxidase and
+      neutrophil extracellular traps
     authors:
     - Mohsen Bahmani
     - Asma Gholami
@@ -739,11 +755,9 @@ publications:
     authors_text: Mohsen Bahmani; Asma Gholami; Marziyeh Ghaeidamini; Zhejian Cao; Mohammad Reza Gharib-Zahedi;
       Pallab Sanpui; Elin K. Esbjörner; Leif A. Eriksson; Ivan Mijakovic; Shadi Rahimi
     journal: Frontiers in Bioengineering and Biotechnology
-    publication_url: https://doi.org/10.3389/fbioe.2026.1797692
-    title: Comparative biodegradation of functionalized graphene oxide nanosheets by myeloperoxidase and
-      neutrophil extracellular traps
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.3389/fbioe.2026.1797692
   overrides: {}
   metadata_check:
     status: matched
@@ -755,7 +769,10 @@ publications:
       line: 4
   retrieved:
     doi: 10.3389/fbioe.2026.1797692
+    provider: crossref
     metadata:
+      title: Comparative biodegradation of functionalized graphene oxide nanosheets by myeloperoxidase
+        and neutrophil extracellular traps
       authors:
       - Mohsen Bahmani
       - Asma Gholami
@@ -770,12 +787,9 @@ publications:
       authors_text: Mohsen Bahmani; Asma Gholami; Marziyeh Ghaeidamini; Zhejian Cao; Mohammad Reza Gharib-Zahedi;
         Pallab Sanpui; Elin K. Esbjörner; Leif A. Eriksson; Ivan Mijakovic; Shadi Rahimi
       journal: Frontiers in Bioengineering and Biotechnology
-      publication_url: https://doi.org/10.3389/fbioe.2026.1797692
-      title: Comparative biodegradation of functionalized graphene oxide nanosheets by myeloperoxidase
-        and neutrophil extracellular traps
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.3389/fbioe.2026.1797692
   abstract:
     text: 'Introduction
 
@@ -3114,7 +3128,24 @@ publications:
     doi: 10.1038/s41467-026-68968-2
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 10
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1038/s41467-026-68968-2
+    doi: 10.1038/s41467-026-68968-2
+    doi_error: null
+    doi_warning: null
+    citation_text: Cuesta-Marti C, Ponce-España E, Uhlig F, Stoltenborg I, Wasiewska LA, Kareem L, Hedayatpour
+      D, Olavarría-Ramírez L, Rosell-Cardona C, Bastiaanssen TFS, Tofani GSS, Valderrama B, Vlckova K,
+      Dickson SL, Lavelle A, Stanton C, Ross RP, Cryan JF, Dinan TG, Clarke G, O'Mahony SM, Schellekens
+      H. (2026). Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar
+      diet-induced alterations in feeding behavior in adult mice. Nat Commun. 2026 Feb 24;17(1):1653.
   metadata:
+    title: Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar diet-induced
+      alterations in feeding behavior in adult mice
     authors:
     - Cristina Cuesta-Marti
     - Eduardo Ponce-España
@@ -3144,11 +3175,9 @@ publications:
       Dickson; Aonghus Lavelle; Catherine Stanton; R. Paul Ross; John F. Cryan; Timothy G. Dinan; Gerard
       Clarke; Siobhain M. O’Mahony; Harriët Schellekens
     journal: Nature Communications
-    publication_url: https://doi.org/10.1038/s41467-026-68968-2
-    title: Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar diet-induced
-      alterations in feeding behavior in adult mice
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1038/s41467-026-68968-2
   overrides: {}
   metadata_check:
     status: matched
@@ -3160,7 +3189,10 @@ publications:
       line: 5
   retrieved:
     doi: 10.1038/s41467-026-68968-2
+    provider: crossref
     metadata:
+      title: Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar
+        diet-induced alterations in feeding behavior in adult mice
       authors:
       - Cristina Cuesta-Marti
       - Eduardo Ponce-España
@@ -3190,12 +3222,9 @@ publications:
         L. Dickson; Aonghus Lavelle; Catherine Stanton; R. Paul Ross; John F. Cryan; Timothy G. Dinan;
         Gerard Clarke; Siobhain M. O’Mahony; Harriët Schellekens
       journal: Nature Communications
-      publication_url: https://doi.org/10.1038/s41467-026-68968-2
-      title: Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar
-        diet-induced alterations in feeding behavior in adult mice
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1038/s41467-026-68968-2
   abstract:
     text: An unhealthy diet disrupts feeding behavior and the gut microbiota, but whether early-life dietary
       effects persist, or can be restored later in life, remains unclear. We investigated whether microbiota-targeted
@@ -3989,7 +4018,22 @@ publications:
     doi: 10.1093/g3journal/jkag161
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 32
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1093/g3journal/jkag161
+    doi: 10.1093/g3journal/jkag161
+    doi_error: null
+    doi_warning: null
+    citation_text: Qvist A, Kaper D, Henricsson M, Stjernman A, Borén J, Pilon M. (2026). A pcyt-1 Allelic
+      Series Reveals In Vivo Consequences of Reduced Phosphatidylcholine Synthesis in C. elegans. G3 (Bethesda).
+      2026 Jul 4:jkag161.
   metadata:
+    title: A pcyt-1 allelic series reveals in vivo consequences of reduced phosphatidylcholine synthesis
+      in C. elegans
     authors:
     - August Qvist
     - Delaney Kaper
@@ -3999,11 +4043,9 @@ publications:
     - Marc Pilon
     authors_text: August Qvist; Delaney Kaper; Marcus Henricsson; Albin Stjernman; Jan Borén; Marc Pilon
     journal: 'G3: Genes, Genomes, Genetics'
-    publication_url: https://doi.org/10.1093/g3journal/jkag161
-    title: A pcyt-1 allelic series reveals in vivo consequences of reduced phosphatidylcholine synthesis
-      in C. elegans
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1093/g3journal/jkag161
   overrides: {}
   metadata_check:
     status: matched
@@ -4015,7 +4057,10 @@ publications:
       line: 17
   retrieved:
     doi: 10.1093/g3journal/jkag161
+    provider: crossref
     metadata:
+      title: A pcyt-1 allelic series reveals in vivo consequences of reduced phosphatidylcholine synthesis
+        in C. elegans
       authors:
       - August Qvist
       - Delaney Kaper
@@ -4025,12 +4070,9 @@ publications:
       - Marc Pilon
       authors_text: August Qvist; Delaney Kaper; Marcus Henricsson; Albin Stjernman; Jan Borén; Marc Pilon
       journal: 'G3: Genes, Genomes, Genetics'
-      publication_url: https://doi.org/10.1093/g3journal/jkag161
-      title: A pcyt-1 allelic series reveals in vivo consequences of reduced phosphatidylcholine synthesis
-        in C. elegans
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1093/g3journal/jkag161
   abstract:
     text: Phosphatidylcholine (PC) is the most abundant phospholipid in eukaryotic membranes and is synthesized
       in part via the rate-limiting enzyme PCYT1A. In humans, hypomorphic PCYT1A variants cause diverse
@@ -4055,6 +4097,95 @@ publications:
     source_url: https://doi.org/10.1093/g3journal/jkag161
     license_url: https://creativecommons.org/licenses/by/4.0/
   cci_involvement: service-provision
+- id: cci-21fbd19f46635e298e2c0a5ccd6bdab7
+  doi: 10.1002/pmic.70096
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 19
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1002/pmic.70096
+    doi: 10.1002/pmic.70096
+    doi_error: null
+    doi_warning: null
+    citation_text: Lischnig A, Karimi N, Larsson P, Ekström K, Crescitelli R, Olin AC, Lässer C. (2026).
+      Proteomic and Lipidomic Profiling of Immune Cell-Derived Subpopulations of Extracellular Vesicles.
+      Proteomics. 2026 Feb;26(2-3):129-153
+  metadata:
+    title: Proteomic and Lipidomic Profiling of Immune Cell‐Derived Subpopulations of Extracellular Vesicles
+    authors:
+    - Anna Lischnig
+    - Nasibeh Karimi
+    - Per Larsson
+    - Karin Ekström
+    - Rossella Crescitelli
+    - Anna‐Carin Olin
+    - Cecilia Lässer
+    authors_text: Anna Lischnig; Nasibeh Karimi; Per Larsson; Karin Ekström; Rossella Crescitelli; Anna‐Carin
+      Olin; Cecilia Lässer
+    journal: PROTEOMICS
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1002/pmic.70096
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1002/pmic.70096
+    provider: crossref
+    metadata:
+      title: Proteomic and Lipidomic Profiling of Immune Cell‐Derived Subpopulations of Extracellular
+        Vesicles
+      authors:
+      - Anna Lischnig
+      - Nasibeh Karimi
+      - Per Larsson
+      - Karin Ekström
+      - Rossella Crescitelli
+      - Anna‐Carin Olin
+      - Cecilia Lässer
+      authors_text: Anna Lischnig; Nasibeh Karimi; Per Larsson; Karin Ekström; Rossella Crescitelli; Anna‐Carin
+        Olin; Cecilia Lässer
+      journal: PROTEOMICS
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1002/pmic.70096
+  cci_involvement: service-provision
+  abstract:
+    text: Extracellular vesicles (EVs) are heterogeneous and play important roles in intercellular communication,
+      contributing to physiological and pathological processes. Since few markers currently exist to differentiate
+      subtypes of EVs, this study aimed to determine proteomic and lipidomic differences among four EV
+      subpopulations. Large and small EVs (L‐EVs and S‐EVs) were isolated from human mast cells (HMC‐1)
+      and monocytes (THP‐1) by differential ultracentrifugation and then further separated by density
+      cushions into two different densities [low‐density (LD) and high‐density (HD)]. L‐EVs were pelleted
+      at 16,500 × g , and S‐EVs were pelleted at 118,000 × g . LD EVs were collected at 1.079–1.146 g/mL,
+      while HD EVs were collected at 1.146–1.185 g/mL. The morphology, size and yield of EVs were determined
+      by TEM and western blot. The proteome and lipidome of the EV subpopulations were determined with
+      mass spectrometry. A total of 5364 proteins were quantified, and L‐EVs LD were enriched in mitochondrial
+      proteins such as TIMM/TOMM and MICOS proteins, while L‐EVs HD were enriched in cytoskeleton‐ and
+      cytokinesis‐associated proteins, such as KIF proteins. S‐EVs LD were enriched in tetraspanins, ADAM10
+      and ESCRT machinery proteins, while S‐EVs HD were enriched in proteins commonly viewed as contaminants,
+      such as histones, complement factors and collagen. Proteins involved in membrane trafficking between
+      the plasma membrane and organelles, such as adaptor protein complexes, the conserved oligomeric
+      Golgi complex, the trafficking protein particle complex, sortin‐nexins, TBC1 domain proteins and
+      coatomer subunits, were expressed at similar levels across all EV subtypes. Furthermore, 107 lipids
+      were quantified, and phosphatidylethanolamine (PE) was less abundant in L‐EVs LD as compared to
+      the other EV subtypes, while ceramides were enriched in L‐EVs as compared to S‐EVs.This study demonstrates
+      that there is a core proteome and lipidome that is similar across all four EV subtypes, but importantly,
+      it also shows that a portion of the proteome and lipidome differs in EV subpopulations separated
+      based on size and density. We suggest that these could be important markers in future EV studies
+      and that they may reflect a different biogenesis and EV function.
+    source_url: https://doi.org/10.1002/pmic.70096
+    license_url: http://creativecommons.org/licenses/by/4.0/
 - id: cci-2242731a540e50758d70f6c56a50ad1b
   doi: 10.1016/j.aquatox.2019.04.021
   approved: true
@@ -4560,7 +4691,22 @@ publications:
     doi: 10.1172/jci.insight.202461
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 6
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1172/jci.insight.202461
+    doi: 10.1172/jci.insight.202461
+    doi_error: null
+    doi_warning: null
+    citation_text: Alfredsson J, Sihlbom Wallem C, Östling M, de la Croix H, Bexe-Lindskog E, Wick MJ.
+      (2026). Tissue-layer-resolved proteome landscape of Crohn's disease strictures highlights potential
+      drivers of fibrosis progression. JCI Insight. 2026 Feb 10;11(6):e202461.
   metadata:
+    title: Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential
+      drivers of fibrosis progression
     authors:
     - Johannes Alfredsson
     - Carina Sihlbom Wallem
@@ -4571,11 +4717,9 @@ publications:
     authors_text: Johannes Alfredsson; Carina Sihlbom Wallem; Maja Östling; Hanna de la Croix; Elinor
       Bexe-Lindskog; Mary Jo Wick
     journal: JCI Insight
-    publication_url: https://doi.org/10.1172/jci.insight.202461
-    title: Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential
-      drivers of fibrosis progression
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1172/jci.insight.202461
   overrides: {}
   metadata_check:
     status: matched
@@ -4587,7 +4731,10 @@ publications:
       line: 3
   retrieved:
     doi: 10.1172/jci.insight.202461
+    provider: crossref
     metadata:
+      title: Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential
+        drivers of fibrosis progression
       authors:
       - Johannes Alfredsson
       - Carina Sihlbom Wallem
@@ -4598,12 +4745,9 @@ publications:
       authors_text: Johannes Alfredsson; Carina Sihlbom Wallem; Maja Östling; Hanna de la Croix; Elinor
         Bexe-Lindskog; Mary Jo Wick
       journal: JCI Insight
-      publication_url: https://doi.org/10.1172/jci.insight.202461
-      title: Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential
-        drivers of fibrosis progression
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1172/jci.insight.202461
   abstract:
     text: The chronic inflammation of Crohn’s disease frequently leads to fibrosis and muscular hypertrophy
       of the intestinal wall. This often culminates in strictures, a serious condition lacking directed
@@ -4804,6 +4948,158 @@ publications:
       year: 2025
     provider: crossref
   cci_involvement: service-provision
+- id: cci-26d814bcf1a751f79adea48cae3bac47
+  doi: 10.1515/mim-2025-0029
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 18
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1515/mim-2025-0029
+    doi: 10.1515/mim-2025-0029
+    doi_error: null
+    doi_warning: null
+    citation_text: 'Hinderling, L., Heil, H., Rates, A., Seidel, P., Kesavan, P., Gunkel, M., Diederich,
+      B., Guilbert, T., Torro, R., Bouchareb, O., Demeautis, C., Martin, C., Brooks, S., Sisamakis, E.,
+      Grandgirard, E., Mutterer, J., Oatman, H., Toettcher, J., Rogov, A., Antonovaite, N., Johansson,
+      K., Ahnlinde, J., André, O., Nordenfelt, P., Nordenfelt, P., Pfander, C., Reymann, J., Lambert,
+      T., Cosenza, M., Korbel, J., Pepperkok, R., Kapitein, L., Pertz, O., Norlin, N., Halavatyi, A. &
+      Camacho, R. (2026). Smart microscopy: current implementations and a roadmap for interoperability.
+      Methods in Microscopy, 3(1), 71-91'
+  metadata:
+    title: 'Smart microscopy: current implementations and a roadmap for interoperability'
+    authors:
+    - Lucien Hinderling
+    - Hannah S. Heil
+    - Alfredo Rates
+    - Philipp Seidel
+    - P.S. Kesavan
+    - Manuel Gunkel
+    - Benedict Diederich
+    - Thomas Guilbert
+    - Rémy Torro
+    - Otmane Bouchareb
+    - Claire Demeautis
+    - Célia Martin
+    - Scott Brooks
+    - Evangelos Sisamakis
+    - Erwan Grandgirard
+    - Jerome Mutterer
+    - Harrison Oatman
+    - Jared Toettcher
+    - Andrii Rogov
+    - Nelda Antonovaite
+    - Karl Johansson
+    - Johannes K. Ahnlinde
+    - Oscar André
+    - Philip Nordenfelt
+    - Pontus Nordenfelt
+    - Claudia Pfander
+    - Jürgen Reymann
+    - Talley Lambert
+    - Marco R. Cosenza
+    - Jan O. Korbel
+    - Rainer Pepperkok
+    - Lukas C. Kapitein
+    - Olivier Pertz
+    - Nils Norlin
+    - Aliaksandr Halavatyi
+    - Rafael Camacho
+    authors_text: Lucien Hinderling; Hannah S. Heil; Alfredo Rates; Philipp Seidel; P.S. Kesavan; Manuel
+      Gunkel; Benedict Diederich; Thomas Guilbert; Rémy Torro; Otmane Bouchareb; Claire Demeautis; Célia
+      Martin; Scott Brooks; Evangelos Sisamakis; Erwan Grandgirard; Jerome Mutterer; Harrison Oatman;
+      Jared Toettcher; Andrii Rogov; Nelda Antonovaite; Karl Johansson; Johannes K. Ahnlinde; Oscar André;
+      Philip Nordenfelt; Pontus Nordenfelt; Claudia Pfander; Jürgen Reymann; Talley Lambert; Marco R.
+      Cosenza; Jan O. Korbel; Rainer Pepperkok; Lukas C. Kapitein; Olivier Pertz; Nils Norlin; Aliaksandr
+      Halavatyi; Rafael Camacho
+    journal: Methods in Microscopy
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1515/mim-2025-0029
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1515/mim-2025-0029
+    provider: crossref
+    metadata:
+      title: 'Smart microscopy: current implementations and a roadmap for interoperability'
+      authors:
+      - Lucien Hinderling
+      - Hannah S. Heil
+      - Alfredo Rates
+      - Philipp Seidel
+      - P.S. Kesavan
+      - Manuel Gunkel
+      - Benedict Diederich
+      - Thomas Guilbert
+      - Rémy Torro
+      - Otmane Bouchareb
+      - Claire Demeautis
+      - Célia Martin
+      - Scott Brooks
+      - Evangelos Sisamakis
+      - Erwan Grandgirard
+      - Jerome Mutterer
+      - Harrison Oatman
+      - Jared Toettcher
+      - Andrii Rogov
+      - Nelda Antonovaite
+      - Karl Johansson
+      - Johannes K. Ahnlinde
+      - Oscar André
+      - Philip Nordenfelt
+      - Pontus Nordenfelt
+      - Claudia Pfander
+      - Jürgen Reymann
+      - Talley Lambert
+      - Marco R. Cosenza
+      - Jan O. Korbel
+      - Rainer Pepperkok
+      - Lukas C. Kapitein
+      - Olivier Pertz
+      - Nils Norlin
+      - Aliaksandr Halavatyi
+      - Rafael Camacho
+      authors_text: Lucien Hinderling; Hannah S. Heil; Alfredo Rates; Philipp Seidel; P.S. Kesavan; Manuel
+        Gunkel; Benedict Diederich; Thomas Guilbert; Rémy Torro; Otmane Bouchareb; Claire Demeautis; Célia
+        Martin; Scott Brooks; Evangelos Sisamakis; Erwan Grandgirard; Jerome Mutterer; Harrison Oatman;
+        Jared Toettcher; Andrii Rogov; Nelda Antonovaite; Karl Johansson; Johannes K. Ahnlinde; Oscar
+        André; Philip Nordenfelt; Pontus Nordenfelt; Claudia Pfander; Jürgen Reymann; Talley Lambert;
+        Marco R. Cosenza; Jan O. Korbel; Rainer Pepperkok; Lukas C. Kapitein; Olivier Pertz; Nils Norlin;
+        Aliaksandr Halavatyi; Rafael Camacho
+      journal: Methods in Microscopy
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1515/mim-2025-0029
+  cci_involvement: scientific-collaboration
+  abstract:
+    text: Smart microscopy is transforming life sciences by automating experimental imaging workflows
+      and enabling real-time adaptation based on feedback from images and other data streams. This shift
+      increases throughput, improves reproducibility, and expands the functional capabilities of microscopes.
+      However, the current landscape is highly fragmented. Academic researchers often develop custom solutions
+      for specific scientific needs, while industry offerings are typically proprietary and tied to specific
+      hardware. This diversity, while fostering innovation, also creates major challenges in interoperability,
+      reproducibility, and standardization, which slows progress and adaption. This article presents a
+      collaborative effort between academic and industry leaders to survey the current state of smart
+      microscopy, highlight representative implementations, and identify common technical and organizational
+      barriers. We propose a framework for greater interoperability based on shared standards, modular
+      software design, and community-driven development. Our goal is to support collaboration across the
+      field and lay the groundwork for a more connected, reusable, and accessible smart microscopy ecosystem.
+      We conclude with a call to action for researchers, hardware developers, and institutions to join
+      in building an open, interoperable foundation that will unlock the full potential of smart microscopy
+      in life science research.
+    source_url: https://doi.org/10.1515/mim-2025-0029
+    license_url: http://creativecommons.org/licenses/by/4.0
 - id: cci-27416521da7f587d9f29988ceb5f7886
   doi: 10.1016/j.msec.2015.08.012
   approved: true
@@ -8496,7 +8792,22 @@ publications:
     doi: 10.20517/evcna.2025.173
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 29
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.20517/evcna.2025.173
+    doi: 10.20517/evcna.2025.173
+    doi_error: null
+    doi_warning: null
+    citation_text: Park KS, Ha DH, Lee JH, Ordouzadeh N, Bergqvist M, Lee HJ, Shin E, Cho BS, Lötvall
+      J. (2026). Quantitative proteomic and functional comparison of extracellular vesicles from multiple
+      adipose tissue mesenchymal stem cell donors. Extracell Vesicles Circ Nucl Acids. 2026 Mar 30;7(1):425-440.
   metadata:
+    title: Quantitative proteomic and functional comparison of extracellular vesicles from multiple adipose
+      tissue mesenchymal stem cell donors
     authors:
     - Kyong-Su Park
     - Dae Hyun Ha
@@ -8510,11 +8821,9 @@ publications:
     authors_text: Kyong-Su Park; Dae Hyun Ha; Jun Ho Lee; Negar Ordouzadeh; Markus Bergqvist; Hyun Ju
       Lee; Ella Shin; Byong Seung Cho; Jan Lötvall
     journal: Extracellular Vesicles and Circulating Nucleic Acids
-    publication_url: https://doi.org/10.20517/evcna.2025.173
-    title: Quantitative proteomic and functional comparison of extracellular vesicles from multiple adipose
-      tissue mesenchymal stem cell donors
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.20517/evcna.2025.173
   overrides: {}
   metadata_check:
     status: matched
@@ -8526,7 +8835,10 @@ publications:
       line: 15
   retrieved:
     doi: 10.20517/evcna.2025.173
+    provider: crossref
     metadata:
+      title: Quantitative proteomic and functional comparison of extracellular vesicles from multiple
+        adipose tissue mesenchymal stem cell donors
       authors:
       - Kyong-Su Park
       - Dae Hyun Ha
@@ -8540,12 +8852,9 @@ publications:
       authors_text: Kyong-Su Park; Dae Hyun Ha; Jun Ho Lee; Negar Ordouzadeh; Markus Bergqvist; Hyun Ju
         Lee; Ella Shin; Byong Seung Cho; Jan Lötvall
       journal: Extracellular Vesicles and Circulating Nucleic Acids
-      publication_url: https://doi.org/10.20517/evcna.2025.173
-      title: Quantitative proteomic and functional comparison of extracellular vesicles from multiple
-        adipose tissue mesenchymal stem cell donors
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.20517/evcna.2025.173
   cci_involvement: service-provision
 - id: cci-4533e4de87f05d6183e975f7e7ddf5ad
   doi: 10.18632/oncotarget.10899
@@ -9723,6 +10032,74 @@ publications:
       type: journal-article
       publication_url: https://doi.org/10.1113/expphysiol.2011.063131
   cci_involvement: service-provision
+- id: cci-4c3e071394d5554f9adcdb8464dfaf8c
+  doi: 10.1016/j.celrep.2026.118026
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 22
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1016/j.celrep.2026.118026
+    doi: 10.1016/j.celrep.2026.118026
+    doi_error: null
+    doi_warning: null
+    citation_text: Mahale S, Chikne V, Adithya N, Mohamed MS, Setia M, Sjövall D, Prajapati B, Hallqvist
+      A, Kanduri M, Kanduri C. (2026). A bifunctional ARHGEF17-AS1 locus encodes MSEP, a protein that
+      supports mitotic spindle organization. Cell Rep. 2026 Oct 27;45(10):118026.
+  metadata:
+    title: A bifunctional ARHGEF17-AS1 locus encodes MSEP, a protein that supports mitotic spindle organization
+    authors:
+    - Sagar Mahale
+    - Vaibhav Chikne
+    - Nitin Adithya
+    - Mohamed Shamsudiin Mohamed
+    - Meenakshi Setia
+    - Daniel Sjövall
+    - Bharat Prajapati
+    - Andreas Hallqvist
+    - Meena Kanduri
+    - Chandrasekhar Kanduri
+    authors_text: Sagar Mahale; Vaibhav Chikne; Nitin Adithya; Mohamed Shamsudiin Mohamed; Meenakshi Setia;
+      Daniel Sjövall; Bharat Prajapati; Andreas Hallqvist; Meena Kanduri; Chandrasekhar Kanduri
+    journal: Cell Reports
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1016/j.celrep.2026.118026
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1016/j.celrep.2026.118026
+    provider: crossref
+    metadata:
+      title: A bifunctional ARHGEF17-AS1 locus encodes MSEP, a protein that supports mitotic spindle organization
+      authors:
+      - Sagar Mahale
+      - Vaibhav Chikne
+      - Nitin Adithya
+      - Mohamed Shamsudiin Mohamed
+      - Meenakshi Setia
+      - Daniel Sjövall
+      - Bharat Prajapati
+      - Andreas Hallqvist
+      - Meena Kanduri
+      - Chandrasekhar Kanduri
+      authors_text: Sagar Mahale; Vaibhav Chikne; Nitin Adithya; Mohamed Shamsudiin Mohamed; Meenakshi
+        Setia; Daniel Sjövall; Bharat Prajapati; Andreas Hallqvist; Meena Kanduri; Chandrasekhar Kanduri
+      journal: Cell Reports
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1016/j.celrep.2026.118026
+  cci_involvement: service-provision
 - id: cci-4cbffb1e170d5982a40669df4a0557c2
   doi: 10.1038/s41598-021-98487-7
   approved: true
@@ -9843,6 +10220,157 @@ publications:
       type: journal-article
       publication_url: https://doi.org/10.1002/jbio.201800018
   cci_involvement: service-provision
+- id: cci-4e1fbe0c0b885c4baae2c0069d6107ac
+  doi: 10.1186/s13046-026-03732-4
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 31
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1186/s13046-026-03732-4
+    doi: 10.1186/s13046-026-03732-4
+    doi_error: null
+    doi_warning: null
+    citation_text: Pontis F, Ghidotti P, Ferrario N, Locatelli C, Boeri M, Gentili M, Segale M, Moro M,
+      Di Bernardo A, Bertolini G, Suatoni P, Ferrari M, Pastorino U, De Cecco L, Ficorilli M, Lucchetta
+      M, Brich S, Agnelli L, Maiullari F, Rizzi R, Bearzi C, Portararo P, Sangaletti S, Crescitelli R,
+      Roz L, Sozzi G, Fortunato O. (2026). Circulating extracellular vesicles from early-stage lung cancer
+      patients trigger endothelial activation to drive pre-metastatic niche formation through synergistic
+      miR-29a and C4A signaling. J Exp Clin Cancer Res. 2026 May 13;45(1):151.
+  metadata:
+    title: Circulating extracellular vesicles from early-stage lung cancer patients trigger endothelial
+      activation to drive pre-metastatic niche formation through synergistic miR-29a and C4A signaling
+    authors:
+    - Francesca Pontis
+    - Patrizia Ghidotti
+    - Nicole Ferrario
+    - Camilla Locatelli
+    - Mattia Boeri
+    - Marco Gentili
+    - Miriam Segale
+    - Massimo Moro
+    - Arianna Di Bernardo
+    - Giulia Bertolini
+    - Paola Suatoni
+    - Michele Ferrari
+    - Ugo Pastorino
+    - Loris De Cecco
+    - Marica Ficorilli
+    - Marta Lucchetta
+    - Silvia Brich
+    - Luca Agnelli
+    - Fabio Maiullari
+    - Roberto Rizzi
+    - Claudia Bearzi
+    - Paola Portararo
+    - Sabina Sangaletti
+    - Rossella Crescitelli
+    - Luca Roz
+    - Gabriella Sozzi
+    - Orazio Fortunato
+    authors_text: Francesca Pontis; Patrizia Ghidotti; Nicole Ferrario; Camilla Locatelli; Mattia Boeri;
+      Marco Gentili; Miriam Segale; Massimo Moro; Arianna Di Bernardo; Giulia Bertolini; Paola Suatoni;
+      Michele Ferrari; Ugo Pastorino; Loris De Cecco; Marica Ficorilli; Marta Lucchetta; Silvia Brich;
+      Luca Agnelli; Fabio Maiullari; Roberto Rizzi; Claudia Bearzi; Paola Portararo; Sabina Sangaletti;
+      Rossella Crescitelli; Luca Roz; Gabriella Sozzi; Orazio Fortunato
+    journal: Journal of Experimental & Clinical Cancer Research
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1186/s13046-026-03732-4
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1186/s13046-026-03732-4
+    provider: crossref
+    metadata:
+      title: Circulating extracellular vesicles from early-stage lung cancer patients trigger endothelial
+        activation to drive pre-metastatic niche formation through synergistic miR-29a and C4A signaling
+      authors:
+      - Francesca Pontis
+      - Patrizia Ghidotti
+      - Nicole Ferrario
+      - Camilla Locatelli
+      - Mattia Boeri
+      - Marco Gentili
+      - Miriam Segale
+      - Massimo Moro
+      - Arianna Di Bernardo
+      - Giulia Bertolini
+      - Paola Suatoni
+      - Michele Ferrari
+      - Ugo Pastorino
+      - Loris De Cecco
+      - Marica Ficorilli
+      - Marta Lucchetta
+      - Silvia Brich
+      - Luca Agnelli
+      - Fabio Maiullari
+      - Roberto Rizzi
+      - Claudia Bearzi
+      - Paola Portararo
+      - Sabina Sangaletti
+      - Rossella Crescitelli
+      - Luca Roz
+      - Gabriella Sozzi
+      - Orazio Fortunato
+      authors_text: Francesca Pontis; Patrizia Ghidotti; Nicole Ferrario; Camilla Locatelli; Mattia Boeri;
+        Marco Gentili; Miriam Segale; Massimo Moro; Arianna Di Bernardo; Giulia Bertolini; Paola Suatoni;
+        Michele Ferrari; Ugo Pastorino; Loris De Cecco; Marica Ficorilli; Marta Lucchetta; Silvia Brich;
+        Luca Agnelli; Fabio Maiullari; Roberto Rizzi; Claudia Bearzi; Paola Portararo; Sabina Sangaletti;
+        Rossella Crescitelli; Luca Roz; Gabriella Sozzi; Orazio Fortunato
+      journal: Journal of Experimental & Clinical Cancer Research
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1186/s13046-026-03732-4
+  cci_involvement: service-provision
+  abstract:
+    text: 'Background
+
+
+      Metastatic recurrence represents the major clinical challenge in early-stage lung cancer after curative
+      surgery. Here, we investigated the role of circulating extracellular vesicles and particles (EVPs)
+      in promoting formation of pre-metastatic niches (PMNs).
+
+
+      Methods
+
+
+      Plasma-derived EVPs were obtained by ultracentrifugation from pre-surgery blood samples of patients
+      with poor prognosis. Heavy-smokers cancer free individuals were used as control. EVP were characterized
+      following MISEV guidelines. Functional experiments were carried out in vitro in 2D and 3D-bioprinted
+      models as well as in vivo .
+
+
+      Results
+
+
+      EVPs from patients with early relapse show distinct molecular profiles, characterized by elevated
+      levels of miR-29a and complement protein C4a. These EVPs preferentially target endothelial cells
+      inducing a pro-inflammatory condition with upregulation of VCAM1 and CXCL1. In turn, endothelial
+      modulation stimulated fibroblast activation and promoted neutrophils recruitment supporting PMNs
+      formation. Mechanistically, we demonstrate that miR-29a and C4A act synergistically through SPARC
+      down-modulation promoting cancer cell colonization. Preconditioning of mouse lungs using EVPs from
+      patients with poor prognosis increased metastatic growth of human tumor cells, which was inhibited
+      by miR-29a blockade.
+
+
+      Conclusions
+
+
+      Circulating EVPs could be novel prognostic biomarkers and key players in PMN formation offering
+      new targets to reduce relapses in lung cancer.'
+    source_url: https://doi.org/10.1186/s13046-026-03732-4
+    license_url: https://creativecommons.org/licenses/by/4.0
 - id: cci-4f63782f20e050fabf6384aaf30f8167
   doi: 10.3389/fpls.2021.663751
   approved: true
@@ -11460,7 +11988,22 @@ publications:
     doi: 10.48550/arxiv.2603.10653
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 28
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.48550/arXiv.2603.10653
+    doi: 10.48550/arxiv.2603.10653
+    doi_error: null
+    doi_warning: null
+    citation_text: Palmås K, Benner M, Billger M, Clarke B, Feifel R, Fernandez-Rodriguez J, Foka A, Griffié
+      J, Gustafsson C, Hamilton K, Holmén J, Lindström K, Olofsson T, Pereira JB, Ponti M, Ravanis J,
+      Shashkova S, Sparr E, Strimling P, Höök F, Volpe G. (2026). Technological excellence requires human
+      and social context. arXiv [Preprint]. 2026. arXiv:2603.10653 [physics.soc-ph].
   metadata:
+    title: Technological Excellence Requires Human and Social Context
     authors:
     - Karl Palmås
     - Mats Benner
@@ -11488,10 +12031,9 @@ publications:
       Tobias Olofsson; Joana B. Pereira; Marisa Ponti; Julia Ravanis; Sviatlana Shashkova; Emma Sparr;
       Pontus Strimling; Fredrik Höök; Giovanni Volpe
     journal: arXiv
-    publication_url: https://doi.org/10.48550/arxiv.2603.10653
-    title: Technological Excellence Requires Human and Social Context
-    type: article
     year: 2026
+    type: article
+    publication_url: https://doi.org/10.48550/arxiv.2603.10653
   overrides: {}
   metadata_check:
     status: matched
@@ -11503,7 +12045,9 @@ publications:
       line: 14
   retrieved:
     doi: 10.48550/arxiv.2603.10653
+    provider: doi-csl
     metadata:
+      title: Technological Excellence Requires Human and Social Context
       authors:
       - Karl Palmås
       - Mats Benner
@@ -11531,11 +12075,9 @@ publications:
         Tobias Olofsson; Joana B. Pereira; Marisa Ponti; Julia Ravanis; Sviatlana Shashkova; Emma Sparr;
         Pontus Strimling; Fredrik Höök; Giovanni Volpe
       journal: arXiv
-      publication_url: https://doi.org/10.48550/arxiv.2603.10653
-      title: Technological Excellence Requires Human and Social Context
-      type: article
       year: 2026
-    provider: doi-csl
+      type: article
+      publication_url: https://doi.org/10.48550/arxiv.2603.10653
   cci_involvement: scientific-collaboration
 - id: cci-5cef10a2e7935026ab11b8e25d66f669
   doi: 10.1186/s13058-025-02209-0
@@ -11559,7 +12101,22 @@ publications:
     doi: 10.1186/s13058-025-02209-0
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 12
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1186/s13058-025-02209-0
+    doi: 10.1186/s13058-025-02209-0
+    doi_error: null
+    doi_warning: null
+    citation_text: Ekström K, Riaz N, Larsson K, Nemeth A, Crescitelli R, Linderholm B, Olofsson Bagge
+      R. (2026). Plasma extracellular vesicles reflect response and prognosis in patients with breast
+      cancer undergoing neoadjuvant treatment. Breast Cancer Res. 2026 Jan 9.
   metadata:
+    title: Plasma extracellular vesicles reflect response and prognosis in patients with breast cancer
+      undergoing neoadjuvant treatment
     authors:
     - Karin Ekström
     - Nazia Riaz
@@ -11571,11 +12128,9 @@ publications:
     authors_text: Karin Ekström; Nazia Riaz; Karolina Larsson; Afrodite Nemeth; Rossella Crescitelli;
       Barbro Linderholm; Roger Olofsson Bagge
     journal: Breast Cancer Research
-    publication_url: https://doi.org/10.1186/s13058-025-02209-0
-    title: Plasma extracellular vesicles reflect response and prognosis in patients with breast cancer
-      undergoing neoadjuvant treatment
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1186/s13058-025-02209-0
   overrides: {}
   metadata_check:
     status: matched
@@ -11587,7 +12142,10 @@ publications:
       line: 7
   retrieved:
     doi: 10.1186/s13058-025-02209-0
+    provider: crossref
     metadata:
+      title: Plasma extracellular vesicles reflect response and prognosis in patients with breast cancer
+        undergoing neoadjuvant treatment
       authors:
       - Karin Ekström
       - Nazia Riaz
@@ -11599,12 +12157,9 @@ publications:
       authors_text: Karin Ekström; Nazia Riaz; Karolina Larsson; Afrodite Nemeth; Rossella Crescitelli;
         Barbro Linderholm; Roger Olofsson Bagge
       journal: Breast Cancer Research
-      publication_url: https://doi.org/10.1186/s13058-025-02209-0
-      title: Plasma extracellular vesicles reflect response and prognosis in patients with breast cancer
-        undergoing neoadjuvant treatment
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1186/s13058-025-02209-0
   abstract:
     text: 'Background
 
@@ -14570,7 +15125,21 @@ publications:
     doi: 10.22541/authorea.15004908/v1
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 33
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.22541/authorea.15004908/v1
+    doi: 10.22541/authorea.15004908/v1
+    doi_error: null
+    doi_warning: null
+    citation_text: Rütting L, Rodas S, Rasmussen L, Ranjbari E, Micaroni M, Elberling B, Danielsen B,
+      Patchett A, Rütting T, Björkman M, Zou H, Arellano-Caicedo C, Hammer E. (2026). Live bacteria nitrogen
+      uptake in response to winter warming in dry Arctic heath. Authorea Preprints
   metadata:
+    title: Live bacteria nitrogen uptake in response to winter warming in dry Arctic heath
     authors:
     - Louise Rütting
     - Sofia Rodas
@@ -14589,10 +15158,9 @@ publications:
       Birgitte Danielsen; Aurora Patchett; Tobias Rütting; Mats Björkman; Hanbang Zou; Carlos Arellano-Caicedo;
       Edith Hammer
     journal: Wiley
-    publication_url: https://doi.org/10.22541/authorea.15004908/v1
-    title: Live bacteria nitrogen uptake in response to winter warming in dry Arctic heath
-    type: posted-content
     year: 2026
+    type: posted-content
+    publication_url: https://doi.org/10.22541/authorea.15004908/v1
   overrides: {}
   metadata_check:
     status: matched
@@ -14604,7 +15172,9 @@ publications:
       line: 18
   retrieved:
     doi: 10.22541/authorea.15004908/v1
+    provider: crossref
     metadata:
+      title: Live bacteria nitrogen uptake in response to winter warming in dry Arctic heath
       authors:
       - Louise Rütting
       - Sofia Rodas
@@ -14623,11 +15193,9 @@ publications:
         Elberling; Birgitte Danielsen; Aurora Patchett; Tobias Rütting; Mats Björkman; Hanbang Zou; Carlos
         Arellano-Caicedo; Edith Hammer
       journal: Wiley
-      publication_url: https://doi.org/10.22541/authorea.15004908/v1
-      title: Live bacteria nitrogen uptake in response to winter warming in dry Arctic heath
-      type: posted-content
       year: 2026
-    provider: crossref
+      type: posted-content
+      publication_url: https://doi.org/10.22541/authorea.15004908/v1
   cci_involvement: scientific-collaboration
 - id: cci-796dca03f3fd5e26a4a901c0bf3d7698
   doi: 10.1083/jcb.202601032
@@ -14655,7 +15223,27 @@ publications:
     doi: 10.1083/jcb.202601032
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 26
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1083/jcb.202601032
+    doi: 10.1083/jcb.202601032
+    doi_error: null
+    doi_warning: null
+    citation_text: 'Montero Llopis P, van Oostende-Triplet C, Gaudreault N, Strambio De Castillia C, Fernandez-Rodriguez
+      J, Martins G, North A, Acevedo L, Avilov S, Bertocchi C, Boehm U, Cameron L, Cammer M, Cleret-Buhot
+      A, Dietzel S, Faklaris O, Gaboriau D, Guilbert T, Grunwald D, Gu T, Halidi N, Hammer M, Hartmann
+      H, Heller J, Jambor H, Koksoy AA, Lacoste J, Larsen D, Le Dévédec SE, Liu P, Moore J, Nelson G,
+      Nelson M, Norlin N, Parslow A, Payne-Dwyer AL, Peterson J, Podder S, Ravasio A, Rosa-Molinar E,
+      Schroth-Diez B, Selchow O, Srinivasan S, Taatjes D, Vonderstein K, Walther C, Nitschke R. (2026).
+      Better reporting is better science: Community-defined minimal reporting requirements for light microscopy.
+      J Cell Biol. 2026 Mar 2;225(3):e202601032.'
   metadata:
+    title: 'Better reporting is better science: Community-defined minimal reporting requirements for light
+      microscopy'
     authors:
     - Paula Montero Llopis
     - Chloë van Oostende-Triplet
@@ -14714,11 +15302,9 @@ publications:
       Rosa-Molinar; Britta Schroth-Diez; Olaf Selchow; Sathya Srinivasan; Douglas Taatjes; Kirstin Vonderstein;
       Christa Walther; Roland Nitschke
     journal: Journal of Cell Biology
-    publication_url: https://doi.org/10.1083/jcb.202601032
-    title: 'Better reporting is better science: Community-defined minimal reporting requirements for light
-      microscopy'
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1083/jcb.202601032
   overrides: {}
   metadata_check:
     status: matched
@@ -14730,7 +15316,10 @@ publications:
       line: 13
   retrieved:
     doi: 10.1083/jcb.202601032
+    provider: crossref
     metadata:
+      title: 'Better reporting is better science: Community-defined minimal reporting requirements for
+        light microscopy'
       authors:
       - Paula Montero Llopis
       - Chloë van Oostende-Triplet
@@ -14789,12 +15378,9 @@ publications:
         Andrea Ravasio; Eduardo Rosa-Molinar; Britta Schroth-Diez; Olaf Selchow; Sathya Srinivasan; Douglas
         Taatjes; Kirstin Vonderstein; Christa Walther; Roland Nitschke
       journal: Journal of Cell Biology
-      publication_url: https://doi.org/10.1083/jcb.202601032
-      title: 'Better reporting is better science: Community-defined minimal reporting requirements for
-        light microscopy'
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1083/jcb.202601032
   cci_involvement: scientific-collaboration
 - id: cci-7bda204807415b688d1356cf1998fba5
   doi: 10.1038/s41598-019-41542-1
@@ -15112,7 +15698,25 @@ publications:
     doi: 10.48550/arxiv.2606.08647
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 15
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.48550/arXiv.2606.08647
+    doi: 10.48550/arxiv.2606.08647
+    doi_error: null
+    doi_warning: null
+    citation_text: Griffié J, Shashkova S, Ciarlo A, Manikandan SK, Andréasson C, Bäckström M, Bereau
+      T, Brismar H, Bustamante C, Carroni M, Covino R, Dahlin A, Deindl S, Delemotte L, Elofsson A, Eriksson
+      J, Fragneto G, Gunnarsson A, Hammarström P, Ingre C, Kaiser C, Kettunen P, Leake MC, Loos B, Månberg
+      A, Mey ASJS, Neutze R, Nyström T, Palmås K, Schaefer C, Tamás MJ, Ticozzi N, Pilvelic TS, Sacquegno
+      J, Tijms BM, von Heijne G, Wallner B, Zhaunerchyk V, Olsson S, Pereira JB, Fernandez-Rodriguez J,
+      Westerlund F, Volpe G. (2026). Protein dynamics beyond structure prediction. arXiv [Preprint]. 2026.
+      arXiv:2606.08647 [q-bio.BM].
   metadata:
+    title: Protein Dynamics Beyond Structure Prediction
     authors:
     - Juliette Griffié
     - Sviatlana Shashkova
@@ -15167,10 +15771,9 @@ publications:
       Sacquegno; B. M.; Tijms; Gunnar von Heijne; Björn Wallner; Vitali Zhaunerchyk; Simon Olsson; Joana
       B. Pereira; Julia Fernandez-Rodriguez; Fredrik Westerlund; Giovanni Volpe
     journal: arXiv
-    publication_url: https://doi.org/10.48550/arxiv.2606.08647
-    title: Protein Dynamics Beyond Structure Prediction
-    type: article
     year: 2026
+    type: article
+    publication_url: https://doi.org/10.48550/arxiv.2606.08647
   overrides: {}
   metadata_check:
     status: matched
@@ -15182,7 +15785,9 @@ publications:
       line: 9
   retrieved:
     doi: 10.48550/arxiv.2606.08647
+    provider: doi-csl
     metadata:
+      title: Protein Dynamics Beyond Structure Prediction
       authors:
       - Juliette Griffié
       - Sviatlana Shashkova
@@ -15237,11 +15842,9 @@ publications:
         Sacquegno; B. M.; Tijms; Gunnar von Heijne; Björn Wallner; Vitali Zhaunerchyk; Simon Olsson; Joana
         B. Pereira; Julia Fernandez-Rodriguez; Fredrik Westerlund; Giovanni Volpe
       journal: arXiv
-      publication_url: https://doi.org/10.48550/arxiv.2606.08647
-      title: Protein Dynamics Beyond Structure Prediction
-      type: article
       year: 2026
-    provider: doi-csl
+      type: article
+      publication_url: https://doi.org/10.48550/arxiv.2606.08647
   cci_involvement: scientific-collaboration
 - id: cci-7d37252274ce5f2a97fe7af2a3201f97
   doi: 10.1073/pnas.1720017115
@@ -16660,7 +17263,23 @@ publications:
     doi: 10.1210/clinem/dgag212
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 36
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1210/clinem/dgag212
+    doi: 10.1210/clinem/dgag212
+    doi_error: null
+    doi_warning: null
+    citation_text: Visuttijai K, Hedberg-Oldfors C, Braun O, Englund E, Glamuzina E, Turner C, Vukusic
+      K, Sandstedt J, Dellgren G, Karason K, Oldfors A. (2026). Dysregulation of glycogen metabolism in
+      cardiomyopathy caused by glycogenin-1 (GYG1) missense variants. J Clin Endocrinol Metab. 2026 May
+      21:dgag212.
   metadata:
+    title: Dysregulation of glycogen metabolism in cardiomyopathy caused by glycogenin-1 ( GYG1 ) missense
+      variants
     authors:
     - Kittichate Visuttijai
     - Carola Hedberg-Oldfors
@@ -16676,11 +17295,9 @@ publications:
     authors_text: Kittichate Visuttijai; Carola Hedberg-Oldfors; Oscar Braun; Elisabet Englund; Emma Glamuzina;
       Clinton Turner; Kristina Vukusic; Joakim Sandstedt; Göran Dellgren; Kristjan Karason; Anders Oldfors
     journal: The Journal of Clinical Endocrinology & Metabolism
-    publication_url: https://doi.org/10.1210/clinem/dgag212
-    title: Dysregulation of glycogen metabolism in cardiomyopathy caused by glycogenin-1 ( GYG1 ) missense
-      variants
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1210/clinem/dgag212
   overrides: {}
   metadata_check:
     status: matched
@@ -16692,7 +17309,10 @@ publications:
       line: 19
   retrieved:
     doi: 10.1210/clinem/dgag212
+    provider: crossref
     metadata:
+      title: Dysregulation of glycogen metabolism in cardiomyopathy caused by glycogenin-1 ( GYG1 ) missense
+        variants
       authors:
       - Kittichate Visuttijai
       - Carola Hedberg-Oldfors
@@ -16709,12 +17329,9 @@ publications:
         Glamuzina; Clinton Turner; Kristina Vukusic; Joakim Sandstedt; Göran Dellgren; Kristjan Karason;
         Anders Oldfors
       journal: The Journal of Clinical Endocrinology & Metabolism
-      publication_url: https://doi.org/10.1210/clinem/dgag212
-      title: Dysregulation of glycogen metabolism in cardiomyopathy caused by glycogenin-1 ( GYG1 ) missense
-        variants
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1210/clinem/dgag212
   abstract:
     text: 'Context
 
@@ -18607,6 +19224,156 @@ publications:
       type: journal-article
       publication_url: https://doi.org/10.1242/bio.2012893
   cci_involvement: service-provision
+- id: cci-92cb56b3868b596db060042fc119c759
+  doi: 10.1016/j.stem.2026.07.003
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 16
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1016/j.stem.2026.07.003
+    doi: 10.1016/j.stem.2026.07.003
+    doi_error: null
+    doi_warning: null
+    citation_text: Grinnemo KH, Braesch-Andersen K, Wedin JO, Velica A, Thelander U, Sabatier P, Beusch
+      CM, Simonson OE, Törne A, Felldin U, Gritsenko O, Park KS, Crescitelli R, Ågren N, Meinke S, Abouzayed
+      A, Wegrzyniak O, Putri A, Hedenqvist P, Rydén A, Leijon A, Lindström L, Velikyan I, Alici E, Wikström
+      J, Gan LM, Lorant T, Kumagai-Braesch M, Ståhle E, Korsgren O, Fromell K, Nilsson-Ekdahl K, Nilsson
+      B, Lötvall J, Jensen-Waern M, Olsen JV, Hagey DW, Andaloussi SEL, Le Blanc K, James S, Eriksson
+      O, Rodin S. (2026). Extracellular vesicle secretome from mesenchymal stromal cells prevents post-ischemic
+      heart failure by targeting cardiac fibrosis. Cell Stem Cell. 2026 Aug 6;33(8):1324-1338.e10.
+  metadata:
+    title: Extracellular vesicle secretome from mesenchymal stromal cells prevents post-ischemic heart
+      failure by targeting cardiac fibrosis
+    authors:
+    - Karl-Henrik Grinnemo
+    - Ken Braesch-Andersen
+    - Johan O. Wedin
+    - Anna Velica
+    - Ulrika Thelander
+    - Pierre Sabatier
+    - Christian M. Beusch
+    - Oscar E. Simonson
+    - Alice Törne
+    - Ulrika Felldin
+    - Olga Gritsenko
+    - Kyong-Su Park
+    - Rossella Crescitelli
+    - Nils Ågren
+    - Stephan Meinke
+    - Ayman Abouzayed
+    - Olivia Wegrzyniak
+    - Andriana Putri
+    - Patricia Hedenqvist
+    - Anneli Rydén
+    - Alexandra Leijon
+    - Lisa Lindström
+    - Irina Velikyan
+    - Evren Alici
+    - Johannes Wikström
+    - Li Ming Gan
+    - Tomas Lorant
+    - Makiko Kumagai-Braesch
+    - Elisabeth Ståhle
+    - Olle Korsgren
+    - Karin Fromell
+    - Kristina Nilsson-Ekdahl
+    - Bo Nilsson
+    - Jan Lötvall
+    - Marianne Jensen-Waern
+    - Jesper V. Olsen
+    - Daniel W. Hagey
+    - Samir E.L. Andaloussi
+    - Katarina Le Blanc
+    - Stefan James
+    - Olof Eriksson
+    - Sergey Rodin
+    authors_text: Karl-Henrik Grinnemo; Ken Braesch-Andersen; Johan O. Wedin; Anna Velica; Ulrika Thelander;
+      Pierre Sabatier; Christian M. Beusch; Oscar E. Simonson; Alice Törne; Ulrika Felldin; Olga Gritsenko;
+      Kyong-Su Park; Rossella Crescitelli; Nils Ågren; Stephan Meinke; Ayman Abouzayed; Olivia Wegrzyniak;
+      Andriana Putri; Patricia Hedenqvist; Anneli Rydén; Alexandra Leijon; Lisa Lindström; Irina Velikyan;
+      Evren Alici; Johannes Wikström; Li Ming Gan; Tomas Lorant; Makiko Kumagai-Braesch; Elisabeth Ståhle;
+      Olle Korsgren; Karin Fromell; Kristina Nilsson-Ekdahl; Bo Nilsson; Jan Lötvall; Marianne Jensen-Waern;
+      Jesper V. Olsen; Daniel W. Hagey; Samir E.L. Andaloussi; Katarina Le Blanc; Stefan James; Olof Eriksson;
+      Sergey Rodin
+    journal: Cell Stem Cell
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1016/j.stem.2026.07.003
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1016/j.stem.2026.07.003
+    provider: crossref
+    metadata:
+      title: Extracellular vesicle secretome from mesenchymal stromal cells prevents post-ischemic heart
+        failure by targeting cardiac fibrosis
+      authors:
+      - Karl-Henrik Grinnemo
+      - Ken Braesch-Andersen
+      - Johan O. Wedin
+      - Anna Velica
+      - Ulrika Thelander
+      - Pierre Sabatier
+      - Christian M. Beusch
+      - Oscar E. Simonson
+      - Alice Törne
+      - Ulrika Felldin
+      - Olga Gritsenko
+      - Kyong-Su Park
+      - Rossella Crescitelli
+      - Nils Ågren
+      - Stephan Meinke
+      - Ayman Abouzayed
+      - Olivia Wegrzyniak
+      - Andriana Putri
+      - Patricia Hedenqvist
+      - Anneli Rydén
+      - Alexandra Leijon
+      - Lisa Lindström
+      - Irina Velikyan
+      - Evren Alici
+      - Johannes Wikström
+      - Li Ming Gan
+      - Tomas Lorant
+      - Makiko Kumagai-Braesch
+      - Elisabeth Ståhle
+      - Olle Korsgren
+      - Karin Fromell
+      - Kristina Nilsson-Ekdahl
+      - Bo Nilsson
+      - Jan Lötvall
+      - Marianne Jensen-Waern
+      - Jesper V. Olsen
+      - Daniel W. Hagey
+      - Samir E.L. Andaloussi
+      - Katarina Le Blanc
+      - Stefan James
+      - Olof Eriksson
+      - Sergey Rodin
+      authors_text: Karl-Henrik Grinnemo; Ken Braesch-Andersen; Johan O. Wedin; Anna Velica; Ulrika Thelander;
+        Pierre Sabatier; Christian M. Beusch; Oscar E. Simonson; Alice Törne; Ulrika Felldin; Olga Gritsenko;
+        Kyong-Su Park; Rossella Crescitelli; Nils Ågren; Stephan Meinke; Ayman Abouzayed; Olivia Wegrzyniak;
+        Andriana Putri; Patricia Hedenqvist; Anneli Rydén; Alexandra Leijon; Lisa Lindström; Irina Velikyan;
+        Evren Alici; Johannes Wikström; Li Ming Gan; Tomas Lorant; Makiko Kumagai-Braesch; Elisabeth Ståhle;
+        Olle Korsgren; Karin Fromell; Kristina Nilsson-Ekdahl; Bo Nilsson; Jan Lötvall; Marianne Jensen-Waern;
+        Jesper V. Olsen; Daniel W. Hagey; Samir E.L. Andaloussi; Katarina Le Blanc; Stefan James; Olof
+        Eriksson; Sergey Rodin
+      journal: Cell Stem Cell
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1016/j.stem.2026.07.003
+  cci_involvement: service-provision
 - id: cci-934b224479765c3082307cf2c23fe4f3
   doi: 10.1016/j.ejpb.2012.10.001
   approved: true
@@ -19132,7 +19899,23 @@ publications:
     doi: 10.1038/s41598-026-42812-5
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 39
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1038/s41598-026-42812-5
+    doi: 10.1038/s41598-026-42812-5
+    doi_error: null
+    doi_warning: null
+    citation_text: Zulfaj E, Nejat A, Kalani M, Miljanovic A, Ekström K, Crescitelli R, Elmahdy A, Thorsell
+      A, Olofsson Bagge R, Redfors B, Omerovic E. (2026). Proteomic analysis of tissue-derived extracellular
+      vesicles shows region-specific molecular changes in a rat model of takotsubo syndrome. Sci Rep.
+      2026 Mar 10;16(1):8731.
   metadata:
+    title: Proteomic analysis of tissue-derived extracellular vesicles shows region-specific molecular
+      changes in a rat model of takotsubo syndrome
     authors:
     - Ermir Zulfaj
     - Amirali Nejat
@@ -19148,11 +19931,9 @@ publications:
     authors_text: Ermir Zulfaj; Amirali Nejat; Mana Kalani; Azra Miljanovic; Karin Ekström; Rossella Crescitelli;
       Ahmed Elmahdy; Annika Thorsell; Roger Olofsson Bagge; Björn Redfors; Elmir Omerovic
     journal: Scientific Reports
-    publication_url: https://doi.org/10.1038/s41598-026-42812-5
-    title: Proteomic analysis of tissue-derived extracellular vesicles shows region-specific molecular
-      changes in a rat model of takotsubo syndrome
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1038/s41598-026-42812-5
   overrides: {}
   metadata_check:
     status: matched
@@ -19164,7 +19945,10 @@ publications:
       line: 22
   retrieved:
     doi: 10.1038/s41598-026-42812-5
+    provider: crossref
     metadata:
+      title: Proteomic analysis of tissue-derived extracellular vesicles shows region-specific molecular
+        changes in a rat model of takotsubo syndrome
       authors:
       - Ermir Zulfaj
       - Amirali Nejat
@@ -19180,12 +19964,9 @@ publications:
       authors_text: Ermir Zulfaj; Amirali Nejat; Mana Kalani; Azra Miljanovic; Karin Ekström; Rossella
         Crescitelli; Ahmed Elmahdy; Annika Thorsell; Roger Olofsson Bagge; Björn Redfors; Elmir Omerovic
       journal: Scientific Reports
-      publication_url: https://doi.org/10.1038/s41598-026-42812-5
-      title: Proteomic analysis of tissue-derived extracellular vesicles shows region-specific molecular
-        changes in a rat model of takotsubo syndrome
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1038/s41598-026-42812-5
   abstract:
     text: Takotsubo syndrome (TS) is characterized by transient regional wall motion abnormalities (RWMA)
       of the heart following stress. Extracellular vesicles (EVs) play a significant role in cellular
@@ -21010,18 +21791,31 @@ publications:
     doi: 10.20517/evcna.2026.07
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 20
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.20517/evcna.2026.07
+    doi: 10.20517/evcna.2026.07
+    doi_error: null
+    doi_warning: null
+    citation_text: Lötvall J, Ordouzadeh N, Park KS. (2026). Bacterial membrane vesicles as effective
+      immunotherapeutic agents in melanoma, colon, and breast cancer. Extracell Vesicles Circ Nucleic
+      Acids. 2026 Jul 6;7:1043-1055.
   metadata:
+    title: Bacterial membrane vesicles as effective immunotherapeutic agents in melanoma, colon, and breast
+      cancer
     authors:
     - Jan Lötvall
     - Negar Ordouzadeh
     - Kyong-Su Park
     authors_text: Jan Lötvall; Negar Ordouzadeh; Kyong-Su Park
     journal: Extracellular Vesicles and Circulating Nucleic Acids
-    publication_url: https://doi.org/10.20517/evcna.2026.07
-    title: Bacterial membrane vesicles as effective immunotherapeutic agents in melanoma, colon, and breast
-      cancer
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.20517/evcna.2026.07
   overrides: {}
   metadata_check:
     status: matched
@@ -21033,19 +21827,19 @@ publications:
       line: 11
   retrieved:
     doi: 10.20517/evcna.2026.07
+    provider: crossref
     metadata:
+      title: Bacterial membrane vesicles as effective immunotherapeutic agents in melanoma, colon, and
+        breast cancer
       authors:
       - Jan Lötvall
       - Negar Ordouzadeh
       - Kyong-Su Park
       authors_text: Jan Lötvall; Negar Ordouzadeh; Kyong-Su Park
       journal: Extracellular Vesicles and Circulating Nucleic Acids
-      publication_url: https://doi.org/10.20517/evcna.2026.07
-      title: Bacterial membrane vesicles as effective immunotherapeutic agents in melanoma, colon, and
-        breast cancer
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.20517/evcna.2026.07
   cci_involvement: service-provision
 - id: cci-a6d946b0c87a570b9b67d703c5f16bec
   doi: 10.1371/journal.pone.0193059
@@ -21410,6 +22204,74 @@ publications:
       type: journal-article
       publication_url: https://doi.org/10.1016/j.cell.2019.06.005
   cci_involvement: service-provision
+- id: cci-ab75a748a4115f8a92f3b66bab84872f
+  doi: 10.1038/s42003-026-10880-y
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 27
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1038/s42003-026-10880-y
+    doi: 10.1038/s42003-026-10880-y
+    doi_error: null
+    doi_warning: null
+    citation_text: Muteb A, Johansson M, Alvarado-Kristensson M. (2026). The TUBG meshwork is associated
+      with centromere dynamics and micronuclear organization. Commun Biol. 2026 Sep 16;9(1):1206.
+  metadata:
+    title: The TUBG meshwork is associated with centromere dynamics and micronuclear organization
+    authors:
+    - Alaaddin Muteb
+    - Martin Johansson
+    - Maria Alvarado-Kristensson
+    authors_text: Alaaddin Muteb; Martin Johansson; Maria Alvarado-Kristensson
+    journal: Communications Biology
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1038/s42003-026-10880-y
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1038/s42003-026-10880-y
+    provider: crossref
+    metadata:
+      title: The TUBG meshwork is associated with centromere dynamics and micronuclear organization
+      authors:
+      - Alaaddin Muteb
+      - Martin Johansson
+      - Maria Alvarado-Kristensson
+      authors_text: Alaaddin Muteb; Martin Johansson; Maria Alvarado-Kristensson
+      journal: Communications Biology
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1038/s42003-026-10880-y
+  cci_involvement: service-provision
+  abstract:
+    text: This study investigates how γ-tubulin and the centrosome contribute to interphase centromere
+      dynamics and nuclear organization. Although classically associated with mitotic microtubule nucleation,
+      here we show that γ-tubulin associates with chromatin and is enriched within centromere-defined
+      volumes. Using live-cell imaging, immunofluorescence, and chromatin immunoprecipitation sequencing,
+      we detect γ-tubulin-associated signal at satellite-rich, centromere-proximal chromatin. Reduced
+      γ-tubulin levels are associated with increased centromere fluorescence intensity and reduced mobility,
+      linking the γ-tubulin network to centromere organization. Under acute cisplatin-induced stress,
+      centromere mobility increases, whereas centromere clustering is observed in separate fixed-cell
+      analyses. Ser131 phosphorylation is associated with γ-tubulin self-assembly and centromere-related
+      dynamics. Additionally, γ-tubulin accumulates in micronuclei, coinciding with increased replication-associated
+      signal and DNA fluorescence. In primary clear cell renal cell carcinoma cells, stress is associated
+      with higher γ-tubulin fluorescence intensity within centromere-defined volumes. Together, these
+      findings support an association between the γ-tubulin meshwork and centromere organization, chromatin
+      compartmentalization, and responses to genomic stress.
+    source_url: https://doi.org/10.1038/s42003-026-10880-y
+    license_url: https://creativecommons.org/licenses/by/4.0
 - id: cci-ac35541e3c7c521f99c541d3ea3ae8ae
   doi: 10.1016/j.fertnstert.2016.03.048
   approved: true
@@ -22208,6 +23070,62 @@ publications:
       year: 2013
       type: journal-article
       publication_url: https://doi.org/10.1152/ajpgi.00046.2013
+  cci_involvement: service-provision
+- id: cci-b41ad982418b52c0b6fdc0f33ceaf622
+  doi: 10.64898/2026.09.04.749561
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 35
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.64898/2026.09.04.749561
+    doi: 10.64898/2026.09.04.749561
+    doi_error: null
+    doi_warning: null
+    citation_text: Sebastian Blid Sköldheden, Júlia Teixidor-Deulofeu, Johan Ruud, Linda Engström Ruud
+      (2026). Semaglutide engages distinct brainstem-to-hypothalamus circuits to suppress motivated feeding
+      and regulate ketogenesis and energy expenditure. bioRxiv 2026.09.04.749561
+  metadata:
+    title: Semaglutide engages distinct brainstem-to-hypothalamus circuits to suppress motivated feeding
+      and regulate ketogenesis and energy expenditure
+    authors:
+    - Sebastian Blid Sköldheden
+    - Júlia Teixidor-Deulofeu
+    - Johan Ruud
+    - Linda Engström Ruud
+    authors_text: Sebastian Blid Sköldheden; Júlia Teixidor-Deulofeu; Johan Ruud; Linda Engström Ruud
+    journal: openRxiv
+    year: 2026
+    type: posted-content
+    publication_url: https://doi.org/10.64898/2026.09.04.749561
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.64898/2026.09.04.749561
+    provider: crossref
+    metadata:
+      title: Semaglutide engages distinct brainstem-to-hypothalamus circuits to suppress motivated feeding
+        and regulate ketogenesis and energy expenditure
+      authors:
+      - Sebastian Blid Sköldheden
+      - Júlia Teixidor-Deulofeu
+      - Johan Ruud
+      - Linda Engström Ruud
+      authors_text: Sebastian Blid Sköldheden; Júlia Teixidor-Deulofeu; Johan Ruud; Linda Engström Ruud
+      journal: openRxiv
+      year: 2026
+      type: posted-content
+      publication_url: https://doi.org/10.64898/2026.09.04.749561
   cci_involvement: service-provision
 - id: cci-b5b2288a3d5f5b1096c41b0964b318e5
   doi: 10.1016/j.celrep.2019.07.053
@@ -23897,7 +24815,21 @@ publications:
     doi: 10.1007/978-1-0716-4905-3_14
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 24
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1007/978-1-0716-4905-3_14
+    doi: 10.1007/978-1-0716-4905-3_14
+    doi_error: null
+    doi_warning: null
+    citation_text: 'Micaroni M, Berndtsson J, Urzì O, Crescitelli R. (2026). Electron Tomography-Based
+      Reconstruction of Extracellular Vesicles in Tissue. In: Srivastava, A.K. (eds) Extracellular Vesicles.
+      Neuromethods, vol 228. Humana, New York, NY.'
   metadata:
+    title: Electron Tomography-Based Reconstruction of Extracellular Vesicles in Tissue
     authors:
     - Massimo Micaroni
     - Jens Berndtsson
@@ -23905,10 +24837,9 @@ publications:
     - Rossella Crescitelli
     authors_text: Massimo Micaroni; Jens Berndtsson; Ornella Urzì; Rossella Crescitelli
     journal: Neuromethods
-    publication_url: https://doi.org/10.1007/978-1-0716-4905-3_14
-    title: Electron Tomography-Based Reconstruction of Extracellular Vesicles in Tissue
-    type: book-chapter
     year: 2026
+    type: book-chapter
+    publication_url: https://doi.org/10.1007/978-1-0716-4905-3_14
   overrides: {}
   metadata_check:
     status: matched
@@ -23920,7 +24851,9 @@ publications:
       line: 12
   retrieved:
     doi: 10.1007/978-1-0716-4905-3_14
+    provider: crossref
     metadata:
+      title: Electron Tomography-Based Reconstruction of Extracellular Vesicles in Tissue
       authors:
       - Massimo Micaroni
       - Jens Berndtsson
@@ -23928,11 +24861,9 @@ publications:
       - Rossella Crescitelli
       authors_text: Massimo Micaroni; Jens Berndtsson; Ornella Urzì; Rossella Crescitelli
       journal: Neuromethods
-      publication_url: https://doi.org/10.1007/978-1-0716-4905-3_14
-      title: Electron Tomography-Based Reconstruction of Extracellular Vesicles in Tissue
-      type: book-chapter
       year: 2026
-    provider: crossref
+      type: book-chapter
+      publication_url: https://doi.org/10.1007/978-1-0716-4905-3_14
   cci_involvement: scientific-collaboration
 - id: cci-c2722009f935590a92713874c09122b7
   doi: 10.1101/2025.10.18.683246
@@ -24025,7 +24956,22 @@ publications:
     doi: 10.1186/s12916-026-04923-8
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 11
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1186/s12916-026-04923-8
+    doi: 10.1186/s12916-026-04923-8
+    doi_error: null
+    doi_warning: null
+    citation_text: D Arrigo D, Park KS, Lässer C, Sigalas GP, Symonds E, Urzí O, Locatelli C, Olofsson
+      Bagge R, Lötvall J, Crescitelli R. (2026). Frozen melanoma tissues yield extracellular vesicles
+      with preserved diagnostic and immunogenic properties. BMC Med. 2026 May 21;24(1):325.
   metadata:
+    title: Frozen melanoma tissues yield extracellular vesicles with preserved diagnostic and immunogenic
+      properties
     authors:
     - Daniele D´Arrigo
     - Kyong-Su Park
@@ -24040,11 +24986,9 @@ publications:
     authors_text: Daniele D´Arrigo; Kyong-Su Park; Cecilia Lässer; Georgios Panagiotis Sigalas; Emma Symonds;
       Ornella Urzí; Camilla Locatelli; Roger Olofsson Bagge; Jan Lötvall; Rossella Crescitelli
     journal: BMC Medicine
-    publication_url: https://doi.org/10.1186/s12916-026-04923-8
-    title: Frozen melanoma tissues yield extracellular vesicles with preserved diagnostic and immunogenic
-      properties
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1186/s12916-026-04923-8
   overrides: {}
   metadata_check:
     status: matched
@@ -24056,7 +25000,10 @@ publications:
       line: 6
   retrieved:
     doi: 10.1186/s12916-026-04923-8
+    provider: crossref
     metadata:
+      title: Frozen melanoma tissues yield extracellular vesicles with preserved diagnostic and immunogenic
+        properties
       authors:
       - Daniele D´Arrigo
       - Kyong-Su Park
@@ -24071,12 +25018,9 @@ publications:
       authors_text: Daniele D´Arrigo; Kyong-Su Park; Cecilia Lässer; Georgios Panagiotis Sigalas; Emma
         Symonds; Ornella Urzí; Camilla Locatelli; Roger Olofsson Bagge; Jan Lötvall; Rossella Crescitelli
       journal: BMC Medicine
-      publication_url: https://doi.org/10.1186/s12916-026-04923-8
-      title: Frozen melanoma tissues yield extracellular vesicles with preserved diagnostic and immunogenic
-        properties
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1186/s12916-026-04923-8
   abstract:
     text: 'Background
 
@@ -24125,6 +25069,85 @@ publications:
     source_url: https://doi.org/10.1186/s12916-026-04923-8
     license_url: https://creativecommons.org/licenses/by/4.0
   cci_involvement: service-provision
+- id: cci-c3af7c9b3d675819821096b485936b7d
+  doi: 10.21203/rs.3.rs-11153643/v1
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 7
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.21203/rs.3.rs-11153643/v1
+    doi: 10.21203/rs.3.rs-11153643/v1
+    doi_error: null
+    doi_warning: null
+    citation_text: Antic A, Dreos A, Lashley T, Yo-Ap SY, Sander K, Schöll M, Hanrieder J. (2026). Second-generation
+      tau PET tracer in situ binding assessed with fluorescence imaging. Res Sq [Preprint]. Oct 27:rs.3.rs-11153643
+  metadata:
+    title: Second-generation tau PET tracer in situ binding assessed with fluorescence imaging
+    authors:
+    - Aleksandra Antic
+    - Ambra Dreos
+    - Tammaryn Lashley
+    - Stephen Yong Yo-Ap
+    - Kerstin Sander
+    - Michael Schöll
+    - Jörg Hanrieder
+    authors_text: Aleksandra Antic; Ambra Dreos; Tammaryn Lashley; Stephen Yong Yo-Ap; Kerstin Sander;
+      Michael Schöll; Jörg Hanrieder
+    journal: Springer Science and Business Media LLC
+    year: 2026
+    type: posted-content
+    publication_url: https://doi.org/10.21203/rs.3.rs-11153643/v1
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.21203/rs.3.rs-11153643/v1
+    provider: crossref
+    metadata:
+      title: Second-generation tau PET tracer in situ binding assessed with fluorescence imaging
+      authors:
+      - Aleksandra Antic
+      - Ambra Dreos
+      - Tammaryn Lashley
+      - Stephen Yong Yo-Ap
+      - Kerstin Sander
+      - Michael Schöll
+      - Jörg Hanrieder
+      authors_text: Aleksandra Antic; Ambra Dreos; Tammaryn Lashley; Stephen Yong Yo-Ap; Kerstin Sander;
+        Michael Schöll; Jörg Hanrieder
+      journal: Springer Science and Business Media LLC
+      year: 2026
+      type: posted-content
+      publication_url: https://doi.org/10.21203/rs.3.rs-11153643/v1
+  cci_involvement: service-provision
+  abstract:
+    text: Brain positron emission tomography (PET) imaging is a valuable tool which allows visualization
+      of the pathological structures inside the living patients’ brains. While amyloid-β PET tracers have
+      been in use with Alzheimer’s disease patients in clinics, tau PET tracers have still not entered
+      the clinical routine. Second-generation tau PET tracers have been developed with the aim to overcome
+      the limitations of the first-generation tau PET tracers, such as low sensitivity and off-target
+      binding. However, the detailed pathological characterization of these tracers’ binding is still
+      needed for fully understanding their potential as accurate markers of pathogenic tau. Herein, we
+      focused on the second-generation tau PET tracer Genentech Tau Probe 1 ([ 18 F]GTP1) and made use
+      of the fluorescent properties of its non-radioactive unlabeled variant GTP1 for correlative fluorescence
+      microscopy. The results show that GTP1 binds to tau tangles and neuropil threads (NPTs), but not
+      amyloid-β plaques. Importantly, our results indicate that there is a strong correlation between
+      the fluorescent GTP1 signal and the [ 18 F]GTP1 signal detected with autoradiography, which is currently
+      the standard way of studying the tau PET tracer binding in situ . Together, this data shows the
+      robust application of a non-radioactive tau PET tracer in binding studies in post-mortem tissue
+      and sheds new light on the tau binding properties of GTP1.
+    source_url: https://doi.org/10.21203/rs.3.rs-11153643/v1
+    license_url: https://creativecommons.org/licenses/by/4.0/
 - id: cci-c44108d337d558ed883c5ec6bd81d859
   doi: 10.1126/science.1238880
   approved: true
@@ -25050,6 +26073,74 @@ publications:
     source_url: https://doi.org/10.3390/ijms25126555
     license_url: https://creativecommons.org/licenses/by/4.0/
   cci_involvement: service-provision
+- id: cci-c96d08c929a456089ca98cbceaabc096
+  doi: 10.1016/j.celrep.2026.118023
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 23
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1016/j.celrep.2026.118023
+    doi: 10.1016/j.celrep.2026.118023
+    doi_error: null
+    doi_warning: null
+    citation_text: Mahale S, Setia M, Sjövall D, Deshpande A, Nagarajan K, Reischl S, Jaako P, Kanduri
+      M, Kanduri C. (2026). The spindle-associated antisense RNA ARHGEF17-AS1 functionally contributes
+      to mitotic spindle integrity. Cell Rep. 2026 Oct 27;45(10):118023.
+  metadata:
+    title: The spindle-associated antisense RNA ARHGEF17-AS1 functionally contributes to mitotic spindle
+      integrity
+    authors:
+    - Sagar Mahale
+    - Meenakshi Setia
+    - Daniel Sjövall
+    - Ananya Deshpande
+    - Kamali Nagarajan
+    - Silke Reischl
+    - Pekka Jaako
+    - Meena Kanduri
+    - Chandrasekhar Kanduri
+    authors_text: Sagar Mahale; Meenakshi Setia; Daniel Sjövall; Ananya Deshpande; Kamali Nagarajan; Silke
+      Reischl; Pekka Jaako; Meena Kanduri; Chandrasekhar Kanduri
+    journal: Cell Reports
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1016/j.celrep.2026.118023
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1016/j.celrep.2026.118023
+    provider: crossref
+    metadata:
+      title: The spindle-associated antisense RNA ARHGEF17-AS1 functionally contributes to mitotic spindle
+        integrity
+      authors:
+      - Sagar Mahale
+      - Meenakshi Setia
+      - Daniel Sjövall
+      - Ananya Deshpande
+      - Kamali Nagarajan
+      - Silke Reischl
+      - Pekka Jaako
+      - Meena Kanduri
+      - Chandrasekhar Kanduri
+      authors_text: Sagar Mahale; Meenakshi Setia; Daniel Sjövall; Ananya Deshpande; Kamali Nagarajan;
+        Silke Reischl; Pekka Jaako; Meena Kanduri; Chandrasekhar Kanduri
+      journal: Cell Reports
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1016/j.celrep.2026.118023
+  cci_involvement: service-provision
 - id: cci-ca4e94b8b01f5e6ca6d1137a7af0eb9b
   doi: 10.1002/anie.202304098
   approved: true
@@ -25619,6 +26710,155 @@ publications:
       type: posted-content
       publication_url: https://doi.org/10.26434/chemrxiv-2024-wkw04
   cci_involvement: service-provision
+- id: cci-ce5c750ad82e52178b34163346453ae6
+  doi: 10.1111/jmi.70188
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 25
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1111/jmi.70188
+    doi: 10.1111/jmi.70188
+    doi_error: null
+    doi_warning: null
+    citation_text: Miura K, Walther C, Fazeli E, Corbat A, Sampaio P, D'Antuono R. (2026). Focus on the
+      methods reproducibility of bioimage analysis. J Microsc. 2026 Nov;304(2):79-82.
+  metadata:
+    title: Focus on the methods reproducibility of bioimage analysis
+    authors:
+    - Kota Miura
+    - Christa Walther
+    - Elnaz Fazeli
+    - Agustin Corbat
+    - Paula Sampaio
+    - Rocco D'Antuono
+    authors_text: Kota Miura; Christa Walther; Elnaz Fazeli; Agustin Corbat; Paula Sampaio; Rocco D'Antuono
+    journal: Journal of Microscopy
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1111/jmi.70188
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1111/jmi.70188
+    provider: crossref
+    metadata:
+      title: Focus on the methods reproducibility of bioimage analysis
+      authors:
+      - Kota Miura
+      - Christa Walther
+      - Elnaz Fazeli
+      - Agustin Corbat
+      - Paula Sampaio
+      - Rocco D'Antuono
+      authors_text: Kota Miura; Christa Walther; Elnaz Fazeli; Agustin Corbat; Paula Sampaio; Rocco D'Antuono
+      journal: Journal of Microscopy
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1111/jmi.70188
+  cci_involvement: service-provision
+- id: cci-ce82275554085f8ea1e70d5d61e886b1
+  doi: 10.1021/acsami.6c08450
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 5
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1021/acsami.6c08450
+    doi: 10.1021/acsami.6c08450
+    doi_error: null
+    doi_warning: null
+    citation_text: Abujubara H, Bharmoria P, Raj D, Alvarez SW, Liu S, Zhylinskaya M, Appiah E, Moth-Poulsen
+      K, Wiel C, Sayin VI, Tietze AA. (2026). Selective and Synergistic Targeting of ErbB2-Positive Cancer
+      Cells with ErbB2 Transmembrane Peptide-Ionic Liquid Nanocarrier Formulation. ACS Appl Mater Interfaces.
+      2026 Sep 2;18(34):46007-46021.
+  metadata:
+    title: Selective and Synergistic Targeting of ErbB2-Positive Cancer Cells with ErbB2 Transmembrane
+      Peptide-Ionic Liquid Nanocarrier Formulation
+    authors:
+    - Helal Abujubara
+    - Pankaj Bharmoria
+    - Dorota Raj
+    - Samantha W. Alvarez
+    - Siyuan Liu
+    - Maryna Zhylinskaya
+    - Enoch Appiah
+    - Kasper Moth-Poulsen
+    - Clotilde Wiel
+    - Volkan I. Sayin
+    - Alesia A. Tietze
+    authors_text: Helal Abujubara; Pankaj Bharmoria; Dorota Raj; Samantha W. Alvarez; Siyuan Liu; Maryna
+      Zhylinskaya; Enoch Appiah; Kasper Moth-Poulsen; Clotilde Wiel; Volkan I. Sayin; Alesia A. Tietze
+    journal: ACS Applied Materials & Interfaces
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1021/acsami.6c08450
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1021/acsami.6c08450
+    provider: crossref
+    metadata:
+      title: Selective and Synergistic Targeting of ErbB2-Positive Cancer Cells with ErbB2 Transmembrane
+        Peptide-Ionic Liquid Nanocarrier Formulation
+      authors:
+      - Helal Abujubara
+      - Pankaj Bharmoria
+      - Dorota Raj
+      - Samantha W. Alvarez
+      - Siyuan Liu
+      - Maryna Zhylinskaya
+      - Enoch Appiah
+      - Kasper Moth-Poulsen
+      - Clotilde Wiel
+      - Volkan I. Sayin
+      - Alesia A. Tietze
+      authors_text: Helal Abujubara; Pankaj Bharmoria; Dorota Raj; Samantha W. Alvarez; Siyuan Liu; Maryna
+        Zhylinskaya; Enoch Appiah; Kasper Moth-Poulsen; Clotilde Wiel; Volkan I. Sayin; Alesia A. Tietze
+      journal: ACS Applied Materials & Interfaces
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1021/acsami.6c08450
+  cci_involvement: service-provision
+  abstract:
+    text: ErbB2-positive cancers are highly aggressive and remain difficult to treat due to limitations
+      of current therapies, such as poor selectivity, insufficient delivery, and toxicity toward healthy
+      tissues. Herein, we developed a dual-action nanoformulation combining prolinium-based surface-active
+      ionic liquid (SAIL) nanocarriers with ErbB2-derived transmembrane (TM) peptide for selective targeting
+      of ErbB2-positive cancer cells. Two new SAILs, which self-assemble into stable micelles/vesicles
+      under physiological conditions, and a series of hydrophobic TM-peptides were synthesized and characterized.
+      Among the resulting nanoformulations, V3-BAIL showed the strongest antiproliferative activity in
+      ErbB2-positive breast, lung, and pancreatic cancer cell lines, whereas activity in low-ErbB2 NCl-H23
+      cells was minimal. The response correlated with ErbB2 expression level, demonstrating target-related
+      selectivity. Chou-Talalay analysis revealed synergy between the SAIL nanocarrier and TM peptide.
+      Mechanistic studies showed that V3-BAIL progressively accumulated in cells, reduced cellular fitness
+      without rapid membrane lysis, and strongly suppressed PI3K/Akt and MAPK/ERK signaling. Relative
+      to doxorubicin and cisplatin, V3-BAIL displayed greater selectivity toward ErbB2-positive cells,
+      and it acted more rapidly and more strongly than trastuzumab under the tested conditions. These
+      findings establish TM peptide-decorated SAIL nanocarriers as a promising strategy for selective
+      and synergistic ErbB2-targeted cancer therapy.
+    source_url: https://doi.org/10.1021/acsami.6c08450
+    license_url: https://creativecommons.org/licenses/by/4.0/
 - id: cci-cea9ced7b85b5b7ba3ed12ce1a1f4a87
   doi: 10.1016/j.cmet.2025.04.018
   approved: true
@@ -26890,7 +28130,24 @@ publications:
     doi: 10.64898/2026.04.09.717380
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 30
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.64898/2026.04.09.717380
+    doi: 10.64898/2026.04.09.717380
+    doi_error: null
+    doi_warning: null
+    citation_text: Park KS, Ordouzadeh N, Lazzari L, Elia N, Scarpitta S, Iachini MC, Bussolati B, Bruno
+      S, Grange C, Ceccotti E, Prudente D, Cedrino M, Di Bucchianico S, Ryffel B, Quesniaux V, Togbe D,
+      Huaux F, Wilmot J, Lallo E, Lötvall J, Dominici M. (2026). Extracellular vesicle-enriched secretome
+      from mesenchymal stromal cells protects against chemically, particulate-, and ischemia-induced innate-immunity
+      induced inflammation. bioRxiv [Preprint]. 2026 Apr 9:2026.04.09.717380.
   metadata:
+    title: Extracellular Vesicle-Enriched Secretome from Mesenchymal Stromal Cells Protects Against Chemically,
+      Particulate-, and Ischemia-Induced Innate-Immunity Induced Inflammation
     authors:
     - Kyong-Su Park
     - Negar Ordouzadeh
@@ -26918,11 +28175,9 @@ publications:
       Massimo Cedrino; Sebastiano Di Bucchianico; Bernhard Ryffel; Valerie Quesniaux; Dieudonnee Togbe;
       Francois Huaux; Juliet Wilmot; Eleonora Lallo; Jan Lötvall; Massimo Dominici
     journal: openRxiv
-    publication_url: https://doi.org/10.64898/2026.04.09.717380
-    title: Extracellular Vesicle-Enriched Secretome from Mesenchymal Stromal Cells Protects Against Chemically,
-      Particulate-, and Ischemia-Induced Innate-Immunity Induced Inflammation
-    type: posted-content
     year: 2026
+    type: posted-content
+    publication_url: https://doi.org/10.64898/2026.04.09.717380
   overrides: {}
   metadata_check:
     status: matched
@@ -26934,7 +28189,10 @@ publications:
       line: 16
   retrieved:
     doi: 10.64898/2026.04.09.717380
+    provider: crossref
     metadata:
+      title: Extracellular Vesicle-Enriched Secretome from Mesenchymal Stromal Cells Protects Against
+        Chemically, Particulate-, and Ischemia-Induced Innate-Immunity Induced Inflammation
       authors:
       - Kyong-Su Park
       - Negar Ordouzadeh
@@ -26962,12 +28220,9 @@ publications:
         Massimo Cedrino; Sebastiano Di Bucchianico; Bernhard Ryffel; Valerie Quesniaux; Dieudonnee Togbe;
         Francois Huaux; Juliet Wilmot; Eleonora Lallo; Jan Lötvall; Massimo Dominici
       journal: openRxiv
-      publication_url: https://doi.org/10.64898/2026.04.09.717380
-      title: Extracellular Vesicle-Enriched Secretome from Mesenchymal Stromal Cells Protects Against
-        Chemically, Particulate-, and Ischemia-Induced Innate-Immunity Induced Inflammation
-      type: posted-content
       year: 2026
-    provider: crossref
+      type: posted-content
+      publication_url: https://doi.org/10.64898/2026.04.09.717380
   cci_involvement: service-provision
 - id: cci-d82f28ab0f265965aea33265981a7d8c
   doi: 10.1016/b978-0-12-801238-3.64911-5
@@ -28820,6 +30075,97 @@ publications:
     source_url: https://doi.org/10.1186/s12951-023-01928-w
     license_url: https://creativecommons.org/licenses/by/4.0
   cci_involvement: service-provision
+- id: cci-e4d66c022edc59f6bdf0fe3cab2c2a68
+  doi: 10.64898/2026.10.26.761888
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 21
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.64898/2026.10.26.761888
+    doi: 10.64898/2026.10.26.761888
+    doi_error: null
+    doi_warning: null
+    citation_text: Luke A. Noon, Giulia Casal, Mario Soriano-Navarro, Anne-Laure Cattin, Rafael Camacho,
+      Carlos Acosta Umanzor, Carmen Rojo Sanz, Arantxa Leal Tassias, Julia Fernandez-Rodriguez, Elisabeth
+      Verboven, Jose Antonio Gomez Sanchez, Marousa Darsinou, Alex Power, Antonella Riccio, Emma R. Andersson,
+      Jemima J. Burden, Alison C. Lloyd (2026). Quantitative spatial connectomics of liver reveals a partially
+      exposed sympathetic network that integrates multiple cell types across the portal tract. bioRxiv
+      2026.10.26.761888
+  metadata:
+    title: Quantitative spatial connectomics of liver reveals a partially exposed sympathetic network
+      that integrates multiple cell types across the portal tract
+    authors:
+    - Luke A. Noon
+    - Giulia Casal
+    - Mario Soriano-Navarro
+    - Anne-Laure Cattin
+    - Rafael Camacho
+    - Carlos Acosta Umanzor
+    - Carmen Rojo Sanz
+    - Arantxa Leal Tassias
+    - Julia Fernandez-Rodriguez
+    - Elisabeth Verboven
+    - Jose Antonio Gomez Sanchez
+    - Marousa Darsinou
+    - Alex Power
+    - Antonella Riccio
+    - Emma R. Andersson
+    - Jemima J. Burden
+    - Alison C. Lloyd
+    authors_text: Luke A. Noon; Giulia Casal; Mario Soriano-Navarro; Anne-Laure Cattin; Rafael Camacho;
+      Carlos Acosta Umanzor; Carmen Rojo Sanz; Arantxa Leal Tassias; Julia Fernandez-Rodriguez; Elisabeth
+      Verboven; Jose Antonio Gomez Sanchez; Marousa Darsinou; Alex Power; Antonella Riccio; Emma R. Andersson;
+      Jemima J. Burden; Alison C. Lloyd
+    journal: openRxiv
+    year: 2026
+    type: posted-content
+    publication_url: https://doi.org/10.64898/2026.10.26.761888
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.64898/2026.10.26.761888
+    provider: crossref
+    metadata:
+      title: Quantitative spatial connectomics of liver reveals a partially exposed sympathetic network
+        that integrates multiple cell types across the portal tract
+      authors:
+      - Luke A. Noon
+      - Giulia Casal
+      - Mario Soriano-Navarro
+      - Anne-Laure Cattin
+      - Rafael Camacho
+      - Carlos Acosta Umanzor
+      - Carmen Rojo Sanz
+      - Arantxa Leal Tassias
+      - Julia Fernandez-Rodriguez
+      - Elisabeth Verboven
+      - Jose Antonio Gomez Sanchez
+      - Marousa Darsinou
+      - Alex Power
+      - Antonella Riccio
+      - Emma R. Andersson
+      - Jemima J. Burden
+      - Alison C. Lloyd
+      authors_text: Luke A. Noon; Giulia Casal; Mario Soriano-Navarro; Anne-Laure Cattin; Rafael Camacho;
+        Carlos Acosta Umanzor; Carmen Rojo Sanz; Arantxa Leal Tassias; Julia Fernandez-Rodriguez; Elisabeth
+        Verboven; Jose Antonio Gomez Sanchez; Marousa Darsinou; Alex Power; Antonella Riccio; Emma R.
+        Andersson; Jemima J. Burden; Alison C. Lloyd
+      journal: openRxiv
+      year: 2026
+      type: posted-content
+      publication_url: https://doi.org/10.64898/2026.10.26.761888
+  cci_involvement: scientific-collaboration
 - id: cci-e668962033065af1a5d79de35e46ff35
   doi: 10.1080/21505594.2026.2645859
   approved: true
@@ -28841,7 +30187,21 @@ publications:
     doi: 10.1080/21505594.2026.2645859
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 13
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1080/21505594.2026.2645859
+    doi: 10.1080/21505594.2026.2645859
+    doi_error: null
+    doi_warning: null
+    citation_text: Erhardsson M, Santos L, Benktander J, Sharba S, Thorell K, Lindén S. (2026). The mouse
+      gastric surface epithelial cell and its response to early Helicobacter pylori infection. Virulence.
+      2026;17(1):2645859.
   metadata:
+    title: The mouse gastric surface epithelial cell and its response to early Helicobacter pylori infection
     authors:
     - Mattias Erhardsson
     - Licínia Santos
@@ -28852,10 +30212,9 @@ publications:
     authors_text: Mattias Erhardsson; Licínia Santos; John Benktander; Sinan Sharba; Kaisa Thorell; Sara
       Lindén
     journal: Virulence
-    publication_url: https://doi.org/10.1080/21505594.2026.2645859
-    title: The mouse gastric surface epithelial cell and its response to early Helicobacter pylori infection
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1080/21505594.2026.2645859
   overrides: {}
   metadata_check:
     status: matched
@@ -28867,7 +30226,9 @@ publications:
       line: 8
   retrieved:
     doi: 10.1080/21505594.2026.2645859
+    provider: crossref
     metadata:
+      title: The mouse gastric surface epithelial cell and its response to early Helicobacter pylori infection
       authors:
       - Mattias Erhardsson
       - Licínia Santos
@@ -28878,11 +30239,9 @@ publications:
       authors_text: Mattias Erhardsson; Licínia Santos; John Benktander; Sinan Sharba; Kaisa Thorell;
         Sara Lindén
       journal: Virulence
-      publication_url: https://doi.org/10.1080/21505594.2026.2645859
-      title: The mouse gastric surface epithelial cell and its response to early Helicobacter pylori infection
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1080/21505594.2026.2645859
   cci_involvement: service-provision
 - id: cci-e6d79197793a584e99392749d47ce6e6
   doi: 10.1111/febs.12382
@@ -29567,7 +30926,21 @@ publications:
     doi: 10.1021/acs.analchem.6c01191
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 37
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1021/acs.analchem.6c01191
+    doi: 10.1021/acs.analchem.6c01191
+    doi_error: null
+    doi_warning: null
+    citation_text: Wang Y, Gu C, Gu H, Zhao Y, Wang D, Ewing AG. (2026). Correlating Molecule Counts with
+      Stress Granule Size Using Novel Platinized Carbon Nanopore Electrodes. Anal Chem. 2026 Jun 16;98(23):17153-17160.
   metadata:
+    title: Correlating Molecule Counts with Stress Granule Size Using Novel Platinized Carbon Nanopore
+      Electrodes
     authors:
     - Yue Wang
     - Chaoyi Gu
@@ -29577,11 +30950,9 @@ publications:
     - Andrew G. Ewing
     authors_text: Yue Wang; Chaoyi Gu; Hui Gu; Yingjie Zhao; Dengchao Wang; Andrew G. Ewing
     journal: Analytical Chemistry
-    publication_url: https://doi.org/10.1021/acs.analchem.6c01191
-    title: Correlating Molecule Counts with Stress Granule Size Using Novel Platinized Carbon Nanopore
-      Electrodes
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1021/acs.analchem.6c01191
   overrides: {}
   metadata_check:
     status: matched
@@ -29593,7 +30964,10 @@ publications:
       line: 20
   retrieved:
     doi: 10.1021/acs.analchem.6c01191
+    provider: crossref
     metadata:
+      title: Correlating Molecule Counts with Stress Granule Size Using Novel Platinized Carbon Nanopore
+        Electrodes
       authors:
       - Yue Wang
       - Chaoyi Gu
@@ -29603,12 +30977,9 @@ publications:
       - Andrew G. Ewing
       authors_text: Yue Wang; Chaoyi Gu; Hui Gu; Yingjie Zhao; Dengchao Wang; Andrew G. Ewing
       journal: Analytical Chemistry
-      publication_url: https://doi.org/10.1021/acs.analchem.6c01191
-      title: Correlating Molecule Counts with Stress Granule Size Using Novel Platinized Carbon Nanopore
-        Electrodes
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1021/acs.analchem.6c01191
   cci_involvement: service-provision
 - id: cci-ea395557f9fd5304b6cc7282da6f5aaf
   doi: 10.3390/nu14091961
@@ -29938,7 +31309,20 @@ publications:
     doi: 10.1002/jev2.70266
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 38
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1002/jev2.70266
+    doi: 10.1002/jev2.70266
+    doi_error: null
+    doi_warning: null
+    citation_text: Yu L, Bergqvist M, Park KS, Lässer C, Lötvall J. (2026). Development of Anti-Inflammatory
+      Extracellular Vesicles by Surface Expression of Syndecan-4. J Extracell Vesicles. 2026 Apr;15(4):e70266.
   metadata:
+    title: Development of Anti‐Inflammatory Extracellular Vesicles by Surface Expression of Syndecan‐4
     authors:
     - Lijuan Yu
     - Markus Bergqvist
@@ -29947,10 +31331,9 @@ publications:
     - Jan Lötvall
     authors_text: Lijuan Yu; Markus Bergqvist; Kyong‐Su Park; Cecilia Lässer; Jan Lötvall
     journal: Journal of Extracellular Vesicles
-    publication_url: https://doi.org/10.1002/jev2.70266
-    title: Development of Anti‐Inflammatory Extracellular Vesicles by Surface Expression of Syndecan‐4
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1002/jev2.70266
   overrides: {}
   metadata_check:
     status: matched
@@ -29962,7 +31345,9 @@ publications:
       line: 21
   retrieved:
     doi: 10.1002/jev2.70266
+    provider: crossref
     metadata:
+      title: Development of Anti‐Inflammatory Extracellular Vesicles by Surface Expression of Syndecan‐4
       authors:
       - Lijuan Yu
       - Markus Bergqvist
@@ -29971,11 +31356,9 @@ publications:
       - Jan Lötvall
       authors_text: Lijuan Yu; Markus Bergqvist; Kyong‐Su Park; Cecilia Lässer; Jan Lötvall
       journal: Journal of Extracellular Vesicles
-      publication_url: https://doi.org/10.1002/jev2.70266
-      title: Development of Anti‐Inflammatory Extracellular Vesicles by Surface Expression of Syndecan‐4
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1002/jev2.70266
   abstract:
     text: The biological functions of extracellular vesicles (EVs) depend on their cellular source. Further,
       different subpopulations of EVs from the same cells carry different cargo, but differences in their
@@ -30817,6 +32200,55 @@ publications:
     source_url: https://doi.org/10.1039/d4ta00055b
     license_url: http://creativecommons.org/licenses/by/3.0/
   cci_involvement: service-provision
+- id: cci-f0bea6835d3e5e8ab8a8d7fe03692365
+  doi: 10.1002/jemt.70135
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 34
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1002/jemt.70135
+    doi: 10.1002/jemt.70135
+    doi_error: null
+    doi_warning: null
+    citation_text: Sampaio P, Fernandez-Rodriguez J. (2026). Microscopy Research and Technique-Building
+      on a Legacy, Shaping the Future. Microsc Res Tech. 2026 Aug;89(8):1062-1063.
+  metadata:
+    title: Microscopy Research and Technique—Building on a Legacy, Shaping the Future
+    authors:
+    - Paula Sampaio
+    - Julia Fernandez‐Rodriguez
+    authors_text: Paula Sampaio; Julia Fernandez‐Rodriguez
+    journal: Microscopy Research and Technique
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1002/jemt.70135
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1002/jemt.70135
+    provider: crossref
+    metadata:
+      title: Microscopy Research and Technique—Building on a Legacy, Shaping the Future
+      authors:
+      - Paula Sampaio
+      - Julia Fernandez‐Rodriguez
+      authors_text: Paula Sampaio; Julia Fernandez‐Rodriguez
+      journal: Microscopy Research and Technique
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1002/jemt.70135
+  cci_involvement: scientific-collaboration
 - id: cci-f0ea1f0ec0275beb89b05d9cbb8b9d48
   doi: 10.1016/j.jlr.2023.100335
   approved: true
@@ -31476,6 +32908,61 @@ publications:
       year: 2022
       type: journal-article
       publication_url: https://doi.org/10.3390/nu14194123
+  cci_involvement: service-provision
+- id: cci-f65dfea9355e508a874b669a35780830
+  doi: 10.1080/15548627.2026.2702873
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 14
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1080/15548627.2026.2702873
+    doi: 10.1080/15548627.2026.2702873
+    doi_error: null
+    doi_warning: null
+    citation_text: Gao Y, Zhao J, Hu X, Sunnerhagen P, Liu B. (2026). Trr1 (thioredoxin reductase 1) modulates
+      ERphagy in aging via liquid-liquid phase separation. Autophagy. 2026 Dec;22(12):3660-3677.
+  metadata:
+    title: Trr1 (thioredoxin reductase 1) modulates ERphagy in aging via liquid-liquid phase separation
+    authors:
+    - Yuan Gao
+    - Jingyi Zhao
+    - Xiangdong Hu
+    - Per Sunnerhagen
+    - Beidong Liu
+    authors_text: Yuan Gao; Jingyi Zhao; Xiangdong Hu; Per Sunnerhagen; Beidong Liu
+    journal: Autophagy
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1080/15548627.2026.2702873
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1080/15548627.2026.2702873
+    provider: crossref
+    metadata:
+      title: Trr1 (thioredoxin reductase 1) modulates ERphagy in aging via liquid-liquid phase separation
+      authors:
+      - Yuan Gao
+      - Jingyi Zhao
+      - Xiangdong Hu
+      - Per Sunnerhagen
+      - Beidong Liu
+      authors_text: Yuan Gao; Jingyi Zhao; Xiangdong Hu; Per Sunnerhagen; Beidong Liu
+      journal: Autophagy
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1080/15548627.2026.2702873
   cci_involvement: service-provision
 - id: cci-f673e14193c05175997c9417945f507b
   doi: 10.1126/sciadv.abg4855
@@ -32805,7 +34292,22 @@ publications:
     doi: 10.1017/qrd.2026.10019
     doi_error: null
     doi_warning: null
+  - file: cci_publications_2026_11_27.md
+    line: 17
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1017/qrd.2026.10019
+    doi: 10.1017/qrd.2026.10019
+    doi_error: null
+    doi_warning: null
+    citation_text: Gu C, Lork A, Majdi S, Rabasco S, Peng H, Ni A, Ernst C, Ewing AG. (2026). Electrochemical
+      measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role for partial release
+      in presynaptic plasticity. QRB Discov. 2026 Mar 23;7:e3.
   metadata:
+    title: Electrochemical measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role
+      for partial release in presynaptic plasticity
     authors:
     - Chaoyi Gu
     - Alicia Lork
@@ -32818,11 +34320,9 @@ publications:
     authors_text: Chaoyi Gu; Alicia Lork; Soodabeh Majdi; Stefania Rabasco; Huashan Peng; Anjie Ni; Carl
       Ernst; Andrew G. Ewing
     journal: QRB Discovery
-    publication_url: https://doi.org/10.1017/qrd.2026.10019
-    title: Electrochemical measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role
-      for partial release in presynaptic plasticity
-    type: journal-article
     year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1017/qrd.2026.10019
   overrides: {}
   metadata_check:
     status: matched
@@ -32834,7 +34334,10 @@ publications:
       line: 10
   retrieved:
     doi: 10.1017/qrd.2026.10019
+    provider: crossref
     metadata:
+      title: Electrochemical measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role
+        for partial release in presynaptic plasticity
       authors:
       - Chaoyi Gu
       - Alicia Lork
@@ -32847,12 +34350,9 @@ publications:
       authors_text: Chaoyi Gu; Alicia Lork; Soodabeh Majdi; Stefania Rabasco; Huashan Peng; Anjie Ni;
         Carl Ernst; Andrew G. Ewing
       journal: QRB Discovery
-      publication_url: https://doi.org/10.1017/qrd.2026.10019
-      title: Electrochemical measurements at human iPSC-derived FOXA2 dopaminergic neurons suggest a role
-        for partial release in presynaptic plasticity
-      type: journal-article
       year: 2026
-    provider: crossref
+      type: journal-article
+      publication_url: https://doi.org/10.1017/qrd.2026.10019
   abstract:
     text: During the past decade, emerging studies using electrochemistry and nanoscale imaging have demonstrated
       that partial exocytotic release is prevailing in neuroendocrine cell models. However, due to complicated
@@ -33653,6 +35153,145 @@ publications:
       type: journal-article
       publication_url: https://doi.org/10.1117/1.jbo.25.7.071205
   cci_involvement: service-provision
+- id: cci-ff6c6f29e743565a9a23cea0cc27b0d7
+  doi: 10.1038/s41467-026-76494-4
+  approved: true
+  technologies: []
+  services: []
+  tagging_status: pending
+  reporting_years:
+  - 2026
+  original_citations:
+  - file: cci_publications_2026_11_27.md
+    line: 8
+    title: ''
+    authors_text: ''
+    journal: ''
+    year: 2026
+    original_doi: 10.1038/s41467-026-76494-4
+    doi: 10.1038/s41467-026-76494-4
+    doi_error: null
+    doi_warning: null
+    citation_text: Aslanyan A, Mukherjee S, Moncur EM, Szadziewska A, He Y, Kac PR, Coyle R, Camporesi
+      E, Sato C, Ghoshal N, Barthélemy NR, Wood J, Ge J, Dulewicz M, Koutarapu S, Schwetye K, Roberts
+      KF, Murphy EC, Carletti F, Blennow K, Gonzalez Ortiz F, Leckey CA, Giovannucci TA, Tariq K, Zetterberg
+      H, Elbert DL, Thorne L, Toma AK, Watkins L, Fox NC, Bateman RJ, Hanrieder J, Paterson RW. (2026).
+      Spatiotemporal characterization of Alzheimer disease pathology in living human brain tissue. Nat
+      Commun. 2026 Sep 24;17(1):9878.
+  metadata:
+    title: Spatiotemporal characterization of Alzheimer disease pathology in living human brain tissue
+    authors:
+    - Aram Aslanyan
+    - Soumya Mukherjee
+    - Eleanor M. Moncur
+    - Alicja Szadziewska
+    - Yingxin He
+    - Przemysław R. Kac
+    - Reid Coyle
+    - Elena Camporesi
+    - Chihiro Sato
+    - Nupur Ghoshal
+    - Nicolas R. Barthélemy
+    - Jack Wood
+    - Junyue Ge
+    - Maciej Dulewicz
+    - Srinivas Koutarapu
+    - Katherine Schwetye
+    - Kaleigh F. Roberts
+    - Eimear C. Murphy
+    - Francesco Carletti
+    - Kaj Blennow
+    - Fernando Gonzalez Ortiz
+    - Claire A. Leckey
+    - Tatiana A. Giovannucci
+    - Kanza Tariq
+    - Henrik Zetterberg
+    - Donald L. Elbert
+    - Lewis Thorne
+    - Ahmed K. Toma
+    - Laurence Watkins
+    - Nick C. Fox
+    - Randall J. Bateman
+    - Jörg Hanrieder
+    - Ross W. Paterson
+    authors_text: Aram Aslanyan; Soumya Mukherjee; Eleanor M. Moncur; Alicja Szadziewska; Yingxin He;
+      Przemysław R. Kac; Reid Coyle; Elena Camporesi; Chihiro Sato; Nupur Ghoshal; Nicolas R. Barthélemy;
+      Jack Wood; Junyue Ge; Maciej Dulewicz; Srinivas Koutarapu; Katherine Schwetye; Kaleigh F. Roberts;
+      Eimear C. Murphy; Francesco Carletti; Kaj Blennow; Fernando Gonzalez Ortiz; Claire A. Leckey; Tatiana
+      A. Giovannucci; Kanza Tariq; Henrik Zetterberg; Donald L. Elbert; Lewis Thorne; Ahmed K. Toma; Laurence
+      Watkins; Nick C. Fox; Randall J. Bateman; Jörg Hanrieder; Ross W. Paterson
+    journal: Nature Communications
+    year: 2026
+    type: journal-article
+    publication_url: https://doi.org/10.1038/s41467-026-76494-4
+  overrides: {}
+  metadata_check:
+    status: review
+    issues: []
+  retrieved:
+    doi: 10.1038/s41467-026-76494-4
+    provider: crossref
+    metadata:
+      title: Spatiotemporal characterization of Alzheimer disease pathology in living human brain tissue
+      authors:
+      - Aram Aslanyan
+      - Soumya Mukherjee
+      - Eleanor M. Moncur
+      - Alicja Szadziewska
+      - Yingxin He
+      - Przemysław R. Kac
+      - Reid Coyle
+      - Elena Camporesi
+      - Chihiro Sato
+      - Nupur Ghoshal
+      - Nicolas R. Barthélemy
+      - Jack Wood
+      - Junyue Ge
+      - Maciej Dulewicz
+      - Srinivas Koutarapu
+      - Katherine Schwetye
+      - Kaleigh F. Roberts
+      - Eimear C. Murphy
+      - Francesco Carletti
+      - Kaj Blennow
+      - Fernando Gonzalez Ortiz
+      - Claire A. Leckey
+      - Tatiana A. Giovannucci
+      - Kanza Tariq
+      - Henrik Zetterberg
+      - Donald L. Elbert
+      - Lewis Thorne
+      - Ahmed K. Toma
+      - Laurence Watkins
+      - Nick C. Fox
+      - Randall J. Bateman
+      - Jörg Hanrieder
+      - Ross W. Paterson
+      authors_text: Aram Aslanyan; Soumya Mukherjee; Eleanor M. Moncur; Alicja Szadziewska; Yingxin He;
+        Przemysław R. Kac; Reid Coyle; Elena Camporesi; Chihiro Sato; Nupur Ghoshal; Nicolas R. Barthélemy;
+        Jack Wood; Junyue Ge; Maciej Dulewicz; Srinivas Koutarapu; Katherine Schwetye; Kaleigh F. Roberts;
+        Eimear C. Murphy; Francesco Carletti; Kaj Blennow; Fernando Gonzalez Ortiz; Claire A. Leckey;
+        Tatiana A. Giovannucci; Kanza Tariq; Henrik Zetterberg; Donald L. Elbert; Lewis Thorne; Ahmed
+        K. Toma; Laurence Watkins; Nick C. Fox; Randall J. Bateman; Jörg Hanrieder; Ross W. Paterson
+      journal: Nature Communications
+      year: 2026
+      type: journal-article
+      publication_url: https://doi.org/10.1038/s41467-026-76494-4
+  cci_involvement: service-provision
+  abstract:
+    text: Alzheimer disease begins in the brain many years before symptoms, but early changes are usually
+      studied after death or indirectly through fluid and imaging biomarkers. Here we show that small
+      brain biopsies collected during ventriculoperitoneal shunt surgery can be used to study Alzheimer
+      disease pathology and protein turnover during life. We analysed biopsies from 18 individuals with
+      suspected normal pressure hydrocephalus, alongside matched ventricular and lumbar cerebrospinal
+      fluid and post-mortem control brain tissue. Amyloid plaques were present in 9 of 18 biopsies, while
+      mature tau tangles were rare. Matrix-assisted laser desorption/ionization mass spectrometry imaging
+      mapped amyloid plaque chemistry within tissue. Phosphorylated tau 217 was enriched around plaques,
+      supporting a local relationship between amyloid and tau pathology. Stable isotope labelling, which
+      tracks newly made proteins, detected rapid tau labelling within approximately 3 hours and estimated
+      brain tau half-life at about 34 days. Amyloid plaques showed little detectable turnover.
+    source_url: https://doi.org/10.1038/s41467-026-76494-4
+    license_url: https://creativecommons.org/licenses/by/4.0
 - id: cci-ff859b8cc8d7577793d50ac397f99bff
   doi: 10.1371/journal.pone.0104186
   approved: true
