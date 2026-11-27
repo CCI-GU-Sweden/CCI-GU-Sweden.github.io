@@ -1,6 +1,34 @@
 {
   "publications": [
     {
+      "authors": [
+        "Sagar Mahale",
+        "Vaibhav Chikne",
+        "Nitin Adithya",
+        "Mohamed Shamsudiin Mohamed",
+        "Meenakshi Setia",
+        "Daniel Sjövall",
+        "Bharat Prajapati",
+        "Andreas Hallqvist",
+        "Meena Kanduri",
+        "Chandrasekhar Kanduri"
+      ],
+      "authors_text": "Sagar Mahale; Vaibhav Chikne; Nitin Adithya; Mohamed Shamsudiin Mohamed; Meenakshi Setia; Daniel Sjövall; Bharat Prajapati; Andreas Hallqvist; Meena Kanduri; Chandrasekhar Kanduri",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.celrep.2026.118026",
+      "id": "cci-4c3e071394d5554f9adcdb8464dfaf8c",
+      "journal": "Cell Reports",
+      "publication_url": "https://doi.org/10.1016/j.celrep.2026.118026",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "A bifunctional ARHGEF17-AS1 locus encodes MSEP, a protein that supports mitotic spindle organization",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
       "abstract": {
         "license_url": "https://creativecommons.org/licenses/by/4.0/",
         "source_url": "https://doi.org/10.1093/g3journal/jkag161",
@@ -167,6 +195,56 @@
         "light-microscopy"
       ],
       "title": "Bifidobacterium longum and prebiotic interventions restore early-life high-fat/high-sugar diet-induced alterations in feeding behavior in adult mice",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1186/s13046-026-03732-4",
+        "text": "Background\n\nMetastatic recurrence represents the major clinical challenge in early-stage lung cancer after curative surgery. Here, we investigated the role of circulating extracellular vesicles and particles (EVPs) in promoting formation of pre-metastatic niches (PMNs).\n\nMethods\n\nPlasma-derived EVPs were obtained by ultracentrifugation from pre-surgery blood samples of patients with poor prognosis. Heavy-smokers cancer free individuals were used as control. EVP were characterized following MISEV guidelines. Functional experiments were carried out in vitro in 2D and 3D-bioprinted models as well as in vivo .\n\nResults\n\nEVPs from patients with early relapse show distinct molecular profiles, characterized by elevated levels of miR-29a and complement protein C4a. These EVPs preferentially target endothelial cells inducing a pro-inflammatory condition with upregulation of VCAM1 and CXCL1. In turn, endothelial modulation stimulated fibroblast activation and promoted neutrophils recruitment supporting PMNs formation. Mechanistically, we demonstrate that miR-29a and C4A act synergistically through SPARC down-modulation promoting cancer cell colonization. Preconditioning of mouse lungs using EVPs from patients with poor prognosis increased metastatic growth of human tumor cells, which was inhibited by miR-29a blockade.\n\nConclusions\n\nCirculating EVPs could be novel prognostic biomarkers and key players in PMN formation offering new targets to reduce relapses in lung cancer."
+      },
+      "authors": [
+        "Francesca Pontis",
+        "Patrizia Ghidotti",
+        "Nicole Ferrario",
+        "Camilla Locatelli",
+        "Mattia Boeri",
+        "Marco Gentili",
+        "Miriam Segale",
+        "Massimo Moro",
+        "Arianna Di Bernardo",
+        "Giulia Bertolini",
+        "Paola Suatoni",
+        "Michele Ferrari",
+        "Ugo Pastorino",
+        "Loris De Cecco",
+        "Marica Ficorilli",
+        "Marta Lucchetta",
+        "Silvia Brich",
+        "Luca Agnelli",
+        "Fabio Maiullari",
+        "Roberto Rizzi",
+        "Claudia Bearzi",
+        "Paola Portararo",
+        "Sabina Sangaletti",
+        "Rossella Crescitelli",
+        "Luca Roz",
+        "Gabriella Sozzi",
+        "Orazio Fortunato"
+      ],
+      "authors_text": "Francesca Pontis; Patrizia Ghidotti; Nicole Ferrario; Camilla Locatelli; Mattia Boeri; Marco Gentili; Miriam Segale; Massimo Moro; Arianna Di Bernardo; Giulia Bertolini; Paola Suatoni; Michele Ferrari; Ugo Pastorino; Loris De Cecco; Marica Ficorilli; Marta Lucchetta; Silvia Brich; Luca Agnelli; Fabio Maiullari; Roberto Rizzi; Claudia Bearzi; Paola Portararo; Sabina Sangaletti; Rossella Crescitelli; Luca Roz; Gabriella Sozzi; Orazio Fortunato",
+      "cci_involvement": "service-provision",
+      "doi": "10.1186/s13046-026-03732-4",
+      "id": "cci-4e1fbe0c0b885c4baae2c0069d6107ac",
+      "journal": "Journal of Experimental & Clinical Cancer Research",
+      "publication_url": "https://doi.org/10.1186/s13046-026-03732-4",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Circulating extracellular vesicles from early-stage lung cancer patients trigger endothelial activation to drive pre-metastatic niche formation through synergistic miR-29a and C4A signaling",
       "type": "journal-article",
       "year": 2026
     },
@@ -403,6 +481,90 @@
       "year": 2026
     },
     {
+      "authors": [
+        "Karl-Henrik Grinnemo",
+        "Ken Braesch-Andersen",
+        "Johan O. Wedin",
+        "Anna Velica",
+        "Ulrika Thelander",
+        "Pierre Sabatier",
+        "Christian M. Beusch",
+        "Oscar E. Simonson",
+        "Alice Törne",
+        "Ulrika Felldin",
+        "Olga Gritsenko",
+        "Kyong-Su Park",
+        "Rossella Crescitelli",
+        "Nils Ågren",
+        "Stephan Meinke",
+        "Ayman Abouzayed",
+        "Olivia Wegrzyniak",
+        "Andriana Putri",
+        "Patricia Hedenqvist",
+        "Anneli Rydén",
+        "Alexandra Leijon",
+        "Lisa Lindström",
+        "Irina Velikyan",
+        "Evren Alici",
+        "Johannes Wikström",
+        "Li Ming Gan",
+        "Tomas Lorant",
+        "Makiko Kumagai-Braesch",
+        "Elisabeth Ståhle",
+        "Olle Korsgren",
+        "Karin Fromell",
+        "Kristina Nilsson-Ekdahl",
+        "Bo Nilsson",
+        "Jan Lötvall",
+        "Marianne Jensen-Waern",
+        "Jesper V. Olsen",
+        "Daniel W. Hagey",
+        "Samir E.L. Andaloussi",
+        "Katarina Le Blanc",
+        "Stefan James",
+        "Olof Eriksson",
+        "Sergey Rodin"
+      ],
+      "authors_text": "Karl-Henrik Grinnemo; Ken Braesch-Andersen; Johan O. Wedin; Anna Velica; Ulrika Thelander; Pierre Sabatier; Christian M. Beusch; Oscar E. Simonson; Alice Törne; Ulrika Felldin; Olga Gritsenko; Kyong-Su Park; Rossella Crescitelli; Nils Ågren; Stephan Meinke; Ayman Abouzayed; Olivia Wegrzyniak; Andriana Putri; Patricia Hedenqvist; Anneli Rydén; Alexandra Leijon; Lisa Lindström; Irina Velikyan; Evren Alici; Johannes Wikström; Li Ming Gan; Tomas Lorant; Makiko Kumagai-Braesch; Elisabeth Ståhle; Olle Korsgren; Karin Fromell; Kristina Nilsson-Ekdahl; Bo Nilsson; Jan Lötvall; Marianne Jensen-Waern; Jesper V. Olsen; Daniel W. Hagey; Samir E.L. Andaloussi; Katarina Le Blanc; Stefan James; Olof Eriksson; Sergey Rodin",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.stem.2026.07.003",
+      "id": "cci-92cb56b3868b596db060042fc119c759",
+      "journal": "Cell Stem Cell",
+      "publication_url": "https://doi.org/10.1016/j.stem.2026.07.003",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Extracellular vesicle secretome from mesenchymal stromal cells prevents post-ischemic heart failure by targeting cardiac fibrosis",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "authors": [
+        "Kota Miura",
+        "Christa Walther",
+        "Elnaz Fazeli",
+        "Agustin Corbat",
+        "Paula Sampaio",
+        "Rocco D'Antuono"
+      ],
+      "authors_text": "Kota Miura; Christa Walther; Elnaz Fazeli; Agustin Corbat; Paula Sampaio; Rocco D'Antuono",
+      "cci_involvement": "service-provision",
+      "doi": "10.1111/jmi.70188",
+      "id": "cci-ce5c750ad82e52178b34163346453ae6",
+      "journal": "Journal of Microscopy",
+      "publication_url": "https://doi.org/10.1111/jmi.70188",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Focus on the methods reproducibility of bioimage analysis",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
       "abstract": {
         "license_url": "https://creativecommons.org/licenses/by/4.0",
         "source_url": "https://doi.org/10.1186/s12916-026-04923-8",
@@ -466,6 +628,26 @@
       "technologies": [],
       "title": "Live bacteria nitrogen uptake in response to winter warming in dry Arctic heath",
       "type": "posted-content",
+      "year": 2026
+    },
+    {
+      "authors": [
+        "Paula Sampaio",
+        "Julia Fernandez‐Rodriguez"
+      ],
+      "authors_text": "Paula Sampaio; Julia Fernandez‐Rodriguez",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.1002/jemt.70135",
+      "id": "cci-f0bea6835d3e5e8ab8a8d7fe03692365",
+      "journal": "Microscopy Research and Technique",
+      "publication_url": "https://doi.org/10.1002/jemt.70135",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Microscopy Research and Technique—Building on a Legacy, Shaping the Future",
+      "type": "journal-article",
       "year": 2026
     },
     {
@@ -599,6 +781,36 @@
       "year": 2026
     },
     {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1002/pmic.70096",
+        "text": "Extracellular vesicles (EVs) are heterogeneous and play important roles in intercellular communication, contributing to physiological and pathological processes. Since few markers currently exist to differentiate subtypes of EVs, this study aimed to determine proteomic and lipidomic differences among four EV subpopulations. Large and small EVs (L‐EVs and S‐EVs) were isolated from human mast cells (HMC‐1) and monocytes (THP‐1) by differential ultracentrifugation and then further separated by density cushions into two different densities [low‐density (LD) and high‐density (HD)]. L‐EVs were pelleted at 16,500 × g , and S‐EVs were pelleted at 118,000 × g . LD EVs were collected at 1.079–1.146 g/mL, while HD EVs were collected at 1.146–1.185 g/mL. The morphology, size and yield of EVs were determined by TEM and western blot. The proteome and lipidome of the EV subpopulations were determined with mass spectrometry. A total of 5364 proteins were quantified, and L‐EVs LD were enriched in mitochondrial proteins such as TIMM/TOMM and MICOS proteins, while L‐EVs HD were enriched in cytoskeleton‐ and cytokinesis‐associated proteins, such as KIF proteins. S‐EVs LD were enriched in tetraspanins, ADAM10 and ESCRT machinery proteins, while S‐EVs HD were enriched in proteins commonly viewed as contaminants, such as histones, complement factors and collagen. Proteins involved in membrane trafficking between the plasma membrane and organelles, such as adaptor protein complexes, the conserved oligomeric Golgi complex, the trafficking protein particle complex, sortin‐nexins, TBC1 domain proteins and coatomer subunits, were expressed at similar levels across all EV subtypes. Furthermore, 107 lipids were quantified, and phosphatidylethanolamine (PE) was less abundant in L‐EVs LD as compared to the other EV subtypes, while ceramides were enriched in L‐EVs as compared to S‐EVs.This study demonstrates that there is a core proteome and lipidome that is similar across all four EV subtypes, but importantly, it also shows that a portion of the proteome and lipidome differs in EV subpopulations separated based on size and density. We suggest that these could be important markers in future EV studies and that they may reflect a different biogenesis and EV function."
+      },
+      "authors": [
+        "Anna Lischnig",
+        "Nasibeh Karimi",
+        "Per Larsson",
+        "Karin Ekström",
+        "Rossella Crescitelli",
+        "Anna‐Carin Olin",
+        "Cecilia Lässer"
+      ],
+      "authors_text": "Anna Lischnig; Nasibeh Karimi; Per Larsson; Karin Ekström; Rossella Crescitelli; Anna‐Carin Olin; Cecilia Lässer",
+      "cci_involvement": "service-provision",
+      "doi": "10.1002/pmic.70096",
+      "id": "cci-21fbd19f46635e298e2c0a5ccd6bdab7",
+      "journal": "PROTEOMICS",
+      "publication_url": "https://doi.org/10.1002/pmic.70096",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Proteomic and Lipidomic Profiling of Immune Cell‐Derived Subpopulations of Extracellular Vesicles",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
       "authors": [
         "Kyong-Su Park",
         "Dae Hyun Ha",
@@ -624,6 +836,242 @@
         "electron-microscopy"
       ],
       "title": "Quantitative proteomic and functional comparison of extracellular vesicles from multiple adipose tissue mesenchymal stem cell donors",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "authors": [
+        "Luke A. Noon",
+        "Giulia Casal",
+        "Mario Soriano-Navarro",
+        "Anne-Laure Cattin",
+        "Rafael Camacho",
+        "Carlos Acosta Umanzor",
+        "Carmen Rojo Sanz",
+        "Arantxa Leal Tassias",
+        "Julia Fernandez-Rodriguez",
+        "Elisabeth Verboven",
+        "Jose Antonio Gomez Sanchez",
+        "Marousa Darsinou",
+        "Alex Power",
+        "Antonella Riccio",
+        "Emma R. Andersson",
+        "Jemima J. Burden",
+        "Alison C. Lloyd"
+      ],
+      "authors_text": "Luke A. Noon; Giulia Casal; Mario Soriano-Navarro; Anne-Laure Cattin; Rafael Camacho; Carlos Acosta Umanzor; Carmen Rojo Sanz; Arantxa Leal Tassias; Julia Fernandez-Rodriguez; Elisabeth Verboven; Jose Antonio Gomez Sanchez; Marousa Darsinou; Alex Power; Antonella Riccio; Emma R. Andersson; Jemima J. Burden; Alison C. Lloyd",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.64898/2026.10.26.761888",
+      "id": "cci-e4d66c022edc59f6bdf0fe3cab2c2a68",
+      "journal": "openRxiv",
+      "publication_url": "https://doi.org/10.64898/2026.10.26.761888",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Quantitative spatial connectomics of liver reveals a partially exposed sympathetic network that integrates multiple cell types across the portal tract",
+      "type": "posted-content",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.21203/rs.3.rs-11153643/v1",
+        "text": "Brain positron emission tomography (PET) imaging is a valuable tool which allows visualization of the pathological structures inside the living patients’ brains. While amyloid-β PET tracers have been in use with Alzheimer’s disease patients in clinics, tau PET tracers have still not entered the clinical routine. Second-generation tau PET tracers have been developed with the aim to overcome the limitations of the first-generation tau PET tracers, such as low sensitivity and off-target binding. However, the detailed pathological characterization of these tracers’ binding is still needed for fully understanding their potential as accurate markers of pathogenic tau. Herein, we focused on the second-generation tau PET tracer Genentech Tau Probe 1 ([ 18 F]GTP1) and made use of the fluorescent properties of its non-radioactive unlabeled variant GTP1 for correlative fluorescence microscopy. The results show that GTP1 binds to tau tangles and neuropil threads (NPTs), but not amyloid-β plaques. Importantly, our results indicate that there is a strong correlation between the fluorescent GTP1 signal and the [ 18 F]GTP1 signal detected with autoradiography, which is currently the standard way of studying the tau PET tracer binding in situ . Together, this data shows the robust application of a non-radioactive tau PET tracer in binding studies in post-mortem tissue and sheds new light on the tau binding properties of GTP1."
+      },
+      "authors": [
+        "Aleksandra Antic",
+        "Ambra Dreos",
+        "Tammaryn Lashley",
+        "Stephen Yong Yo-Ap",
+        "Kerstin Sander",
+        "Michael Schöll",
+        "Jörg Hanrieder"
+      ],
+      "authors_text": "Aleksandra Antic; Ambra Dreos; Tammaryn Lashley; Stephen Yong Yo-Ap; Kerstin Sander; Michael Schöll; Jörg Hanrieder",
+      "cci_involvement": "service-provision",
+      "doi": "10.21203/rs.3.rs-11153643/v1",
+      "id": "cci-c3af7c9b3d675819821096b485936b7d",
+      "journal": "Springer Science and Business Media LLC",
+      "publication_url": "https://doi.org/10.21203/rs.3.rs-11153643/v1",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Second-generation tau PET tracer in situ binding assessed with fluorescence imaging",
+      "type": "posted-content",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_url": "https://doi.org/10.1021/acsami.6c08450",
+        "text": "ErbB2-positive cancers are highly aggressive and remain difficult to treat due to limitations of current therapies, such as poor selectivity, insufficient delivery, and toxicity toward healthy tissues. Herein, we developed a dual-action nanoformulation combining prolinium-based surface-active ionic liquid (SAIL) nanocarriers with ErbB2-derived transmembrane (TM) peptide for selective targeting of ErbB2-positive cancer cells. Two new SAILs, which self-assemble into stable micelles/vesicles under physiological conditions, and a series of hydrophobic TM-peptides were synthesized and characterized. Among the resulting nanoformulations, V3-BAIL showed the strongest antiproliferative activity in ErbB2-positive breast, lung, and pancreatic cancer cell lines, whereas activity in low-ErbB2 NCl-H23 cells was minimal. The response correlated with ErbB2 expression level, demonstrating target-related selectivity. Chou-Talalay analysis revealed synergy between the SAIL nanocarrier and TM peptide. Mechanistic studies showed that V3-BAIL progressively accumulated in cells, reduced cellular fitness without rapid membrane lysis, and strongly suppressed PI3K/Akt and MAPK/ERK signaling. Relative to doxorubicin and cisplatin, V3-BAIL displayed greater selectivity toward ErbB2-positive cells, and it acted more rapidly and more strongly than trastuzumab under the tested conditions. These findings establish TM peptide-decorated SAIL nanocarriers as a promising strategy for selective and synergistic ErbB2-targeted cancer therapy."
+      },
+      "authors": [
+        "Helal Abujubara",
+        "Pankaj Bharmoria",
+        "Dorota Raj",
+        "Samantha W. Alvarez",
+        "Siyuan Liu",
+        "Maryna Zhylinskaya",
+        "Enoch Appiah",
+        "Kasper Moth-Poulsen",
+        "Clotilde Wiel",
+        "Volkan I. Sayin",
+        "Alesia A. Tietze"
+      ],
+      "authors_text": "Helal Abujubara; Pankaj Bharmoria; Dorota Raj; Samantha W. Alvarez; Siyuan Liu; Maryna Zhylinskaya; Enoch Appiah; Kasper Moth-Poulsen; Clotilde Wiel; Volkan I. Sayin; Alesia A. Tietze",
+      "cci_involvement": "service-provision",
+      "doi": "10.1021/acsami.6c08450",
+      "id": "cci-ce82275554085f8ea1e70d5d61e886b1",
+      "journal": "ACS Applied Materials & Interfaces",
+      "publication_url": "https://doi.org/10.1021/acsami.6c08450",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Selective and Synergistic Targeting of ErbB2-Positive Cancer Cells with ErbB2 Transmembrane Peptide-Ionic Liquid Nanocarrier Formulation",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "authors": [
+        "Sebastian Blid Sköldheden",
+        "Júlia Teixidor-Deulofeu",
+        "Johan Ruud",
+        "Linda Engström Ruud"
+      ],
+      "authors_text": "Sebastian Blid Sköldheden; Júlia Teixidor-Deulofeu; Johan Ruud; Linda Engström Ruud",
+      "cci_involvement": "service-provision",
+      "doi": "10.64898/2026.09.04.749561",
+      "id": "cci-b41ad982418b52c0b6fdc0f33ceaf622",
+      "journal": "openRxiv",
+      "publication_url": "https://doi.org/10.64898/2026.09.04.749561",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Semaglutide engages distinct brainstem-to-hypothalamus circuits to suppress motivated feeding and regulate ketogenesis and energy expenditure",
+      "type": "posted-content",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "http://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1515/mim-2025-0029",
+        "text": "Smart microscopy is transforming life sciences by automating experimental imaging workflows and enabling real-time adaptation based on feedback from images and other data streams. This shift increases throughput, improves reproducibility, and expands the functional capabilities of microscopes. However, the current landscape is highly fragmented. Academic researchers often develop custom solutions for specific scientific needs, while industry offerings are typically proprietary and tied to specific hardware. This diversity, while fostering innovation, also creates major challenges in interoperability, reproducibility, and standardization, which slows progress and adaption. This article presents a collaborative effort between academic and industry leaders to survey the current state of smart microscopy, highlight representative implementations, and identify common technical and organizational barriers. We propose a framework for greater interoperability based on shared standards, modular software design, and community-driven development. Our goal is to support collaboration across the field and lay the groundwork for a more connected, reusable, and accessible smart microscopy ecosystem. We conclude with a call to action for researchers, hardware developers, and institutions to join in building an open, interoperable foundation that will unlock the full potential of smart microscopy in life science research."
+      },
+      "authors": [
+        "Lucien Hinderling",
+        "Hannah S. Heil",
+        "Alfredo Rates",
+        "Philipp Seidel",
+        "P.S. Kesavan",
+        "Manuel Gunkel",
+        "Benedict Diederich",
+        "Thomas Guilbert",
+        "Rémy Torro",
+        "Otmane Bouchareb",
+        "Claire Demeautis",
+        "Célia Martin",
+        "Scott Brooks",
+        "Evangelos Sisamakis",
+        "Erwan Grandgirard",
+        "Jerome Mutterer",
+        "Harrison Oatman",
+        "Jared Toettcher",
+        "Andrii Rogov",
+        "Nelda Antonovaite",
+        "Karl Johansson",
+        "Johannes K. Ahnlinde",
+        "Oscar André",
+        "Philip Nordenfelt",
+        "Pontus Nordenfelt",
+        "Claudia Pfander",
+        "Jürgen Reymann",
+        "Talley Lambert",
+        "Marco R. Cosenza",
+        "Jan O. Korbel",
+        "Rainer Pepperkok",
+        "Lukas C. Kapitein",
+        "Olivier Pertz",
+        "Nils Norlin",
+        "Aliaksandr Halavatyi",
+        "Rafael Camacho"
+      ],
+      "authors_text": "Lucien Hinderling; Hannah S. Heil; Alfredo Rates; Philipp Seidel; P.S. Kesavan; Manuel Gunkel; Benedict Diederich; Thomas Guilbert; Rémy Torro; Otmane Bouchareb; Claire Demeautis; Célia Martin; Scott Brooks; Evangelos Sisamakis; Erwan Grandgirard; Jerome Mutterer; Harrison Oatman; Jared Toettcher; Andrii Rogov; Nelda Antonovaite; Karl Johansson; Johannes K. Ahnlinde; Oscar André; Philip Nordenfelt; Pontus Nordenfelt; Claudia Pfander; Jürgen Reymann; Talley Lambert; Marco R. Cosenza; Jan O. Korbel; Rainer Pepperkok; Lukas C. Kapitein; Olivier Pertz; Nils Norlin; Aliaksandr Halavatyi; Rafael Camacho",
+      "cci_involvement": "scientific-collaboration",
+      "doi": "10.1515/mim-2025-0029",
+      "id": "cci-26d814bcf1a751f79adea48cae3bac47",
+      "journal": "Methods in Microscopy",
+      "publication_url": "https://doi.org/10.1515/mim-2025-0029",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Smart microscopy: current implementations and a roadmap for interoperability",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s41467-026-76494-4",
+        "text": "Alzheimer disease begins in the brain many years before symptoms, but early changes are usually studied after death or indirectly through fluid and imaging biomarkers. Here we show that small brain biopsies collected during ventriculoperitoneal shunt surgery can be used to study Alzheimer disease pathology and protein turnover during life. We analysed biopsies from 18 individuals with suspected normal pressure hydrocephalus, alongside matched ventricular and lumbar cerebrospinal fluid and post-mortem control brain tissue. Amyloid plaques were present in 9 of 18 biopsies, while mature tau tangles were rare. Matrix-assisted laser desorption/ionization mass spectrometry imaging mapped amyloid plaque chemistry within tissue. Phosphorylated tau 217 was enriched around plaques, supporting a local relationship between amyloid and tau pathology. Stable isotope labelling, which tracks newly made proteins, detected rapid tau labelling within approximately 3 hours and estimated brain tau half-life at about 34 days. Amyloid plaques showed little detectable turnover."
+      },
+      "authors": [
+        "Aram Aslanyan",
+        "Soumya Mukherjee",
+        "Eleanor M. Moncur",
+        "Alicja Szadziewska",
+        "Yingxin He",
+        "Przemysław R. Kac",
+        "Reid Coyle",
+        "Elena Camporesi",
+        "Chihiro Sato",
+        "Nupur Ghoshal",
+        "Nicolas R. Barthélemy",
+        "Jack Wood",
+        "Junyue Ge",
+        "Maciej Dulewicz",
+        "Srinivas Koutarapu",
+        "Katherine Schwetye",
+        "Kaleigh F. Roberts",
+        "Eimear C. Murphy",
+        "Francesco Carletti",
+        "Kaj Blennow",
+        "Fernando Gonzalez Ortiz",
+        "Claire A. Leckey",
+        "Tatiana A. Giovannucci",
+        "Kanza Tariq",
+        "Henrik Zetterberg",
+        "Donald L. Elbert",
+        "Lewis Thorne",
+        "Ahmed K. Toma",
+        "Laurence Watkins",
+        "Nick C. Fox",
+        "Randall J. Bateman",
+        "Jörg Hanrieder",
+        "Ross W. Paterson"
+      ],
+      "authors_text": "Aram Aslanyan; Soumya Mukherjee; Eleanor M. Moncur; Alicja Szadziewska; Yingxin He; Przemysław R. Kac; Reid Coyle; Elena Camporesi; Chihiro Sato; Nupur Ghoshal; Nicolas R. Barthélemy; Jack Wood; Junyue Ge; Maciej Dulewicz; Srinivas Koutarapu; Katherine Schwetye; Kaleigh F. Roberts; Eimear C. Murphy; Francesco Carletti; Kaj Blennow; Fernando Gonzalez Ortiz; Claire A. Leckey; Tatiana A. Giovannucci; Kanza Tariq; Henrik Zetterberg; Donald L. Elbert; Lewis Thorne; Ahmed K. Toma; Laurence Watkins; Nick C. Fox; Randall J. Bateman; Jörg Hanrieder; Ross W. Paterson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s41467-026-76494-4",
+      "id": "cci-ff6c6f29e743565a9a23cea0cc27b0d7",
+      "journal": "Nature Communications",
+      "publication_url": "https://doi.org/10.1038/s41467-026-76494-4",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Spatiotemporal characterization of Alzheimer disease pathology in living human brain tissue",
       "type": "journal-article",
       "year": 2026
     },
@@ -694,6 +1142,59 @@
       "year": 2026
     },
     {
+      "authors": [
+        "Sagar Mahale",
+        "Meenakshi Setia",
+        "Daniel Sjövall",
+        "Ananya Deshpande",
+        "Kamali Nagarajan",
+        "Silke Reischl",
+        "Pekka Jaako",
+        "Meena Kanduri",
+        "Chandrasekhar Kanduri"
+      ],
+      "authors_text": "Sagar Mahale; Meenakshi Setia; Daniel Sjövall; Ananya Deshpande; Kamali Nagarajan; Silke Reischl; Pekka Jaako; Meena Kanduri; Chandrasekhar Kanduri",
+      "cci_involvement": "service-provision",
+      "doi": "10.1016/j.celrep.2026.118023",
+      "id": "cci-c96d08c929a456089ca98cbceaabc096",
+      "journal": "Cell Reports",
+      "publication_url": "https://doi.org/10.1016/j.celrep.2026.118023",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The spindle-associated antisense RNA ARHGEF17-AS1 functionally contributes to mitotic spindle integrity",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "abstract": {
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_url": "https://doi.org/10.1038/s42003-026-10880-y",
+        "text": "This study investigates how γ-tubulin and the centrosome contribute to interphase centromere dynamics and nuclear organization. Although classically associated with mitotic microtubule nucleation, here we show that γ-tubulin associates with chromatin and is enriched within centromere-defined volumes. Using live-cell imaging, immunofluorescence, and chromatin immunoprecipitation sequencing, we detect γ-tubulin-associated signal at satellite-rich, centromere-proximal chromatin. Reduced γ-tubulin levels are associated with increased centromere fluorescence intensity and reduced mobility, linking the γ-tubulin network to centromere organization. Under acute cisplatin-induced stress, centromere mobility increases, whereas centromere clustering is observed in separate fixed-cell analyses. Ser131 phosphorylation is associated with γ-tubulin self-assembly and centromere-related dynamics. Additionally, γ-tubulin accumulates in micronuclei, coinciding with increased replication-associated signal and DNA fluorescence. In primary clear cell renal cell carcinoma cells, stress is associated with higher γ-tubulin fluorescence intensity within centromere-defined volumes. Together, these findings support an association between the γ-tubulin meshwork and centromere organization, chromatin compartmentalization, and responses to genomic stress."
+      },
+      "authors": [
+        "Alaaddin Muteb",
+        "Martin Johansson",
+        "Maria Alvarado-Kristensson"
+      ],
+      "authors_text": "Alaaddin Muteb; Martin Johansson; Maria Alvarado-Kristensson",
+      "cci_involvement": "service-provision",
+      "doi": "10.1038/s42003-026-10880-y",
+      "id": "cci-ab75a748a4115f8a92f3b66bab84872f",
+      "journal": "Communications Biology",
+      "publication_url": "https://doi.org/10.1038/s42003-026-10880-y",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "The TUBG meshwork is associated with centromere dynamics and micronuclear organization",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
       "abstract": {
         "license_url": "http://creativecommons.org/licenses/by/4.0/",
         "source_url": "https://doi.org/10.1172/jci.insight.202461",
@@ -722,6 +1223,29 @@
         "light-microscopy"
       ],
       "title": "Tissue-layer-resolved proteome landscape of Crohn’s disease strictures highlights potential drivers of fibrosis progression",
+      "type": "journal-article",
+      "year": 2026
+    },
+    {
+      "authors": [
+        "Yuan Gao",
+        "Jingyi Zhao",
+        "Xiangdong Hu",
+        "Per Sunnerhagen",
+        "Beidong Liu"
+      ],
+      "authors_text": "Yuan Gao; Jingyi Zhao; Xiangdong Hu; Per Sunnerhagen; Beidong Liu",
+      "cci_involvement": "service-provision",
+      "doi": "10.1080/15548627.2026.2702873",
+      "id": "cci-f65dfea9355e508a874b669a35780830",
+      "journal": "Autophagy",
+      "publication_url": "https://doi.org/10.1080/15548627.2026.2702873",
+      "reporting_years": [
+        2026
+      ],
+      "services": [],
+      "technologies": [],
+      "title": "Trr1 (thioredoxin reductase 1) modulates ERphagy in aging via liquid-liquid phase separation",
       "type": "journal-article",
       "year": 2026
     },
